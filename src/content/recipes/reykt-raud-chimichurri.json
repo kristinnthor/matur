@@ -2,32 +2,124 @@
   "title": "Reykt rauð chimichurri",
   "subtitle": "argentínsk kryddsósa með reyktri papriku",
   "description": "Hrá kryddsósa úr steinselju, hvítlauk og reyktri papriku. Frábær með lambi, nautasteik, grilluðu grænmeti eða einfaldlega með góðu brauði.",
-  "categories": ["sosur"],
-  "tags": ["fljotlegt", "veislumatur"],
+  "categories": [
+    "sosur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "veislumatur"
+  ],
   "servings": 6,
-  "time": { "prep": 10, "cook": 0 },
+  "time": {
+    "prep": 10,
+    "cook": 0
+  },
   "ingredients": [
-    { "id": "hvitlaukur", "amount": 6, "unit": "rif", "item": "hvítlaukur" },
-    { "id": "skalottlaukur", "amount": 2, "unit": "stk", "item": "skalottlaukur", "note": "stórir" },
-    { "id": "olia", "amount": 1.25, "unit": "dl", "item": "ólífuolía" },
-    { "id": "edik", "amount": 2, "unit": "msk", "item": "rauðvínsedik" },
-    { "id": "steinselja", "amount": 1, "unit": "dl", "item": "fersk steinselja", "note": "söxuð, eða kóríander, eða blanda af hvoru tveggja" },
-    { "id": "paprika", "amount": 1, "unit": "msk", "item": "reykt paprika", "note": "sæt" },
-    { "id": "chipotle", "amount": 1, "unit": "tsk", "item": "chipotle chilíduft" },
-    { "id": "salt", "amount": 0.75, "unit": "tsk", "item": "salt", "scalable": false },
-    { "id": "kumin", "amount": 0.5, "unit": "tsk", "item": "kúmín", "scalable": false },
-    { "id": "chiliflogur", "amount": 0.5, "unit": "tsk", "item": "chiliflögur", "scalable": false }
+    {
+      "id": "hvitlaukur",
+      "amount": 6,
+      "unit": "rif",
+      "item": "hvítlaukur"
+    },
+    {
+      "id": "skalottlaukur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "skalottlaukur",
+      "note": "stórir"
+    },
+    {
+      "id": "olia",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "ólífuolía"
+    },
+    {
+      "id": "edik",
+      "amount": 2,
+      "unit": "msk",
+      "item": "rauðvínsedik"
+    },
+    {
+      "id": "steinselja",
+      "amount": 1,
+      "unit": "dl",
+      "item": "fersk steinselja",
+      "note": "söxuð, eða kóríander, eða blanda af hvoru tveggja"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "msk",
+      "item": "reykt paprika",
+      "note": "sæt"
+    },
+    {
+      "id": "chipotle",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "chipotle chilíduft"
+    },
+    {
+      "id": "salt",
+      "amount": 0.75,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "kumin",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "kúmín",
+      "scalable": false
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "scalable": false
+    }
   ],
   "steps": [
-    { "text": "Setjið {{hvitlaukur}} og {{skalottlaukur}} í matvinnsluvél og púlsið stutt – blandan á að vera gróf, ekki maukuð.", "refs": ["hvitlaukur", "skalottlaukur"] },
-    { "text": "Bætið {{olia}}, {{edik}}, {{steinselja}}, {{paprika}}, {{chipotle}}, {{salt}}, {{kumin}} og {{chiliflogur}} út í. Púlsið aftur stutt, bara þar til allt hefur blandast. Sósan á að halda áferð og má alls ekki verða að fljótandi mauki.", "refs": ["olia", "edik", "steinselja", "paprika", "chipotle", "salt", "kumin", "chiliflogur"] },
-    { "text": "Án matvinnsluvélar: saxið hvítlaukinn, skalottlaukinn og steinseljuna mjög smátt, setjið í skál og hrærið olíunni, edikinu og kryddunum saman við.", "refs": [] },
-    { "text": "Sósan er tilbúin strax, en verður umtalsvert betri ef hún fær að standa í minnst 30 mínútur við stofuhita svo bragðið nái að jafna sig.", "refs": [] }
+    {
+      "text": "Setjið {{hvitlaukur}} og {{skalottlaukur}} í matvinnsluvél og púlsið stutt – blandan á að vera gróf, ekki maukuð.",
+      "refs": [
+        "hvitlaukur",
+        "skalottlaukur"
+      ]
+    },
+    {
+      "text": "Bætið {{olia}}, {{edik}}, {{steinselja}}, {{paprika}}, {{chipotle}}, {{salt}}, {{kumin}} og {{chiliflogur}} út í. Púlsið aftur stutt, bara þar til allt hefur blandast. Sósan á að halda áferð og má alls ekki verða að fljótandi mauki.",
+      "refs": [
+        "olia",
+        "edik",
+        "steinselja",
+        "paprika",
+        "chipotle",
+        "salt",
+        "kumin",
+        "chiliflogur"
+      ]
+    },
+    {
+      "text": "Án matvinnsluvélar: saxið hvítlaukinn, skalottlaukinn og steinseljuna mjög smátt, setjið í skál og hrærið olíunni, edikinu og kryddunum saman við.",
+      "refs": []
+    },
+    {
+      "text": "Sósan er tilbúin strax, en verður umtalsvert betri ef hún fær að standa í minnst 30 mínútur við stofuhita svo bragðið nái að jafna sig.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: magn af steinselju var gefið upp sem bil (¼–½ bolli); hér er það fest á 1 dl sem gefur rétt hlutfall á móti olíunni. Bætt við skýrum hvíldartíma – sósan er mun betri eftir 30 mínútur.",
     "storage": "Geymist í 5 daga í lokuðu íláti í kæli. Olían stífnar í kæli; takið sósuna út 20 mínútum fyrir framreiðslu. Má frysta í klakaboxi í allt að 3 mánuði.",
     "variants": "Chipotle chilíduft fæst ekki alls staðar á Íslandi. Í staðinn má nota 1 tsk reykta papriku til viðbótar og ¼ tsk cayenne-pipar – það gefur svipaða reykt-sterka blöndu. Kóríander í stað steinselju gefur ferskari og sítrónukenndari sósu."
   },
-  "source": { "url": "https://www.thebeardedhiker.com/smoky-red-chimichurri/", "site": "thebeardedhiker.com" }
+  "source": {
+    "url": "https://www.thebeardedhiker.com/smoky-red-chimichurri/",
+    "site": "thebeardedhiker.com"
+  },
+  "image": "./photos/reykt-raud-chimichurri.jpg"
 }

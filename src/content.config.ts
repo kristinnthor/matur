@@ -43,7 +43,7 @@ const ingredient = z.object({
 
 const recipes = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/recipes' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     subtitle: z.string().optional(),
     description: z.string(),
@@ -62,7 +62,7 @@ const recipes = defineCollection({
       variants: z.string().optional(),
     }).default({}),
     source: z.object({ url: z.string().url(), site: z.string() }),
-    image: z.string().optional(),
+    image: image().optional(),
   }),
 });
 

@@ -1,6 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import { formatScaled, type Ingredient } from '../lib/units';
-import { renderStep } from '../lib/steps';
+import { renderStepHtml } from '../lib/steps';
 
 const { recipe } = Astro.props;
 const d = recipe.data;
@@ -15,66 +16,87 @@ for (const i of ings) {
   if (last && last.name === name) last.items.push(i);
   else groups.push({ name, items: [i] });
 }
+
+// Portrait sources need a lower crop focus inside the panoramic hero frame.
+const cropLow = recipe.id === 'reykt-raud-chimichurri';
 ---
 <article class="wrap">
-  <h1>{d.title}</h1>
-  {d.subtitle && <p class="muted">{d.subtitle}</p>}
-  <p class="prose">{d.description}</p>
-  <p class="muted">{total} mín · {d.servings} skammtar</p>
+  <header class="recipe-head">
+    <h1>{d.title}</h1>
+    {d.subtitle && <p class="subtitle">{d.subtitle}</p>}
+    <p class="lead">{d.description}</p>
+    <p class="meta muted"><b>{total} mín</b> · undirbúningur {d.time.prep} mín · eldun {d.time.cook} mín</p>
+    {d.image && (
+      <Image
+        src={d.image}
+        alt={d.title}
+        widths={[720, 1280, 1600]}
+        sizes="(max-width: 72rem) 100vw, 1120px"
+        loading="eager"
+        class={`recipe-hero${cropLow ? ' crop-low' : ''}`}
+      />
+    )}
+  </header>
 
-  <div class="scaler">
-    <label for="servings">Skammtar</label>
-    <button type="button" data-step="-1" aria-label="Fækka skömmtum">−</button>
-    <output id="servings" data-base={d.servings}>{d.servings}</output>
-    <button type="button" data-step="1" aria-label="Fjölga skömmtum">+</button>
-  </div>
+  <div class="recipe-grid">
+    <aside>
+      <div class="scaler">
+        <label for="servings">Skammtar</label>
+        <button type="button" data-step="-1" aria-label="Fækka skömmtum">−</button>
+        <output id="servings" data-base={d.servings}>{d.servings}</output>
+        <button type="button" data-step="1" aria-label="Fjölga skömmtum">+</button>
+      </div>
 
-  <h2>Hráefni</h2>
-  {groups.map((g) => (
-    <>
-      {g.name && <h3 class="ing-group">{g.name}</h3>}
-      <ul class="ingredients">
-        {g.items.map((i) => (
-          <li>
-            <input type="checkbox" id={`ing-${i.id}`} />
-            <label for={`ing-${i.id}`}>
-              <span
-                class="qty"
-                data-id={i.id}
-                data-amount={i.amount}
-                data-unit={i.unit}
-                data-item={i.item}
-                data-scalable={String(i.scalable ?? true)}
-              >{formatScaled(i, 1)}</span>
-              <span>{i.item}{i.note && <span class="muted">, {i.note}</span>}</span>
-            </label>
-          </li>
+      <h2>Hráefni</h2>
+      {groups.map((g) => (
+        <>
+          {g.name && <h3 class="ing-group">{g.name}</h3>}
+          <ul class="ingredients">
+            {g.items.map((i) => (
+              <li>
+                <input type="checkbox" id={`ing-${i.id}`} />
+                <label for={`ing-${i.id}`}>
+                  <span
+                    class="qty"
+                    data-id={i.id}
+                    data-amount={i.amount}
+                    data-unit={i.unit}
+                    data-item={i.item}
+                    data-scalable={String(i.scalable ?? true)}
+                  >{formatScaled(i, 1)}</span>
+                  <span class="ing-name">{i.item}{i.note && <span class="muted">, {i.note}</span>}</span>
+                </label>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
+    </aside>
+
+    <div>
+      <h2>Aðferð</h2>
+      <ol class="steps">
+        {d.steps.map((s: { text: string; refs: string[] }) => (
+          <li data-template={s.text} set:html={renderStepHtml(s.text, ings, 1)} />
         ))}
-      </ul>
-    </>
-  ))}
+      </ol>
 
-  <h2>Aðferð</h2>
-  <ol class="steps">
-    {d.steps.map((s: { text: string; refs: string[] }) => (
-      <li data-template={s.text}>{renderStep(s.text, ings, 1)}</li>
-    ))}
-  </ol>
+      {(d.notes.improvements || d.notes.storage || d.notes.variants) && (
+        <section class="notes">
+          <h2>Athugasemdir</h2>
+          {d.notes.improvements && <p><span class="note-label">Endurbætur:</span> {d.notes.improvements.replace(/^Endurbætur frá upprunalegu uppskriftinni:\s*/, '')}</p>}
+          {d.notes.storage && <p><span class="note-label">Geymsla:</span> {d.notes.storage}</p>}
+          {d.notes.variants && <p><span class="note-label">Tilbrigði:</span> {d.notes.variants}</p>}
+        </section>
+      )}
 
-  {(d.notes.improvements || d.notes.storage || d.notes.variants) && (
-    <section class="notes prose">
-      <h2>Athugasemdir</h2>
-      {d.notes.improvements && <p>{d.notes.improvements}</p>}
-      {d.notes.storage && <p>{d.notes.storage}</p>}
-      {d.notes.variants && <p>{d.notes.variants}</p>}
-    </section>
-  )}
+      <p class="source muted">
+        Byggt á uppskrift frá <a href={d.source.url} rel="noopener nofollow">{d.source.site}</a>
+      </p>
 
-  <p class="source muted">
-    Byggt á uppskrift frá <a href={d.source.url} rel="noopener nofollow">{d.source.site}</a>
-  </p>
-
-  <a class="cook-link" href={`/uppskrift/${recipe.id}/elda/`}>Byrja að elda</a>
+      <a class="cook-link" href={`/uppskrift/${recipe.id}/elda/`}>Byrja að elda</a>
+    </div>
+  </div>
 </article>
 
 <script>

@@ -1,12 +1,14 @@
 import { formatScaled, type Ingredient, type Unit } from '../lib/units';
-import { renderStep } from '../lib/steps';
+import { renderStepHtml } from '../lib/steps';
 
 const output = document.querySelector<HTMLOutputElement>('#servings');
 
 if (output) {
   const base = Number(output.dataset.base);
   let servings = base;
+  let pulseTimer: ReturnType<typeof setTimeout> | undefined;
 
+  const article = document.querySelector<HTMLElement>('article');
   const qtyNodes = Array.from(document.querySelectorAll<HTMLElement>('.qty'));
   const stepNodes = Array.from(document.querySelectorAll<HTMLLIElement>('.steps li'));
 
@@ -28,8 +30,18 @@ if (output) {
 
     stepNodes.forEach((node) => {
       const template = node.dataset.template;
-      if (template) node.textContent = renderStep(template, ingredients, factor);
+      // renderStepHtml escapes all source text; the only markup is its own span.
+      if (template) node.innerHTML = renderStepHtml(template, ingredients, factor);
     });
+
+    // The living-quantity pulse: restart the animation class on each change.
+    if (article) {
+      article.classList.remove('pulse');
+      void article.offsetWidth;
+      article.classList.add('pulse');
+      clearTimeout(pulseTimer);
+      pulseTimer = setTimeout(() => article.classList.remove('pulse'), 550);
+    }
   };
 
   document.querySelectorAll<HTMLButtonElement>('[data-step]').forEach((btn) => {

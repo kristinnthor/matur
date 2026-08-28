@@ -211,3 +211,15 @@ hands.
 | Unit errors recur | Units are a tested module with canonical internal representation (§5) |
 | Subscription usage limits interrupt a bulk run | `--limit` plus resume support |
 | Ingredient aggregation merges things it should not | Merge only within a compatible unit class; list unmergeable items separately |
+
+---
+
+## Revision 2026-08-28: visual direction
+
+Section 11's "warm editorial serif" direction was replaced at the user's request
+("brighter and professional") with a Nordic-light system: cool off-white ground,
+near-black ink, rhubarb (rabarbari) accent, Bricolage Grotesque display over
+Atkinson Hyperlegible body (chosen for arm's-length kitchen legibility), and
+recipe photography (Pexels-licensed, see docs/photo-credits.md). The signature
+element is the living quantities: every amount, including those inlined in step
+text, renders in accent type and pulses when servings change. Dark mode retained.

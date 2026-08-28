@@ -2,36 +2,149 @@
   "title": "Kartöflusalat með beikoni og piparosti",
   "subtitle": "íslenskt meðlæti með stökku beikoni",
   "description": "Rjómakennt kartöflusalat með stökku beikoni, piparosti og fersku vorlauk. Klassískt meðlæti með grilluðu kjöti eða á veisluborðið.",
-  "categories": ["medlaeti"],
-  "tags": ["veislumatur", "barnvaent"],
+  "categories": [
+    "medlaeti"
+  ],
+  "tags": [
+    "veislumatur",
+    "barnvaent"
+  ],
   "servings": 4,
-  "time": { "prep": 20, "cook": 15 },
+  "time": {
+    "prep": 20,
+    "cook": 15
+  },
   "ingredients": [
-    { "id": "kartoflur", "amount": 1, "unit": "kg", "item": "kartöflur" },
-    { "id": "beikon", "amount": 150, "unit": "g", "item": "beikon", "note": "eða beikonkurl" },
-    { "id": "egg", "amount": 3, "unit": "stk", "item": "egg" },
-    { "id": "majones", "amount": 2, "unit": "dl", "item": "majónes" },
-    { "id": "syrdur", "amount": 1, "unit": "dl", "item": "sýrður rjómi 10%" },
-    { "id": "piparostur", "amount": 150, "unit": "g", "item": "piparostur", "note": "skorinn smátt" },
-    { "id": "steinselja", "amount": 2, "unit": "msk", "item": "fersk steinselja", "note": "söxuð" },
-    { "id": "vorlaukur", "amount": 2, "unit": "msk", "item": "vorlaukur", "note": "saxaður" },
-    { "id": "sinnep", "amount": 1, "unit": "msk", "item": "Dijon sinnep" },
-    { "id": "sykur", "amount": 1, "unit": "msk", "item": "sykur" },
-    { "id": "sitrona", "amount": 0.5, "unit": "stk", "item": "sítróna", "note": "safinn" },
-    { "id": "salt", "amount": 1.5, "unit": "tsk", "item": "salt", "scalable": false }
+    {
+      "id": "kartoflur",
+      "amount": 1,
+      "unit": "kg",
+      "item": "kartöflur"
+    },
+    {
+      "id": "beikon",
+      "amount": 150,
+      "unit": "g",
+      "item": "beikon",
+      "note": "eða beikonkurl"
+    },
+    {
+      "id": "egg",
+      "amount": 3,
+      "unit": "stk",
+      "item": "egg"
+    },
+    {
+      "id": "majones",
+      "amount": 2,
+      "unit": "dl",
+      "item": "majónes"
+    },
+    {
+      "id": "syrdur",
+      "amount": 1,
+      "unit": "dl",
+      "item": "sýrður rjómi 10%"
+    },
+    {
+      "id": "piparostur",
+      "amount": 150,
+      "unit": "g",
+      "item": "piparostur",
+      "note": "skorinn smátt"
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð"
+    },
+    {
+      "id": "vorlaukur",
+      "amount": 2,
+      "unit": "msk",
+      "item": "vorlaukur",
+      "note": "saxaður"
+    },
+    {
+      "id": "sinnep",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Dijon sinnep"
+    },
+    {
+      "id": "sykur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sykur"
+    },
+    {
+      "id": "sitrona",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "safinn"
+    },
+    {
+      "id": "salt",
+      "amount": 1.5,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    }
   ],
   "steps": [
-    { "text": "Skerið {{kartoflur}} í sneiðar og setjið í pott með vatni og 1 msk af salti. Sjóðið í 7–10 mínútur. Kartöflurnar mega alls ekki sjóða of lengi – þá verða þær að mauki þegar þeim er blandað saman við salatið. Hellið af og látið kalt vatn renna á þær í örstutta stund.", "refs": ["kartoflur"] },
-    { "text": "Á meðan kartöflurnar sjóða, steikið {{beikon}} á pönnu þar til það er stökkt. Ef þið notið ekki beikonkurl þarf að skera beikonið smátt niður fyrst. Látið renna af því á eldhúspappír.", "refs": ["beikon"] },
-    { "text": "Sjóðið {{egg}} í 8 mínútur, kælið þau í köldu vatni og afhýðið.", "refs": ["egg"] },
-    { "text": "Hrærið {{majones}}, {{syrdur}}, {{sinnep}}, {{sykur}}, {{sitrona}} og helminginn af {{salt}} saman í skál. Blandið {{steinselja}} og helmingnum af {{vorlaukur}} saman við.", "refs": ["majones", "syrdur", "sinnep", "sykur", "sitrona", "salt", "steinselja", "vorlaukur"] },
-    { "text": "Setjið kartöflurnar í stóra skál ásamt {{piparostur}} og beikoninu. Skerið eggin smátt og blandið saman við.", "refs": ["piparostur"] },
-    { "text": "Hellið majónesblöndunni yfir og hrærið varlega þar til allt hefur blandast. Stráið afganginum af vorlauknum yfir. Geymið í kæli þar til salatið er borið fram – það er best eftir minnst klukkustund í kæli.", "refs": [] }
+    {
+      "text": "Skerið {{kartoflur}} í sneiðar og setjið í pott með vatni og 1 msk af salti. Sjóðið í 7–10 mínútur. Kartöflurnar mega alls ekki sjóða of lengi – þá verða þær að mauki þegar þeim er blandað saman við salatið. Hellið af og látið kalt vatn renna á þær í örstutta stund.",
+      "refs": [
+        "kartoflur"
+      ]
+    },
+    {
+      "text": "Á meðan kartöflurnar sjóða, steikið {{beikon}} á pönnu þar til það er stökkt. Ef þið notið ekki beikonkurl þarf að skera beikonið smátt niður fyrst. Látið renna af því á eldhúspappír.",
+      "refs": [
+        "beikon"
+      ]
+    },
+    {
+      "text": "Sjóðið {{egg}} í 8 mínútur, kælið þau í köldu vatni og afhýðið.",
+      "refs": [
+        "egg"
+      ]
+    },
+    {
+      "text": "Hrærið {{majones}}, {{syrdur}}, {{sinnep}}, {{sykur}}, {{sitrona}} og helminginn af {{salt}} saman í skál. Blandið {{steinselja}} og helmingnum af {{vorlaukur}} saman við.",
+      "refs": [
+        "majones",
+        "syrdur",
+        "sinnep",
+        "sykur",
+        "sitrona",
+        "salt",
+        "steinselja",
+        "vorlaukur"
+      ]
+    },
+    {
+      "text": "Setjið kartöflurnar í stóra skál ásamt {{piparostur}} og beikoninu. Skerið eggin smátt og blandið saman við.",
+      "refs": [
+        "piparostur"
+      ]
+    },
+    {
+      "text": "Hellið majónesblöndunni yfir og hrærið varlega þar til allt hefur blandast. Stráið afganginum af vorlauknum yfir. Geymið í kæli þar til salatið er borið fram – það er best eftir minnst klukkustund í kæli.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: magntölurnar í frumuppskriftinni ganga ekki upp. Þar er talað um 25 g majónes og 5 g sýrðan rjóma á móti heilu kílói af kartöflum, sem dugar hvergi nærri til að hjúpa salatið. Hér er notast við 2 dl majónes og 1 dl sýrðan rjóma. Beikonið var sömuleiðis hækkað úr 25 g í 150 g. Bætt við hvíldartíma í kæli, sem skiptir verulegu máli fyrir bragðið.",
     "storage": "Geymist í 2 daga í kæli. Hentar ekki í frysti, því majónesið skilur sig við frystingu.",
     "variants": "Piparostinn má skipta út fyrir rjómaost með pipar eða fetaost ef piparostur fæst ekki. Fyrir léttari útgáfu má nota helming majónes og helming grískrar jógúrtar."
   },
-  "source": { "url": "https://www.gottimatinn.is/uppskriftir/kartoflusalat-med--beikoni-og-piparosti", "site": "gottimatinn.is" }
+  "source": {
+    "url": "https://www.gottimatinn.is/uppskriftir/kartoflusalat-med--beikoni-og-piparosti",
+    "site": "gottimatinn.is"
+  },
+  "image": "./photos/kartoflusalat-med-beikoni-og-piparosti.jpg"
 }

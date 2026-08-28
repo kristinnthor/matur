@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
-interface Props { title: string; description?: string }
-const { title, description = 'Persónulegur uppskriftavefur' } = Astro.props;
+interface Props { title: string; description?: string; showHeader?: boolean }
+const { title, description = 'Persónulegur uppskriftavefur', showHeader = true } = Astro.props;
 ---
 <!doctype html>
 <html lang="is">
@@ -14,12 +14,19 @@ const { title, description = 'Persónulegur uppskriftavefur' } = Astro.props;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..700&display=swap"
     />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <meta name="theme-color" content="#8c3b1e" />
+    <meta name="theme-color" content="#c42750" />
   </head>
   <body>
+    {showHeader && (
+      <header class="site-head">
+        <div class="inner">
+          <a class="wordmark" href="/">Matur</a>
+        </div>
+      </header>
+    )}
     <slot />
     <script is:inline>
       if ('serviceWorker' in navigator) {

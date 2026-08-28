@@ -28,3 +28,33 @@ describe('renderStep', () => {
       .toBe('Baetid {{vantar}} ut i.');
   });
 });
+
+import { renderStepHtml } from './steps';
+
+describe('renderStepHtml', () => {
+  it('wraps the quantity in a span and leaves the item as text', () => {
+    expect(renderStepHtml('Steikid {{beikon}} vel.', ingredients, 1))
+      .toBe('Steikid <span class="qty-i">150 g</span> beikon vel.');
+  });
+
+  it('escapes HTML in the base text', () => {
+    expect(renderStepHtml('Hitid ofninn <b>vel</b> & lengi.', ingredients, 1))
+      .toBe('Hitid ofninn &lt;b&gt;vel&lt;/b&gt; &amp; lengi.');
+  });
+
+  it('escapes HTML in ingredient names', () => {
+    const evil = [{ id: 'x', amount: 1, unit: 'stk' as const, item: '<img>', scalable: true }];
+    expect(renderStepHtml('Notid {{x}}.', evil, 1))
+      .toBe('Notid <span class="qty-i">1 stk</span> &lt;img&gt;.');
+  });
+
+  it('keeps unknown references visible as literal text', () => {
+    expect(renderStepHtml('Baetid {{vantar}} vid.', ingredients, 1))
+      .toBe('Baetid {{vantar}} vid.');
+  });
+
+  it('reflects scaling in the wrapped quantity', () => {
+    expect(renderStepHtml('Steikid {{beikon}}.', ingredients, 2))
+      .toBe('Steikid <span class="qty-i">300 g</span> beikon.');
+  });
+});

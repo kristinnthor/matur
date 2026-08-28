@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
-import { renderStep } from '../../../lib/steps';
+import { renderStepHtml } from '../../../lib/steps';
 import type { Ingredient } from '../../../lib/units';
 
 export async function getStaticPaths() {
@@ -13,7 +13,7 @@ const { recipe } = Astro.props;
 const d = recipe.data;
 const ings = d.ingredients as Ingredient[];
 ---
-<Base title={`${d.title} — elda`}>
+<Base title={`${d.title} — elda`} showHeader={false}>
   <main class="cook">
     <header>
       <a href={`/uppskrift/${recipe.id}/`}>← Til baka</a>
@@ -22,7 +22,7 @@ const ings = d.ingredients as Ingredient[];
 
     {d.steps.map((s: { text: string }, i: number) => (
       <section class="step" data-index={i} hidden={i !== 0}>
-        <p>{renderStep(s.text, ings, 1)}</p>
+        <p set:html={renderStepHtml(s.text, ings, 1)} />
       </section>
     ))}
 

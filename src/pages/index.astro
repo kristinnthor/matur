@@ -7,11 +7,13 @@ import { CATEGORIES } from '../content.config';
 const recipes = await getCollection('recipes');
 const used = new Set(recipes.flatMap((r) => r.data.categories));
 ---
-<Base title="Matur">
+<Base title="Matur" showHeader={false}>
   <div class="wrap">
-    <h1>Matur</h1>
-    <p class="muted">Persónulegur uppskriftavefur</p>
-    <nav class="categories">
+    <header class="hero">
+      <h1>Matur<span style="color: var(--accent)">.</span></h1>
+      <p class="tagline">Uppskriftirnar okkar — á íslensku, í réttum einingum.</p>
+    </header>
+    <nav class="categories" aria-label="Flokkar">
       {Object.entries(CATEGORIES)
         .filter(([key]) => used.has(key))
         .map(([key, label]) => <a href={`/flokkur/${key}/`}>{label}</a>)}

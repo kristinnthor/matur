@@ -2,44 +2,207 @@
   "title": "Lambakótilettur með myntu-chimichurri",
   "subtitle": "hvítlauks- og kryddjurtakryddaðar kótilettur",
   "description": "Lambakótilettur nuddaðar með ofnbökuðum hvítlauk, rósmarín og salvíu, bornar fram með ferskri myntu-chimichurri. Kryddblandan má undirbúa daginn áður.",
-  "categories": ["kjot"],
-  "tags": ["veislumatur"],
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
   "servings": 4,
-  "time": { "prep": 40, "cook": 10 },
+  "time": {
+    "prep": 40,
+    "cook": 10
+  },
   "ingredients": [
-    { "id": "kotilettur", "amount": 12, "unit": "stk", "item": "lambakótilettur", "group": "Kótiletturnar" },
-    { "id": "hvitlaukshaus", "amount": 1, "unit": "stk", "item": "hvítlaukur", "note": "heill haus", "group": "Kótiletturnar" },
-    { "id": "olia", "amount": 1, "unit": "msk", "item": "ólífuolía", "group": "Kótiletturnar" },
-    { "id": "rosmarin", "amount": 2, "unit": "msk", "item": "ferskt rósmarín", "note": "saxað", "group": "Kótiletturnar" },
-    { "id": "salvia", "amount": 2, "unit": "msk", "item": "fersk salvía", "note": "söxuð", "group": "Kótiletturnar" },
-    { "id": "kumin", "amount": 2, "unit": "tsk", "item": "kúmín", "group": "Kótiletturnar" },
-    { "id": "hvitlauksduft", "amount": 2, "unit": "tsk", "item": "hvítlauksduft", "group": "Kótiletturnar" },
-    { "id": "koriander", "amount": 1, "unit": "tsk", "item": "kóríanderfræ", "group": "Kótiletturnar" },
-    { "id": "salt", "amount": 2, "unit": "tsk", "item": "salt", "scalable": false, "group": "Kótiletturnar" },
-
-    { "id": "mynta", "amount": 2.5, "unit": "dl", "item": "fersk mynta", "group": "Myntu-chimichurri" },
-    { "id": "steinselja", "amount": 1.25, "unit": "dl", "item": "fersk steinselja", "group": "Myntu-chimichurri" },
-    { "id": "oregano", "amount": 1.25, "unit": "dl", "item": "ferskt oregano", "group": "Myntu-chimichurri" },
-    { "id": "skalottlaukur", "amount": 1, "unit": "stk", "item": "skalottlaukur", "group": "Myntu-chimichurri" },
-    { "id": "hvitlauksrif", "amount": 2, "unit": "rif", "item": "hvítlaukur", "group": "Myntu-chimichurri" },
-    { "id": "chimiolia", "amount": 1, "unit": "dl", "item": "ólífuolía", "group": "Myntu-chimichurri" },
-    { "id": "edik", "amount": 2, "unit": "msk", "item": "rauðvínsedik", "group": "Myntu-chimichurri" },
-    { "id": "chiliflogur", "amount": 1, "unit": "tsk", "item": "chiliflögur", "scalable": false, "group": "Myntu-chimichurri" }
+    {
+      "id": "kotilettur",
+      "amount": 12,
+      "unit": "stk",
+      "item": "lambakótilettur",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "hvitlaukshaus",
+      "amount": 1,
+      "unit": "stk",
+      "item": "hvítlaukur",
+      "note": "heill haus",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ferskt rósmarín",
+      "note": "saxað",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "salvia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk salvía",
+      "note": "söxuð",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "kumin",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "kúmín",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "hvitlauksduft",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "hvítlauksduft",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "koriander",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "kóríanderfræ",
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false,
+      "group": "Kótiletturnar"
+    },
+    {
+      "id": "mynta",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "fersk mynta",
+      "group": "Myntu-chimichurri"
+    },
+    {
+      "id": "steinselja",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "fersk steinselja",
+      "group": "Myntu-chimichurri"
+    },
+    {
+      "id": "oregano",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "ferskt oregano",
+      "group": "Myntu-chimichurri"
+    },
+    {
+      "id": "skalottlaukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "skalottlaukur",
+      "group": "Myntu-chimichurri"
+    },
+    {
+      "id": "hvitlauksrif",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "group": "Myntu-chimichurri"
+    },
+    {
+      "id": "chimiolia",
+      "amount": 1,
+      "unit": "dl",
+      "item": "ólífuolía",
+      "group": "Myntu-chimichurri"
+    },
+    {
+      "id": "edik",
+      "amount": 2,
+      "unit": "msk",
+      "item": "rauðvínsedik",
+      "group": "Myntu-chimichurri"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "scalable": false,
+      "group": "Myntu-chimichurri"
+    }
   ],
   "steps": [
-    { "text": "Hitið ofninn í 175°C. Skerið {{hvitlaukshaus}} í tvennt þvert á rifin, dreypið {{olia}} yfir, pakkið inn í álpappír og bakið í 20–30 mínútur þar til hvítlaukurinn er mjúkur og sætur. Kreistið hann úr hýðinu og setjið til hliðar.", "refs": ["hvitlaukshaus", "olia"] },
-    { "text": "Þerrið {{kotilettur}} vel með eldhúspappír og leggið á bakka.", "refs": ["kotilettur"] },
-    { "text": "Merjið {{rosmarin}}, {{salvia}}, {{kumin}}, {{hvitlauksduft}} og {{koriander}} saman í mortéli þar til úr verður gróft mauk. Blandið ofnbakaða hvítlauknum saman við.", "refs": ["rosmarin", "salvia", "kumin", "hvitlauksduft", "koriander"] },
-    { "text": "Nuddið kryddmaukinu ríflega á báðar hliðar kótilettanna. Látið standa í kæli í minnst 2 klukkustundir, eða yfir nótt.", "refs": [] },
-    { "text": "Chimichurri: setjið {{mynta}}, {{steinselja}}, {{oregano}}, {{skalottlaukur}} og {{hvitlauksrif}} í matvinnsluvél og saxið smátt. Hrærið {{chimiolia}}, {{edik}} og {{chiliflogur}} saman við í skál. Látið standa við stofuhita.", "refs": ["mynta", "steinselja", "oregano", "skalottlaukur", "hvitlauksrif", "chimiolia", "edik", "chiliflogur"] },
-    { "text": "Takið kótiletturnar úr kæli 30 mínútum fyrir eldun. Skafið mesta kryddmaukið af en skiljið þunnt lag eftir, þerrið og saltið með {{salt}}.", "refs": ["salt"] },
-    { "text": "Grillið við háan hita í 2–3 mínútur á hlið fyrir rare í miðju. Á pönnu: hitið þykkbotna pönnu vel og steikið í 2–3 mínútur á hlið. Í ofni: 220°C með grillelementi í 4–5 mínútur á hlið.", "refs": [] },
-    { "text": "Látið kjötið hvíla í 5 mínútur áður en það er borið fram. Dreypið chimichurri yfir og berið afganginn fram með.", "refs": [] }
+    {
+      "text": "Hitið ofninn í 175°C. Skerið {{hvitlaukshaus}} í tvennt þvert á rifin, dreypið {{olia}} yfir, pakkið inn í álpappír og bakið í 20–30 mínútur þar til hvítlaukurinn er mjúkur og sætur. Kreistið hann úr hýðinu og setjið til hliðar.",
+      "refs": [
+        "hvitlaukshaus",
+        "olia"
+      ]
+    },
+    {
+      "text": "Þerrið {{kotilettur}} vel með eldhúspappír og leggið á bakka.",
+      "refs": [
+        "kotilettur"
+      ]
+    },
+    {
+      "text": "Merjið {{rosmarin}}, {{salvia}}, {{kumin}}, {{hvitlauksduft}} og {{koriander}} saman í mortéli þar til úr verður gróft mauk. Blandið ofnbakaða hvítlauknum saman við.",
+      "refs": [
+        "rosmarin",
+        "salvia",
+        "kumin",
+        "hvitlauksduft",
+        "koriander"
+      ]
+    },
+    {
+      "text": "Nuddið kryddmaukinu ríflega á báðar hliðar kótilettanna. Látið standa í kæli í minnst 2 klukkustundir, eða yfir nótt.",
+      "refs": []
+    },
+    {
+      "text": "Chimichurri: setjið {{mynta}}, {{steinselja}}, {{oregano}}, {{skalottlaukur}} og {{hvitlauksrif}} í matvinnsluvél og saxið smátt. Hrærið {{chimiolia}}, {{edik}} og {{chiliflogur}} saman við í skál. Látið standa við stofuhita.",
+      "refs": [
+        "mynta",
+        "steinselja",
+        "oregano",
+        "skalottlaukur",
+        "hvitlauksrif",
+        "chimiolia",
+        "edik",
+        "chiliflogur"
+      ]
+    },
+    {
+      "text": "Takið kótiletturnar úr kæli 30 mínútum fyrir eldun. Skafið mesta kryddmaukið af en skiljið þunnt lag eftir, þerrið og saltið með {{salt}}.",
+      "refs": [
+        "salt"
+      ]
+    },
+    {
+      "text": "Grillið við háan hita í 2–3 mínútur á hlið fyrir rare í miðju. Á pönnu: hitið þykkbotna pönnu vel og steikið í 2–3 mínútur á hlið. Í ofni: 220°C með grillelementi í 4–5 mínútur á hlið.",
+      "refs": []
+    },
+    {
+      "text": "Látið kjötið hvíla í 5 mínútur áður en það er borið fram. Dreypið chimichurri yfir og berið afganginn fram með.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: frumuppskriftin segir að skafa eigi kryddmaukið alveg af fyrir grillun, sem hendir mestu bragðinu. Hér er þunnt lag skilið eftir, nóg til að bragðið haldi sér en ekki svo mikið að kryddjurtirnar brenni. Bætt við hvíldartíma eftir eldun, skammtastærð og eldunartíma, sem vantaði alveg í frumuppskriftina.",
     "storage": "Chimichurri geymist í 4 daga í kæli. Kryddmaukið má útbúa 2 dögum fyrr. Eldað lambakjöt geymist í 3 daga í kæli.",
     "variants": "Ferskt oregano fæst ekki alltaf á Íslandi. Notið þá 1 msk af þurrkuðu oregano í staðinn. Grillið er ekki alltaf raunhæfur kostur hérlendis; steikarpanna gefur síst lakari útkomu og betri steikarskorpu. Kótiletturnar má skipta út fyrir lambafille eða lambalæri í sneiðum."
   },
-  "source": { "url": "http://www.kitchenlush.com/home/2016/2/10/roasted-garlic-rosemary-and-sage-rubbed-lamb-chops-mint-chimichurri", "site": "kitchenlush.com" }
+  "source": {
+    "url": "http://www.kitchenlush.com/home/2016/2/10/roasted-garlic-rosemary-and-sage-rubbed-lamb-chops-mint-chimichurri",
+    "site": "kitchenlush.com"
+  },
+  "image": "./photos/lambakotilettur-med-myntu-chimichurri.jpg"
 }

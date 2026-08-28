@@ -2,36 +2,177 @@
   "title": "Boeuf Bourguignon",
   "subtitle": "franskur nautapottréttur",
   "description": "Meyrt nautakjöt hægeldað í rauðvíni með beikoni, perlulauk, gulrótum og sveppum. Klassískur franskur pottréttur sem verður jafnvel enn betri daginn eftir.",
-  "categories": ["kjot", "pottrettir"],
-  "tags": ["haegeldad", "veislumatur", "frystivaent"],
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur",
+    "frystivaent"
+  ],
   "servings": 8,
-  "time": { "prep": 30, "cook": 180 },
+  "time": {
+    "prep": 30,
+    "cook": 180
+  },
   "ingredients": [
-    { "id": "naut", "amount": 1, "unit": "kg", "item": "nautagúllas", "note": "eða nautakjöt í bitum" },
-    { "id": "beikon", "amount": 150, "unit": "g", "item": "beikon", "note": "skorið í bita" },
-    { "id": "hveiti", "amount": 40, "unit": "g", "item": "hveiti" },
-    { "id": "salt", "amount": 1, "unit": "tsk", "item": "salt", "scalable": false },
-    { "id": "pipar", "amount": 0.5, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false },
-    { "id": "smjor", "amount": 40, "unit": "g", "item": "smjör" },
-    { "id": "perlulaukur", "amount": 350, "unit": "g", "item": "perlulaukur", "note": "frosinn er í lagi" },
-    { "id": "gulraetur", "amount": 3, "unit": "stk", "item": "gulrætur", "note": "í 4–5 cm bitum" },
-    { "id": "hvitlaukur", "amount": 2, "unit": "rif", "item": "hvítlaukur", "note": "fínsaxaður" },
-    { "id": "tomatpurra", "amount": 1, "unit": "msk", "item": "tómatpúrra" },
-    { "id": "raudvin", "amount": 5, "unit": "dl", "item": "rauðvín", "note": "Pinot Noir eða annað Búrgundarvín" },
-    { "id": "nautasod", "amount": 2.5, "unit": "dl", "item": "nautasoð" },
-    { "id": "larvidarlauf", "amount": 1, "unit": "stk", "item": "lárviðarlauf", "scalable": false },
-    { "id": "timjan", "amount": 1, "unit": "tsk", "item": "ferskt timjan", "note": "lauf", "scalable": false },
-    { "id": "sveppir", "amount": 250, "unit": "g", "item": "kastaníusveppir", "note": "skornir í tvennt" }
+    {
+      "id": "naut",
+      "amount": 1,
+      "unit": "kg",
+      "item": "nautagúllas",
+      "note": "eða nautakjöt í bitum"
+    },
+    {
+      "id": "beikon",
+      "amount": 150,
+      "unit": "g",
+      "item": "beikon",
+      "note": "skorið í bita"
+    },
+    {
+      "id": "hveiti",
+      "amount": 40,
+      "unit": "g",
+      "item": "hveiti"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "smjor",
+      "amount": 40,
+      "unit": "g",
+      "item": "smjör"
+    },
+    {
+      "id": "perlulaukur",
+      "amount": 350,
+      "unit": "g",
+      "item": "perlulaukur",
+      "note": "frosinn er í lagi"
+    },
+    {
+      "id": "gulraetur",
+      "amount": 3,
+      "unit": "stk",
+      "item": "gulrætur",
+      "note": "í 4–5 cm bitum"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "fínsaxaður"
+    },
+    {
+      "id": "tomatpurra",
+      "amount": 1,
+      "unit": "msk",
+      "item": "tómatpúrra"
+    },
+    {
+      "id": "raudvin",
+      "amount": 5,
+      "unit": "dl",
+      "item": "rauðvín",
+      "note": "Pinot Noir eða annað Búrgundarvín"
+    },
+    {
+      "id": "nautasod",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "nautasoð"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 1,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "scalable": false
+    },
+    {
+      "id": "timjan",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "ferskt timjan",
+      "note": "lauf",
+      "scalable": false
+    },
+    {
+      "id": "sveppir",
+      "amount": 250,
+      "unit": "g",
+      "item": "kastaníusveppir",
+      "note": "skornir í tvennt"
+    }
   ],
   "steps": [
-    { "text": "Hitið ofninn í 160°C (undir- og yfirhiti). Rétturinn eldast hægt og rólega í ofninum.", "refs": [] },
-    { "text": "Steikið {{beikon}} í stórum pottjárnspotti á miðlungshita þar til það er stökkt, um 5 mínútur. Takið beikonið upp úr en skiljið fituna eftir í pottinum.", "refs": ["beikon"] },
-    { "text": "Þerrið {{naut}} vel með eldhúspappír og veltið því upp úr blöndu af {{hveiti}}, {{salt}} og {{pipar}}. Bætið {{smjor}} í pottinn og brúnið kjötið á öllum hliðum í 2–3 skömmtum – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Um 4–5 mínútur á skammt. Takið kjötið frá.", "refs": ["naut", "hveiti", "salt", "pipar", "smjor"] },
-    { "text": "Setjið {{perlulaukur}} og {{gulraetur}} í pottinn og steikið í 4–5 mínútur þar til það fer að taka lit.", "refs": ["perlulaukur", "gulraetur"] },
-    { "text": "Bætið {{hvitlaukur}} og {{tomatpurra}} út í og steikið í 1 mínútu. Hellið {{raudvin}} í pottinn og skafið vel upp allt sem hefur fest við botninn – þar liggur bragðið. Bætið {{nautasod}}, kjötinu, beikoninu, {{larvidarlauf}} og {{timjan}} út í.", "refs": ["hvitlaukur", "tomatpurra", "raudvin", "nautasod", "larvidarlauf", "timjan"] },
-    { "text": "Setjið lokið á pottinn og eldið í ofninum í 2 klukkustundir.", "refs": [] },
-    { "text": "Bætið {{sveppir}} út í pottinn, setjið lokið aftur á og eldið í 1 klukkustund í viðbót, þar til kjötið er lungamjúkt.", "refs": ["sveppir"] },
-    { "text": "Veiðið lárviðarlaufið upp úr og smakkið til með salti og pipar. Ef sósan er of þunn má sjóða hana niður á hellu í nokkrar mínútur án loks. Berið fram með kartöflumús, soðnum kartöflum eða góðu brauði.", "refs": [] }
+    {
+      "text": "Hitið ofninn í 160°C (undir- og yfirhiti). Rétturinn eldast hægt og rólega í ofninum.",
+      "refs": []
+    },
+    {
+      "text": "Steikið {{beikon}} í stórum pottjárnspotti á miðlungshita þar til það er stökkt, um 5 mínútur. Takið beikonið upp úr en skiljið fituna eftir í pottinum.",
+      "refs": [
+        "beikon"
+      ]
+    },
+    {
+      "text": "Þerrið {{naut}} vel með eldhúspappír og veltið því upp úr blöndu af {{hveiti}}, {{salt}} og {{pipar}}. Bætið {{smjor}} í pottinn og brúnið kjötið á öllum hliðum í 2–3 skömmtum – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Um 4–5 mínútur á skammt. Takið kjötið frá.",
+      "refs": [
+        "naut",
+        "hveiti",
+        "salt",
+        "pipar",
+        "smjor"
+      ]
+    },
+    {
+      "text": "Setjið {{perlulaukur}} og {{gulraetur}} í pottinn og steikið í 4–5 mínútur þar til það fer að taka lit.",
+      "refs": [
+        "perlulaukur",
+        "gulraetur"
+      ]
+    },
+    {
+      "text": "Bætið {{hvitlaukur}} og {{tomatpurra}} út í og steikið í 1 mínútu. Hellið {{raudvin}} í pottinn og skafið vel upp allt sem hefur fest við botninn – þar liggur bragðið. Bætið {{nautasod}}, kjötinu, beikoninu, {{larvidarlauf}} og {{timjan}} út í.",
+      "refs": [
+        "hvitlaukur",
+        "tomatpurra",
+        "raudvin",
+        "nautasod",
+        "larvidarlauf",
+        "timjan"
+      ]
+    },
+    {
+      "text": "Setjið lokið á pottinn og eldið í ofninum í 2 klukkustundir.",
+      "refs": []
+    },
+    {
+      "text": "Bætið {{sveppir}} út í pottinn, setjið lokið aftur á og eldið í 1 klukkustund í viðbót, þar til kjötið er lungamjúkt.",
+      "refs": [
+        "sveppir"
+      ]
+    },
+    {
+      "text": "Veiðið lárviðarlaufið upp úr og smakkið til með salti og pipar. Ef sósan er of þunn má sjóða hana niður á hellu í nokkrar mínútur án loks. Berið fram með kartöflumús, soðnum kartöflum eða góðu brauði.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: beikon, tómatpúrra og nautasoð gefa dýpra bragð og koma í veg fyrir að sósan verði of súr eða þurr. Kjötið er þerrað og brúnað í skömmtum svo það brúnist almennilega.",
@@ -41,5 +182,6 @@
   "source": {
     "url": "https://thatovenfeelin.com/french-beef-bourguignon/",
     "site": "thatovenfeelin.com"
-  }
+  },
+  "image": "./photos/boeuf-bourguignon.jpg"
 }
