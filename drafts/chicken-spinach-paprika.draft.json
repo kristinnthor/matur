@@ -1,0 +1,42 @@
+{
+  "source": {
+    "url": "https://whatsinthepan.com/chicken-and-spinach-in-creamy-paprika-sauce/",
+    "site": "whatsinthepan.com"
+  },
+  "fetched": "2026-08-28T17:03:57.823Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Chicken and Spinach in Creamy Paprika Sauce",
+    "yield": "4",
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "totalTime": "PT30M",
+    "ingredients": [
+      "4 Chicken Breasts ((boneless & skinless))",
+      "1 tsp Smoked Paprika ((for seasoning chicken))",
+      "1/4 tsp Salt and Pepper ((each for seasoning chicken))",
+      "2 tablespoon unsalted butter",
+      "1 tablespoon butter",
+      "4 cloves garlic (minced)",
+      "1 tablespoon flour (sifted)",
+      "1/2 cup dry white wine",
+      "1/2 cup chicken broth ((sodium free))",
+      "1/2 cup heavy cream",
+      "1 tsp fresh lemon juice ((juice of squeezed lemon))",
+      "2 cups fresh spinach",
+      "1/2 teaspoon salt",
+      "1 tsp paprika"
+    ],
+    "instructions": [
+      "Season the chicken with salt, pepper and paprika, rubbing it evenly over both sides.",
+      "Melt 2 tablespoons of butter in a large skillet (I used cast iron skillet) over medium high heat and cook on the first side for about 3 minutes.",
+      "Flip, and turn the heat down to medium and cook for another three minutes. Remove and set chicken aside on separate plate.",
+      "Melt 1 tablespoon of butter in the now empty skillet. Add garlic and cook stirring frequently about 2 minutes.",
+      "Add flour using a sifter until well mixed. Add wine next and cook for 1-2 minutes to allow alcohol to evaporate.",
+      "Stir in chicken broth, heavy cream and lemon juice. Add salt and paprika. Mix well. Simmer for 2 minutes. Taste the sauce and adjust seasoning (if necessary) at this point.",
+      "Add in the spinach and cook for additional 2 minutes until the spinach has wilted.",
+      "Return the chicken to the skillet and cook covered for 2-3 minutes if your chicken breasts are thin; or for 5-7 minutes, if they are thick.",
+      "Serve immediately."
+    ]
+  }
+}
