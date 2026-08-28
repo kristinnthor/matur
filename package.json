@@ -1,0 +1,35 @@
+{
+  "name": "matur",
+  "version": "1.0.0",
+  "description": "Persónulegur uppskriftavefur",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristinnthor/matur.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kristinnthor/matur/issues"
+  },
+  "homepage": "https://github.com/kristinnthor/matur#readme",
+  "dependencies": {
+    "astro": "^5.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  },
+  "private": true
+}

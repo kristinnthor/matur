@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { renderStep } from '../../../lib/steps';
+import type { Ingredient } from '../../../lib/units';
+
+export async function getStaticPaths() {
+  const recipes = await getCollection('recipes');
+  return recipes.map((r) => ({ params: { slug: r.id }, props: { recipe: r } }));
+}
+
+const { recipe } = Astro.props;
+const d = recipe.data;
+const ings = d.ingredients as Ingredient[];
+---
+<Base title={`${d.title} — elda`}>
+  <main class="cook">
+    <header>
+      <a href={`/uppskrift/${recipe.id}/`}>← Til baka</a>
+      <span class="counter"><span id="current">1</span> / {d.steps.length}</span>
+    </header>
+
+    {d.steps.map((s: { text: string }, i: number) => (
+      <section class="step" data-index={i} hidden={i !== 0}>
+        <p>{renderStep(s.text, ings, 1)}</p>
+      </section>
+    ))}
+
+    <nav class="cook-nav">
+      <button type="button" id="prev">Fyrra</button>
+      <button type="button" id="next">Næsta</button>
+    </nav>
+  </main>
+</Base>
+
+<script>
+  import '../../../scripts/cook.ts';
+</script>

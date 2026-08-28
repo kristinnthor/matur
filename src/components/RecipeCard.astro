@@ -1,0 +1,11 @@
+---
+const { recipe } = Astro.props;
+const d = recipe.data;
+const total = d.time.prep + d.time.cook;
+---
+<a class="card" href={`/uppskrift/${recipe.id}/`}>
+  {d.image && <img src={d.image} alt="" loading="lazy" />}
+  <h3>{d.title}</h3>
+  <p class="muted">{d.subtitle ?? d.description.slice(0, 90)}</p>
+  <p class="meta muted">{total} mín · {d.servings} skammtar</p>
+</a>
