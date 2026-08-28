@@ -545,3 +545,19 @@ h2::before {
   .sel-recipe { border: none; padding: 0.1rem 0; margin: 0; background: none; }
   .shop-items .qty { background: none; padding: 0; }
 }
+
+/* Photo upload */
+.upload-page form { max-width: 26rem; display: flex; flex-direction: column; gap: 1.1rem; margin-top: 1.5rem; }
+.upload-page .field { display: flex; flex-direction: column; gap: 0.35rem; }
+.upload-page .field span { font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; }
+.upload-page select, .upload-page input {
+  font: inherit;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+}
+.upload-page #preview { max-width: 100%; border-radius: var(--radius); aspect-ratio: 3 / 2; object-fit: cover; }
+.upload-page #upload-btn { border: none; cursor: pointer; font-size: 1rem; align-self: flex-start; }
+.upload-page #status { min-height: 1.5em; font-weight: 600; }

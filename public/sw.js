@@ -1,4 +1,4 @@
-const CACHE = 'matur-v3';
+const CACHE = 'matur-v4';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/manifest.webmanifest'])));
@@ -17,7 +17,8 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
-  if (new URL(request.url).origin !== self.location.origin) return;
+  const u = new URL(request.url);
+  if (u.origin !== self.location.origin || u.pathname.startsWith('/api/')) return;
 
   // Cache-first: a kitchen with poor signal is exactly the case this exists for.
   event.respondWith(

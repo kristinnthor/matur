@@ -21,3 +21,4 @@ Thumbs.db
 # Import pipeline scratch
 scripts/.cache/
 drafts/*.raw.json
+.dev.vars
