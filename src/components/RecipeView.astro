@@ -26,16 +26,40 @@ const photo = photoFor(recipe.id);
     {d.subtitle && <p class="subtitle">{d.subtitle}</p>}
     <p class="lead">{d.description}</p>
     <p class="meta muted"><b>{total} mín</b> · undirbúningur {d.time.prep} mín · eldun {d.time.cook} mín</p>
-    {photo && (
-      <Image
-        src={photo}
-        alt={d.title}
-        widths={[720, 1280, 1600]}
-        sizes="(max-width: 72rem) 100vw, 1120px"
-        loading="eager"
-        class="recipe-hero"
-      />
+    {photo ? (
+      <figure class="photo-wrap">
+        <Image
+          src={photo}
+          alt={d.title}
+          widths={[720, 1280, 1600]}
+          sizes="(max-width: 72rem) 100vw, 1120px"
+          loading="eager"
+          class="recipe-hero"
+        />
+        <button type="button" id="photo-edit-open" class="photo-edit-btn" data-slug={recipe.id} aria-label="Skipta um mynd">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </button>
+      </figure>
+    ) : (
+      <button type="button" id="photo-edit-open" class="photo-add" data-slug={recipe.id}>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        Bæta við mynd
+      </button>
     )}
+
+    <dialog id="photo-dialog">
+      <h2>Mynd af réttinum</h2>
+      <img id="photo-dialog-preview" alt="" />
+      <label class="field">
+        <span>Leyninúmer</span>
+        <input type="password" id="photo-dialog-pass" autocomplete="current-password" />
+      </label>
+      <div class="dialog-actions">
+        <button type="button" id="photo-dialog-cancel">Hætta við</button>
+        <button type="button" id="photo-dialog-submit" class="primary">Hlaða upp</button>
+      </div>
+      <p id="photo-dialog-status" role="status" aria-live="polite"></p>
+    </dialog>
   </header>
 
   <div class="recipe-grid">
@@ -105,4 +129,5 @@ const photo = photoFor(recipe.id);
 <script>
   import '../scripts/scaler.ts';
   import '../scripts/add-to-list.ts';
+  import '../scripts/photo-edit.ts';
 </script>

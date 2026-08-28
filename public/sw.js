@@ -1,4 +1,4 @@
-const CACHE = 'matur-v4';
+const CACHE = 'matur-v5';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/manifest.webmanifest'])));
