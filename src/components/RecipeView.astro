@@ -1,0 +1,68 @@
+---
+import { formatScaled, type Ingredient } from '../lib/units';
+import { renderStep } from '../lib/steps';
+
+const { recipe } = Astro.props;
+const d = recipe.data;
+const ings = d.ingredients as Ingredient[];
+const total = d.time.prep + d.time.cook;
+---
+<article class="wrap">
+  <h1>{d.title}</h1>
+  {d.subtitle && <p class="muted">{d.subtitle}</p>}
+  <p class="prose">{d.description}</p>
+  <p class="muted">{total} mín · {d.servings} skammtar</p>
+
+  <div class="scaler">
+    <label for="servings">Skammtar</label>
+    <button type="button" data-step="-1" aria-label="Fækka skömmtum">−</button>
+    <output id="servings" data-base={d.servings}>{d.servings}</output>
+    <button type="button" data-step="1" aria-label="Fjölga skömmtum">+</button>
+  </div>
+
+  <h2>Hráefni</h2>
+  <ul class="ingredients">
+    {ings.map((i) => (
+      <li>
+        <input type="checkbox" id={`ing-${i.id}`} />
+        <label for={`ing-${i.id}`}>
+          <span
+            class="qty"
+            data-id={i.id}
+            data-amount={i.amount}
+            data-unit={i.unit}
+            data-item={i.item}
+            data-scalable={String(i.scalable ?? true)}
+          >{formatScaled(i, 1)}</span>
+          <span>{i.item}{i.note && <span class="muted">, {i.note}</span>}</span>
+        </label>
+      </li>
+    ))}
+  </ul>
+
+  <h2>Aðferð</h2>
+  <ol class="steps">
+    {d.steps.map((s: { text: string; refs: string[] }) => (
+      <li data-template={s.text}>{renderStep(s.text, ings, 1)}</li>
+    ))}
+  </ol>
+
+  {(d.notes.improvements || d.notes.storage || d.notes.variants) && (
+    <section class="notes prose">
+      <h2>Athugasemdir</h2>
+      {d.notes.improvements && <p>{d.notes.improvements}</p>}
+      {d.notes.storage && <p>{d.notes.storage}</p>}
+      {d.notes.variants && <p>{d.notes.variants}</p>}
+    </section>
+  )}
+
+  <p class="source muted">
+    Byggt á uppskrift frá <a href={d.source.url} rel="noopener nofollow">{d.source.site}</a>
+  </p>
+
+  <a class="cook-link" href={`/uppskrift/${recipe.id}/elda/`}>Byrja að elda</a>
+</article>
+
+<script>
+  import '../scripts/scaler.ts';
+</script>

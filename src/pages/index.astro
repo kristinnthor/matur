@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import { CATEGORIES } from '../content.config';
+
+const recipes = await getCollection('recipes');
+const used = new Set(recipes.flatMap((r) => r.data.categories));
+---
+<Base title="Matur">
+  <div class="wrap">
+    <h1>Matur</h1>
+    <p class="muted">Persónulegur uppskriftavefur</p>
+    <nav class="categories">
+      {Object.entries(CATEGORIES)
+        .filter(([key]) => used.has(key))
+        .map(([key, label]) => <a href={`/flokkur/${key}/`}>{label}</a>)}
+    </nav>
+    <div class="grid">
+      {recipes.map((r) => <RecipeCard recipe={r} />)}
+    </div>
+  </div>
+</Base>
