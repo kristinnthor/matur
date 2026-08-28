@@ -6,6 +6,15 @@ const { recipe } = Astro.props;
 const d = recipe.data;
 const ings = d.ingredients as Ingredient[];
 const total = d.time.prep + d.time.cook;
+
+// Preserve authored order; an ungrouped recipe collapses to a single unnamed group.
+const groups: { name: string; items: Ingredient[] }[] = [];
+for (const i of ings) {
+  const name = i.group ?? '';
+  const last = groups[groups.length - 1];
+  if (last && last.name === name) last.items.push(i);
+  else groups.push({ name, items: [i] });
+}
 ---
 <article class="wrap">
   <h1>{d.title}</h1>
@@ -21,24 +30,29 @@ const total = d.time.prep + d.time.cook;
   </div>
 
   <h2>Hráefni</h2>
-  <ul class="ingredients">
-    {ings.map((i) => (
-      <li>
-        <input type="checkbox" id={`ing-${i.id}`} />
-        <label for={`ing-${i.id}`}>
-          <span
-            class="qty"
-            data-id={i.id}
-            data-amount={i.amount}
-            data-unit={i.unit}
-            data-item={i.item}
-            data-scalable={String(i.scalable ?? true)}
-          >{formatScaled(i, 1)}</span>
-          <span>{i.item}{i.note && <span class="muted">, {i.note}</span>}</span>
-        </label>
-      </li>
-    ))}
-  </ul>
+  {groups.map((g) => (
+    <>
+      {g.name && <h3 class="ing-group">{g.name}</h3>}
+      <ul class="ingredients">
+        {g.items.map((i) => (
+          <li>
+            <input type="checkbox" id={`ing-${i.id}`} />
+            <label for={`ing-${i.id}`}>
+              <span
+                class="qty"
+                data-id={i.id}
+                data-amount={i.amount}
+                data-unit={i.unit}
+                data-item={i.item}
+                data-scalable={String(i.scalable ?? true)}
+              >{formatScaled(i, 1)}</span>
+              <span>{i.item}{i.note && <span class="muted">, {i.note}</span>}</span>
+            </label>
+          </li>
+        ))}
+      </ul>
+    </>
+  ))}
 
   <h2>Aðferð</h2>
   <ol class="steps">

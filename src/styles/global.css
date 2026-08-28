@@ -121,3 +121,9 @@ a { color: var(--accent); }
 @media print {
   .scaler, .cook-link, .categories { display: none; }
 }
+
+.ing-group {
+  font-size: 1rem; text-transform: uppercase; letter-spacing: .06em;
+  color: var(--muted); margin: 1.5rem 0 .4rem;
+}
+.ing-group:first-of-type { margin-top: .75rem; }
