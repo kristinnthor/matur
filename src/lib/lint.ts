@@ -7,7 +7,7 @@ export interface LintResult {
 }
 
 const ENGLISH_UNITS = /\b(cups?|tsp|tbsp|teaspoons?|tablespoons?|ounces?|oz|pounds?|lbs?|grams?|milliliters?)\b/i;
-const SEASONING = /salt\b|pipar|chili|cayenne|lárviðar|múskat/i;
+const SEASONING = /salt\b|\bpipar\b|chili|cayenne|lárviðar|múskat/i;
 /** A number immediately followed by an Icelandic unit token inside step prose. */
 const INLINE_QTY = /\d+\s?(g|kg|dl|ml|tsk|msk)\b/;
 
