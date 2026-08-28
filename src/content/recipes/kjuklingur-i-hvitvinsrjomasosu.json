@@ -1,0 +1,35 @@
+{
+  "title": "Kjúklingur í hvítvínsrjómasósu",
+  "subtitle": "með sveppum, blaðlauk og spínati",
+  "description": "Kjúklingabringur í rjómasósu með hvítvíni, steiktum sveppum, blaðlauk og fersku spínati. Klassískur pönnuréttur sem á heima með kartöflumús eða hrísgrjónum.",
+  "categories": ["kjuklingur"],
+  "tags": ["veislumatur"],
+  "servings": 4,
+  "time": { "prep": 15, "cook": 25 },
+  "ingredients": [
+    { "id": "kjuklingur", "amount": 4, "unit": "stk", "item": "kjúklingabringur" },
+    { "id": "smjor", "amount": 2, "unit": "msk", "item": "smjör" },
+    { "id": "salt", "amount": 0.5, "unit": "tsk", "item": "salt", "scalable": false },
+    { "id": "pipar", "amount": 0.25, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false },
+    { "id": "sveppir", "amount": 250, "unit": "g", "item": "sveppir", "note": "skornir í sneiðar" },
+    { "id": "bladlaukur", "amount": 1, "unit": "stk", "item": "blaðlaukur", "note": "þunnt skorinn" },
+    { "id": "hvitvin", "amount": 2, "unit": "dl", "item": "hvítvín" },
+    { "id": "rjomi", "amount": 2.5, "unit": "dl", "item": "rjómi" },
+    { "id": "kraftur", "amount": 1, "unit": "msk", "item": "kjúklingakraftur", "note": "eða 1 teningur" },
+    { "id": "spinat", "amount": 60, "unit": "g", "item": "ferskt spínat" }
+  ],
+  "steps": [
+    { "text": "Kljúfið {{kjuklingur}} eftir endilöngu þannig að úr hverri bringu komi tveir fremur þunnir bitar. Kryddið með {{salt}} og {{pipar}}.", "refs": ["kjuklingur", "salt", "pipar"] },
+    { "text": "Bræðið {{smjor}} á stórri pönnu og brúnið kjúklingabitana vel á báðum hliðum. Takið af pönnunni og geymið á diski.", "refs": ["smjor"] },
+    { "text": "Steikið {{sveppir}} á sömu pönnu í stutta stund. Bætið {{bladlaukur}} saman við og steikið aðeins áfram.", "refs": ["sveppir", "bladlaukur"] },
+    { "text": "Hækkið hitann og hellið {{hvitvin}} á pönnuna. Látið sjóða niður í 1–2 mínútur.", "refs": ["hvitvin"] },
+    { "text": "Hellið {{rjomi}} á pönnuna ásamt {{kraftur}} og hleypið aftur upp suðunni.", "refs": ["rjomi", "kraftur"] },
+    { "text": "Setjið {{spinat}} út í sósuna og leggið kjúklingabitana ofan á. Ausið sósunni yfir þá og látið malla í 5–10 mínútur, þar til kjúklingurinn er eldaður í gegn og sósan hefur þykknað aðeins. Gætið þess að ofelda ekki bitana. Smakkið til og berið fram með kartöflumús eða hrísgrjónum.", "refs": ["spinat"] }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: sveppabakki og „lúkur“ af spínati fest í grömm; salt- og piparmagn tilgreint.",
+    "storage": "Geymist í 2 daga í kæli. Hitið varlega við lágan hita svo rjómasósan skilji sig ekki.",
+    "variants": "Áfengislaus útgáfa: notið kjúklingasoð í stað hvítvíns og 1 tsk af sítrónusafa fyrir sýruna. Ferskt timjan (1 tsk) í sósuna fer þessum rétti vel."
+  },
+  "source": { "url": "https://www.gottimatinn.is/matarblog/helena-gunnarsdottir/kju/230", "site": "gottimatinn.is" }
+}

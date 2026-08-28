@@ -1,0 +1,141 @@
+{
+  "title": "Djúsí kjötbollur í rjómasósu",
+  "subtitle": "ofureinfaldar og mjúkar",
+  "description": "Mjúkar nautakjötbollur með piparosti, steiktar á pönnu og látnar malla í rjómasósu. Fjölskyldusigurvegari sem krakkar elska að hjálpa til við að búa til.",
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 15,
+    "cook": 20
+  },
+  "ingredients": [
+    {
+      "id": "hakk",
+      "amount": 500,
+      "unit": "g",
+      "item": "nautahakk"
+    },
+    {
+      "id": "egg",
+      "amount": 1,
+      "unit": "stk",
+      "item": "egg"
+    },
+    {
+      "id": "piparostur",
+      "amount": 150,
+      "unit": "g",
+      "item": "piparostur",
+      "note": "rifinn"
+    },
+    {
+      "id": "raudlaukur",
+      "amount": 0.25,
+      "unit": "stk",
+      "item": "rauðlaukur",
+      "note": "smátt saxaður"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 1,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "smátt saxaður"
+    },
+    {
+      "id": "kex",
+      "amount": 0.5,
+      "unit": "pakki",
+      "item": "kex",
+      "note": "Ritz, Tuc eða sambærilegt salt-kex, mulið"
+    },
+    {
+      "id": "kryddblanda",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "ítölsk kryddblanda",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "olía til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "rjomi",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "rjómi"
+    },
+    {
+      "id": "kraftur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "nautakraftur"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Setjið {{hakk}} í skál ásamt {{egg}}, {{piparostur}}, {{raudlaukur}}, {{hvitlaukur}}, {{kex}}, {{kryddblanda}}, {{salt}} og {{pipar}}. Hnoðið öllu vel saman með höndunum og mótið bollur, um 25 stykki.",
+      "refs": [
+        "hakk",
+        "egg",
+        "piparostur",
+        "raudlaukur",
+        "hvitlaukur",
+        "kex",
+        "kryddblanda",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á stórri pönnu og steikið bollurnar á meðalhita á öllum hliðum þar til þær taka lit. Þær þurfa ekki að eldast í gegn á þessu stigi.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Hellið {{rjomi}} á pönnuna, hrærið {{kraftur}} saman við rjómann og setjið lokið á. Látið malla við vægan hita í 5–10 mínútur, þar til sósan hefur þykknað og bollurnar eru eldaðar í gegn.",
+      "refs": [
+        "rjomi",
+        "kraftur"
+      ]
+    },
+    {
+      "text": "Berið fram með kartöflumús, hrísgrjónum eða soðnum kartöflum — eða með fylltum sætum kartöflum eins og höfundurinn mælir með.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: magn af salti og pipar var fest og vörumerkjatilvísanir gerðar almennar — hvaða piparostur og hvaða rjómi sem er virkar.",
+    "storage": "Geymast í 3 daga í kæli. Bollurnar frjósa mjög vel, bæði hráar og steiktar — gerið þá sósuna ferska þegar þær eru notaðar.",
+    "variants": "Í stað piparosts má nota annan bragðmikinn kryddost. Lambahakk til helminga á móti nautahakki gefur íslenskari bollur."
+  },
+  "source": {
+    "url": "https://lindaben.is/recipes/djusi-ofur-einfaldar-og-godar-kjotbollur/",
+    "site": "lindaben.is"
+  }
+}

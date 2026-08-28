@@ -1,0 +1,29 @@
+{
+  "title": "Ofnbakaður pestó-kjúklingur",
+  "subtitle": "þriggja hráefna hversdagsréttur",
+  "description": "Kjúklingabringur bakaðar í basilíkupestói með bráðnum osti. Fáránlega einfalt og alltaf vinsælt — safinn í botninum kallar á hrísgrjón eða gott brauð.",
+  "categories": ["kjuklingur"],
+  "tags": ["barnvaent", "fljotlegt"],
+  "servings": 4,
+  "time": { "prep": 10, "cook": 35 },
+  "ingredients": [
+    { "id": "kjuklingur", "amount": 4, "unit": "stk", "item": "kjúklingabringur", "note": "úrbeinaðar og hamflettar" },
+    { "id": "salt", "amount": 0.5, "unit": "tsk", "item": "salt", "scalable": false },
+    { "id": "pipar", "amount": 0.5, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false },
+    { "id": "pesto", "amount": 1.25, "unit": "dl", "item": "basilíkupestó", "note": "gott grænt pestó úr krukku eða heimagert" },
+    { "id": "ostur", "amount": 60, "unit": "g", "item": "rifinn mozzarellaostur", "note": "eða meira ef þið viljið vel osta" }
+  ],
+  "steps": [
+    { "text": "Hitið ofninn í 190°C. Snyrtið {{kjuklingur}} og skerið hverja bringu eftir endilöngu í 2–3 ræmur. Kryddið með {{salt}} og {{pipar}}.", "refs": ["kjuklingur", "salt", "pipar"] },
+    { "text": "Smyrjið eldfast mót með helmingnum af {{pesto}}. Raðið kjúklingaræmunum yfir og smyrjið afganginum af pestóinu ofan á þær.", "refs": ["pesto"] },
+    { "text": "Leggið álpappír yfir mótið og bakið í 25–30 mínútur, þar til kjúklingurinn er rétt eldaður í gegn. Ekki elda lengur — hann heldur áfram að eldast undir ostinum.", "refs": [] },
+    { "text": "Takið álpappírinn af, stráið {{ostur}} yfir og bakið án álpappírs í 5 mínútur í viðbót, þar til osturinn er bráðinn. Fyrir gylltan ost má kveikja á grillelementinu síðustu 1–2 mínúturnar.", "refs": ["ostur"] },
+    { "text": "Berið fram heitt með hrísgrjónum, byggi eða góðu brauði — bragðgóður safinn í botni mótsins á ekki að fara til spillis.", "refs": [] }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: magn af salti og pipar var ekki tilgreint og hefur verið fest. Óþarfa skref um steikarúða var fellt út — pestóið sjálft sér um að ekkert festist.",
+    "storage": "Geymist í 3 daga í kæli. Hentar vel í nesti daginn eftir, kalt eða upphitað.",
+    "variants": "Rautt pestó gefur sætari útgáfu. Fyrir léttari rétt má nota kjúklingalundir og stytta eldunartímann í 20 mínútur undir álpappír."
+  },
+  "source": { "url": "http://www.kalynskitchen.com/2010/09/easy-recipe-for-baked-pesto-chicken.html", "site": "kalynskitchen.com" }
+}

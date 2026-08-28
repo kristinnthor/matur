@@ -1,5 +1,11 @@
 # Recipe links — triage
 
+> **Status 2026-08-28 (evening): all 18 recipes are converted and live.** The three
+> blocked sources were recovered (mbl.is via browser, pjatt.is and the truncated
+> gottimatinn link via the Wayback Machine — the latter turned out to be Kjúklingur
+> í hvítvínsrjómasósu eftir Helenu Gunnarsdóttur, 2016). The table below is kept as
+> the historical record of the triage.
+
 Source: the list supplied 2026-08-28. Status checked the same day.
 
 **18 recipes, 2 non-recipes.** Of the 18: **11 already in Icelandic**, 7 in English.

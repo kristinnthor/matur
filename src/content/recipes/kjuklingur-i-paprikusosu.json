@@ -1,0 +1,39 @@
+{
+  "title": "Kjúklingur og spínat í rjómalagaðri paprikusósu",
+  "subtitle": "pönnuréttur á hálftíma",
+  "description": "Kjúklingabringur í silkimjúkri paprikurjómasósu með hvítvíni, sítrónu og fersku spínati. Allt gert á einni pönnu.",
+  "categories": ["kjuklingur"],
+  "tags": ["fljotlegt"],
+  "servings": 4,
+  "time": { "prep": 10, "cook": 20 },
+  "ingredients": [
+    { "id": "kjuklingur", "amount": 4, "unit": "stk", "item": "kjúklingabringur", "note": "úrbeinaðar og hamflettar" },
+    { "id": "reyktpaprika", "amount": 1, "unit": "tsk", "item": "reykt paprika", "note": "til að krydda kjúklinginn" },
+    { "id": "salt", "amount": 0.75, "unit": "tsk", "item": "salt", "scalable": false },
+    { "id": "pipar", "amount": 0.25, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false },
+    { "id": "smjor", "amount": 3, "unit": "msk", "item": "smjör", "note": "skipt: 2 msk fyrir kjúklinginn, 1 msk fyrir sósuna" },
+    { "id": "hvitlaukur", "amount": 4, "unit": "rif", "item": "hvítlaukur", "note": "fínsaxaður" },
+    { "id": "hveiti", "amount": 1, "unit": "msk", "item": "hveiti" },
+    { "id": "hvitvin", "amount": 1.25, "unit": "dl", "item": "þurrt hvítvín" },
+    { "id": "sod", "amount": 1.25, "unit": "dl", "item": "kjúklingasoð" },
+    { "id": "rjomi", "amount": 1.25, "unit": "dl", "item": "rjómi" },
+    { "id": "sitrona", "amount": 1, "unit": "tsk", "item": "nýkreistur sítrónusafi" },
+    { "id": "paprikuduft", "amount": 1, "unit": "tsk", "item": "paprikuduft", "note": "í sósuna" },
+    { "id": "spinat", "amount": 100, "unit": "g", "item": "ferskt spínat" }
+  ],
+  "steps": [
+    { "text": "Þerrið {{kjuklingur}} og nuddið {{reyktpaprika}}, helmingnum af {{salt}} og {{pipar}} jafnt á báðar hliðar.", "refs": ["kjuklingur", "reyktpaprika", "salt", "pipar"] },
+    { "text": "Bræðið tvo þriðju af {{smjor}} á stórri pönnu við meðalháan hita. Steikið bringurnar í um 3 mínútur á hlið, lækkið hitann í meðalhita fyrir seinni hliðina. Takið kjúklinginn frá á disk — hann klárast í sósunni á eftir.", "refs": ["smjor"] },
+    { "text": "Bræðið afganginn af smjörinu á pönnunni og steikið {{hvitlaukur}} í um 2 mínútur, hrærið stöðugt svo hann brenni ekki.", "refs": ["hvitlaukur"] },
+    { "text": "Sáldrið {{hveiti}} yfir og hrærið vel saman. Hellið {{hvitvin}} á pönnuna og látið sjóða í 1–2 mínútur svo vínandinn gufi upp.", "refs": ["hveiti", "hvitvin"] },
+    { "text": "Hrærið {{sod}}, {{rjomi}} og {{sitrona}} saman við ásamt {{paprikuduft}} og afganginum af saltinu. Látið malla í 2 mínútur og smakkið sósuna til.", "refs": ["sod", "rjomi", "sitrona", "paprikuduft"] },
+    { "text": "Bætið {{spinat}} út í og eldið í 2 mínútur þar til það hefur fallið saman.", "refs": ["spinat"] },
+    { "text": "Setjið kjúklinginn aftur á pönnuna, lok yfir, og eldið í 3–7 mínútur eftir þykkt bringanna, þar til þær eru eldaðar í gegn. Berið fram strax — með hrísgrjónum, pasta eða kartöflumús.", "refs": [] }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: spínatmagnið var gefið upp í bollum og hefur verið fest í grömmum sem passa við íslenskar spínatpakkningar. Smjörskiptingin er tekin saman í eina línu í stað tveggja hráefna.",
+    "storage": "Geymist í 2 daga í kæli. Hitið varlega upp við lágan hita svo rjómasósan skilji sig ekki.",
+    "variants": "Hvítvíninu má skipta út fyrir auka kjúklingasoð og ½ tsk af sítrónusafa til viðbótar. Sterkari útgáfa: ¼ tsk cayenne-pipar með paprikuduftinu."
+  },
+  "source": { "url": "https://whatsinthepan.com/chicken-and-spinach-in-creamy-paprika-sauce/", "site": "whatsinthepan.com" }
+}

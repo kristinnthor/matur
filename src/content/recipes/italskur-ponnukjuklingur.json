@@ -1,0 +1,168 @@
+{
+  "title": "Ítalskur pönnukjúklingur með tómötum og sveppum",
+  "subtitle": "léttur réttur í miðjarðarhafsstíl",
+  "description": "Þunnar kjúklingasneiðar í léttri hvítvínssósu með sveppum, konfekttómötum, hvítlauk og sítrónu. Ferskur og bjartur réttur sem biður um gott brauð.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "fljotlegt"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 10,
+    "cook": 20
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingur",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kjúklingabringur",
+      "note": "skornar í tvennt á þykktina í þunnar sneiðar"
+    },
+    {
+      "id": "oregano",
+      "amount": 1,
+      "unit": "msk",
+      "item": "þurrkað oregano",
+      "note": "skipt til helminga"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "skipt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "note": "skipt",
+      "scalable": false
+    },
+    {
+      "id": "hveiti",
+      "amount": 60,
+      "unit": "g",
+      "item": "hveiti"
+    },
+    {
+      "id": "sosuhveiti",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "hveiti",
+      "note": "fyrir sósuna"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "scalable": false
+    },
+    {
+      "id": "sveppir",
+      "amount": 225,
+      "unit": "g",
+      "item": "kastaníusveppir",
+      "note": "sneiddir"
+    },
+    {
+      "id": "tomatar",
+      "amount": 400,
+      "unit": "g",
+      "item": "konfekttómatar",
+      "note": "skornir í tvennt"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "gróft saxaður"
+    },
+    {
+      "id": "hvitvin",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "þurrt hvítvín"
+    },
+    {
+      "id": "sitrona",
+      "amount": 1,
+      "unit": "msk",
+      "item": "nýkreistur sítrónusafi"
+    },
+    {
+      "id": "sod",
+      "amount": 1.75,
+      "unit": "dl",
+      "item": "kjúklingasoð"
+    },
+    {
+      "id": "spinat",
+      "amount": 50,
+      "unit": "g",
+      "item": "ferskt spínat",
+      "note": "má sleppa"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þerrið {{kjuklingur}} vel. Kryddið báðar hliðar með helmingnum af {{oregano}}, {{salt}} og {{pipar}}. Veltið sneiðunum upp úr {{hveiti}} og hristið umframhveitið af.",
+      "refs": [
+        "kjuklingur",
+        "oregano",
+        "salt",
+        "pipar",
+        "hveiti"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á stórri pönnu sem á til lok. Brúnið kjúklingasneiðarnar á báðum hliðum, um 3 mínútur. Takið þær frá á disk.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Steikið {{sveppir}} á sömu pönnu við meðalháan hita í um 1 mínútu. Bætið {{tomatar}}, {{hvitlaukur}}, afganginum af oreganoinu, saltinu og piparnum út í ásamt {{sosuhveiti}}. Eldið í um 3 mínútur og hrærið reglulega.",
+      "refs": [
+        "sveppir",
+        "tomatar",
+        "hvitlaukur",
+        "sosuhveiti"
+      ]
+    },
+    {
+      "text": "Hellið {{hvitvin}} á pönnuna og látið sjóða aðeins niður. Bætið þá {{sitrona}} og {{sod}} út í.",
+      "refs": [
+        "hvitvin",
+        "sitrona",
+        "sod"
+      ]
+    },
+    {
+      "text": "Hleypið upp suðu og setjið kjúklinginn aftur á pönnuna. Eldið við háan hita í um 3 mínútur, lækkið svo í lágan meðalhita, setjið lokið á og eldið í 7–8 mínútur í viðbót, þar til kjúklingurinn er eldaður í gegn.",
+      "refs": []
+    },
+    {
+      "text": "Hrærið {{spinat}} saman við rétt fyrir framreiðslu ef notað. Berið fram heitt með orzo, öðru smáu pasta eða góðu brauði í sósuna.",
+      "refs": [
+        "spinat"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: únsur og bollar færð í grömm og desilítra sem passa við íslenskar pakkningar — sveppabakki og tómatapakki standast nánast á við uppskriftina.",
+    "storage": "Geymist í 2 daga í kæli og batnar jafnvel — sósan fær að jafna sig. Hentar illa í frysti; tómatarnir verða maukkenndir.",
+    "variants": "Hvítvíninu má skipta út fyrir auka soð og 1 tsk sítrónusafa. Kapers (1 msk) gefur skemmtilega selturíka útgáfu."
+  },
+  "source": {
+    "url": "https://www.themediterraneandish.com/italian-skillet-chicken-tomatoes-mushrooms/",
+    "site": "themediterraneandish.com"
+  }
+}
