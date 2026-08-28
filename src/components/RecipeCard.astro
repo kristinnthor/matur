@@ -1,14 +1,16 @@
 ---
 import { Image } from 'astro:assets';
+import { photoFor } from '../lib/photos';
 
 const { recipe } = Astro.props;
 const d = recipe.data;
 const total = d.time.prep + d.time.cook;
 const initial = d.title.charAt(0);
+const photo = photoFor(recipe.id);
 ---
 <a class="card" href={`/uppskrift/${recipe.id}/`}>
-  {d.image
-    ? <Image src={d.image} alt="" widths={[400, 800]} sizes="(max-width: 40rem) 92vw, 400px" />
+  {photo
+    ? <Image src={photo} alt="" widths={[400, 800]} sizes="(max-width: 40rem) 92vw, 400px" />
     : <div class="card-ph" aria-hidden="true"><span>{initial}</span></div>}
   <div class="body">
     <h3>{d.title}</h3>

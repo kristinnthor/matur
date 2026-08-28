@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import { formatScaled, type Ingredient } from '../lib/units';
 import { renderStepHtml } from '../lib/steps';
+import { photoFor } from '../lib/photos';
 
 const { recipe } = Astro.props;
 const d = recipe.data;
@@ -17,8 +18,7 @@ for (const i of ings) {
   else groups.push({ name, items: [i] });
 }
 
-// Portrait sources need a lower crop focus inside the panoramic hero frame.
-const cropLow = recipe.id === 'reykt-raud-chimichurri';
+const photo = photoFor(recipe.id);
 ---
 <article class="wrap">
   <header class="recipe-head">
@@ -26,14 +26,14 @@ const cropLow = recipe.id === 'reykt-raud-chimichurri';
     {d.subtitle && <p class="subtitle">{d.subtitle}</p>}
     <p class="lead">{d.description}</p>
     <p class="meta muted"><b>{total} mín</b> · undirbúningur {d.time.prep} mín · eldun {d.time.cook} mín</p>
-    {d.image && (
+    {photo && (
       <Image
-        src={d.image}
+        src={photo}
         alt={d.title}
         widths={[720, 1280, 1600]}
         sizes="(max-width: 72rem) 100vw, 1120px"
         loading="eager"
-        class={`recipe-hero${cropLow ? ' crop-low' : ''}`}
+        class="recipe-hero"
       />
     )}
   </header>
