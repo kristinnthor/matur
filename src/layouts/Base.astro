@@ -24,11 +24,20 @@ const { title, description = 'Persónulegur uppskriftavefur', showHeader = true 
       <header class="site-head">
         <div class="inner">
           <a class="wordmark" href="/">Matur</a>
+          <a class="list-link" href="/innkaupalisti/">Innkaupalisti<span class="badge" data-list-badge hidden>0</span></a>
         </div>
       </header>
     )}
     <slot />
     <script is:inline>
+      (function () {
+        try {
+          var list = JSON.parse(localStorage.getItem("matur:list") || "{}");
+          var n = Object.keys(list).length;
+          var badge = document.querySelector("[data-list-badge]");
+          if (badge && n > 0) { badge.textContent = String(n); badge.hidden = false; }
+        } catch (e) {}
+      })();
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
       }

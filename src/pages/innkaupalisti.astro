@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const recipes = await getCollection('recipes');
+const data = Object.fromEntries(
+  recipes.map((r) => [
+    r.id,
+    { title: r.data.title, servings: r.data.servings, ingredients: r.data.ingredients },
+  ]),
+);
+---
+<Base title="Innkaupalisti — Matur">
+  <div class="wrap list-page">
+    <h1>Innkaupalisti</h1>
+    <p class="tagline muted">Veldu uppskriftir, stilltu skammta — listinn raðar sér eftir búðinni.</p>
+
+    <section id="selected-recipes" aria-live="polite"></section>
+
+    <div id="list-empty" hidden>
+      <p class="muted">
+        Listinn er tómur. Opnaðu <a href="/">uppskrift</a>, veldu fjölda skammta og smelltu á
+        „Setja á innkaupalista“.
+      </p>
+    </div>
+
+    <section id="shopping-sections"></section>
+
+    <div class="list-actions" id="list-actions" hidden>
+      <button type="button" id="print-list">Prenta</button>
+      <button type="button" id="clear-list" class="danger">Hreinsa lista</button>
+    </div>
+  </div>
+
+  <script type="application/json" id="recipe-data" set:html={JSON.stringify(data)} />
+  <script>
+    import '../scripts/list.ts';
+  </script>
+</Base>

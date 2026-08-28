@@ -94,11 +94,15 @@ const cropLow = recipe.id === 'reykt-raud-chimichurri';
         Byggt á uppskrift frá <a href={d.source.url} rel="noopener nofollow">{d.source.site}</a>
       </p>
 
-      <a class="cook-link" href={`/uppskrift/${recipe.id}/elda/`}>Byrja að elda</a>
+      <div class="recipe-actions">
+        <a class="cook-link" href={`/uppskrift/${recipe.id}/elda/`}>Byrja að elda</a>
+        <button type="button" id="add-to-list" class="list-btn" data-slug={recipe.id} data-servings={d.servings}>Setja á innkaupalista</button>
+      </div>
     </div>
   </div>
 </article>
 
 <script>
   import '../scripts/scaler.ts';
+  import '../scripts/add-to-list.ts';
 </script>

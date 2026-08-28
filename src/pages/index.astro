@@ -7,7 +7,7 @@ import { CATEGORIES } from '../content.config';
 const recipes = await getCollection('recipes');
 const used = new Set(recipes.flatMap((r) => r.data.categories));
 ---
-<Base title="Matur" showHeader={false}>
+<Base title="Matur">
   <div class="wrap">
     <header class="hero">
       <h1>Matur<span style="color: var(--accent)">.</span></h1>
