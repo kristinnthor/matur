@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Claude Code session state
+.remember/
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Import pipeline scratch
+scripts/.cache/
+drafts/*.raw.json
