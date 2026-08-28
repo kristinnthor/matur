@@ -111,14 +111,20 @@ function roundToStep(value: number, step: number): number {
 function roundCanonical(canonical: number, authored: Unit): number {
   const def = UNITS[authored];
 
-  if (authored === 'tsk' || authored === 'msk') {
-    // Round in the authored unit, to the nearest quarter.
-    const inUnit = canonical / def.toCanonical;
-    return roundToStep(inUnit, 0.25) * def.toCanonical;
-  }
-
   if (def.class === 'count') return roundToStep(canonical, 0.5);
 
+  // Round in the unit the amount will actually be displayed in, so the result
+  // lands on something a cook can measure: 6¼ dl, not 6,3 dl.
+  const display = displayUnit(canonical, authored);
+  const displayDef = UNITS[display.unit];
+
+  if (displayDef.class === 'volume') {
+    // Millilitres are read as whole numbers; larger volume units as quarters.
+    if (display.unit === 'ml') return roundToStep(canonical, 5);
+    return roundToStep(display.amount, 0.25) * displayDef.toCanonical;
+  }
+
+  // Mass is weighed in grams whether it displays as g or kg.
   return canonical < 100 ? roundToStep(canonical, 5) : roundToStep(canonical, 10);
 }
 

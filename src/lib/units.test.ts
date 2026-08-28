@@ -122,3 +122,28 @@ describe('scaleIngredient', () => {
     expect(formatScaled(clove, 2)).toBe('4 rif');
   });
 });
+
+describe('scaling rounds to measurable quantities in the display unit', () => {
+  it('rounds decilitres to quarters, not to an unmeasurable decimal', () => {
+    const wine = ing({ amount: 5, unit: 'dl', item: 'raudvin' });
+    // 5 dl scaled by 1.25 is 6.25 dl - must read as 6¼ dl, never 6,3 dl.
+    expect(formatScaled(wine, 1.25)).toBe('6¼ dl');
+  });
+
+  it('rounds a half-decilitre base cleanly', () => {
+    const stock = ing({ amount: 2.5, unit: 'dl', item: 'nautasod' });
+    expect(formatScaled(stock, 1.25)).toBe('3¼ dl');
+  });
+
+  it('leaves unscaled decilitres untouched', () => {
+    const wine = ing({ amount: 5, unit: 'dl', item: 'raudvin' });
+    expect(formatScaled(wine, 1)).toBe('5 dl');
+    const stock = ing({ amount: 2.5, unit: 'dl', item: 'nautasod' });
+    expect(formatScaled(stock, 1)).toBe('2½ dl');
+  });
+
+  it('still uses millilitres below 100 ml', () => {
+    const cream = ing({ amount: 60, unit: 'ml', item: 'rjomi' });
+    expect(formatScaled(cream, 1.25)).toBe('75 ml');
+  });
+});
