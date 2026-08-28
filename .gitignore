@@ -22,3 +22,4 @@ Thumbs.db
 scripts/.cache/
 drafts/*.raw.json
 .dev.vars
+.wrangler/
