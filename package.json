@@ -10,7 +10,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "import": "node scripts/import.ts",
+    "translate": "node scripts/translate.ts",
+    "check": "node scripts/check.ts"
   },
   "repository": {
     "type": "git",
