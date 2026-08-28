@@ -79,3 +79,46 @@ describe('formatIngredientAmount - regression cases from spec section 2', () => 
     expect(formatIngredientAmount(150, 'g')).toBe('150 g');
   });
 });
+
+import { scaleIngredient, formatScaled, type Ingredient } from './units';
+
+const ing = (over: Partial<Ingredient>): Ingredient => ({
+  id: 'x', amount: 1, unit: 'stk', item: 'laukur', scalable: true, ...over,
+});
+
+describe('scaleIngredient', () => {
+  it('does not scale ingredients flagged scalable: false', () => {
+    const salt = ing({ amount: 1, unit: 'tsk', item: 'salt', scalable: false });
+    expect(scaleIngredient(salt, 3).amount).toBe(1);
+  });
+
+  it('scales mass and rounds to 10 g above 100 g', () => {
+    const beef = ing({ amount: 1, unit: 'kg', item: 'nautakjot' });
+    expect(formatScaled(beef, 0.5)).toBe('500 g');
+  });
+
+  it('scales mass and rounds to 5 g below 100 g', () => {
+    const flour = ing({ amount: 40, unit: 'g', item: 'hveiti' });
+    expect(formatScaled(flour, 0.5)).toBe('20 g');
+  });
+
+  it('keeps tsk and msk in their own unit when scaled', () => {
+    const puree = ing({ amount: 1, unit: 'msk', item: 'tomatpurra' });
+    expect(formatScaled(puree, 2)).toBe('2 msk');
+  });
+
+  it('renders awkward counts as a range, never a decimal', () => {
+    const carrots = ing({ amount: 3, unit: 'stk', item: 'gulraetur' });
+    expect(formatScaled(carrots, 0.444)).toBe('1–2 stk');
+  });
+
+  it('keeps sub-unit counts as a fraction', () => {
+    const onion = ing({ amount: 1, unit: 'stk', item: 'laukur' });
+    expect(formatScaled(onion, 0.5)).toBe('½ stk');
+  });
+
+  it('leaves whole counts whole', () => {
+    const clove = ing({ amount: 2, unit: 'rif', item: 'hvitlaukur' });
+    expect(formatScaled(clove, 2)).toBe('4 rif');
+  });
+});

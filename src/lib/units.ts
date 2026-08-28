@@ -92,3 +92,56 @@ export function formatIngredientAmount(amount: number, unit: Unit): string {
   const display = displayUnit(canonical, unit);
   return `${formatAmount(display.amount)} ${display.unit}`;
 }
+
+export interface Ingredient {
+  id: string;
+  amount: number;
+  unit: Unit;
+  item: string;
+  note?: string;
+  group?: string | null;
+  scalable: boolean;
+}
+
+function roundToStep(value: number, step: number): number {
+  return Math.round(value / step) * step;
+}
+
+/** Round a canonical value according to its unit class and authored unit. */
+function roundCanonical(canonical: number, authored: Unit): number {
+  const def = UNITS[authored];
+
+  if (authored === 'tsk' || authored === 'msk') {
+    // Round in the authored unit, to the nearest quarter.
+    const inUnit = canonical / def.toCanonical;
+    return roundToStep(inUnit, 0.25) * def.toCanonical;
+  }
+
+  if (def.class === 'count') return roundToStep(canonical, 0.5);
+
+  return canonical < 100 ? roundToStep(canonical, 5) : roundToStep(canonical, 10);
+}
+
+export function scaleIngredient(ing: Ingredient, factor: number): Ingredient {
+  if (!ing.scalable) return ing;
+
+  const canonical = roundCanonical(toCanonical(ing.amount, ing.unit) * factor, ing.unit);
+  return { ...ing, amount: canonical / UNITS[ing.unit].toCanonical };
+}
+
+export function formatScaled(ing: Ingredient, factor: number): string {
+  const scaled = scaleIngredient(ing, factor);
+
+  if (UNITS[scaled.unit].class === 'count') {
+    const n = scaled.amount;
+    const isWhole = Math.abs(n - Math.round(n)) < EPSILON;
+
+    // A non-whole count of one or more reads badly as a fraction - show a range.
+    if (n >= 1 && !isWhole) {
+      return `${Math.floor(n)}–${Math.ceil(n)} ${scaled.unit}`;
+    }
+    return `${formatAmount(n)} ${scaled.unit}`;
+  }
+
+  return formatIngredientAmount(scaled.amount, scaled.unit);
+}
