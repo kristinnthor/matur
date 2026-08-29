@@ -3,7 +3,15 @@
   "compilerOptions": {
     "strict": true,
     "noUncheckedIndexedAccess": true,
-    "types": ["astro/client", "vitest/globals"]
+    "types": [
+      "astro/client",
+      "vitest/globals"
+    ]
   },
-  "include": ["src/**/*", "scripts/**/*"]
+  "include": [
+    ".astro/types.d.ts",
+    "src/**/*",
+    "scripts/**/*",
+    "worker/**/*"
+  ]
 }

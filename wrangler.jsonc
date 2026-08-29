@@ -2,9 +2,10 @@
   "name": "matur",
   "main": "worker/index.ts",
   "compatibility_date": "2026-08-28",
-  // Runs before every deploy, including in Cloudflare's CI where the
-  // dashboard build command is intentionally left empty.
-  "build": { "command": "npm run build" },
+  // Gate + build: typecheck, unit tests and the recipe lint all run before
+  // every deploy (including Cloudflare CI, where the dashboard build command
+  // is intentionally empty) - a red test now blocks the deploy.
+  "build": { "command": "npm run verify" },
   // Pure static site: upload the Astro output as assets, no worker script.
   "assets": { "directory": "./dist", "binding": "ASSETS" },
   "vars": { "GITHUB_REPO": "kristinnthor/matur" }

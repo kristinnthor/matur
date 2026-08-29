@@ -4,6 +4,13 @@
  * build). Auth is a shared passphrase; both it and the GitHub token are
  * Worker secrets set outside this codebase.
  */
+/** Minimal binding type — avoids pulling @cloudflare/workers-types, whose
+ * global Request/Response redefinitions clash with the DOM lib the client
+ * scripts compile against. */
+interface Fetcher {
+  fetch(req: Request): Promise<Response>;
+}
+
 export interface Env {
   ASSETS: Fetcher;
   GITHUB_REPO: string;

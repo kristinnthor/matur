@@ -13,7 +13,8 @@
     "test:watch": "vitest",
     "import": "node scripts/import.ts",
     "translate": "node scripts/translate.ts",
-    "check": "node scripts/check.ts"
+    "check": "node scripts/check.ts",
+    "verify": "astro check && vitest run && node scripts/check.ts && astro build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "astro": "^5.18.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.10",
     "@types/node": "^26.4.0",
     "typescript": "^5.9.3",
     "vitest": "^4.1.11",
