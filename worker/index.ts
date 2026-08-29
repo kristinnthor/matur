@@ -111,6 +111,11 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
   const { slug, data } = body;
   if (!slug || !SLUG.test(slug)) return json(400, { error: 'Ógilt uppskriftarheiti.' });
   if (!data) return json(400, { error: 'Engin mynd fylgdi.' });
+  // The content-length preflight is advisory (a chunked body has no header),
+  // so bound the decode work on the actual payload too.
+  if (data.length > MAX_BYTES * (4 / 3) + 4) {
+    return json(413, { error: 'Myndin er of stór (hámark 4,5 MB).' });
+  }
 
   let bytes: Uint8Array;
   try {

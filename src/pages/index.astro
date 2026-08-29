@@ -18,7 +18,7 @@ const used = new Set(recipes.flatMap((r) => r.data.categories));
         .filter(([key]) => used.has(key))
         .map(([key, label]) => <a href={`/flokkur/${key}/`}>{label}</a>)}
     </nav>
-    <nav class="categories tag-rail" aria-label="Merki">
+    <nav class="tag-rail" aria-label="Merki">
       {Object.entries(TAGS)
         .filter(([key]) => recipes.some((r) => r.data.tags.includes(key)))
         .map(([key, label]) => <a class="tag-chip" href={`/merki/${key}/`}>{label}</a>)}
