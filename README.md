@@ -2,33 +2,63 @@
 
 Persónulegur uppskriftavefur — [matur.kristinn.eu](https://matur.kristinn.eu)
 
-Icelandic recipe site. Recipes are structured JSON validated at build time, rendered as a
-static offline-capable PWA with serving scaling and a kitchen cook mode.
+Icelandic recipe PWA. Recipes are structured JSON validated at build time, rendered
+as a static, offline-capable site with live serving scaling, a kitchen cook mode,
+an aisle-ordered shopping list, and phone photo uploads that commit straight to
+this repo.
+
+## How it runs
+
+Astro 7 static output served by a small **Cloudflare Worker** (`worker/index.ts`):
+static assets flow through the assets binding, `POST /api/photo` accepts
+passphrase-gated photo uploads and commits them via the GitHub API — which
+triggers a rebuild, so uploaded photos ride the same image pipeline as everything
+else. Photos attach to recipes purely by filename: `src/content/recipes/photos/<slug>.jpg`.
+
+Every push to `main` deploys via Cloudflare's Git build, **gated** by
+`npm run verify` — typecheck, unit tests and the recipe lint all must pass or the
+deploy is blocked. Note that the site itself commits to `main` (photo uploads), so
+always `git pull --rebase` before pushing.
 
 ## Development
 
 ```bash
 npm install
-npm run dev      # http://localhost:4321
-npm test         # units and step-interpolation tests
-npm run build    # static output to dist/
+npm run dev        # http://localhost:4321
+npm test           # unit tests (units engine, lint, shopping, parsers)
+npm run check      # recipe lint over src/content/recipes/
+npm run verify     # the full deploy gate: astro check + tests + lint + build
+npx wrangler dev   # site + worker together (secrets from .dev.vars)
 ```
+
+Bringing in a new recipe:
+
+```bash
+npm run import -- <source-url> [slug]   # fetch → drafts/<slug>.draft.json
+npm run translate                        # drafts → Icelandic recipe JSON via claude -p
+```
+
+`translate` needs a logged-in `claude` CLI (or `--backend=api` with
+`ANTHROPIC_API_KEY`) and is glossary-driven — see `glossary/`.
 
 ## Structure
 
 | Path | Purpose |
 |---|---|
-| `src/lib/units.ts` | Icelandic unit system — canonical storage, display formatting, scaling |
-| `src/lib/steps.ts` | Resolves `{{ingredient}}` references in step text |
-| `src/content.config.ts` | Recipe schema, categories and tags |
-| `src/content/recipes/` | One JSON file per recipe |
-| `docs/superpowers/specs/` | Design spec |
-| `docs/superpowers/plans/` | Implementation plans |
-| `docs/recipe-links.md` | Source link triage |
+| `src/lib/units.ts` | Icelandic unit engine — canonical storage, display idiom, scaling |
+| `src/lib/shopping.ts` | Shopping-list aggregation and store-section mapping |
+| `src/lib/lint.ts` + `scripts/check.ts` | Recipe rules the schema cannot express |
+| `src/lib/steps.ts` | `{{ingredient}}` refs inlined into step text, scaled live |
+| `src/content/recipes/` | One JSON file per recipe (+ `photos/<slug>.jpg`) |
+| `worker/index.ts` | `/api/photo` upload endpoint + asset passthrough |
+| `scripts/import.ts` / `translate.ts` | Source-to-Icelandic recipe pipeline |
+| `glossary/` | House rules: units idiom, product names, tone |
+| `docs/superpowers/` | Design spec and implementation plans |
 
-## Units
+## Units, the short version
 
-Amounts are stored canonically (grams / millilitres / counts) and rendered in Icelandic units
-only at display time. Rounding happens in the display unit so scaled amounts stay measurable —
-`6¼ dl`, never `6,3 dl`. Ingredients marked `"scalable": false` (salt, raising agents, seasoning)
-do not change when servings change.
+Amounts are stored canonically (grams / millilitres / counts) and rendered in
+Icelandic units only at display time — `5 dl`, never `500 ml`; fractions, never
+decimals. Scaling rounds to measurable steps and never rounds a required
+ingredient to zero. Ingredients marked `"scalable": false` (seasoning-to-taste,
+raising agents) ignore serving changes. The shopping list rounds **up**.

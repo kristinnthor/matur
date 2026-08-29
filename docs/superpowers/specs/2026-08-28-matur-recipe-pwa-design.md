@@ -223,3 +223,20 @@ Atkinson Hyperlegible body (chosen for arm's-length kitchen legibility), and
 recipe photography (Pexels-licensed, see docs/photo-credits.md). The signature
 element is the living quantities: every amount, including those inlined in step
 text, renders in accent type and pulses when servings change. Dark mode retained.
+
+---
+
+## Revision 2026-08-29: reality sync (review issue #32)
+
+- **Hosting** is a Cloudflare **Worker with Git builds**, not classic Pages:
+  `wrangler.jsonc` has `main: worker/index.ts`; static output is served via the
+  assets binding and `/api/*` is handled by the worker (`run_worker_first`).
+- **The "no admin UI" non-goal has one deliberate exception**: `/myndir/` and the
+  per-recipe photo editor upload JPEGs through `POST /api/photo`, which commits to
+  the repo via the GitHub API (passphrase-gated, secrets held as Worker secrets).
+  Recipes themselves remain files edited in git; only photos have a UI path.
+- **Data model drift**: recipes have no `slug` field (the filename is the id via
+  the content-collection loader) and no `image` field (photos attach by filename
+  convention, `photos/<slug>.jpg`).
+- **Deploys are gated**: wrangler's custom build runs `npm run verify`
+  (astro check + vitest + recipe lint + build); a red check blocks the deploy.
