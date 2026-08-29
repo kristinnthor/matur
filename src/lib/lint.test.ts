@@ -84,3 +84,37 @@ describe('lintRecipe warnings', () => {
     expect(r.warnings.join()).toMatch(/quantit/i);
   });
 });
+
+describe('issue #4: ref integrity for non-ASCII and malformed ids', () => {
+  it('errors on ingredient ids outside the safe charset', () => {
+    const r = lintRecipe(withIngredient({ id: 'hvítlaukur', amount: 1, unit: 'rif', item: 'hvítlaukur' }));
+    expect(r.errors.join()).toMatch(/id/);
+  });
+
+  it('errors on ref tokens that the renderer cannot resolve', () => {
+    const r = lintRecipe({
+      ...valid,
+      steps: [{ text: 'Notið {{olifu-olia}} og {{beikon }}.', refs: [] }],
+    });
+    expect(r.errors.length).toBeGreaterThanOrEqual(2);
+  });
+});
+
+describe('issue #5: fresh chili is produce, not seasoning', () => {
+  it('does not flag a whole fresh chili', () => {
+    const r = lintRecipe(withIngredient({ id: 'c', amount: 1, unit: 'stk', item: 'rauður chilipipar' }));
+    expect(r.warnings.join()).not.toMatch(/scalable/);
+  });
+
+  it('still flags chili flakes and powders', () => {
+    const r = lintRecipe(withIngredient({ id: 'cf', amount: 1, unit: 'tsk', item: 'chiliflögur' }));
+    expect(r.warnings.join()).toMatch(/scalable/);
+  });
+});
+
+describe('issue #6: taxonomy checks ignore the prototype chain', () => {
+  it('rejects prototype-chain names as categories and tags', () => {
+    expect(lintRecipe({ ...valid, categories: ['toString'] }).errors.join()).toMatch(/categor/);
+    expect(lintRecipe({ ...valid, tags: ['constructor'] }).errors.join()).toMatch(/tag/);
+  });
+});

@@ -114,3 +114,21 @@ describe('aggregate', () => {
     expect(aggregate({ horfin: 4 }, recipes)).toEqual([]);
   });
 });
+
+describe('mass totals at or above 1 kg round UP in the display unit (issue #3)', () => {
+  it('never under-reports a kilogram total', () => {
+    // 500 g spaghetti scaled 4->9 servings needs 1125 g; must show 1¼ kg, not 1,1 kg.
+    const items = flat(aggregate({ carbonara: 9 }, recipes));
+    expect(items.find((i) => i.label === 'spaghetti')!.amount).toBe('1¼ kg');
+  });
+
+  it('a hair over a kilo rounds up to the next quarter', () => {
+    const items = flat(
+      aggregate(
+        { carbonara: 4 },
+        { carbonara: { title: 'X', servings: 4, ingredients: [ing({ id: 's', amount: 1010, unit: 'g', item: 'spaghetti' })] } },
+      ),
+    );
+    expect(items.find((i) => i.label === 'spaghetti')!.amount).toBe('1¼ kg');
+  });
+});

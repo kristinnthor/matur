@@ -74,7 +74,10 @@ function formatTotal(canonical: number, units: Set<Unit>): string {
   const cls = UNITS[only!].class;
   if (cls === 'mass') {
     const grams = canonical < 100 ? ceilToStep(canonical, 5) : ceilToStep(canonical, 10);
-    return grams >= 1000 ? `${formatAmount(grams / 1000)} kg` : `${grams} g`;
+    // At a kilo and above, ceil in the display unit too - formatAmount rounds
+    // to nearest, which would quietly under-report what to buy.
+    if (grams >= 1000) return `${formatAmount(ceilToStep(grams / 1000, 0.25))} kg`;
+    return `${grams} g`;
   }
   // Pourable volume: choose the display unit for the magnitude, ceil to its quarter.
   const unit: Unit = canonical >= 1000 ? 'l' : canonical >= 100 ? 'dl' : 'ml';

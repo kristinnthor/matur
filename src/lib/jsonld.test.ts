@@ -81,3 +81,17 @@ describe('extractRecipe', () => {
     expect(extractRecipe(html)?.name).toBe('Valid');
   });
 });
+
+describe('issue #7: legal single-value schema.org shapes', () => {
+  it('accepts recipeIngredient as a bare string', () => {
+    const html = wrap(JSON.stringify({
+      '@type': 'Recipe',
+      name: 'Single',
+      recipeIngredient: '1 egg',
+      recipeInstructions: 'Whisk it.',
+    }));
+    const r = extractRecipe(html);
+    expect(r?.ingredients).toEqual(['1 egg']);
+    expect(r?.instructions).toEqual(['Whisk it.']);
+  });
+});

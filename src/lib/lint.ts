@@ -7,7 +7,11 @@ export interface LintResult {
 }
 
 const ENGLISH_UNITS = /\b(cups?|tsp|tbsp|teaspoons?|tablespoons?|ounces?|oz|pounds?|lbs?|grams?|milliliters?)\b/i;
-const SEASONING = /salt\b|\bpipar\b|chili|cayenne|lárviðar|múskat/i;
+// Only spice forms of chili count as seasoning — a whole fresh chili is
+// produce and scales with servings.
+const SEASONING = /salt\b|\bpipar\b|chiliflög|chiliduft|chilikrydd|cayenne|lárviðar|múskat/i;
+/** The renderer's ref grammar (steps.ts REF_PATTERN) only resolves these ids. */
+const SAFE_ID = /^[a-z0-9_]+$/;
 /** A number immediately followed by an Icelandic unit token inside step prose. */
 const INLINE_QTY = /\d+\s?(g|kg|dl|ml|tsk|msk)\b/;
 
@@ -31,10 +35,10 @@ export function lintRecipe(r: unknown): LintResult {
   const cats = Array.isArray(rec.categories) ? rec.categories : [];
   if (cats.length === 0) errors.push('no categories');
   for (const c of cats) {
-    if (!(c in CATEGORIES)) errors.push(`unknown category: ${c}`);
+    if (!Object.hasOwn(CATEGORIES, c)) errors.push(`unknown category: ${c}`);
   }
   for (const t of Array.isArray(rec.tags) ? rec.tags : []) {
-    if (!(t in TAGS)) errors.push(`unknown tag: ${t}`);
+    if (!Object.hasOwn(TAGS, t)) errors.push(`unknown tag: ${t}`);
   }
 
   const ings = (Array.isArray(rec.ingredients) ? rec.ingredients : []) as Ing[];
@@ -42,6 +46,9 @@ export function lintRecipe(r: unknown): LintResult {
   for (const i of ings) {
     const label = String(i.id ?? i.item ?? '?');
     if (typeof i.id === 'string') {
+      if (!SAFE_ID.test(i.id)) {
+        errors.push(`ingredient id '${i.id}' outside [a-z0-9_] - the renderer cannot resolve {{${i.id}}}`);
+      }
       if (ids.has(i.id)) errors.push(`duplicate ingredient id: ${i.id}`);
       ids.add(i.id);
     } else {
@@ -65,8 +72,13 @@ export function lintRecipe(r: unknown): LintResult {
   const steps = (Array.isArray(rec.steps) ? rec.steps : []) as { text?: unknown }[];
   steps.forEach((s, n) => {
     const text = typeof s.text === 'string' ? s.text : '';
-    for (const m of text.matchAll(/\{\{(\w+)\}\}/g)) {
-      if (!ids.has(m[1]!)) errors.push(`step ${n + 1} references missing ingredient: ${m[1]}`);
+    for (const m of text.matchAll(/\{\{([^}]*)\}\}/g)) {
+      const token = m[1]!;
+      if (!SAFE_ID.test(token)) {
+        errors.push(`step ${n + 1} has a malformed ref token: {{${token}}}`);
+      } else if (!ids.has(token)) {
+        errors.push(`step ${n + 1} references missing ingredient: ${token}`);
+      }
     }
     if (ENGLISH_UNITS.test(text)) errors.push(`step ${n + 1} contains english unit words`);
     if (INLINE_QTY.test(text)) {

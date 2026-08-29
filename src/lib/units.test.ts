@@ -187,3 +187,11 @@ describe('skammtar plural', () => {
     expect(skammtar(4)).toBe('skammtar');
   });
 });
+
+describe('issue #8: third glyphs are reachable through authored amounts', () => {
+  it('renders thirds as glyphs', () => {
+    expect(formatAmount(1 / 3)).toBe('⅓');
+    expect(formatAmount(2 / 3)).toBe('⅔');
+    expect(formatScaled(ing({ amount: 1 / 3, unit: 'stk', item: 'epli' }), 1)).toBe('⅓ stk');
+  });
+});

@@ -86,7 +86,8 @@ export function extractRecipe(html: string): JsonLdRecipe | null {
     const node = findRecipeNode(parsed);
     if (!node) continue;
 
-    const ingredients = (Array.isArray(node.recipeIngredient) ? node.recipeIngredient : [])
+    const rawIngredients = node.recipeIngredient;
+    const ingredients = (Array.isArray(rawIngredients) ? rawIngredients : rawIngredients != null ? [rawIngredients] : [])
       .map((i) => cleanText(String(i)))
       .filter(Boolean);
 
