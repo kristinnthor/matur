@@ -2,6 +2,10 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import RecipeView from '../../components/RecipeView.astro';
+import { photoFor } from '../../lib/photos';
+import { renderStep } from '../../lib/steps';
+import { formatScaled, type Ingredient } from '../../lib/units';
+import { CATEGORIES, TAGS } from '../../lib/taxonomy';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recipes');
@@ -9,7 +13,40 @@ export async function getStaticPaths() {
 }
 
 const { recipe } = Astro.props;
+const d = recipe.data;
+const ings = d.ingredients as Ingredient[];
+const photo = photoFor(recipe.id);
+
+// The site consumes schema.org/Recipe from its sources; it publishes it too.
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Recipe',
+  name: d.title,
+  description: d.description,
+  inLanguage: 'is',
+  ...(photo ? { image: new URL(photo.src, Astro.site).href } : {}),
+  recipeYield: `${d.servings} skammtar`,
+  prepTime: `PT${d.time.prep}M`,
+  cookTime: `PT${d.time.cook}M`,
+  totalTime: `PT${d.time.prep + d.time.cook}M`,
+  recipeCategory: d.categories.map((c: string) => CATEGORIES[c as keyof typeof CATEGORIES]),
+  keywords: d.tags.map((t: string) => TAGS[t as keyof typeof TAGS]).join(', '),
+  recipeIngredient: ings.map(
+    (i) => `${formatScaled(i, 1)} ${i.item}${i.note ? ` (${i.note})` : ''}`,
+  ),
+  recipeInstructions: d.steps.map((s: { text: string }, n: number) => ({
+    '@type': 'HowToStep',
+    position: n + 1,
+    text: renderStep(s.text, ings, 1),
+  })),
+  isBasedOn: d.source.url,
+};
 ---
-<Base title={`${recipe.data.title} — Matur`} description={recipe.data.description}>
+<Base title={`${recipe.data.title} — Matur`} description={recipe.data.description} image={photo?.src}>
+  <script
+    type="application/ld+json"
+    slot="head"
+    set:html={JSON.stringify(jsonLd).replaceAll('<', '\\u003c')}
+  />
   <RecipeView recipe={recipe} />
 </Base>

@@ -1,7 +1,21 @@
 ---
 import '../styles/global.css';
-interface Props { title: string; description?: string; showHeader?: boolean }
-const { title, description = 'Persónulegur uppskriftavefur', showHeader = true } = Astro.props;
+interface Props {
+  title: string;
+  description?: string;
+  showHeader?: boolean;
+  /** Absolute or root-relative URL of a social-share image. */
+  image?: string;
+}
+const {
+  title,
+  description = 'Persónulegur uppskriftavefur',
+  showHeader = true,
+  image,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = image ? new URL(image, Astro.site).href : undefined;
 ---
 <!doctype html>
 <html lang="is">
@@ -10,6 +24,18 @@ const { title, description = 'Persónulegur uppskriftavefur', showHeader = true 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta property="og:site_name" content="Matur" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="is_IS" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +44,7 @@ const { title, description = 'Persónulegur uppskriftavefur', showHeader = true 
     />
     <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="theme-color" content="#c42750" />
+    <slot name="head" />
   </head>
   <body>
     {showHeader && (
@@ -32,12 +59,19 @@ const { title, description = 'Persónulegur uppskriftavefur', showHeader = true 
     <slot />
     <script is:inline>
       (function () {
-        try {
-          var list = JSON.parse(localStorage.getItem("matur:list") || "{}");
-          var n = Object.keys(list).length;
-          var badge = document.querySelector("[data-list-badge]");
-          if (badge && n > 0) { badge.textContent = String(n); badge.hidden = false; }
-        } catch (e) {}
+        function updateBadge() {
+          try {
+            var list = JSON.parse(localStorage.getItem("matur:list") || "{}");
+            var n = Object.keys(list).length;
+            var badge = document.querySelector("[data-list-badge]");
+            if (!badge) return;
+            badge.textContent = String(n);
+            badge.hidden = n === 0;
+          } catch (e) {}
+        }
+        updateBadge();
+        document.addEventListener("matur:list-changed", updateBadge);
+        window.addEventListener("storage", updateBadge);
       })();
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));

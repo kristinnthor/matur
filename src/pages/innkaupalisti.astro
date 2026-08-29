@@ -32,7 +32,7 @@ const data = Object.fromEntries(
     </div>
   </div>
 
-  <script type="application/json" id="recipe-data" set:html={JSON.stringify(data)} />
+  <script type="application/json" id="recipe-data" set:html={JSON.stringify(data).replaceAll('<', '\u003c')} />
   <script>
     import '../scripts/list.ts';
   </script>
