@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import RecipeCard from '../components/RecipeCard.astro';
-import { CATEGORIES } from '../content.config';
+import { CATEGORIES, TAGS } from '../lib/taxonomy';
 
 const recipes = await getCollection('recipes');
 const used = new Set(recipes.flatMap((r) => r.data.categories));
@@ -17,6 +17,11 @@ const used = new Set(recipes.flatMap((r) => r.data.categories));
       {Object.entries(CATEGORIES)
         .filter(([key]) => used.has(key))
         .map(([key, label]) => <a href={`/flokkur/${key}/`}>{label}</a>)}
+    </nav>
+    <nav class="categories tag-rail" aria-label="Merki">
+      {Object.entries(TAGS)
+        .filter(([key]) => recipes.some((r) => r.data.tags.includes(key)))
+        .map(([key, label]) => <a class="tag-chip" href={`/merki/${key}/`}>{label}</a>)}
     </nav>
     <div class="grid">
       {recipes.map((r) => <RecipeCard recipe={r} />)}

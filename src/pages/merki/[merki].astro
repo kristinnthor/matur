@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import { TAGS } from '../../lib/taxonomy';
+
+export async function getStaticPaths() {
+  const recipes = await getCollection('recipes');
+  return Object.keys(TAGS).map((key) => ({
+    params: { merki: key },
+    props: { recipes: recipes.filter((r) => r.data.tags.includes(key)), key },
+  }));
+}
+
+const { recipes, key } = Astro.props;
+const label = TAGS[key as keyof typeof TAGS];
+---
+<Base title={`${label} — Matur`}>
+  <div class="wrap">
+    <p><a href="/">← Allar uppskriftir</a></p>
+    <h1>{label}</h1>
+    {recipes.length === 0
+      ? <p class="muted">Engar uppskriftir með þessu merki enn.</p>
+      : <div class="grid">{recipes.map((r) => <RecipeCard recipe={r} />)}</div>}
+  </div>
+</Base>

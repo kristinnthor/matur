@@ -650,3 +650,36 @@ h2::before {
 @media print {
   .photo-edit-btn, .photo-add { display: none; }
 }
+
+/* Card titles are h2 for document outline, styled as card headings */
+.card .card-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--text);
+  display: block;
+}
+.card .card-title::before { content: none; }
+
+/* Tag chips */
+.tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 0; }
+.tag-rail { margin-top: -1.5rem; }
+.tag-chip {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.22rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.tag-chip:hover { border-color: var(--accent); }
+
+@media print {
+  .list-btn, .list-page .tagline, .tag-row, .tag-rail { display: none; }
+}

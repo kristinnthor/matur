@@ -14,7 +14,8 @@ const d = recipe.data;
 const ings = d.ingredients as Ingredient[];
 ---
 <Base title={`${d.title} — elda`} showHeader={false}>
-  <main class="cook" data-slug={recipe.id} data-base={d.servings}>
+  <div class="cook" data-slug={recipe.id} data-base={d.servings}>
+    <h1 class="sr-only">{d.title} — eldunarhamur</h1>
     <header>
       <a href={`/uppskrift/${recipe.id}/`}>← Til baka</a>
       <span class="counter muted" id="cook-servings">{d.servings} {skammtar(d.servings)}</span>
@@ -33,7 +34,7 @@ const ings = d.ingredients as Ingredient[];
       <button type="button" id="prev">Fyrra</button>
       <button type="button" id="next">Næsta</button>
     </nav>
-  </main>
+  </div>
 
   <script type="application/json" id="cook-ingredients" set:html={JSON.stringify(ings).replaceAll('<', '\\u003c')} />
   <script>

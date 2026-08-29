@@ -56,7 +56,9 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
         </div>
       </header>
     )}
-    <slot />
+    <main id="main">
+      <slot />
+    </main>
     <script is:inline>
       (function () {
         function updateBadge() {
