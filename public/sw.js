@@ -1,40 +1,105 @@
-const CACHE = 'matur-v6';
+/**
+ * Matur service worker.
+ *
+ * Two caches with different lifetimes:
+ *  - STATIC: /_astro/* hashed assets and font files — immutable, cache-first,
+ *    never revalidated (a changed asset gets a new hash and URL).
+ *  - PAGES: HTML and other same-origin GETs — stale-while-revalidate, so the
+ *    kitchen gets an instant (possibly one-deploy-old) page and the next view
+ *    is fresh. No manual version bump needed for content updates.
+ *
+ * Navigations that miss both cache and network fall back to /offline/.
+ */
+const STATIC = 'matur-static-v1';
+const PAGES = 'matur-pages-v1';
+const OFFLINE_URL = '/offline/';
+const PAGE_LIMIT = 120;
+const STATIC_LIMIT = 300;
+
+const isFont = (url) => url.hostname === 'fonts.gstatic.com';
+const isImmutable = (url) => url.pathname.startsWith('/_astro/') || isFont(url);
+
+async function trimCache(name, max) {
+  const cache = await caches.open(name);
+  const keys = await cache.keys();
+  // Oldest entries first — Cache API preserves insertion order.
+  for (let i = 0; i < keys.length - max; i++) await cache.delete(keys[i]);
+}
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/manifest.webmanifest'])));
+  event.waitUntil(
+    caches.open(PAGES).then((c) => c.addAll(['/', OFFLINE_URL, '/manifest.webmanifest'])),
+  );
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))),
-    ),
+    (async () => {
+      const keys = await caches.keys();
+      await Promise.all(
+        keys.filter((k) => k !== STATIC && k !== PAGES).map((k) => caches.delete(k)),
+      );
+      await self.clients.claim();
+    })(),
   );
-  self.clients.claim();
 });
 
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
-  const u = new URL(request.url);
-  if (u.origin !== self.location.origin || u.pathname.startsWith('/api/')) return;
+  const url = new URL(request.url);
+  if (url.pathname.startsWith('/api/')) return;
+  const sameOrigin = url.origin === self.location.origin;
+  if (!sameOrigin && !isFont(url)) return;
 
-  // Cache-first: a kitchen with poor signal is exactly the case this exists for.
+  if (isImmutable(url)) {
+    // Hashed assets and fonts: cache-first, cached once, never revalidated.
+    event.respondWith(
+      (async () => {
+        const cached = await caches.match(request);
+        if (cached) return cached;
+        const response = await fetch(request);
+        // Fonts arrive opaque (status 0); same-origin hashed assets must be OK.
+        if (response.ok || (response.type === 'opaque' && isFont(url))) {
+          const cache = await caches.open(STATIC);
+          event.waitUntil(
+            cache.put(request, response.clone()).then(() => trimCache(STATIC, STATIC_LIMIT)),
+          );
+        }
+        return response;
+      })(),
+    );
+    return;
+  }
+
+  // Pages: stale-while-revalidate with an offline fallback for navigations.
   event.respondWith(
-    caches.match(request).then((cached) => {
-      const network = fetch(request)
-        .then((response) => {
-          // Only successful responses may enter the offline cache; a cached
-          // 500 or error page would otherwise be served forever.
+    (async () => {
+      const cached = await caches.match(request);
+      const refresh = fetch(request)
+        .then(async (response) => {
           if (response.ok) {
-            const copy = response.clone();
-            caches.open(CACHE).then((c) => c.put(request, copy));
+            const cache = await caches.open(PAGES);
+            await cache.put(request, response.clone());
+            await trimCache(PAGES, PAGE_LIMIT);
           }
           return response;
         })
-        .catch(() => cached ?? Response.error());
-      return cached ?? network;
-    }),
+        .catch(() => null);
+
+      if (cached) {
+        // Serve instantly; the refresh continues in the background.
+        event.waitUntil(refresh);
+        return cached;
+      }
+      const network = await refresh;
+      if (network) return network;
+      if (request.mode === 'navigate') {
+        const offline = await caches.match(OFFLINE_URL);
+        if (offline) return offline;
+      }
+      return Response.error();
+    })(),
   );
 });
