@@ -3,10 +3,38 @@ import { renderStepHtml } from '../lib/steps';
 
 const output = document.querySelector<HTMLOutputElement>('#servings');
 
+const SERVINGS_KEY = 'matur:servings';
+const slug = location.pathname.match(/\/uppskrift\/([^/]+)/)?.[1] ?? '';
+
+function readServings(): Record<string, number> {
+  try {
+    return JSON.parse(localStorage.getItem(SERVINGS_KEY) ?? '{}');
+  } catch {
+    return {};
+  }
+}
+
+function storeServings(n: number, base: number): void {
+  try {
+    const map = readServings();
+    // The authored default needs no entry; keep the map tidy.
+    if (n === base) delete map[slug];
+    else map[slug] = n;
+    localStorage.setItem(SERVINGS_KEY, JSON.stringify(map));
+  } catch {
+    // Storage unavailable — scaling still works, it just is not remembered.
+  }
+}
+
 if (output) {
   const base = Number(output.dataset.base);
   let servings = base;
   let pulseTimer: ReturnType<typeof setTimeout> | undefined;
+
+  const remembered = readServings()[slug];
+  if (typeof remembered === 'number' && remembered >= 1 && remembered !== base) {
+    servings = remembered;
+  }
 
   const article = document.querySelector<HTMLElement>('article');
   const qtyNodes = Array.from(document.querySelectorAll<HTMLElement>('.qty'));
@@ -23,6 +51,7 @@ if (output) {
   const apply = () => {
     const factor = servings / base;
     output.textContent = String(servings);
+    storeServings(servings, base);
 
     qtyNodes.forEach((node, i) => {
       node.textContent = formatScaled(ingredients[i]!, factor);
@@ -50,4 +79,6 @@ if (output) {
       apply();
     });
   });
+
+  if (servings !== base) apply();
 }

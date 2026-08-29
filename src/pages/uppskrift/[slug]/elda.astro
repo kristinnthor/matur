@@ -14,14 +14,15 @@ const d = recipe.data;
 const ings = d.ingredients as Ingredient[];
 ---
 <Base title={`${d.title} — elda`} showHeader={false}>
-  <main class="cook">
+  <main class="cook" data-slug={recipe.id} data-base={d.servings}>
     <header>
       <a href={`/uppskrift/${recipe.id}/`}>← Til baka</a>
+      <span class="counter muted" id="cook-servings">{d.servings} skammtar</span>
       <span class="counter"><span id="current">1</span> / {d.steps.length}</span>
     </header>
 
     {d.steps.map((s: { text: string }, i: number) => (
-      <section class="step" data-index={i} hidden={i !== 0}>
+      <section class="step" data-index={i} data-template={s.text} hidden={i !== 0}>
         <p set:html={renderStepHtml(s.text, ings, 1)} />
       </section>
     ))}
@@ -31,8 +32,9 @@ const ings = d.ingredients as Ingredient[];
       <button type="button" id="next">Næsta</button>
     </nav>
   </main>
-</Base>
 
-<script>
-  import '../../../scripts/cook.ts';
-</script>
+  <script type="application/json" id="cook-ingredients" set:html={JSON.stringify(ings).replaceAll('<', '\\u003c')} />
+  <script>
+    import '../../../scripts/cook.ts';
+  </script>
+</Base>
