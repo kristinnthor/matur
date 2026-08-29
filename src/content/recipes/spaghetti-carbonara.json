@@ -2,32 +2,119 @@
   "title": "Spaghetti carbonara",
   "subtitle": "einfalda fjölskylduútgáfan",
   "description": "Spaghetti með stökku beikoni í silkimjúkri eggja- og ostasósu. Galdurinn er allur í hitastýringunni — eggin eiga að þykkna, ekki að hræreldast.",
-  "categories": ["pasta"],
-  "tags": ["fljotlegt", "barnvaent"],
+  "categories": [
+    "pasta"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
   "servings": 4,
-  "time": { "prep": 10, "cook": 20 },
+  "time": {
+    "prep": 10,
+    "cook": 20
+  },
   "ingredients": [
-    { "id": "spaghetti", "amount": 500, "unit": "g", "item": "spaghetti" },
-    { "id": "beikon", "amount": 250, "unit": "g", "item": "beikon", "note": "skorið í litla bita" },
-    { "id": "egg", "amount": 4, "unit": "stk", "item": "egg" },
-    { "id": "rjomi", "amount": 1, "unit": "dl", "item": "rjómi" },
-    { "id": "ostur", "amount": 100, "unit": "g", "item": "rifinn ostur" },
-    { "id": "parmesan", "amount": 40, "unit": "g", "item": "parmesanostur", "note": "nýrifinn, og meira til að bera fram" },
-    { "id": "salt", "amount": 0.5, "unit": "tsk", "item": "salt", "scalable": false },
-    { "id": "pipar", "amount": 0.5, "unit": "tsk", "item": "nýmalaður svartur pipar", "note": "gjarnan meira", "scalable": false }
+    {
+      "id": "spaghetti",
+      "amount": 500,
+      "unit": "g",
+      "item": "spaghetti"
+    },
+    {
+      "id": "beikon",
+      "amount": 250,
+      "unit": "g",
+      "item": "beikon",
+      "note": "skorið í litla bita"
+    },
+    {
+      "id": "egg",
+      "amount": 4,
+      "unit": "stk",
+      "item": "egg"
+    },
+    {
+      "id": "rjomi",
+      "amount": 1,
+      "unit": "dl",
+      "item": "rjómi"
+    },
+    {
+      "id": "ostur",
+      "amount": 100,
+      "unit": "g",
+      "item": "rifinn ostur"
+    },
+    {
+      "id": "parmesan",
+      "amount": 40,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "nýrifinn, og meira til að bera fram"
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "note": "gjarnan meira",
+      "scalable": false
+    }
   ],
   "steps": [
-    { "text": "Steikið {{beikon}} á pönnu þar til það er stökkt. Takið pönnuna af hitanum en geymið beikonið og fituna á henni.", "refs": ["beikon"] },
-    { "text": "Hrærið {{egg}} og {{rjomi}} saman í skál ásamt {{salt}}. Blandið {{parmesan}} saman við eggjahræruna.", "refs": ["egg", "rjomi", "salt", "parmesan"] },
-    { "text": "Sjóðið {{spaghetti}} í vel söltuðu vatni samkvæmt leiðbeiningum á pakkanum. Takið frá einn bolla af pastavatninu áður en þið hellið af.", "refs": ["spaghetti"] },
-    { "text": "Setjið spaghettíið aftur í pottinn og blandið beikoninu með fitunni og {{ostur}} saman við.", "refs": ["ostur"] },
-    { "text": "Takið pottinn AF hellunni, hellið eggjahrærunni yfir og hrærið stöðugt og hratt í eina mínútu. Eggin eiga að þykkna í glansandi sósu við hitann frá pastanu — ef potturinn stendur á heitri hellu hræreldast þau. Þynnið sósuna með skvettu af pastavatninu ef hún er of þykk.", "refs": [] },
-    { "text": "Berið fram strax í skálum með {{pipar}} og auka parmesan yfir.", "refs": ["pipar"] }
+    {
+      "text": "Steikið {{beikon}} á pönnu þar til það er stökkt. Takið pönnuna af hitanum en geymið beikonið og fituna á henni.",
+      "refs": [
+        "beikon"
+      ]
+    },
+    {
+      "text": "Hrærið {{egg}} og {{rjomi}} saman í skál ásamt {{salt}}. Blandið {{parmesan}} saman við eggjahræruna.",
+      "refs": [
+        "egg",
+        "rjomi",
+        "salt",
+        "parmesan"
+      ]
+    },
+    {
+      "text": "Sjóðið {{spaghetti}} í vel söltuðu vatni samkvæmt leiðbeiningum á pakkanum. Takið frá um 2 dl af pastavatninu áður en þið hellið af.",
+      "refs": [
+        "spaghetti"
+      ]
+    },
+    {
+      "text": "Setjið spaghettíið aftur í pottinn og blandið beikoninu með fitunni og {{ostur}} saman við.",
+      "refs": [
+        "ostur"
+      ]
+    },
+    {
+      "text": "Takið pottinn AF hellunni, hellið eggjahrærunni yfir og hrærið stöðugt og hratt í eina mínútu. Eggin eiga að þykkna í glansandi sósu við hitann frá pastanu — ef potturinn stendur á heitri hellu hræreldast þau. Þynnið sósuna með skvettu af pastavatninu ef hún er of þykk.",
+      "refs": []
+    },
+    {
+      "text": "Berið fram strax í skálum með {{pipar}} og auka parmesan yfir.",
+      "refs": [
+        "pipar"
+      ]
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: eggjum fækkað úr sex í fjögur — fjögur duga vel í 500 g af pasta og sósan verður síður eggjakennd. Bætt við pastavatnstrikkinu og því lykilatriði að taka pottinn af hellunni áður en eggin fara út í; frumuppskriftin nefndi hættuna en ekki lausnina.",
     "storage": "Carbonara er réttur augnabliksins — sósan skilur sig við geymslu og upphitun. Eldið ekki meira en borðað verður.",
     "variants": "Klassísk útgáfa: sleppið rjóma og osti, notið eingöngu parmesan (eða pecorino) og eggjarauður í stað heilla eggja. Beikoninu má skipta út fyrir pancetta."
   },
-  "source": { "url": "http://www.hun.is/spaghetti-carbonara-uppskrift/", "site": "hun.is" }
+  "source": {
+    "url": "http://www.hun.is/spaghetti-carbonara-uppskrift/",
+    "site": "hun.is"
+  }
 }

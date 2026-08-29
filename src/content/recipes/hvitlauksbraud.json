@@ -2,37 +2,159 @@
   "title": "Stórgott hvítlauksbrauð",
   "subtitle": "heil ofnskúffa af mjúku fokkasíubrauði",
   "description": "Mjúkt gerbrauð penslað með hvítlauks-, basilíku- og sítrónuolíu. Dugar fyrir marga — kjörið í matarboð, og afgangurinn frystist frábærlega.",
-  "categories": ["bakstur", "medlaeti"],
-  "tags": ["veislumatur", "frystivaent"],
+  "categories": [
+    "bakstur",
+    "medlaeti"
+  ],
+  "tags": [
+    "veislumatur",
+    "frystivaent"
+  ],
   "servings": 12,
-  "time": { "prep": 120, "cook": 20 },
+  "time": {
+    "prep": 120,
+    "cook": 20
+  },
   "ingredients": [
-    { "id": "ger", "amount": 15, "unit": "g", "item": "þurrger", "note": "eða 50 g pressuger", "group": "Deigið" },
-    { "id": "vatn", "amount": 5, "unit": "dl", "item": "fingurvolgt vatn", "note": "um 37°C", "group": "Deigið" },
-    { "id": "olia", "amount": 1, "unit": "dl", "item": "ólífuolía", "group": "Deigið" },
-    { "id": "sykur", "amount": 1, "unit": "msk", "item": "sykur", "group": "Deigið" },
-    { "id": "salt", "amount": 2, "unit": "tsk", "item": "salt", "scalable": false, "group": "Deigið" },
-    { "id": "hveiti", "amount": 13, "unit": "dl", "item": "hveiti", "note": "12–14 dl eftir þörf", "group": "Deigið" },
-
-    { "id": "fyllingarolia", "amount": 1, "unit": "dl", "item": "ólífuolía", "group": "Hvítlauksolían" },
-    { "id": "basilika", "amount": 0.5, "unit": "búnt", "item": "fersk basilíka", "note": "aðeins blöðin", "group": "Hvítlauksolían" },
-    { "id": "hvitlaukur", "amount": 2, "unit": "rif", "item": "hvítlaukur", "group": "Hvítlauksolían" },
-    { "id": "sitrona", "amount": 0.5, "unit": "stk", "item": "sítróna", "note": "aðeins fínrifið hýðið", "group": "Hvítlauksolían" },
-    { "id": "flogusalt", "amount": 1, "unit": "tsk", "item": "flögusalt", "scalable": false, "group": "Hvítlauksolían" },
-    { "id": "pipar", "amount": 0.25, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false, "group": "Hvítlauksolían" }
+    {
+      "id": "ger",
+      "amount": 15,
+      "unit": "g",
+      "item": "þurrger",
+      "note": "eða 50 g pressuger",
+      "group": "Deigið"
+    },
+    {
+      "id": "vatn",
+      "amount": 5,
+      "unit": "dl",
+      "item": "fingurvolgt vatn",
+      "note": "um 37°C",
+      "group": "Deigið"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "dl",
+      "item": "ólífuolía",
+      "group": "Deigið"
+    },
+    {
+      "id": "sykur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sykur",
+      "group": "Deigið"
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Deigið"
+    },
+    {
+      "id": "hveiti",
+      "amount": 13,
+      "unit": "dl",
+      "item": "hveiti",
+      "note": "12–14 dl eftir þörf",
+      "group": "Deigið"
+    },
+    {
+      "id": "fyllingarolia",
+      "amount": 1,
+      "unit": "dl",
+      "item": "ólífuolía",
+      "group": "Hvítlauksolían"
+    },
+    {
+      "id": "basilika",
+      "amount": 0.5,
+      "unit": "búnt",
+      "item": "fersk basilíka",
+      "note": "aðeins blöðin",
+      "group": "Hvítlauksolían"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "group": "Hvítlauksolían"
+    },
+    {
+      "id": "sitrona",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "aðeins fínrifið hýðið",
+      "group": "Hvítlauksolían"
+    },
+    {
+      "id": "flogusalt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "flögusalt",
+      "scalable": false,
+      "group": "Hvítlauksolían"
+    },
+    {
+      "id": "pipar",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false,
+      "group": "Hvítlauksolían"
+    }
   ],
   "steps": [
-    { "text": "Hrærið {{ger}} saman við {{vatn}} og bætið {{olia}}, {{sykur}} og {{salt}} út í. Bætið nánast öllu {{hveiti}} saman við og hnoðið vel — notið ekki meira hveiti en þarf, annars verður brauðið þurrt. Deigið á að vera mjúkt og örlítið klístrað.", "refs": ["ger", "vatn", "olia", "sykur", "salt", "hveiti"] },
-    { "text": "Látið deigið hefast á hlýjum stað undir viskastykki í 45–60 mínútur, þar til það hefur tvöfaldast.", "refs": [] },
-    { "text": "Klæðið ofnskúffu með bökunarpappír og stráið smá hveiti yfir. Setjið deigið á plötuna, dreifið jafnt úr því og látið hefast aftur í 40 mínútur. Hitið ofninn í 250°C á meðan.", "refs": [] },
-    { "text": "Hvítlauksolían: maukið {{fyllingarolia}} og {{basilika}} með töfrasprota þar til olían er slétt og græn. Pressið {{hvitlaukur}} út í, rífið hýðið af {{sitrona}} saman við og smakkið til með {{flogusalt}} og {{pipar}}.", "refs": ["fyllingarolia", "basilika", "hvitlaukur", "sitrona", "flogusalt", "pipar"] },
-    { "text": "Gerið litlar holur um allt brauðið með fingrunum, eins og í fokkasíu. Penslið hvítlauksolíunni yfir allt brauðið og ofan í holurnar.", "refs": [] },
-    { "text": "Bakið í miðjum ofni í 15–20 mínútur, þar til brauðið fær fallegan gylltan lit. Látið kólna undir viskastykki — það heldur skorpunni mjúkri.", "refs": [] }
+    {
+      "text": "Hrærið {{ger}} saman við {{vatn}} og bætið {{olia}}, {{sykur}} og {{salt}} út í. Bætið nánast öllu {{hveiti}} saman við og hnoðið vel — notið ekki meira hveiti en þarf, annars verður brauðið þurrt. Deigið á að vera mjúkt og örlítið klístrað.",
+      "refs": [
+        "ger",
+        "vatn",
+        "olia",
+        "sykur",
+        "salt",
+        "hveiti"
+      ]
+    },
+    {
+      "text": "Látið deigið hefast á hlýjum stað undir viskastykki í 45–60 mínútur, þar til það hefur tvöfaldast.",
+      "refs": []
+    },
+    {
+      "text": "Klæðið ofnskúffu með bökunarpappír og stráið smá hveiti yfir. Setjið deigið á plötuna, dreifið jafnt úr því og látið hefast aftur í 40 mínútur. Hitið ofninn í 250°C á meðan.",
+      "refs": []
+    },
+    {
+      "text": "Hvítlauksolían: maukið {{fyllingarolia}} og {{basilika}} með töfrasprota þar til olían er slétt og græn. Pressið {{hvitlaukur}} út í, rífið hýðið af {{sitrona}} saman við og smakkið til með {{flogusalt}} og {{pipar}}.",
+      "refs": [
+        "fyllingarolia",
+        "basilika",
+        "hvitlaukur",
+        "sitrona",
+        "flogusalt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Gerið litlar holur um allt brauðið með fingrunum, eins og í fokkasíu. Penslið hvítlauksolíunni yfir allt brauðið og ofan í holurnar.",
+      "refs": []
+    },
+    {
+      "text": "Bakið í miðjum ofni í 15–20 mínútur, þar til brauðið fær fallegan gylltan lit. Látið kólna undir viskastykki — það heldur skorpunni mjúkri.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: germagnið er leiðrétt — 50 g eiga við pressuger, ekki þurrger; 15 g af þurrgeri jafngilda því og virka rétt. Saltmagn í olíunni fest í stað „eftir smekk“.",
     "storage": "Best samdægurs en geymist í 2 daga í lokuðu íláti. Frystist mjög vel niðurskorið — beint úr frysti í 180°C heitan ofn í 5 mínútur.",
     "variants": "Sólþurrkaðir tómatar ofan í holurnar fyrir bakstur eru frábær viðbót — ábending úr athugasemdum við frumuppskriftina. Rósmarín í stað basilíku gefur klassískari fokkasíu."
   },
-  "source": { "url": "http://ljufmeti.com/2012/08/26/storgott-hvitlauksbraud-sem-dugar-fyrir-marga/", "site": "ljufmeti.com" }
+  "source": {
+    "url": "http://ljufmeti.com/2012/08/26/storgott-hvitlauksbraud-sem-dugar-fyrir-marga/",
+    "site": "ljufmeti.com"
+  }
 }

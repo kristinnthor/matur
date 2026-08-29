@@ -2,36 +2,149 @@
   "title": "Kjúklingur með sætum kartöflum, spínati og fetaosti",
   "subtitle": "allt í einu eldföstu móti",
   "description": "Hollur og litríkur ofnréttur: sætar kartöflur, spínat, kjúklingur, tómatar og fetaostur í lögum, toppað með ristuðum furuhnetum og balsamikgljáa.",
-  "categories": ["kjuklingur"],
-  "tags": ["barnvaent"],
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "barnvaent"
+  ],
   "servings": 4,
-  "time": { "prep": 20, "cook": 45 },
+  "time": {
+    "prep": 20,
+    "cook": 45
+  },
   "ingredients": [
-    { "id": "saetkartafla", "amount": 1, "unit": "stk", "item": "sæt kartafla", "note": "stór, skræld og skorin í þunnar sneiðar" },
-    { "id": "olia", "amount": 2, "unit": "msk", "item": "ólífuolía", "scalable": false },
-    { "id": "salt", "amount": 0.5, "unit": "tsk", "item": "salt", "scalable": false },
-    { "id": "pipar", "amount": 0.25, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false },
-    { "id": "kjuklingur", "amount": 4, "unit": "stk", "item": "kjúklingabringur", "note": "skornar í bita" },
-    { "id": "krydd", "amount": 2, "unit": "tsk", "item": "fajita- eða kjúklingakrydd", "scalable": false },
-    { "id": "spinat", "amount": 170, "unit": "g", "item": "ferskt spínat", "note": "einn poki" },
-    { "id": "raudlaukur", "amount": 1, "unit": "stk", "item": "rauðlaukur", "note": "lítill, fínt skorinn" },
-    { "id": "tomatar", "amount": 250, "unit": "g", "item": "konfekttómatar", "note": "skornir í bita" },
-    { "id": "fetaostur", "amount": 1, "unit": "dós", "item": "fetaostur í olíu", "note": "krukka, með olíunni" },
-    { "id": "furuhnetur", "amount": 50, "unit": "g", "item": "furuhnetur" },
-    { "id": "balsamik", "amount": 2, "unit": "msk", "item": "balsamikgljái" }
+    {
+      "id": "saetkartafla",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sæt kartafla",
+      "note": "stór, skræld og skorin í þunnar sneiðar"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía"
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "kjuklingur",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kjúklingabringur",
+      "note": "skornar í bita"
+    },
+    {
+      "id": "krydd",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "fajita- eða kjúklingakrydd"
+    },
+    {
+      "id": "spinat",
+      "amount": 170,
+      "unit": "g",
+      "item": "ferskt spínat",
+      "note": "einn poki"
+    },
+    {
+      "id": "raudlaukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "rauðlaukur",
+      "note": "lítill, fínt skorinn"
+    },
+    {
+      "id": "tomatar",
+      "amount": 250,
+      "unit": "g",
+      "item": "konfekttómatar",
+      "note": "skornir í bita"
+    },
+    {
+      "id": "fetaostur",
+      "amount": 1,
+      "unit": "dós",
+      "item": "fetaostur í olíu",
+      "note": "krukka, með olíunni"
+    },
+    {
+      "id": "furuhnetur",
+      "amount": 50,
+      "unit": "g",
+      "item": "furuhnetur"
+    },
+    {
+      "id": "balsamik",
+      "amount": 2,
+      "unit": "msk",
+      "item": "balsamikgljái"
+    }
   ],
   "steps": [
-    { "text": "Hitið ofninn í 180°C. Raðið sneiðunum af {{saetkartafla}} í eldfast mót, dreypið {{olia}} yfir og kryddið með {{salt}} og {{pipar}}. Bakið í 15 mínútur á meðan kjúklingurinn er undirbúinn.", "refs": ["saetkartafla", "olia", "salt", "pipar"] },
-    { "text": "Kryddið bitana af {{kjuklingur}} með {{krydd}} og lokið þeim á heitri pönnu — steikið stutt, þeir eiga ekki að eldast í gegn.", "refs": ["kjuklingur", "krydd"] },
-    { "text": "Takið mótið út. Dreifið {{spinat}} yfir sætu kartöflurnar og kjúklingnum yfir spínatið. Stráið {{tomatar}} og {{raudlaukur}} yfir og hellið að lokum {{fetaostur}} ásamt olíunni úr krukkunni yfir allt.", "refs": ["spinat", "tomatar", "raudlaukur", "fetaostur"] },
-    { "text": "Bakið í 30 mínútur, þar til kjúklingurinn er eldaður í gegn og fetaosturinn farinn að taka lit.", "refs": [] },
-    { "text": "Ristið {{furuhnetur}} á þurri pönnu við meðalhita á meðan, þar til þær ilma og gyllast — fylgist vel með, þær brenna hratt.", "refs": ["furuhnetur"] },
-    { "text": "Stráið furuhnetunum yfir réttinn þegar hann kemur úr ofninum og dreypið {{balsamik}} yfir. Berið fram eins og hann er, eða með brauði og salati fyrir matarboð.", "refs": ["balsamik"] }
+    {
+      "text": "Hitið ofninn í 180°C. Raðið sneiðunum af {{saetkartafla}} í eldfast mót, dreypið {{olia}} yfir og kryddið með {{salt}} og {{pipar}}. Bakið í 15 mínútur á meðan kjúklingurinn er undirbúinn.",
+      "refs": [
+        "saetkartafla",
+        "olia",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Kryddið bitana af {{kjuklingur}} með {{krydd}} og lokið þeim á heitri pönnu — steikið stutt, þeir eiga ekki að eldast í gegn.",
+      "refs": [
+        "kjuklingur",
+        "krydd"
+      ]
+    },
+    {
+      "text": "Takið mótið út. Dreifið {{spinat}} yfir sætu kartöflurnar og kjúklingnum yfir spínatið. Stráið {{tomatar}} og {{raudlaukur}} yfir og hellið að lokum {{fetaostur}} ásamt olíunni úr krukkunni yfir allt.",
+      "refs": [
+        "spinat",
+        "tomatar",
+        "raudlaukur",
+        "fetaostur"
+      ]
+    },
+    {
+      "text": "Bakið í 30 mínútur, þar til kjúklingurinn er eldaður í gegn og fetaosturinn farinn að taka lit.",
+      "refs": []
+    },
+    {
+      "text": "Ristið {{furuhnetur}} á þurri pönnu við meðalhita á meðan, þar til þær ilma og gyllast — fylgist vel með, þær brenna hratt.",
+      "refs": [
+        "furuhnetur"
+      ]
+    },
+    {
+      "text": "Stráið furuhnetunum yfir réttinn þegar hann kemur úr ofninum og dreypið {{balsamik}} yfir. Berið fram eins og hann er, eða með brauði og salati fyrir matarboð.",
+      "refs": [
+        "balsamik"
+      ]
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: magn af tómötum, furuhnetum og balsamikgljáa var ótilgreint og hefur verið fest. Bætt við leiðbeiningum um að rista furuhneturnar á pönnu með viðvörun — þær brenna auðveldlega.",
     "storage": "Geymist í 2 daga í kæli og er góður upphitaður í hádegismat. Hentar ekki í frysti — spínatið og tómatarnir verða vatnskenndir.",
     "variants": "Graskersbitar í stað sætra kartaflna virka vel — ábending úr athugasemdum við frumuppskriftina. Grísk jógúrt með smá hvítlauk er gott meðlæti."
   },
-  "source": { "url": "https://ljufmeti.com/2013/08/07/kjuklingur-med-saetum-kartoflum-spinati-og-fetaosti/", "site": "ljufmeti.com" }
+  "source": {
+    "url": "https://ljufmeti.com/2013/08/07/kjuklingur-med-saetum-kartoflum-spinati-og-fetaosti/",
+    "site": "ljufmeti.com"
+  }
 }

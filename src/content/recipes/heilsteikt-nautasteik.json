@@ -2,29 +2,92 @@
   "title": "Heilsteikt nautasteik við lágan hita",
   "subtitle": "slátrarasteikin — brúnuð og hægelduð í 75°C ofni",
   "description": "Stór, fitusprengd nautasteik — ribeye eða framhryggur — brúnuð vel og síðan elduð heil í mjög lágum ofnhita þar til kjarninn nær 57°C. Bráðnar í munni og nánast ómögulegt að ofelda.",
-  "categories": ["kjot"],
-  "tags": ["haegeldad", "veislumatur"],
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur"
+  ],
   "servings": 4,
-  "time": { "prep": 20, "cook": 240 },
+  "time": {
+    "prep": 20,
+    "cook": 240
+  },
   "ingredients": [
-    { "id": "steik", "amount": 1.8, "unit": "kg", "item": "nautasteik í heilu lagi", "note": "ribeye eða framhryggur (prime rib), þykk, fitusprengd og vel hangin — 400–500 g á mann" },
-    { "id": "olia", "amount": 2, "unit": "msk", "item": "olía til steikingar", "scalable": false },
-    { "id": "salt", "amount": 2, "unit": "tsk", "item": "flögusalt", "scalable": false },
-    { "id": "pipar", "amount": 1, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false }
+    {
+      "id": "steik",
+      "amount": 1.8,
+      "unit": "kg",
+      "item": "nautasteik í heilu lagi",
+      "note": "ribeye eða framhryggur (prime rib), þykk, fitusprengd og vel hangin — 400–500 g á mann"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "olía til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "flögusalt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    }
   ],
   "steps": [
-    { "text": "Takið {{steik}} úr kæli 1–2 klukkustundum fyrir eldun svo hún nái stofuhita. Hitið ofninn í 75–80°C (undir- og yfirhiti, ekki blástur ef hann hitar ójafnt). Þerrið steikina vel.", "refs": ["steik"] },
-    { "text": "Hitið {{olia}} á stórri pönnu við háan hita og brúnið steikina vel á öllum hliðum — þetta lokar henni og lágmarkar vökvatap. Ef steikin er of stór fyrir pönnuna má brúna hana í ofni við 250°C í 15–20 mínútur og lækka svo hitann.", "refs": ["olia"] },
-    { "text": "Kryddið steikina með {{salt}} og {{pipar}} og setjið hana í ofnskúffu. Stingið kjöthitamæli djúpt inn í miðjan vöðvann.", "refs": ["salt", "pipar"] },
-    { "text": "Eldið í ofninum þar til kjarnhitinn nær 57°C fyrir medium rare — 55°C er rare, 60°C medium. Þetta tekur 2–4 klukkustundir eftir stærð, allt að 5 fyrir mjög stóra steik. Ekkert þarf að gera á meðan.", "refs": [] },
-    { "text": "Takið steikina út, pakkið henni í álpappír og látið hana jafna sig í 10–15 mínútur áður en hún er skorin.", "refs": [] },
-    { "text": "Ef gestirnir eru ekki tilbúnir: lækkið ofninn í 57°C og geymið steikina þar — við kjarnhita eldast hún ekki áfram. Þetta er stóri kostur aðferðarinnar fyrir matarboð.", "refs": [] },
-    { "text": "Skerið í þykkar sneiðar og berið fram með góðu salti og nýmuldum pipar. Kartöflumús með steinselju, ofnbakaðir kartöflubátar eða kramdar kartöflur eiga vel við — og chimichurri eða rauðvínssósa fyrir þá sem vilja sósu.", "refs": [] }
+    {
+      "text": "Takið {{steik}} úr kæli 1–2 klukkustundum fyrir eldun svo hún nái stofuhita. Hitið ofninn í 75–80°C (undir- og yfirhiti, ekki blástur ef hann hitar ójafnt). Þerrið steikina vel.",
+      "refs": [
+        "steik"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á stórri pönnu við háan hita og brúnið steikina vel á öllum hliðum — brúnunin myndar skorpuna og djúpa steikarbragðið. Ef steikin er of stór fyrir pönnuna má brúna hana í ofni við 250°C í 15–20 mínútur og lækka svo hitann.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Kryddið steikina með {{salt}} og {{pipar}} og setjið hana í ofnskúffu. Stingið kjöthitamæli djúpt inn í miðjan vöðvann.",
+      "refs": [
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Eldið í ofninum þar til kjarnhitinn nær 57°C fyrir medium rare — 55°C er rare, 60°C medium. Þetta tekur 2–4 klukkustundir eftir stærð, allt að 5 fyrir mjög stóra steik. Ekkert þarf að gera á meðan.",
+      "refs": []
+    },
+    {
+      "text": "Takið steikina út, pakkið henni í álpappír og látið hana jafna sig í 10–15 mínútur áður en hún er skorin.",
+      "refs": []
+    },
+    {
+      "text": "Ef gestirnir eru ekki tilbúnir: lækkið ofninn í 57°C og geymið steikina þar — við kjarnhita eldast hún ekki áfram. Þetta er stóri kostur aðferðarinnar fyrir matarboð.",
+      "refs": []
+    },
+    {
+      "text": "Skerið í þykkar sneiðar og berið fram með góðu salti og nýmuldum pipar. Kartöflumús með steinselju, ofnbakaðir kartöflubátar eða kramdar kartöflur eiga vel við — og chimichurri eða rauðvínssósa fyrir þá sem vilja sósu.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: greinin var í ritgerðarformi og hefur verið felld í skref með föstum tölum — kjarnhitatöflunni og þumalputtareglunni (ofn á 75°C, kjöt í 57°C) er haldið óbreyttri. Bætt við að taka steikina úr kæli fyrirfram.",
     "storage": "Afgangar geymast í 3 daga í kæli og eru frábærir þunnt skornir á brauð. Hitið sneiðar örstutt á pönnu — annars ofeldast þær.",
     "variants": "Vel hangið kjöt skiptir meira máli en vöðvinn sjálfur; kaupið steikina jafnvel viku fyrirfram og geymið í kæli. Reykt paprika í kryddinu gefur grillkeim þegar grillið er ekki í boði."
   },
-  "source": { "url": "http://vinotek.is/2009/10/11/heilsteikt-nautasteik/", "site": "vinotek.is" }
+  "source": {
+    "url": "http://vinotek.is/2009/10/11/heilsteikt-nautasteik/",
+    "site": "vinotek.is"
+  }
 }

@@ -14,7 +14,7 @@
   "servings": 8,
   "time": {
     "prep": 30,
-    "cook": 180
+    "cook": 210
   },
   "ingredients": [
     {
@@ -109,8 +109,7 @@
       "amount": 1,
       "unit": "tsk",
       "item": "ferskt timjan",
-      "note": "lauf",
-      "scalable": false
+      "note": "lauf"
     },
     {
       "id": "sveppir",
