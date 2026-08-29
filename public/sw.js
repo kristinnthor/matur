@@ -1,4 +1,4 @@
-const CACHE = 'matur-v5';
+const CACHE = 'matur-v6';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/manifest.webmanifest'])));
@@ -25,8 +25,12 @@ self.addEventListener('fetch', (event) => {
     caches.match(request).then((cached) => {
       const network = fetch(request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE).then((c) => c.put(request, copy));
+          // Only successful responses may enter the offline cache; a cached
+          // 500 or error page would otherwise be served forever.
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE).then((c) => c.put(request, copy));
+          }
           return response;
         })
         .catch(() => cached ?? Response.error());
