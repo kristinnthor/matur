@@ -16,14 +16,21 @@ const OFFLINE_URL = '/offline/';
 const PAGE_LIMIT = 120;
 const STATIC_LIMIT = 300;
 
-const isFont = (url) => url.hostname === 'fonts.gstatic.com';
-const isImmutable = (url) => url.pathname.startsWith('/_astro/') || isFont(url);
+const isFontFile = (url) => url.hostname === 'fonts.gstatic.com';
+const isFontCss = (url) => url.hostname === 'fonts.googleapis.com';
+const isImmutable = (url) => url.pathname.startsWith('/_astro/') || isFontFile(url);
+const PRECACHED = ['/', OFFLINE_URL, '/manifest.webmanifest'].map(
+  (p) => new URL(p, self.location.origin).href,
+);
 
 async function trimCache(name, max) {
   const cache = await caches.open(name);
   const keys = await cache.keys();
-  // Oldest entries first — Cache API preserves insertion order.
-  for (let i = 0; i < keys.length - max; i++) await cache.delete(keys[i]);
+  // Oldest entries first (Cache API preserves insertion order), but the
+  // precached shell and the offline fallback are never evicted — they are
+  // only ever written at install and would otherwise be first out.
+  const evictable = keys.filter((k) => !PRECACHED.includes(k.url));
+  for (let i = 0; i < evictable.length - max; i++) await cache.delete(evictable[i]);
 }
 
 self.addEventListener('install', (event) => {
@@ -51,17 +58,20 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   if (url.pathname.startsWith('/api/')) return;
   const sameOrigin = url.origin === self.location.origin;
-  if (!sameOrigin && !isFont(url)) return;
+  // The fonts.googleapis.com stylesheet holds the @font-face rules; without it
+  // the cached gstatic font files would never be referenced offline. It flows
+  // through the page (SWR) branch below; the binaries are immutable.
+  if (!sameOrigin && !isFontFile(url) && !isFontCss(url)) return;
 
   if (isImmutable(url)) {
-    // Hashed assets and fonts: cache-first, cached once, never revalidated.
+    // Hashed assets and font files: cache-first, cached once, never revalidated.
+    // Both arrive CORS-readable, so response.ok is a valid gate for each.
     event.respondWith(
       (async () => {
         const cached = await caches.match(request);
         if (cached) return cached;
         const response = await fetch(request);
-        // Fonts arrive opaque (status 0); same-origin hashed assets must be OK.
-        if (response.ok || (response.type === 'opaque' && isFont(url))) {
+        if (response.ok) {
           const cache = await caches.open(STATIC);
           event.waitUntil(
             cache.put(request, response.clone()).then(() => trimCache(STATIC, STATIC_LIMIT)),

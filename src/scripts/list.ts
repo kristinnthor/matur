@@ -23,7 +23,12 @@ function writeJson(key: string, value: unknown): void {
 }
 
 const dataEl = document.querySelector('#recipe-data');
-const recipes: Record<string, RecipeData> = dataEl ? JSON.parse(dataEl.textContent ?? '{}') : {};
+let recipes: Record<string, RecipeData> = {};
+try {
+  recipes = dataEl ? JSON.parse(dataEl.textContent ?? '{}') : {};
+} catch {
+  // A corrupt embed must not blank the page; the empty state still renders.
+}
 
 const selectedEl = document.querySelector<HTMLElement>('#selected-recipes')!;
 const sectionsEl = document.querySelector<HTMLElement>('#shopping-sections')!;
@@ -150,9 +155,9 @@ function render(): void {
 
   if (focusKey) {
     const [slug, act] = focusKey.split('|');
-    document
-      .querySelector<HTMLElement>(`[data-slug="${slug}"][data-act="${act}"]`)
-      ?.focus();
+    const same = document.querySelector<HTMLElement>(`[data-slug="${slug}"][data-act="${act}"]`);
+    // If the focused row was removed, land on a sensible neighbor instead of <body>.
+    (same ?? document.querySelector<HTMLElement>('.sel-remove') ?? document.querySelector<HTMLElement>('#clear-list'))?.focus();
   }
 }
 

@@ -9,6 +9,7 @@ const manifest = recipes
   .sort((a, b) => Number(a.hasPhoto) - Number(b.hasPhoto) || a.title.localeCompare(b.title, 'is'));
 ---
 <Base title="Myndir — Matur">
+  <meta name="robots" content="noindex" slot="head" />
   <div class="wrap upload-page">
     <h1>Myndir</h1>
     <p class="tagline muted">
