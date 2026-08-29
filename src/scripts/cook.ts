@@ -5,10 +5,16 @@ const steps = Array.from(document.querySelectorAll<HTMLElement>('.step'));
 const current = document.querySelector<HTMLElement>('#current');
 let index = 0;
 
+const live = document.querySelector<HTMLElement>('#cook-live');
+
 const show = (n: number) => {
   index = Math.min(Math.max(n, 0), steps.length - 1);
   steps.forEach((s, i) => { s.hidden = i !== index; });
   if (current) current.textContent = String(index + 1);
+  if (live) {
+    const text = steps[index]?.querySelector('p')?.textContent ?? '';
+    live.textContent = `Skref ${index + 1} af ${steps.length}. ${text}`;
+  }
 };
 
 document.querySelector('#next')?.addEventListener('click', () => show(index + 1));
@@ -47,15 +53,21 @@ if (cook) {
   }
 }
 
-// Keep the screen awake while cooking. Unsupported browsers simply skip this.
-let lock: unknown = null;
+// Keep the screen awake while cooking. The OS releases the lock whenever the
+// app is backgrounded, so it must be re-acquired every time we become visible.
+interface WakeLockLike {
+  addEventListener(type: 'release', listener: () => void): void;
+}
+let lock: WakeLockLike | null = null;
 
 const acquire = async () => {
   try {
     const nav = navigator as Navigator & {
-      wakeLock?: { request: (type: 'screen') => Promise<unknown> };
+      wakeLock?: { request: (type: 'screen') => Promise<WakeLockLike> };
     };
-    if (nav.wakeLock) lock = await nav.wakeLock.request('screen');
+    if (!nav.wakeLock) return;
+    lock = await nav.wakeLock.request('screen');
+    lock.addEventListener('release', () => { lock = null; });
   } catch {
     // Denied or unsupported - cooking still works, the screen just sleeps.
   }
@@ -64,5 +76,5 @@ const acquire = async () => {
 void acquire();
 
 document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible' && lock === null) void acquire();
+  if (document.visibilityState === 'visible' && !lock) void acquire();
 });

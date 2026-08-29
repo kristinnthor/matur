@@ -21,6 +21,15 @@ function storeServings(n: number, base: number): void {
     if (n === base) delete map[slug];
     else map[slug] = n;
     localStorage.setItem(SERVINGS_KEY, JSON.stringify(map));
+
+    // If this recipe is already on the shopping list, keep its count in sync
+    // so scaling here doesn't silently leave the list at an old number.
+    const list = JSON.parse(localStorage.getItem('matur:list') ?? '{}') as Record<string, number>;
+    if (slug in list && list[slug] !== n) {
+      list[slug] = n;
+      localStorage.setItem('matur:list', JSON.stringify(list));
+      document.dispatchEvent(new CustomEvent('matur:list-changed'));
+    }
   } catch {
     // Storage unavailable — scaling still works, it just is not remembered.
   }

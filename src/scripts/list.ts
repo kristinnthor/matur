@@ -3,6 +3,7 @@ import { skammtar } from '../lib/units';
 
 const LIST_KEY = 'matur:list';
 const CHECKED_KEY = 'matur:checked';
+const SERVINGS_KEY = 'matur:servings';
 
 function readJson<T>(key: string, fallback: T): T {
   try {
@@ -40,12 +41,35 @@ function el<K extends keyof HTMLElementTagNameMap>(
   return node;
 }
 
+function setServings(slug: string, n: number): void {
+  const list = { ...readJson<Record<string, number>>(LIST_KEY, {}), [slug]: n };
+  writeJson(LIST_KEY, list);
+  // Keep the recipe-page scaler in sync so both views agree on the count.
+  const servings = readJson<Record<string, number>>(SERVINGS_KEY, {});
+  if (recipes[slug] && n === recipes[slug]!.servings) delete servings[slug];
+  else servings[slug] = n;
+  writeJson(SERVINGS_KEY, servings);
+  document.dispatchEvent(new CustomEvent('matur:list-changed'));
+}
+
 function render(): void {
-  let selections = readJson<Record<string, number>>(LIST_KEY, {});
-  // Drop selections for recipes that no longer exist.
-  selections = Object.fromEntries(Object.entries(selections).filter(([slug]) => recipes[slug]));
-  const checked = readJson<Record<string, boolean>>(CHECKED_KEY, {});
+  const rawSelections = readJson<Record<string, number>>(LIST_KEY, {});
+  // Drop selections for recipes that no longer exist — and write the pruned
+  // map back so the header badge stops counting ghosts.
+  const selections = Object.fromEntries(
+    Object.entries(rawSelections).filter(([slug]) => recipes[slug]),
+  );
+  if (Object.keys(selections).length !== Object.keys(rawSelections).length) {
+    writeJson(LIST_KEY, selections);
+    document.dispatchEvent(new CustomEvent('matur:list-changed'));
+  }
   const slugs = Object.keys(selections);
+
+  // Remember which control had focus; re-rendering destroys the old nodes.
+  const active = document.activeElement as HTMLElement | null;
+  const focusKey = active?.dataset?.slug && active?.dataset?.act
+    ? `${active.dataset.slug}|${active.dataset.act}`
+    : null;
 
   selectedEl.replaceChildren();
   sectionsEl.replaceChildren();
@@ -57,25 +81,24 @@ function render(): void {
     const row = el('div', { class: 'sel-recipe' });
     const link = el('a', { href: `/uppskrift/${slug}/` }, r.title);
     const stepper = el('div', { class: 'sel-stepper' });
-    const minus = el('button', { type: 'button', 'aria-label': 'Fækka skömmtum' }, '−');
+    const minus = el('button', { type: 'button', 'data-slug': slug, 'data-act': 'minus', 'aria-label': 'Fækka skömmtum' }, '−');
     const count = el('output', {}, `${selections[slug]}`);
-    const plus = el('button', { type: 'button', 'aria-label': 'Fjölga skömmtum' }, '+');
-    const remove = el('button', { type: 'button', class: 'sel-remove', 'aria-label': 'Fjarlægja' }, '×');
+    const plus = el('button', { type: 'button', 'data-slug': slug, 'data-act': 'plus', 'aria-label': 'Fjölga skömmtum' }, '+');
+    const remove = el('button', { type: 'button', class: 'sel-remove', 'data-slug': slug, 'data-act': 'remove', 'aria-label': 'Fjarlægja' }, '×');
 
     minus.addEventListener('click', () => {
-      const next = { ...selections, [slug]: Math.max(1, selections[slug]! - 1) };
-      writeJson(LIST_KEY, next);
+      setServings(slug, Math.max(1, selections[slug]! - 1));
       render();
     });
     plus.addEventListener('click', () => {
-      const next = { ...selections, [slug]: selections[slug]! + 1 };
-      writeJson(LIST_KEY, next);
+      setServings(slug, selections[slug]! + 1);
       render();
     });
     remove.addEventListener('click', () => {
       const next = { ...selections };
       delete next[slug];
       writeJson(LIST_KEY, next);
+      document.dispatchEvent(new CustomEvent('matur:list-changed'));
       render();
     });
 
@@ -84,14 +107,27 @@ function render(): void {
     selectedEl.append(row);
   }
 
-  for (const section of aggregate(selections, recipes)) {
+  const sections = aggregate(selections, recipes);
+  const currentKeys = new Set(sections.flatMap((s) => s.items.map((i) => i.key)));
+
+  // Checked state only survives for items still on the list; otherwise a
+  // ticked-off "beikon" resurfaces pre-checked on next month's list.
+  const checked = readJson<Record<string, boolean>>(CHECKED_KEY, {});
+  const prunedChecked = Object.fromEntries(
+    Object.entries(checked).filter(([key]) => currentKeys.has(key)),
+  );
+  if (Object.keys(prunedChecked).length !== Object.keys(checked).length) {
+    writeJson(CHECKED_KEY, prunedChecked);
+  }
+
+  for (const section of sections) {
     const h = el('h2', {}, section.name);
     const ul = el('ul', { class: 'shop-items' });
     for (const item of section.items) {
       const li = el('li');
       const id = `shop-${item.key.replace(/[^a-z0-9]+/gi, '-')}`;
       const box = el('input', { type: 'checkbox', id });
-      box.checked = checked[item.key] === true;
+      box.checked = prunedChecked[item.key] === true;
       const label = el('label', { for: id });
       label.append(
         el('span', { class: 'qty' }, item.amount),
@@ -111,12 +147,20 @@ function render(): void {
     }
     sectionsEl.append(h, ul);
   }
+
+  if (focusKey) {
+    const [slug, act] = focusKey.split('|');
+    document
+      .querySelector<HTMLElement>(`[data-slug="${slug}"][data-act="${act}"]`)
+      ?.focus();
+  }
 }
 
 document.querySelector('#clear-list')?.addEventListener('click', () => {
   if (confirm('Hreinsa allan innkaupalistann?')) {
     writeJson(LIST_KEY, {});
     writeJson(CHECKED_KEY, {});
+    document.dispatchEvent(new CustomEvent('matur:list-changed'));
     render();
   }
 });
