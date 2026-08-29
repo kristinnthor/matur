@@ -14,6 +14,38 @@ export interface Env {
 const SLUG = /^[a-z0-9-]{3,80}$/;
 const MAX_BYTES = 4.5 * 1024 * 1024;
 
+/**
+ * Passphrase brute-force protection. In-memory per isolate, so a determined
+ * attacker rotating IPs or hitting many PoPs can exceed it — acceptable for a
+ * household site where the passphrase gates repo writes, not secrets. The
+ * window is generous enough that a family member fat-fingering the passphrase
+ * a few times is never locked out.
+ */
+const FAIL_LIMIT = 8;
+const FAIL_WINDOW_MS = 15 * 60 * 1000;
+const failures = new Map<string, { count: number; windowStart: number }>();
+
+function tooManyFailures(ip: string, now: number): boolean {
+  const entry = failures.get(ip);
+  if (!entry || now - entry.windowStart > FAIL_WINDOW_MS) return false;
+  return entry.count >= FAIL_LIMIT;
+}
+
+function recordFailure(ip: string, now: number): void {
+  const entry = failures.get(ip);
+  if (!entry || now - entry.windowStart > FAIL_WINDOW_MS) {
+    failures.set(ip, { count: 1, windowStart: now });
+  } else {
+    entry.count++;
+  }
+  // Keep the map from growing without bound in a long-lived isolate.
+  if (failures.size > 1000) {
+    for (const [key, e] of failures) {
+      if (now - e.windowStart > FAIL_WINDOW_MS) failures.delete(key);
+    }
+  }
+}
+
 function json(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), {
     status,
@@ -33,8 +65,15 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
   if (!env.GITHUB_TOKEN || !env.UPLOAD_PASS) {
     return json(503, { error: 'Upphleðsla er ekki virkjuð enn — leyninúmer og GitHub-lykil vantar á vefþjóninn.' });
   }
+  const ip = req.headers.get('cf-connecting-ip') ?? 'unknown';
+  const now = Date.now();
+  if (tooManyFailures(ip, now)) {
+    return json(429, { error: 'Of margar tilraunir — reyndu aftur eftir korter.' });
+  }
+
   const pass = req.headers.get('x-upload-pass') ?? '';
   if (!safeEqual(pass, env.UPLOAD_PASS)) {
+    recordFailure(ip, now);
     return json(401, { error: 'Rangt leyninúmer.' });
   }
 
