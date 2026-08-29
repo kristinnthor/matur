@@ -18,7 +18,8 @@ const ingredient = z.object({
 });
 
 const recipes = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/recipes' }),
+  // Top level only — photos/ holds the images and their credits.json sidecar.
+  loader: glob({ pattern: '*.json', base: './src/content/recipes' }),
   schema: z.object({
     title: z.string(),
     subtitle: z.string().optional(),
@@ -37,7 +38,7 @@ const recipes = defineCollection({
       storage: z.string().optional(),
       variants: z.string().optional(),
     }).default({}),
-    source: z.object({ url: z.url(), site: z.string() }),
+    source: z.object({ url: z.url(), site: z.string() }),
   }),
 });
 

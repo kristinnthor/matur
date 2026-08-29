@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import { formatScaled, skammtar, type Ingredient } from '../lib/units';
 import { renderStepHtml } from '../lib/steps';
-import { photoFor } from '../lib/photos';
+import { creditFor, photoFor } from '../lib/photos';
 import { TAGS } from '../lib/taxonomy';
 
 const { recipe } = Astro.props;
@@ -20,6 +20,7 @@ for (const i of ings) {
 }
 
 const photo = photoFor(recipe.id);
+const credit = creditFor(recipe.id);
 ---
 <article class="wrap">
   <header class="recipe-head">
@@ -47,6 +48,13 @@ const photo = photoFor(recipe.id);
         <button type="button" id="photo-edit-open" class="photo-edit-btn" data-slug={recipe.id} aria-label="Skipta um mynd">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         </button>
+        {credit && (
+          <figcaption class="photo-credit">
+            Mynd: <a href={credit.sourceUrl} rel="noopener nofollow">{credit.creator}</a>
+            {' · '}
+            <a href={credit.licenseUrl} rel="license noopener nofollow">{credit.license}</a>
+          </figcaption>
+        )}
       </figure>
     ) : (
       <button type="button" id="photo-edit-open" class="photo-add" data-slug={recipe.id}>

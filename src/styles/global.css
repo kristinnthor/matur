@@ -579,6 +579,14 @@ h2::before {
 
 /* Per-recipe photo editing */
 .photo-wrap { position: relative; margin: 0; }
+.photo-credit {
+  margin: 0.4rem 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: right;
+}
+.photo-credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.photo-credit a:hover { color: var(--accent); }
 .photo-edit-btn {
   position: absolute;
   right: 0.9rem;
