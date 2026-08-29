@@ -147,3 +147,21 @@ describe('scaling rounds to measurable quantities in the display unit', () => {
     expect(formatScaled(cream, 1.25)).toBe('75 ml');
   });
 });
+
+describe('scaling is identity at factor 1 and never rounds to zero (issue #2)', () => {
+  it('leaves tiny authored amounts untouched at factor 1', () => {
+    expect(formatScaled(ing({ amount: 2, unit: 'g', item: 'ger' }), 1)).toBe('2 g');
+    expect(formatScaled(ing({ amount: 2, unit: 'ml', item: 'dropar' }), 1)).toBe('2 ml');
+  });
+
+  it('clamps counts to a half instead of zero', () => {
+    expect(formatScaled(ing({ amount: 1, unit: 'stk', item: 'chili' }), 0.125)).toBe('½ stk');
+    expect(formatScaled(ing({ amount: 1, unit: 'búnt', item: 'steinselja' }), 0.125)).toBe('½ búnt');
+  });
+
+  it('clamps mass and spoon volumes to their smallest step', () => {
+    expect(formatScaled(ing({ amount: 5, unit: 'g', item: 'x' }), 0.4)).toBe('5 g');
+    expect(formatScaled(ing({ amount: 1, unit: 'tsk', item: 'x' }), 0.1)).toBe('¼ tsk');
+    expect(formatScaled(ing({ amount: 2, unit: 'ml', item: 'x' }), 0.5)).toBe('5 ml');
+  });
+});

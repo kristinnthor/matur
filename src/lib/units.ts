@@ -110,26 +110,41 @@ function roundToStep(value: number, step: number): number {
 /** Round a canonical value according to its unit class and authored unit. */
 function roundCanonical(canonical: number, authored: Unit): number {
   const def = UNITS[authored];
+  let rounded: number;
+  let minStep: number;
 
-  if (def.class === 'count') return roundToStep(canonical, 0.5);
+  if (def.class === 'count') {
+    rounded = roundToStep(canonical, 0.5);
+    minStep = 0.5;
+  } else {
+    // Round in the unit the amount will actually be displayed in, so the result
+    // lands on something a cook can measure: 6¼ dl, not 6,3 dl.
+    const display = displayUnit(canonical, authored);
+    const displayDef = UNITS[display.unit];
 
-  // Round in the unit the amount will actually be displayed in, so the result
-  // lands on something a cook can measure: 6¼ dl, not 6,3 dl.
-  const display = displayUnit(canonical, authored);
-  const displayDef = UNITS[display.unit];
-
-  if (displayDef.class === 'volume') {
-    // Millilitres are read as whole numbers; larger volume units as quarters.
-    if (display.unit === 'ml') return roundToStep(canonical, 5);
-    return roundToStep(display.amount, 0.25) * displayDef.toCanonical;
+    if (displayDef.class === 'volume') {
+      // Millilitres are read as whole numbers; larger volume units as quarters.
+      if (display.unit === 'ml') {
+        rounded = roundToStep(canonical, 5);
+        minStep = 5;
+      } else {
+        rounded = roundToStep(display.amount, 0.25) * displayDef.toCanonical;
+        minStep = 0.25 * displayDef.toCanonical;
+      }
+    } else {
+      // Mass is weighed in grams whether it displays as g or kg.
+      rounded = canonical < 100 ? roundToStep(canonical, 5) : roundToStep(canonical, 10);
+      minStep = 5;
+    }
   }
 
-  // Mass is weighed in grams whether it displays as g or kg.
-  return canonical < 100 ? roundToStep(canonical, 5) : roundToStep(canonical, 10);
+  // A required ingredient must never round away to nothing.
+  return canonical > 0 && rounded === 0 ? minStep : rounded;
 }
 
 export function scaleIngredient(ing: Ingredient, factor: number): Ingredient {
-  if (!ing.scalable) return ing;
+  // Factor 1 is identity: authored amounts (even a 2 g pinch) display as written.
+  if (!ing.scalable || factor === 1) return ing;
 
   const canonical = roundCanonical(toCanonical(ing.amount, ing.unit) * factor, ing.unit);
   return { ...ing, amount: canonical / UNITS[ing.unit].toCanonical };
