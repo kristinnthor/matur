@@ -37,7 +37,7 @@ const recipes = defineCollection({
       storage: z.string().optional(),
       variants: z.string().optional(),
     }).default({}),
-    source: z.object({ url: z.string().url(), site: z.string() }),
+    source: z.object({ url: z.url(), site: z.string() }),
   }),
 });
 
