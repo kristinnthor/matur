@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import { formatScaled, skammtar, type Ingredient } from '../lib/units';
 import { renderStepHtml } from '../lib/steps';
 import { photoFor } from '../lib/photos';
+import { TAGS } from '../lib/taxonomy';
 
 const { recipe } = Astro.props;
 const d = recipe.data;
@@ -26,6 +27,13 @@ const photo = photoFor(recipe.id);
     {d.subtitle && <p class="subtitle">{d.subtitle}</p>}
     <p class="lead">{d.description}</p>
     <p class="meta muted"><b>{total} mín</b> · undirbúningur {d.time.prep} mín · eldun {d.time.cook} mín · {d.servings} {skammtar(d.servings)}</p>
+    {d.tags.length > 0 && (
+      <p class="tag-row">
+        {d.tags.map((t: string) => (
+          <a class="tag-chip" href={`/merki/${t}/`}>{TAGS[t as keyof typeof TAGS]}</a>
+        ))}
+      </p>
+    )}
     {photo ? (
       <figure class="photo-wrap">
         <Image
@@ -47,8 +55,8 @@ const photo = photoFor(recipe.id);
       </button>
     )}
 
-    <dialog id="photo-dialog">
-      <h2>Mynd af réttinum</h2>
+    <dialog id="photo-dialog" aria-labelledby="photo-dialog-title">
+      <h2 id="photo-dialog-title">Mynd af réttinum</h2>
       <img id="photo-dialog-preview" alt="" />
       <label class="field">
         <span>Leyninúmer</span>

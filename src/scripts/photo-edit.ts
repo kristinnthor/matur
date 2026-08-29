@@ -19,6 +19,13 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
   document.body.append(fileInput);
 
   let jpeg: Blob | null = null;
+  let previewUrl: string | null = null;
+
+  const setPreview = (blob: Blob) => {
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+    previewUrl = URL.createObjectURL(blob);
+    preview.src = previewUrl;
+  };
 
   openBtn.addEventListener('click', () => fileInput.click());
 
@@ -28,22 +35,35 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
     status.textContent = '';
     try {
       jpeg = await toJpeg(file);
+      setPreview(jpeg);
     } catch {
       jpeg = null;
       status.textContent = 'Gat ekki unnið úr myndinni — reyndu aðra.';
     }
-    if (jpeg) preview.src = URL.createObjectURL(jpeg);
     passInput.value = readPass();
+    submit.disabled = false;
     dialog.showModal();
   });
 
-  cancel.addEventListener('click', () => {
+  // Whatever closes the dialog (Hætta við, Esc, success timer): reset the
+  // input so re-selecting the same photo fires change again next time.
+  dialog.addEventListener('close', () => {
     fileInput.value = '';
-    dialog.close();
+    jpeg = null;
+    submit.disabled = false;
+  });
+
+  cancel.addEventListener('click', () => dialog.close());
+
+  passInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      submit.click();
+    }
   });
 
   submit.addEventListener('click', async () => {
-    if (!jpeg) return;
+    if (!jpeg || submit.disabled) return;
     submit.disabled = true;
     status.textContent = 'Hleð upp …';
     try {
@@ -52,18 +72,17 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
         status.textContent = result.replaced
           ? 'Tókst! Nýja myndin fer í loftið eftir um 2 mínútur.'
           : 'Tókst! Myndin fer í loftið eftir um 2 mínútur.';
-        swapHero(preview.src);
-        setTimeout(() => {
-          dialog.close();
-          fileInput.value = '';
-        }, 1800);
-      } else {
-        status.textContent = result.error ?? 'Villa.';
-        if (result.status === 401) passInput.value = '';
+        if (previewUrl) swapHero(previewUrl);
+        // Stay disabled through the close window so a second tap cannot
+        // commit the same photo twice.
+        setTimeout(() => dialog.close(), 1800);
+        return;
       }
+      status.textContent = result.error ?? 'Villa.';
+      if (result.status === 401) passInput.value = '';
+      submit.disabled = false;
     } catch {
       status.textContent = 'Upphleðslan mistókst — athugaðu nettenginguna.';
-    } finally {
       submit.disabled = false;
     }
   });

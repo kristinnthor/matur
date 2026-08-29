@@ -15,6 +15,7 @@ fileInput.addEventListener('change', async () => {
   if (!file) return;
   const blob = await toJpeg(file).catch(() => null);
   if (blob) {
+    if (preview.src.startsWith('blob:')) URL.revokeObjectURL(preview.src);
     preview.src = URL.createObjectURL(blob);
     preview.hidden = false;
   }

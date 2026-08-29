@@ -61,7 +61,11 @@ function recordFailure(ip: string, now: number): void {
 function json(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), {
     status,
-    headers: { 'content-type': 'application/json; charset=utf-8' },
+    headers: {
+      'content-type': 'application/json; charset=utf-8',
+      // API responses are per-request state; nothing may cache them.
+      'cache-control': 'no-store',
+    },
   });
 }
 
@@ -91,6 +95,13 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
   // A successful login forgives earlier typos — nobody sits one mistake from lockout.
   failures.delete(ip);
 
+  // Reject oversized bodies before buffering/decoding anything. Base64 inflates
+  // by 4/3, so the wire limit is the byte limit times 4/3 plus JSON overhead.
+  const contentLength = Number(req.headers.get('content-length') ?? '0');
+  if (contentLength > MAX_BYTES * (4 / 3) + 4096) {
+    return json(413, { error: 'Myndin er of stór (hámark 4,5 MB).' });
+  }
+
   let body: { slug?: string; data?: string };
   try {
     body = await req.json();
@@ -118,27 +129,41 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
     'User-Agent': 'matur-photo-upload',
   };
 
+  const fetchSha = async (): Promise<string | undefined | null> => {
+    const existing = await fetch(api, { headers: gh });
+    if (existing.ok) return ((await existing.json()) as { sha?: string }).sha;
+    if (existing.status === 404) return undefined;
+    return null; // upstream error
+  };
+
+  const putPhoto = (sha: string | undefined) =>
+    fetch(api, {
+      method: 'PUT',
+      headers: { ...gh, 'content-type': 'application/json' },
+      body: JSON.stringify({
+        message: `photo: ${slug} (upphlaðin af síðunni)`,
+        content: data,
+        ...(sha ? { sha } : {}),
+      }),
+    });
+
   // Replacing an existing photo needs its current blob SHA.
-  let sha: string | undefined;
-  const existing = await fetch(api, { headers: gh });
-  if (existing.ok) {
-    sha = ((await existing.json()) as { sha?: string }).sha;
-  } else if (existing.status !== 404) {
-    return json(502, { error: `GitHub svaraði ${existing.status} við uppflettingu.` });
+  let sha = await fetchSha();
+  if (sha === null) return json(502, { error: 'GitHub svaraði ekki — reyndu aftur.' });
+
+  let put = await putPhoto(sha);
+  // Two uploads racing the same file: the loser's SHA is stale (409/422).
+  // Refetch once and retry so the second photo wins instead of erroring.
+  if (put.status === 409 || put.status === 422) {
+    sha = await fetchSha();
+    if (sha !== null) put = await putPhoto(sha);
   }
 
-  const put = await fetch(api, {
-    method: 'PUT',
-    headers: { ...gh, 'content-type': 'application/json' },
-    body: JSON.stringify({
-      message: `photo: ${slug} (upphlaðin af síðunni)`,
-      content: data,
-      ...(sha ? { sha } : {}),
-    }),
-  });
   if (!put.ok) {
+    // Upstream details go to the logs, not to the client.
     const detail = ((await put.json().catch(() => ({}))) as { message?: string }).message ?? '';
-    return json(502, { error: `GitHub hafnaði myndinni (${put.status}). ${detail}`.trim() });
+    console.error(`github put failed for ${slug}: ${put.status} ${detail}`);
+    return json(502, { error: 'GitHub hafnaði myndinni — reyndu aftur eftir smástund.' });
   }
 
   return json(200, { ok: true, path, replaced: Boolean(sha) });

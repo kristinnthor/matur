@@ -6,7 +6,14 @@
   // every deploy (including Cloudflare CI, where the dashboard build command
   // is intentionally empty) - a red test now blocks the deploy.
   "build": { "command": "npm run verify" },
-  // Pure static site: upload the Astro output as assets, no worker script.
-  "assets": { "directory": "./dist", "binding": "ASSETS" },
+  // Static Astro output served as assets; worker/index.ts fronts /api/* and
+  // falls through to assets for everything else.
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+  "observability": { "enabled": true },
   "vars": { "GITHUB_REPO": "kristinnthor/matur" }
 }
