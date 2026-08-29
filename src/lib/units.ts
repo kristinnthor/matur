@@ -108,7 +108,7 @@ function roundToStep(value: number, step: number): number {
 }
 
 /** Round a canonical value according to its unit class and authored unit. */
-function roundCanonical(canonical: number, authored: Unit): number {
+function roundCanonical(canonical: number, authored: Unit, original: number): number {
   const def = UNITS[authored];
   let rounded: number;
   let minStep: number;
@@ -138,19 +138,28 @@ function roundCanonical(canonical: number, authored: Unit): number {
     }
   }
 
-  // A required ingredient must never round away to nothing.
-  return canonical > 0 && rounded === 0 ? minStep : rounded;
+  // A required ingredient must never round away to nothing — but the clamp
+  // must never exceed the authored amount either (a quarter onion halved is
+  // still a quarter onion, not half of one).
+  return canonical > 0 && rounded === 0 ? Math.min(minStep, original) : rounded;
 }
 
 export function scaleIngredient(ing: Ingredient, factor: number): Ingredient {
   // Factor 1 is identity: authored amounts (even a 2 g pinch) display as written.
   if (!ing.scalable || factor === 1) return ing;
 
-  const canonical = roundCanonical(toCanonical(ing.amount, ing.unit) * factor, ing.unit);
+  const original = toCanonical(ing.amount, ing.unit);
+  const canonical = roundCanonical(original * factor, ing.unit, original);
   return { ...ing, amount: canonical / UNITS[ing.unit].toCanonical };
 }
 
 export function formatScaled(ing: Ingredient, factor: number): string {
+  // Unscaled amounts display exactly as authored, in the authored unit —
+  // 13 dl stays 13 dl, never a promoted decimal like 1,3 l.
+  if (!ing.scalable || factor === 1) {
+    return `${formatAmount(ing.amount)} ${ing.unit}`;
+  }
+
   const scaled = scaleIngredient(ing, factor);
 
   if (UNITS[scaled.unit].class === 'count') {
@@ -165,4 +174,9 @@ export function formatScaled(ing: Ingredient, factor: number): string {
   }
 
   return formatIngredientAmount(scaled.amount, scaled.unit);
+}
+
+/** Icelandic plural for servings: 1 skammtur, 2 skammtar, 21 skammtur, 11 skammtar. */
+export function skammtar(n: number): string {
+  return n % 10 === 1 && n % 100 !== 11 ? 'skammtur' : 'skammtar';
 }

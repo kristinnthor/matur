@@ -1,4 +1,5 @@
 import { aggregate, type RecipeData } from '../lib/shopping';
+import { skammtar } from '../lib/units';
 
 const LIST_KEY = 'matur:list';
 const CHECKED_KEY = 'matur:checked';
@@ -78,7 +79,7 @@ function render(): void {
       render();
     });
 
-    stepper.append(minus, count, el('span', { class: 'muted sel-label' }, 'skammtar'), plus);
+    stepper.append(minus, count, el('span', { class: 'muted sel-label' }, skammtar(selections[slug]!)), plus);
     row.append(link, stepper, remove);
     selectedEl.append(row);
   }

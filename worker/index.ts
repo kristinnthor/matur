@@ -45,10 +45,15 @@ function recordFailure(ip: string, now: number): void {
   } else {
     entry.count++;
   }
-  // Keep the map from growing without bound in a long-lived isolate.
+  // Keep the map bounded even under IP rotation: purge expired entries first,
+  // then evict oldest (Map preserves insertion order) until under the cap.
   if (failures.size > 1000) {
     for (const [key, e] of failures) {
       if (now - e.windowStart > FAIL_WINDOW_MS) failures.delete(key);
+    }
+    for (const key of failures.keys()) {
+      if (failures.size <= 1000) break;
+      failures.delete(key);
     }
   }
 }
@@ -83,6 +88,8 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
     recordFailure(ip, now);
     return json(401, { error: 'Rangt leyninúmer.' });
   }
+  // A successful login forgives earlier typos — nobody sits one mistake from lockout.
+  failures.delete(ip);
 
   let body: { slug?: string; data?: string };
   try {

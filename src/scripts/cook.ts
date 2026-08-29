@@ -1,5 +1,5 @@
 import { renderStepHtml } from '../lib/steps';
-import type { Ingredient } from '../lib/units';
+import { skammtar, type Ingredient } from '../lib/units';
 
 const steps = Array.from(document.querySelectorAll<HTMLElement>('.step'));
 const current = document.querySelector<HTMLElement>('#current');
@@ -33,7 +33,7 @@ if (cook) {
   } catch {
     // Storage unavailable — cook at the authored servings.
   }
-  if (servingsLabel) servingsLabel.textContent = `${chosen} skammtar`;
+  if (servingsLabel) servingsLabel.textContent = `${chosen} ${skammtar(chosen)}`;
   if (chosen !== base) {
     const dataEl = document.querySelector('#cook-ingredients');
     const ings: Ingredient[] = dataEl ? JSON.parse(dataEl.textContent ?? '[]') : [];

@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import { renderStepHtml } from '../../../lib/steps';
-import type { Ingredient } from '../../../lib/units';
+import { skammtar, type Ingredient } from '../../../lib/units';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recipes');
@@ -17,7 +17,7 @@ const ings = d.ingredients as Ingredient[];
   <main class="cook" data-slug={recipe.id} data-base={d.servings}>
     <header>
       <a href={`/uppskrift/${recipe.id}/`}>← Til baka</a>
-      <span class="counter muted" id="cook-servings">{d.servings} skammtar</span>
+      <span class="counter muted" id="cook-servings">{d.servings} {skammtar(d.servings)}</span>
       <span class="counter"><span id="current">1</span> / {d.steps.length}</span>
     </header>
 

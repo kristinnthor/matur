@@ -162,6 +162,28 @@ describe('scaling is identity at factor 1 and never rounds to zero (issue #2)', 
   it('clamps mass and spoon volumes to their smallest step', () => {
     expect(formatScaled(ing({ amount: 5, unit: 'g', item: 'x' }), 0.4)).toBe('5 g');
     expect(formatScaled(ing({ amount: 1, unit: 'tsk', item: 'x' }), 0.1)).toBe('¼ tsk');
-    expect(formatScaled(ing({ amount: 2, unit: 'ml', item: 'x' }), 0.5)).toBe('5 ml');
+    expect(formatScaled(ing({ amount: 2, unit: 'ml', item: 'x' }), 0.5)).toBe('2 ml');
+  });
+});
+
+describe('review follow-ups on the zero-clamp and identity path', () => {
+  it('clamp never exceeds the authored amount when scaling down', () => {
+    expect(formatScaled(ing({ amount: 0.25, unit: 'stk', item: 'raudlaukur' }), 0.5)).toBe('¼ stk');
+    expect(formatScaled(ing({ amount: 2, unit: 'g', item: 'x' }), 0.25)).toBe('2 g');
+  });
+
+  it('identity path keeps the authored unit instead of promoting to a decimal', () => {
+    expect(formatScaled(ing({ amount: 13, unit: 'dl', item: 'hveiti' }), 1)).toBe('13 dl');
+  });
+});
+
+import { skammtar } from './units';
+
+describe('skammtar plural', () => {
+  it('uses singular for numbers ending in 1 except 11', () => {
+    expect(skammtar(1)).toBe('skammtur');
+    expect(skammtar(21)).toBe('skammtur');
+    expect(skammtar(11)).toBe('skammtar');
+    expect(skammtar(4)).toBe('skammtar');
   });
 });
