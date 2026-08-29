@@ -1,0 +1,212 @@
+{
+  "title": "Bolognese-sósa",
+  "subtitle": "hægelduð ítölsk kjötsósa",
+  "description": "Ekta ítölsk kjötsósa sem mallar rólega í nokkrar klukkustundir þar til hún verður djúp og bragðmikil. Borin fram með breiðu pasta á borð við tagliatelle eða pappardelle.",
+  "categories": [
+    "pasta",
+    "kjot"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur",
+    "frystivaent"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 30,
+    "cook": 240
+  },
+  "ingredients": [
+    {
+      "id": "olifuolia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "og meiri eftir þörf"
+    },
+    {
+      "id": "smjor",
+      "amount": 2,
+      "unit": "msk",
+      "item": "smjör"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "stór, fínt saxaður"
+    },
+    {
+      "id": "gulraetur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "gulrætur",
+      "note": "stórar, fínt saxaðar"
+    },
+    {
+      "id": "selleri",
+      "amount": 2,
+      "unit": "stk",
+      "item": "sellerístilkar",
+      "note": "fínt saxaðir"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "saxaður"
+    },
+    {
+      "id": "pancetta",
+      "amount": 110,
+      "unit": "g",
+      "item": "pancetta",
+      "note": "í litlum teningum"
+    },
+    {
+      "id": "nautahakk",
+      "amount": 450,
+      "unit": "g",
+      "item": "nautahakk",
+      "note": "20% fita"
+    },
+    {
+      "id": "svinahakk",
+      "amount": 450,
+      "unit": "g",
+      "item": "svínahakk"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "hvitvin",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "þurrt hvítvín"
+    },
+    {
+      "id": "tomatar",
+      "amount": 2,
+      "unit": "dós",
+      "item": "niðursoðnir heilir tómatar",
+      "note": "400 g hvor, t.d. San Marzano, kramdir með höndunum"
+    },
+    {
+      "id": "mjolk",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "nýmjólk"
+    },
+    {
+      "id": "muskat",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "múskat",
+      "note": "nýrifið",
+      "scalable": false
+    },
+    {
+      "id": "rjomi",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "rjómi",
+      "note": "má sleppa"
+    },
+    {
+      "id": "parmesan",
+      "amount": 100,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "rifinn, Parmigiano Reggiano er bestur"
+    },
+    {
+      "id": "steinselja",
+      "amount": 0.5,
+      "unit": "búnt",
+      "item": "fersk steinselja",
+      "note": "söxuð"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið {{olifuolia}} og {{smjor}} í stórum þykkbotna potti á miðlungsháum hita þar til smjörið er bráðnað. Bætið {{laukur}}, {{gulraetur}} og {{selleri}} út í og steikið þar til grænmetið er mjúkt og byrjað að taka lit, 5–8 mínútur. Bætið {{hvitlaukur}} við og steikið í 1–2 mínútur í viðbót. Saltið og piprið örlítið, takið grænmetið upp úr með gataspaða og leggið til hliðar.",
+      "refs": [
+        "olifuolia",
+        "smjor",
+        "laukur",
+        "gulraetur",
+        "selleri",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Bætið meiri olíu í pottinn ef þarf og steikið {{pancetta}} þar til hún er gullinbrún, um 5 mínútur. Takið hana upp úr og geymið með grænmetinu.",
+      "refs": [
+        "pancetta"
+      ]
+    },
+    {
+      "text": "Brúnið {{nautahakk}} og {{svinahakk}} í 2–3 skömmtum – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Kryddið með {{salt}} og {{pipar}}, brjótið kekki með sleif en hrærið ekki of oft. Þetta tekur 10–15 mínútur; brúnu agnirnar sem festast við botninn eru bragðgrunnur sósunnar.",
+      "refs": [
+        "nautahakk",
+        "svinahakk",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Setjið grænmetið og pancettuna aftur í pottinn. Hellið {{hvitvin}} út í og skafið upp brúnuðu agnirnar af botninum. Sjóðið þar til vínið er að mestu gufað upp, 2–3 mínútur.",
+      "refs": [
+        "hvitvin"
+      ]
+    },
+    {
+      "text": "Hrærið {{tomatar}}, {{mjolk}} og {{muskat}} saman við ásamt klípu af salti og pipar. Hitið að suðu og lækkið svo hitann þar til sósan rétt mallar.",
+      "refs": [
+        "tomatar",
+        "mjolk",
+        "muskat"
+      ]
+    },
+    {
+      "text": "Látið malla undir loki í 3–4 klukkustundir og hrærið öðru hverju, þar til vökvinn hefur soðið niður og sósan er þykk. Sé hún enn of þunn má hækka hitann undir lokin og sjóða hana niður á meðan hrært er. Fleytið fituna sem flýtur upp á yfirborðið ofan af með skeið.",
+      "refs": []
+    },
+    {
+      "text": "Hrærið {{rjomi}}, {{parmesan}} og {{steinselja}} saman við og hrærið kröftuglega svo sósan bindist vel. Smakkið til með salti og pipar.",
+      "refs": [
+        "rjomi",
+        "parmesan",
+        "steinselja"
+      ]
+    },
+    {
+      "text": "Berið fram með breiðu pasta á borð við tagliatelle eða pappardelle.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "storage": "Geymist í 4–5 daga í kæli og frystist einstaklega vel, í allt að 3 mánuði. Kælið sósuna alveg áður en hún fer í frysti og hitið hana rólega upp í potti.",
+    "variants": "Pancettu má skipta út fyrir beikon ef hún fæst ekki. Rjómanum má sleppa fyrir hefðbundnari og léttari útgáfu. Ef svínahakk fæst ekki má nota nautahakk eingöngu, samtals 900 g."
+  },
+  "source": {
+    "url": "https://www.oliviascuisine.com/bolognese-sauce-recipe/",
+    "site": "oliviascuisine.com"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "title": "Franskur kjúklingapottréttur að hætti ömmu",
+  "subtitle": "poulet en cocotte með hvítvíni, sveppum og hrísgrjónum",
+  "description": "Klassískur franskur pottréttur – poulet en cocotte „grand-mère“ – þar sem kjúklingur er brúnaður með beikoni og sveppum, soðinn í hvítvíni og hrísgrjónin elduð í sama potti. Allt í einum potti og sósan verður til af sjálfu sér.",
+  "categories": [
+    "kjuklingur",
+    "pottrettir"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 15,
+    "cook": 75
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "kjúklingur",
+      "note": "hlutaður í bita"
+    },
+    {
+      "id": "beikon",
+      "amount": 50,
+      "unit": "g",
+      "item": "beikon eða pancetta",
+      "note": "skorið í bita"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "saxaður"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "fínsaxaður"
+    },
+    {
+      "id": "kryddjurtir",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ferskar kryddjurtir",
+      "note": "t.d. rósmarín og estragon, saxaðar"
+    },
+    {
+      "id": "sveppir",
+      "amount": 200,
+      "unit": "g",
+      "item": "sveppir",
+      "note": "t.d. kastaníusveppir, sneiddir"
+    },
+    {
+      "id": "hvitvin",
+      "amount": 3,
+      "unit": "dl",
+      "item": "þurrt hvítvín"
+    },
+    {
+      "id": "kraftur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "kjúklingakraftur"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 1,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "scalable": false
+    },
+    {
+      "id": "hrisgrjon",
+      "amount": 3,
+      "unit": "dl",
+      "item": "hrísgrjón"
+    },
+    {
+      "id": "vatn",
+      "amount": 4,
+      "unit": "dl",
+      "item": "vatn",
+      "note": "eða kjúklingasoð, meira ef þarf"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "olía til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "saltpipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt og pipar",
+      "note": "eftir smekk",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 200 °C. Hitið {{olia}} í þykkbotna potti sem má fara í ofn, helst pottjárnspotti.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Mýkið {{beikon}} í pottinum þar til fitan fer að bráðna. Bætið {{laukur}} út í og mýkið í 3–4 mínútur.",
+      "refs": [
+        "beikon",
+        "laukur"
+      ]
+    },
+    {
+      "text": "Brúnið {{kjuklingur}} á öllum hliðum, í tveimur skömmtum ef þarf – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast.",
+      "refs": [
+        "kjuklingur"
+      ]
+    },
+    {
+      "text": "Bætið {{sveppir}}, {{kryddjurtir}} og {{hvitlaukur}} út í og steikið áfram í 2–3 mínútur.",
+      "refs": [
+        "sveppir",
+        "kryddjurtir",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið {{hvitvin}} út í og látið suðuna koma upp. Bætið {{larvidarlauf}} og {{kraftur}} út í og kryddið með {{saltpipar}}.",
+      "refs": [
+        "hvitvin",
+        "larvidarlauf",
+        "kraftur",
+        "saltpipar"
+      ]
+    },
+    {
+      "text": "Setjið lokið á pottinn og eldið í ofninum í um 30 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Bætið {{hrisgrjon}} og {{vatn}} út í og hrærið. Eldið áfram í ofninum án loks í 20–25 mínútur, eða þar til grjónin eru fullsoðin. Bætið við vökva ef grjónin þorna áður en þau soðna í gegn.",
+      "refs": [
+        "hrisgrjon",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Takið lárviðarlaufið úr. Látið réttinn standa í nokkrar mínútur og berið fram.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: vökvinn fyrir hrísgrjónin var óskilgreindur („bætið vökva ef þarf“) – hér er miðað við 4 dl af vatni eða soði á móti 3 dl af grjónum, til viðbótar við hvítvínið. Skammtafjölda, undirbúnings- og eldunartíma bætt við, magn kryddjurta skilgreint sem 2 msk og hvítlauksgeirar festir í 4 rif.",
+    "storage": "Geymist í 2–3 daga í kæli. Þolir frystingu í allt að 2 mánuði, en grjónin verða mýkri eftir frystingu. Hitið upp í potti við vægan hita með smá vatni eða soði.",
+    "variants": "Í stað kastaníusveppa má nota venjulega hvíta sveppi og estragon má skipta út fyrir timjan. Nota má 2 tsk af þurrkuðum kryddjurtum í stað ferskra. Ef ekki á að nota vín má skipta hvítvíninu út fyrir kjúklingasoð með 1 msk af sítrónusafa. Með réttinum passar suðurfranskt rauðvín, t.d. Côtes-du-Rhône."
+  },
+  "source": {
+    "url": "http://www.vinotek.is/2014/11/16/franskur-kjuklingapottrettur-ad-haetti-ommu/",
+    "site": "vinotek.is"
+  }
+}

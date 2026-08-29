@@ -1,0 +1,152 @@
+{
+  "title": "Pizza með hakkbotni",
+  "subtitle": "lágkolvetna pizza á nautahakksbotni",
+  "description": "Einföld lágkolvetnapizza þar sem kryddað nautahakk kemur í stað pizzadeigs, með pastasósu, grænmeti og bráðnum mozzarella. Rétturinn fellur jafnt í kramið hjá fullorðnum og börnum.",
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 15,
+    "cook": 25
+  },
+  "ingredients": [
+    {
+      "id": "nautahakk",
+      "amount": 900,
+      "unit": "g",
+      "item": "nautahakk"
+    },
+    {
+      "id": "egg",
+      "amount": 2,
+      "unit": "stk",
+      "item": "egg"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "stór rif, söxuð smátt eða pressuð"
+    },
+    {
+      "id": "steinselja",
+      "amount": 3,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð smátt"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "chilikrydd",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "milt chilikrydd",
+      "note": "kryddblanda með chili, tómötum, papriku og sinnepsfræjum",
+      "scalable": false
+    },
+    {
+      "id": "sveppir",
+      "amount": 250,
+      "unit": "g",
+      "item": "sveppir",
+      "note": "skornir í sneiðar"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "stk",
+      "item": "rauð paprika",
+      "note": "skorin í bita"
+    },
+    {
+      "id": "pastasosa",
+      "amount": 400,
+      "unit": "g",
+      "item": "góð pastasósa",
+      "note": "t.d. með kryddjurtum og hvítlauk"
+    },
+    {
+      "id": "mozzarella",
+      "amount": 2,
+      "unit": "stk",
+      "item": "ferskar mozzarellakúlur",
+      "note": "125 g hvor, skornar í sneiðar"
+    },
+    {
+      "id": "parmesan",
+      "amount": 50,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "rifinn – má líka nota hefðbundinn rifinn ost"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 220 °C.",
+      "refs": []
+    },
+    {
+      "text": "Setjið {{nautahakk}} í skál ásamt {{egg}}, {{hvitlaukur}} og {{steinselja}}. Kryddið með {{salt}}, {{pipar}} og {{chilikrydd}} og blandið vel saman með höndunum.",
+      "refs": [
+        "nautahakk",
+        "egg",
+        "hvitlaukur",
+        "steinselja",
+        "salt",
+        "pipar",
+        "chilikrydd"
+      ]
+    },
+    {
+      "text": "Skiptið hakkinu í tvennt og þrýstið því í botninn á tveimur um 24 cm kökuformum eða einu stóru eldföstu móti. Hafið kantana aðeins þykkari en miðjuna, eins og á pizzabotni.",
+      "refs": []
+    },
+    {
+      "text": "Dreifið {{pastasosa}} jafnt yfir hakkbotnana og raðið {{sveppir}} og {{paprika}} yfir.",
+      "refs": [
+        "pastasosa",
+        "sveppir",
+        "paprika"
+      ]
+    },
+    {
+      "text": "Stráið {{parmesan}} yfir og raðið sneiðunum af {{mozzarella}} efst.",
+      "refs": [
+        "parmesan",
+        "mozzarella"
+      ]
+    },
+    {
+      "text": "Bakið við 220 °C í 20–25 mínútur, eða þar til osturinn hefur bráðnað og hakkið er eldað í gegn. Hellið umframvökva varlega af forminu og látið standa í 5 mínútur áður en skorið er í sneiðar – þá helst botninn betur saman.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: magn vantaði fyrir steinselju, sveppi, papriku, parmesan, salt og krydd og hér eru gefin hófleg viðmiðunarmögn. Kryddblandan „Chili Explosion“ er alhæfð sem milt chilikrydd svo uppskriftin sé ekki bundin einu vörumerki. Bætt við að hella umframvökva af eftir bakstur og láta réttinn standa í 5 mínútur, því hakkbotninn gefur frá sér vökva og helst betur saman eftir stutta hvíld.",
+    "storage": "Geymist í 2–3 daga í kæli. Má frysta í allt að 2 mánuði; hitið aftur í ofni við 180 °C þar til rétturinn er heitur í gegn.",
+    "variants": "Í stað milds chilikrydds má nota klípu af chiliflögum eða reykta papriku. Hægt er að sleppa parmesan og nota eingöngu mozzarellakúlurnar, eða nota hefðbundinn rifinn ost. Áleggið má laga að smekk, t.d. með svörtum ólífum eða skinku. Gott er að krydda pizzuna að lokum með heitu pizzakryddi áður en hún fer í ofninn."
+  },
+  "source": {
+    "url": "http://eldhussogur.com/2014/01/09/pizza-med-hakkbotni/",
+    "site": "eldhussogur.com"
+  }
+}

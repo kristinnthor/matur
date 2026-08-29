@@ -1,0 +1,41 @@
+{
+  "source": {
+    "url": "http://www.gottimatinn.is/uppskriftir/kjotrettir/kjuklingur/bjor-kjuklingur-med-kartoflusalati-fylltum-sveppum-og-kaldri-sosu/98",
+    "site": "gottimatinn.is"
+  },
+  "fetched": "2026-08-29T15:31:43.372Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Bjór kjúklingur með kartöflusalati, fylltum sveppum og kaldri sósu",
+    "yield": "4 skammtar",
+    "cookTime": "PT110M",
+    "ingredients": [
+      "Kjúklingur: salt og pipar",
+      "Kjúklingur: ólífuolía",
+      "Kjúklingur: 1 stk. heill kjúklingur",
+      "Kjúklingur: 33 cl dós af bjór (milli dökkur)",
+      "Kjúklingur: 1 stk. sítróna",
+      "Kjúklingur: 1 grein thyme",
+      "Kjúklingur: 1 grein rósmarín",
+      "Kartöflusalat: salt og pipar",
+      "Kartöflusalat: 6 g smælki",
+      "Kartöflusalat: 3 ml sýrður rjómi 18% frá Gott í matinn",
+      "Kartöflusalat: 2 g graslaukur",
+      "Kartöflusalat: 2 stk. shallottu laukar",
+      "Kartöflusalat: 1 stk. chilli",
+      "Kartöflusalat: 1 stk. sítróna",
+      "Kartöflusalat: 15 g hunang",
+      "Fylltir sveppir: 8 stk. sveppir",
+      "Fylltir sveppir: 1 stk. Dala Hringur",
+      "Fylltir sveppir: 1 g kurlað beikon",
+      "Köld sósa: 5 ml mjólk",
+      "Köld sósa: 2 g gráðaostur eða piparostur"
+    ],
+    "instructions": [
+      "Grillaður bjór kjúklingur: Kjúklingurinn er skolaður og lítil göt gerð undir skinnið á honum, í götin er stungið einni sneið af sítrónu, einni grein af thyme og einni af rósmarín. Bjórinn opnaður og dósinni er komið fyrir inn í kjúklingnum til að gufusjóða kjúlinginn að innan með bjór. Kjúklingurinn er nuddaður með olíu og kryddaður með salti og svörtum pipar. Grillið er hitað og kjúklingurinn settur á það þannig að hann standi uppréttur. Grilltími fer eftir stærð en yfirleitt um 1,5 klst. Gott getur verið að hafa álpappír vafinn um fuglinn fyrstu 15-25 mínúturnar.",
+      "Kartöflusalat með chilli og graslauk: Kartöflurnar eru soðnar heilar í vatni, síðan eru þær sigtaðar og kældar. Hver kartafla er skorin í fjóra bita. Skarlottu laukurinn er skrældur og skorinn fínt niður, chillíinn er einnig saxaður fínt, graslaukurinn er saxaður og blandaður við skarlottinn og chillíinn. Að lokum er sýrðum rjóma og hunangi blandað saman við og börkur af ½ sítrónu raspaður út í. Smakkað er til með smá sítrónu safa, salti og pipar.",
+      "Fylltir sveppir með osti og beikoni: Stilkurinn af sveppunum er hreinsaður úr. Beikonkurlið er steikt á pönnu þar til að það er orðið stökkt. Beikoninu er skipt jafnt ofan í sveppina og ostur er skorinn smátt og sett ofan á beikonið. Kryddað með salti og pipar og grillað í 10-15 mínútur.",
+      "Köld ostasósa: Mjólkin er hituð í potti upp að suðu, ostinum er bætt við og pískað saman eða tekið með töfrasprota. Krydduð til með salti og pipar og síðan kæld."
+    ]
+  }
+}

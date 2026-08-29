@@ -1,0 +1,34 @@
+{
+  "source": {
+    "url": "https://msrecipe.com/baked-honey-dijon-chicken-recipe/",
+    "site": "schnellrezept.com"
+  },
+  "fetched": "2026-08-29T15:32:17.942Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Baked Honey Dijon Chicken Recipe",
+    "yield": "4",
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "totalTime": "PT40M",
+    "ingredients": [
+      "2 tablespoons whole grain Dijon mustard",
+      "2-3 sprigs of rosemary",
+      "1/4 cup honey",
+      "1 tablespoon soy sauce (or tamari for gluten-free)",
+      "2 cloves garlic (minced or grated)",
+      "1 pound boneless (skinless chicken breasts (or thighs))",
+      "1/2 cup chicken broth (or water)",
+      "2 tablespoons Dijon mustard",
+      "2 tablespoons apple cider vinegar",
+      "Salt and pepper (to taste)"
+    ],
+    "instructions": [
+      "Preheat your oven to 350°F (180°C).",
+      "In a bowl, whisk together the honey, Dijon mustard, whole grain mustard, apple cider vinegar, soy sauce, garlic, salt, pepper, and chicken broth until thoroughly combined.",
+      "Add the chicken breasts to the mixture, ensuring each piece is well-coated. Arrange the chicken in a baking dish in a single layer, and tuck the rosemary sprigs between the chicken pieces.",
+      "Place the baking dish in the oven and bake for 25 to 35 minutes, or until the chicken is cooked through and reaches an internal temperature of 165°F (75°C).",
+      "Remove from the oven and drizzle the chicken with the sauce from the baking dish before serving."
+    ]
+  }
+}

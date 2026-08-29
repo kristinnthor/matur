@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://cheframsayrecipes.com/gordon-ramsay-cottage-pie-recipe/",
+    "site": "cheframsayrecipes.com"
+  },
+  "fetched": "2026-08-29T15:32:12.370Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Gordon Ramsay Cottage Pie Recipe",
+    "yield": "6",
+    "prepTime": "PT15M",
+    "cookTime": "PT1H",
+    "totalTime": "PT1H15M",
+    "ingredients": [
+      "1.5 tbsp olive oil",
+      "2 garlic cloves, minced",
+      "1 carrot + 1 celery stalk, finely chopped",
+      "1 celery stalk, finely chopped",
+      "750g ground beef",
+      "40g all-purpose flour",
+      "55g tomato paste",
+      "500ml beef stock",
+      "125ml red wine (or sub stock + balsamic)",
+      "1 bouillon cube",
+      "2 tbsp Worcestershire sauce",
+      "1 tsp dried thyme or 3 sprigs fresh",
+      "2 bay leaves",
+      "Salt + pepper to taste",
+      "1.2kg potatoes, peeled, cubed",
+      "165ml warm milk",
+      "30g butter",
+      "Salt",
+      "20g grated parmesan",
+      "30g butter"
+    ],
+    "instructions": [
+      "Sauté garlic, onion, carrot, celery in oil.",
+      "Add beef, brown it.",
+      "Stir in flour, tomato paste, wine, stock, bouillon, Worcestershire, thyme, bay leaves. Simmer 30 mins.",
+      "Boil potatoes till soft. Mash with butter, milk, salt.",
+      "Let meat filling cool slightly. Spoon into dish.",
+      "Spread mash over top. Fork texture. Add parmesan + butter.",
+      "Bake at 180°C (350°F) for 25–30 mins. Broil 2–3 mins.",
+      "Rest 5 mins. Serve."
+    ]
+  }
+}

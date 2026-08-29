@@ -1,0 +1,185 @@
+{
+  "title": "Nautakinnar í rauðvíni",
+  "subtitle": "hægeldaður pottréttur með silkimjúkri rauðvínssósu",
+  "description": "Nautakinnar verða lungamjúkar við langa og rólega eldun í rauðvíni og nautasoði. Soðið er svo maukað og soðið niður í bragðmikla, silkimjúka sósu – fullkominn helgarmatur með kartöflumús.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 15,
+    "cook": 240
+  },
+  "ingredients": [
+    {
+      "id": "olia",
+      "amount": 3,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "skipt",
+      "scalable": false
+    },
+    {
+      "id": "nautakinnar",
+      "amount": 1.5,
+      "unit": "kg",
+      "item": "nautakinnar",
+      "note": "4 stórar eða 6 litlar"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "gróft saxaður"
+    },
+    {
+      "id": "selleri",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sellerístöngull",
+      "note": "gróft saxaður"
+    },
+    {
+      "id": "gulrot",
+      "amount": 1,
+      "unit": "stk",
+      "item": "gulrót",
+      "note": "gróft söxuð"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "fínsaxaður"
+    },
+    {
+      "id": "timjan",
+      "amount": 6,
+      "unit": "stk",
+      "item": "greinar af fersku timjani",
+      "note": "eða 1½ tsk þurrkað timjan"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 4,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "note": "þurrkuð, eða 3 fersk",
+      "scalable": false
+    },
+    {
+      "id": "nautasod",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "nautasoð",
+      "note": "eða vatn og nautakraftur"
+    },
+    {
+      "id": "raudvin",
+      "amount": 5,
+      "unit": "dl",
+      "item": "rauðvín",
+      "note": "bragðmikið, t.d. cabernet sauvignon eða merlot"
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "skipt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "note": "eftir smekk",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Snyrtið {{nautakinnar}}: skerið burt stærstu sinar og himnur. Þerrið kinnarnar vel og nuddið þær upp úr helmingnum af {{salt}} og góðum hluta af {{pipar}}.",
+      "refs": [
+        "nautakinnar",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hitið tvo þriðju af {{olia}} í stórum, þykkbotna potti við háan hita. Brúnið kinnarnar vel á báðum hliðum í tveimur umferðum – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Færið á disk.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Lækkið hitann í meðalháan og hitið afganginn af {{olia}}. Steikið {{hvitlaukur}} og {{laukur}} í 3 mínútur, þar til laukurinn er orðinn glær.",
+      "refs": [
+        "olia",
+        "hvitlaukur",
+        "laukur"
+      ]
+    },
+    {
+      "text": "Bætið {{selleri}} og {{gulrot}} út í og steikið í 3 mínútur í viðbót.",
+      "refs": [
+        "selleri",
+        "gulrot"
+      ]
+    },
+    {
+      "text": "Hellið {{raudvin}} í pottinn og látið sjóða í 1 mínútu. Skafið brúnuðu agnirnar af botninum með sleif – þar liggur bragðið.",
+      "refs": [
+        "raudvin"
+      ]
+    },
+    {
+      "text": "Bætið {{nautasod}}, {{timjan}} og {{larvidarlauf}} út í og leggið kinnarnar aftur í pottinn ásamt safanum sem hefur runnið af þeim. Hitið að suðu og setjið lokið á.",
+      "refs": [
+        "nautasod",
+        "timjan",
+        "larvidarlauf"
+      ]
+    },
+    {
+      "text": "Setjið pottinn í 160 °C heitan ofn og eldið í 3–3½ klukkustund, þar til kinnarnar eru svo meyrar að gaffall rennur í gegn. Á hellu má í staðinn láta malla á lágum hita í 2–2½ klukkustund og snúa kjötinu að minnsta kosti einu sinni.",
+      "refs": []
+    },
+    {
+      "text": "Veiðið kinnarnar upp úr pottinum og fjarlægið timjangreinarnar og lárviðarlaufin.",
+      "refs": []
+    },
+    {
+      "text": "Maukið soðið með töfrasprota þar til sósan er alveg slétt – hún lýsist aðeins við það.",
+      "refs": []
+    },
+    {
+      "text": "Sjóðið sósuna við meðalháan hita í 5–10 mínútur, þar til hún dökknar aftur og þykknar í sósuáferð – hún á að minnka um fjórðung til þriðjung. Smakkið til með afganginum af {{salt}} og {{pipar}}.",
+      "refs": [
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Leggið kinnarnar aftur í sósuna og haldið heitu þar til borið er fram. Berið fram með kartöflumús, ausið sósunni ríkulega yfir og stráið saxaðri steinselju yfir ef vill.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: frumuppskriftin gefur fjórar eldunaraðferðir (hægsuðupott, þrýstipott, hellu og ofn) í einni blandaðri skrefaröð. Hér er ofnaðferðin höfð sem aðalaðferð, enda hentar hún íslenskum eldhúsum betur en hægsuðupottur, og skrefin sett í eina samfellda röð með helluaðferðina sem valkost. Uppgefinn eldunartími var einnig leiðréttur svo hann taki brúnun kjötsins og niðursuðu sósunnar með.",
+    "storage": "Geymist í 3–4 daga í kæli og bragðast jafnvel enn betur daginn eftir. Frystist mjög vel í allt að 3 mánuði – frystið kinnarnar í sósunni. Þíðið í kæli yfir nótt og hitið rólega í potti.",
+    "variants": "Í hægsuðupotti: setjið allt í pottinn eftir brúnun og eldið á lágri stillingu í 8–10 klukkustundir eftir stærð kinnanna. Nautakinnar fást í betri kjötborðum og hjá kjötkaupmönnum; fáist þær ekki má nota nautagúllas í stórum bitum og stytta eldunartímann um allt að klukkustund. Gott með kartöflumús eða blómkálsmauki."
+  },
+  "source": {
+    "url": "https://www.recipetineats.com/slow-cooker-red-wine-beef-cheeks/",
+    "site": "recipetineats.com"
+  }
+}

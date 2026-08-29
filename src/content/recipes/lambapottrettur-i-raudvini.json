@@ -1,0 +1,176 @@
+{
+  "title": "Lambapottréttur í rauðvíni",
+  "subtitle": "hægeldað lambalæri í djúpri rauðvínssósu",
+  "description": "Meyrt lambalæri hægeldað í djúpri rauðvínssósu með lauk, gulrót og lárviðarlaufi. Kjötið dettur í sundur og sósan verður full af bragði – fyrirhafnarlítill veislumatur.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur",
+    "frystivaent"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 20,
+    "cook": 480
+  },
+  "ingredients": [
+    {
+      "id": "lambalaeri",
+      "amount": 1,
+      "unit": "kg",
+      "item": "lambalæri",
+      "note": "hálft læri, með eða án beins – lambabógur virkar líka"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður pipar",
+      "scalable": false
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "gulrot",
+      "amount": 1,
+      "unit": "stk",
+      "item": "gulrót",
+      "note": "skorin í teninga"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "saxaður"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "sneiddur"
+    },
+    {
+      "id": "raudvin",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "þurrt rauðvín",
+      "note": "t.d. Merlot eða Cabernet Sauvignon"
+    },
+    {
+      "id": "nautasod",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "nautasoð"
+    },
+    {
+      "id": "tomatpurra",
+      "amount": 1,
+      "unit": "msk",
+      "item": "tómatpúrra"
+    },
+    {
+      "id": "timjan",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "þurrkað timjan",
+      "note": "eða rósmarín"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 2,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "scalable": false
+    },
+    {
+      "id": "maissterkja",
+      "amount": 1,
+      "unit": "msk",
+      "item": "maíssterkja"
+    },
+    {
+      "id": "vatn",
+      "amount": 2,
+      "unit": "msk",
+      "item": "kalt vatn",
+      "note": "til að hræra út maíssterkjuna"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þerrið {{lambalaeri}} með eldhúspappír og kryddið vel á öllum hliðum með {{salt}} og {{pipar}}.",
+      "refs": [
+        "lambalaeri",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á stórri pönnu við háan hita og brúnið lambið vel á öllum hliðum. Færið það í hægeldunarpottinn.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Setjið {{laukur}} og {{gulrot}} á sömu pönnu og steikið við lágan hita í 5 mínútur. Bætið {{hvitlaukur}} út í og steikið í nokkrar sekúndur í viðbót – hann má ekki brenna.",
+      "refs": [
+        "laukur",
+        "gulrot",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið {{raudvin}} á pönnuna og skafið botninn með sleif til að losa brúnuðu agnirnar – í þeim liggur bragðið. Bætið {{nautasod}}, {{tomatpurra}} og {{timjan}} út í, hrærið saman og takið af hitanum.",
+      "refs": [
+        "raudvin",
+        "nautasod",
+        "tomatpurra",
+        "timjan"
+      ]
+    },
+    {
+      "text": "Hellið blöndunni yfir lambið ásamt {{larvidarlauf}} og eldið á lágri stillingu í 8 klukkustundir eða hárri stillingu í 6 klukkustundir.",
+      "refs": [
+        "larvidarlauf"
+      ]
+    },
+    {
+      "text": "Takið kjötið úr pottinum og haldið því heitu undir álpappír. Hellið soðinu í lítinn pott, hrærið {{maissterkja}} saman við {{vatn}} og bætið út í. Látið malla þar til sósan þykknar.",
+      "refs": [
+        "maissterkja",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Rífið lambið í stóra bita með tveimur göfflum og berið fram með rauðvínssósunni.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: maíssterkjan er hrærð út í köldu vatni áður en henni er bætt í sósuna, annars myndast kekkir. Sósan er einnig þykkt í potti á hellu í stað hægeldunarpottsins, því á lágri stillingu nær soðið varla suðu og sterkjan þykknar þá illa.",
+    "storage": "Geymist í 3–4 daga í kæli og allt að 3 mánuði í frysti. Hitið varlega upp í potti við vægan hita og bætið við smá vatni eða soði ef sósan er of þykk.",
+    "variants": "Ef hægeldunarpottur er ekki til má elda réttinn í lokuðum potti í ofni við 140–150 °C í 3–4 klukkustundir. Lambabógur virkar jafn vel og læri. Í stað timjans má nota rósmarín, og rauðvíninu má skipta út fyrir meira nautasoð ásamt 1 tsk af rauðvínsediki."
+  },
+  "source": {
+    "url": "https://vikalinka.com/slow-cooker-lamb-red-wine-sauce/",
+    "site": "vikalinka.com"
+  }
+}

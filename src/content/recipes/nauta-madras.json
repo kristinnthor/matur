@@ -1,0 +1,243 @@
+{
+  "title": "Madras-karrí með nautakjöti",
+  "subtitle": "hægeldaður indverskur pottréttur",
+  "description": "Bragðmikið indverskt karrí þar sem nautakjöt mallar í kryddaðri tómatsósu með jógúrt og kókosmjólk. Kjötið verður lungamjúkt eftir hæga eldun og sósan djúp og rík.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "frystivaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 20,
+    "cook": 90
+  },
+  "ingredients": [
+    {
+      "id": "nautakjot",
+      "amount": 570,
+      "unit": "g",
+      "item": "nautagúllas",
+      "note": "eða annað nautakjöt í bitum, t.d. flanksteik"
+    },
+    {
+      "id": "hveiti",
+      "amount": 2,
+      "unit": "msk",
+      "item": "hveiti"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "sólblómaolía",
+      "note": "til að brúna kjötið",
+      "scalable": false
+    },
+    {
+      "id": "olialaukur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sólblómaolía",
+      "note": "til að steikja laukinn",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "má sleppa",
+      "scalable": false
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "stór"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur"
+    },
+    {
+      "id": "tomatar",
+      "amount": 1,
+      "unit": "dós",
+      "item": "niðursoðnir tómatar",
+      "note": "400 g"
+    },
+    {
+      "id": "pudursykur",
+      "amount": 2,
+      "unit": "msk",
+      "item": "dökkur púðursykur"
+    },
+    {
+      "id": "edik",
+      "amount": 2,
+      "unit": "msk",
+      "item": "rauðvínsedik",
+      "note": "eða hvítvínsedik"
+    },
+    {
+      "id": "jogurt",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "grísk jógúrt",
+      "note": "eða önnur þykk hrein jógúrt"
+    },
+    {
+      "id": "kokosmjolk",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "kókosmjólk"
+    },
+    {
+      "id": "koriander",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ferskur kóríander",
+      "note": "saxaður"
+    },
+    {
+      "id": "kumin",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "malað kúmín"
+    },
+    {
+      "id": "korianderfrae",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "malað kóríanderfræ"
+    },
+    {
+      "id": "turmerik",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "túrmerik"
+    },
+    {
+      "id": "kardimommur",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "malaðar kardimommur"
+    },
+    {
+      "id": "garammasala",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "garam masala"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "negull",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "malaður negull"
+    },
+    {
+      "id": "pipar",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "malaður",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Skerið {{nautakjot}} í 2–3 cm bita.",
+      "refs": [
+        "nautakjot"
+      ]
+    },
+    {
+      "text": "Setjið kjötið í skál og veltið því upp úr {{hveiti}} ásamt {{salt}}.",
+      "refs": [
+        "hveiti",
+        "salt"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} í potti og brúnið kjötið vel á öllum hliðum. Steikið í tveimur umferðum ef þarf – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Setjið kjötið aftur í skálina á meðan sósan er gerð.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Saxið {{laukur}} og {{hvitlaukur}} mjög fínt, í matvinnsluvél eða með hníf.",
+      "refs": [
+        "laukur",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hitið {{olialaukur}} í sama potti og steikið laukinn og hvítlaukinn þar til laukurinn er mjúkur og glær. Gætið þess að hann brúnist ekki.",
+      "refs": [
+        "olialaukur"
+      ]
+    },
+    {
+      "text": "Bætið {{kumin}}, {{korianderfrae}}, {{turmerik}}, {{kardimommur}}, {{garammasala}}, {{chiliflogur}}, {{negull}} og {{pipar}} út í og steikið í eina mínútu í viðbót. Hrærið vel svo laukurinn sé alveg hjúpaður kryddinu.",
+      "refs": [
+        "kumin",
+        "korianderfrae",
+        "turmerik",
+        "kardimommur",
+        "garammasala",
+        "chiliflogur",
+        "negull",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hrærið {{tomatar}}, {{pudursykur}} og {{edik}} saman við, ásamt hveitinu sem varð eftir í skálinni af kjötinu. Látið suðuna koma upp.",
+      "refs": [
+        "tomatar",
+        "pudursykur",
+        "edik"
+      ]
+    },
+    {
+      "text": "Hrærið {{jogurt}} og {{kokosmjolk}} saman við og setjið kjötið aftur í pottinn. Setjið lok á, lækkið hitann og látið malla í 1½ klukkustund. Hrærið öðru hverju svo rétturinn brenni ekki við botninn.",
+      "refs": [
+        "jogurt",
+        "kokosmjolk"
+      ]
+    },
+    {
+      "text": "Ef sósan er of þunn, takið lokið af síðustu 15 mínúturnar svo hún sjóði aðeins niður. Hrærið mestum hluta af {{koriander}} saman við og stráið afganginum yfir til skrauts.",
+      "refs": [
+        "koriander"
+      ]
+    },
+    {
+      "text": "Berið fram með hvítum hrísgrjónum og/eða naan-brauði til að sópa upp sósunni.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: bætt við ábendingu um að brúna kjötið í tveimur umferðum svo það brúnist í stað þess að sjóða. Að öðru leyti er uppskriftin óbreytt fyrir utan umreikning í íslenskar mælieiningar.",
+    "storage": "Geymist í 3 daga í kæli og batnar frekar en hitt – bragðið nær að jafna sig yfir nótt. Frystist vel í allt að 3 mánuði; þíðið í kæli og hitið rólega upp að suðu.",
+    "variants": "Lambakjöt má nota í stað nautakjöts og hentar mjög vel í madras. Grískri jógúrt má skipta út fyrir aðra þykka hreina jógúrt. Fyrir mildari rétt má minnka chiliflögurnar um helming – fyrir sterkari má bæta við cayenne-pipar."
+  },
+  "source": {
+    "url": "https://www.foodleclub.com/easy-beef-madras-curry/",
+    "site": "foodleclub.com"
+  }
+}

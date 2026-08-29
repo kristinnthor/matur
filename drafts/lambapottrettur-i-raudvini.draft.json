@@ -1,0 +1,35 @@
+{
+  "source": {
+    "url": "https://vikalinka.com/slow-cooker-lamb-red-wine-sauce/",
+    "site": "vikalinka.com"
+  },
+  "fetched": "2026-08-29T15:31:52.776Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Slow Cooker Lamb in Red Wine Sauce",
+    "yield": "6",
+    "prepTime": "PT20M",
+    "cookTime": "PT480M",
+    "totalTime": "PT500M",
+    "ingredients": [
+      "1kg / 2 lbs half leg of lamb (bone in or boneless) (or lamb shoulder)",
+      "salt and pepper",
+      "1 tbsp olive oil",
+      "1 carrot (diced)",
+      "1 onion (chopped)",
+      "2 cloves garlic",
+      "125ml / 1/2 cup dry red wine (Merlot, Cab Sauv or anything you like )",
+      "125ml / 1/2 cup beef stock",
+      "1 tbsp tomato paste",
+      "1/2 tsp dried thyme or rosemary",
+      "2 bay leaves",
+      "1 tbsp corn starch/cornflour"
+    ],
+    "instructions": [
+      "Pat the leg of lamb dry with paper towel, then season generously with salt and pepper. Heat 1 tbsp of olive oil in a large frying pan and brown the lamb all over. Transfer to a slow cooker.",
+      "To the same pan, add the chopped onion and diced carrot, cook for 5 minutes over low heat, then add the sliced garlic and cook briefly for a few seconds to avoid burning, then deglaze with the red wine and scrape the bottom of the pan to release the burnt bits into the sauce. Add the beef stock, the tomato paste and the thyme, stir to combine and take off the heat.",
+      "Pour the mixture over the lamb together with the bay leaves and cook on LOW for 8 hours or on High for 6 hours.",
+      "Remove the meat from the slow cooker and keep warm. Add the cornstarch to the pan juice and simmer until thickened. Gently pull the lamb apart with two forks into large chunks before serving with the red wine sauce."
+    ]
+  }
+}

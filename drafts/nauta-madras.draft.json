@@ -1,0 +1,49 @@
+{
+  "source": {
+    "url": "https://www.foodleclub.com/easy-beef-madras-curry/",
+    "site": "foodleclub.com"
+  },
+  "fetched": "2026-08-29T15:31:58.692Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Easy Beef Madras Curry",
+    "yield": "4",
+    "prepTime": "PT20M",
+    "cookTime": "PT90M",
+    "totalTime": "PT110M",
+    "ingredients": [
+      "1¼ pound / 570 grams cubed beef ((topside / flank / chuck))",
+      "2 tablespoons flour",
+      "3 tablespoons sunflower oil ((2 for frying the meat, and 1 for frying the onions).)",
+      "1 teaspoon salt (optional)",
+      "1 large onion",
+      "2 cloves garlic",
+      "14 ounce / 400 grams can chopped tomatoes",
+      "2 tablespoon dark brown sugar",
+      "2 tablespoon red or white wine vinegar",
+      "1 cup greek or natural thick yoghurt",
+      "1 cup coconut milk",
+      "2 tablespoons chopped fresh coriander",
+      "1 teaspoons ground cumin",
+      "1 teaspoon ground coriander",
+      "1 teaspoon ground turmeric",
+      "½ teaspoon ground cardamom",
+      "2 teaspoons garam masala",
+      "1 teaspoon dried chili flakes (adjust to your own taste)",
+      "¼ teaspoon ground cloves",
+      "¼ teaspoon ground black pepper"
+    ],
+    "instructions": [
+      "Cut the meat into bite-sized pieces (approximately 1\" cubes)",
+      "Place the meat in a small mixing bowl and coat it in flour seasoned with 1 teaspoon of salt",
+      "Heat 2 tablespoons sunflower oil in a saucepan (or large frying pan) and fry the meat until nicely browned on all sides. Return the meat to the bowl while you make the sauce.",
+      "Put the onion and garlic into a food processor and pulse until the onion is finely chopped.",
+      "Heat 1 tablespoon sunflower oil in the same frying pan and stirfry the onions and garlic until the onions soften and turn translucent. Take care not to allow them to brown.",
+      "Stir in all the spices and continue to fry for a further minute. Stir well to ensure the onions are completely coated with the spices.",
+      "Stir in the tomatoes, brown sugar and vinegar. Also, stir in any flour remaining from coating the meat. Bring to a boil.",
+      "Stir in the yoghurt and coconut milk and return the browned meat to the pan. Cover the pan with a lid, turn the heat to low and leave the curry to simmer for 1 and a half hours. Stir occasionally to ensure it doesn't stick on the bottom of the pan.",
+      "If the sauce seems too thin, remove the lid for the last 15 minutes, to allow some of the liquid to evaporate. Stir through most of the chopped coriander and sprinkle the remainder on top for garnish.",
+      "Serve with white rice and/or naan bread to mop up all the delicious gravy."
+    ]
+  }
+}

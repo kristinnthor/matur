@@ -1,0 +1,36 @@
+{
+  "source": {
+    "url": "https://heerlijkehappen.nl/kippendij-in-champignon-roomsaus/",
+    "site": "heerlijkehappen.nl"
+  },
+  "fetched": "2026-08-29T15:32:06.688Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Kippendij in champignon roomsaus",
+    "yield": "4",
+    "prepTime": "PT10M",
+    "cookTime": "PT25M",
+    "totalTime": "PT35M",
+    "ingredients": [
+      "1 kg kippendij ((mag met bot) )",
+      "400 gr champignons",
+      "250 ml kookroom (35% vet)",
+      "150 gr Parmezaanse kaas (geraspte)",
+      "3 tenen knoflook",
+      "1 citroen",
+      "1 eetlepel peterselie (verse)",
+      "2 el Persillade (kruidenmix)",
+      "peper (naar smaak)",
+      "zout (naar smaak)"
+    ],
+    "instructions": [
+      "Pers het sap van de citroen uit. Neem een kom erbij en doe hier de kippendijen in. Bestrooi met peper en zout en masseer het vlees in. Giet het citroensap erop en schep de persillade erbij en laat een 15tal minuutjes intrekken.",
+      "Snijd ondertussen de champignons in plakken en pers de knoflooktenen uit.",
+      "Verhit een grote koekenpan en doe er een scheut olijfolie in. Bak de kippendijen aan beide zijdes mooi goudbruin. (dit betekent gaar! dus dat duurt een minuutje of 15 op middelhoog vuur) Haal ze vervolgens uit de pan en leg op een bord opzij.",
+      "Voeg de champignons en de knoflook toe aan de pan en bak deze tot ze lekker zacht beginnen te worden.",
+      "Voeg de kookroom toe en roer het geheel, daarna de Parmezaanse kaas en laat deze helemaal smelten, de saus zal hierdoor wat dikker worden, en echt lekker creamy eruit zien.",
+      "Doe de kippendijen terug in de pan en laat even warm worden in de saus. Maak af met de vers gehakte peterselie en serveer.",
+      "Heerlijk Happen!"
+    ]
+  }
+}

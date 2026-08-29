@@ -1,0 +1,42 @@
+{
+  "source": {
+    "url": "https://www.oliviascuisine.com/bolognese-sauce-recipe/",
+    "site": "oliviascuisine.com"
+  },
+  "fetched": "2026-08-29T15:31:55.885Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Bolognese Sauce",
+    "yield": "8",
+    "prepTime": "PT30M",
+    "cookTime": "PT240M",
+    "totalTime": "PT270M",
+    "ingredients": [
+      "1 tablespoon extra-virgin olive oil",
+      "2 tablespoons butter",
+      "1 large onion (finely chopped)",
+      "2 large carrots (finely chopped)",
+      "2 celery stalks (finely chopped)",
+      "3 cloves garlic (chopped)",
+      "4 ounces pancetta (diced)",
+      "1 pound ground beef ((20% fat))",
+      "1 pound ground pork",
+      "Salt and freshly ground pepper (to taste)",
+      "1 cup dry white wine",
+      "1 (28 ounces) can peeled San Marzano tomatoes ( hand crushed)",
+      "1 cup whole milk",
+      "½ teaspoon freshly grated nutmeg",
+      "1 cup heavy cream (optional (see notes))",
+      "1 cup grated parmesan cheese (Parmigiano Reggiano is the best!)",
+      "½ cup chopped parsley"
+    ],
+    "instructions": [
+      "Heat olive oil and butter in a large Dutch oven, over medium high heat, until the butter is melted. Add onion, carrots, and celery, and sauté until softened and beginning to caramelize, 5 to 8 minutes. Add garlic and sauté for another couple of minutes, until fragrant. Season with salt and pepper and, using a slotted spoon, remove the soffritto to a plate and reserve.",
+      "Add more olive oil, if needed, and add the pancetta. Cook until golden brown, about 5 minutes. Remove pancetta and reserve. Working in 2-3 batches so not to over crowd the pot, add ground beef and pork. Season with salt and pepper and cook, breaking lumps with a wooden spoon but resisting the urge to stir too often, until browned, about 10 - 15 minutes. We want the meat to caramelize and the brown bits to stick to the bottom of the pot, as that's where all the flavor is! (See notes.)",
+      "Return the reserved soffritto and pancetta to the pot. Add the white wine and deglaze the pan, scraping all the browned bits stuck to the bottom. Cook until the wine is mostly evaporated, about 2 to 3 minutes. Stir in the crushed tomatoes, milk, nutmeg and a pinch of salt and pepper. Bring to a boil and then lower the heat to a simmer.",
+      "Cover and cook, stirring occasionally, for 3 to 4 hours or until the liquids have reduced and the sauce is thick. If, by then, the sauce is still too liquid-y, you can turn the heat up and boil - stirring frequently - until it reduces.Some of the fat will separate and float to the top, making it easier to skim it off with a spoon. Discard.",
+      "Stir in heavy cream, parmesan cheese and parsley. Stir vigorously to emulsify. Taste for seasoning and adjust salt and pepper, if necessary.",
+      "Serve, tossed with a wide pasta, like tagliatelle or pappardelle."
+    ]
+  }
+}

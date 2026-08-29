@@ -1,0 +1,107 @@
+{
+  "title": "Mexíkófiskur",
+  "subtitle": "einfaldur ofnbakaður fiskréttur með tacosósu",
+  "description": "Þorskur eða ýsa bakað í rjómakenndri tacosósu með bræddum osti og stökkum nachosflögum. Einfaldur hversdagsréttur sem krakkarnir kunna að meta.",
+  "categories": [
+    "fiskur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 10,
+    "cook": 25
+  },
+  "ingredients": [
+    {
+      "id": "fiskur",
+      "amount": 600,
+      "unit": "g",
+      "item": "þorskur eða ýsa"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "rjomi",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "rjómi",
+      "note": "eða matreiðslurjómi"
+    },
+    {
+      "id": "tacososa",
+      "amount": 2,
+      "unit": "dl",
+      "item": "tacosósa",
+      "note": "1 krukka, um 230 g"
+    },
+    {
+      "id": "ostur",
+      "amount": 2,
+      "unit": "dl",
+      "item": "rifinn ostur"
+    },
+    {
+      "id": "nachos",
+      "amount": 20,
+      "unit": "stk",
+      "item": "nachosflögur",
+      "note": "muldar"
+    },
+    {
+      "id": "smjor",
+      "amount": 1,
+      "unit": "msk",
+      "item": "smjör",
+      "note": "til að smyrja mótið",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 200 °C.",
+      "refs": []
+    },
+    {
+      "text": "Smyrjið eldfast mót með {{smjor}}. Leggið {{fiskur}} í mótið og stráið {{salt}} yfir.",
+      "refs": [
+        "smjor",
+        "fiskur",
+        "salt"
+      ]
+    },
+    {
+      "text": "Hrærið saman {{rjomi}}, {{tacososa}} og {{ostur}} í skál og hellið yfir fiskinn.",
+      "refs": [
+        "rjomi",
+        "tacososa",
+        "ostur"
+      ]
+    },
+    {
+      "text": "Bakið í miðjum ofni í 15 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Stráið {{nachos}} yfir réttinn og bakið áfram í 10 mínútur til viðbótar, samtals 25 mínútur. Flögurnar eiga að vera stökkar og sósan freyðandi í köntunum.",
+      "refs": [
+        "nachos"
+      ]
+    }
+  ],
+  "notes": {
+    "storage": "Geymist í 2 daga í kæli. Hentar illa í frysti því sósan getur skilið sig og flögurnar verða mjúkar. Við upphitun er best að hita réttinn í ofni svo flögurnar haldist stökkar.",
+    "variants": "Nota má hvaða hvítan fisk sem er, til dæmis löngu eða keilu. Tacosósa er mild salsasósa í krukku – ekki sterk chilisósa – og fyrir börnin er mildasta útgáfan best. Í stað nachosflagna má nota Doritos eða aðrar maísflögur."
+  },
+  "source": {
+    "url": "https://ljufmeti.com/2016/05/30/mexikofiskur/",
+    "site": "ljufmeti.com"
+  }
+}

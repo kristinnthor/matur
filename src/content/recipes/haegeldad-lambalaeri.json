@@ -1,0 +1,253 @@
+{
+  "title": "Hægeldað lambalæri",
+  "subtitle": "lungamjúkt sunnudagslæri með grænmeti og rjómasósu",
+  "description": "Lambalæri hægeldað í steikarpotti ofan á kartöflum, sætum kartöflum og rótargrænmeti í sex til sjö klukkustundir við lágan hita. Kjötið verður lungamjúkt og bráðnar í munni, og soðið úr pottinum verður að dásamlegri rjómasósu.",
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 30,
+    "cook": 400
+  },
+  "ingredients": [
+    {
+      "id": "laeri",
+      "amount": 1,
+      "unit": "stk",
+      "item": "lambalæri",
+      "note": "ca. 3 kg",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Lambalæri og grænmeti",
+      "scalable": false
+    },
+    {
+      "id": "krydd",
+      "amount": 2,
+      "unit": "msk",
+      "item": "lambakjötskrydd",
+      "note": "eftir smekk",
+      "group": "Lambalæri og grænmeti",
+      "scalable": false
+    },
+    {
+      "id": "saltpipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt og pipar",
+      "note": "eftir smekk",
+      "group": "Lambalæri og grænmeti",
+      "scalable": false
+    },
+    {
+      "id": "saetar",
+      "amount": 2,
+      "unit": "stk",
+      "item": "sætar kartöflur",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "kartoflur",
+      "amount": 12,
+      "unit": "stk",
+      "item": "kartöflur",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "gulraetur",
+      "amount": 6,
+      "unit": "stk",
+      "item": "gulrætur",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "stk",
+      "item": "paprika",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "raudlaukur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "rauðlaukur",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "hvítlaukur",
+      "note": "heilir; solo-hvítlaukur hentar vel",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "piparkorn",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "piparkorn",
+      "group": "Lambalæri og grænmeti",
+      "scalable": false
+    },
+    {
+      "id": "vatn",
+      "amount": 6,
+      "unit": "dl",
+      "item": "vatn",
+      "group": "Lambalæri og grænmeti"
+    },
+    {
+      "id": "smjor",
+      "amount": 40,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Sósa"
+    },
+    {
+      "id": "hveiti",
+      "amount": 40,
+      "unit": "g",
+      "item": "hveiti",
+      "group": "Sósa"
+    },
+    {
+      "id": "rjomi",
+      "amount": 3,
+      "unit": "dl",
+      "item": "rjómi",
+      "group": "Sósa"
+    },
+    {
+      "id": "kraftur",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "lambakraftur",
+      "note": "2–3 tsk eftir smekk; má nota nautakraft",
+      "group": "Sósa"
+    },
+    {
+      "id": "hlaup",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "rifsberjahlaup",
+      "group": "Sósa"
+    },
+    {
+      "id": "sojasosa",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sojasósa",
+      "group": "Sósa"
+    },
+    {
+      "id": "sosulitur",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "sósulitur",
+      "note": "nokkrir dropar; má sleppa",
+      "group": "Sósa",
+      "scalable": false
+    },
+    {
+      "id": "saltpiparsosa",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt og pipar",
+      "note": "eftir smekk",
+      "group": "Sósa",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 80–100°C, undir- og yfirhita. Snyrtið {{laeri}}, skolið það og þerrið vel.",
+      "refs": [
+        "laeri"
+      ]
+    },
+    {
+      "text": "Nuddið {{olia}} inn í lærið og kryddið það með {{krydd}} og {{saltpipar}}.",
+      "refs": [
+        "olia",
+        "krydd",
+        "saltpipar"
+      ]
+    },
+    {
+      "text": "Flysjið {{kartoflur}}, {{saetar}} og {{gulraetur}} og skerið í frekar litla bita — stórir bitar ná síður að eldast í gegn. Skerið {{raudlaukur}} og {{paprika}} sömuleiðis og afhýðið {{hvitlaukur}}.",
+      "refs": [
+        "kartoflur",
+        "saetar",
+        "gulraetur",
+        "raudlaukur",
+        "paprika",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Raðið grænmetinu í botninn á steikarpotti, hellið {{vatn}} yfir og stráið {{piparkorn}} út í. Leggið lærið ofan á grænmetið og setjið lokið á pottinn.",
+      "refs": [
+        "vatn",
+        "piparkorn"
+      ]
+    },
+    {
+      "text": "Steikið í ofninum í 6–7 klukkustundir við 80–100°C. Best er að stinga kjöthitamæli í lærið — það er tilbúið þegar kjarnhitinn nær 60–65°C.",
+      "refs": []
+    },
+    {
+      "text": "Takið lokið af pottinum, stillið ofninn á 220°C með grilli og grillið lærið í um 10 mínútur, eða þar til puran er orðin dökk og stökk.",
+      "refs": []
+    },
+    {
+      "text": "Leggið lærið á bretti og látið það jafna sig á meðan sósan er gerð. Ef grænmetið er ekki alveg eldað í gegn má hella því í ofnskúffu og baka við 200–220°C í um 10 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Sigtið vökvann úr pottinum frá grænmetinu og fleytið mestu fituna ofan af.",
+      "refs": []
+    },
+    {
+      "text": "Bræðið {{smjor}} í potti og þeytið {{hveiti}} saman við. Bætið síaða vökvanum út í smátt og smátt við meðalhita og pískið vel á meðan.",
+      "refs": [
+        "smjor",
+        "hveiti"
+      ]
+    },
+    {
+      "text": "Bætið {{rjomi}} og {{kraftur}} út í og smakkið sósuna til með {{hlaup}}, {{sojasosa}} og {{saltpiparsosa}}. Litið sósuna með {{sosulitur}} ef vill. Ef sósan er of þunn má þykkja hana með sósujafnara.",
+      "refs": [
+        "rjomi",
+        "kraftur",
+        "hlaup",
+        "sojasosa",
+        "saltpiparsosa",
+        "sosulitur"
+      ]
+    },
+    {
+      "text": "Skerið lærið í sneiðar og berið fram með grænmetinu og sósunni.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: skammtafjölda og undirbúningstíma bætt við, sem vantaði í frumuppskriftina, og magn sett á ólífuolíu, lambakjötskrydd, piparkorn og sósulit sem voru án magntalna. Að öðru leyti er aðferðin óbreytt.",
+    "storage": "Afgangar geymast í 3–4 daga í kæli. Kjötið má frysta í allt að 3 mánuði, en sósan hentar síður í frysti því rjómasósur eiga til að skilja sig við upphitun.",
+    "variants": "Í stað lambakrafts má nota nautakraft og sósulit má sleppa — hann breytir aðeins litnum. Venjulegur hvítlaukur kemur í stað solo-hvítlauks; skiptið honum þá í rif. Annað rótargrænmeti, t.d. steinseljurót eða sellerírót, sómir sér líka vel í pottinum."
+  },
+  "source": {
+    "url": "http://eldhussogur.com/2013/01/14/haegeldad-lambalaeri/",
+    "site": "eldhussogur.com"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "title": "Fiskur í gulri sósu",
+  "subtitle": "hvít fiskflök í mjúkri grænmetissósu",
+  "description": "Hvít fiskflök elduð varlega og borin fram með silkimjúkri gulri sósu úr lauk, gulrót, hvítlauk og hvítvíni. Einfaldur hversdagsréttur sem er kominn á borðið á hálftíma.",
+  "categories": [
+    "fiskur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 2,
+  "time": {
+    "prep": 10,
+    "cook": 20
+  },
+  "ingredients": [
+    {
+      "id": "fiskur",
+      "amount": 400,
+      "unit": "g",
+      "item": "hvít fiskflök",
+      "note": "t.d. þorskur, ýsa eða langa, roð- og beinlaus"
+    },
+    {
+      "id": "olia",
+      "amount": 0.5,
+      "unit": "dl",
+      "item": "ólífuolía"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "meðalstór, saxaður smátt"
+    },
+    {
+      "id": "gulrot",
+      "amount": 1,
+      "unit": "stk",
+      "item": "gulrót",
+      "note": "söxuð smátt"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "söxuð"
+    },
+    {
+      "id": "hveiti",
+      "amount": 1,
+      "unit": "msk",
+      "item": "hveiti",
+      "note": "kúfuð"
+    },
+    {
+      "id": "hvitvin",
+      "amount": 1,
+      "unit": "dl",
+      "item": "hvítvín"
+    },
+    {
+      "id": "vatn",
+      "amount": 1,
+      "unit": "dl",
+      "item": "vatn"
+    },
+    {
+      "id": "steinselja",
+      "amount": 3,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð"
+    },
+    {
+      "id": "fiskikraftur",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "fiskikraftsteningur",
+      "note": "eða salt eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt",
+      "note": "á fiskinn",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið {{olia}} í potti á meðalhita. Bætið {{laukur}}, {{gulrot}} og {{hvitlaukur}} út í og steikið í 8–10 mínútur þar til grænmetið er mjúkt, án þess að það brúnist.",
+      "refs": [
+        "olia",
+        "laukur",
+        "gulrot",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Stráið {{hveiti}} yfir grænmetið og hrærið stöðugt í 1 mínútu svo hveitibragðið eldist burt.",
+      "refs": [
+        "hveiti"
+      ]
+    },
+    {
+      "text": "Hellið {{hvitvin}} og {{vatn}} út í ásamt {{fiskikraftur}} og látið malla í 4–5 mínútur þar til sósan þykknar. Maukið sósuna með töfrasprota ef þið viljið hana alveg slétta – annars má hafa hana grófa.",
+      "refs": [
+        "hvitvin",
+        "vatn",
+        "fiskikraftur"
+      ]
+    },
+    {
+      "text": "Bætið {{steinselja}} út í undir lok suðutímans og smakkið til. Þynnið sósuna með smá vatni ef hún er of þykk.",
+      "refs": [
+        "steinselja"
+      ]
+    },
+    {
+      "text": "Hitið ofninn í 200 °C. Raðið {{fiskur}} í eldfast mót, penslið með örlítilli olíu og stráið {{salt}} yfir. Bakið í 12–15 mínútur, eftir þykkt flakanna, þar til fiskurinn er rétt eldaður í gegn.",
+      "refs": [
+        "fiskur",
+        "salt"
+      ]
+    },
+    {
+      "text": "Leggið fiskinn á diska og hellið heitri sósunni yfir. Berið fram strax, til dæmis með soðnum kartöflum eða hrísgrjónum.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: uppskriftin var skrifuð fyrir Thermomix-vél og steikarpoka í örbylgjuofni; hér er hún löguð að venjulegum potti og ofni. Magn fisksins var ekki tilgreint í frumuppskriftinni og er hér áætlað 400 g fyrir tvo. Eldunartímar aðlagaðir að potti – grænmetið er svitað lengur en í vélinni svo það nái að mýkjast almennilega.",
+    "storage": "Geymist í 2 daga í kæli; hitið varlega upp svo fiskurinn ofeldist ekki. Sósuna eina má frysta í allt að 2 mánuði, en fiskurinn er bestur nýeldaður.",
+    "variants": "Upprunalega uppskriftin notar panga-flök, en þorskur, ýsa eða langa henta vel. Fiskinn má líka elda eins og í frumuppskriftinni: penslið flökin með olíu og salti, lokið þau inni í steikarpoka, stingið lítil göt á pokann og eldið í örbylgjuofni á fullum styrk í um 6 mínútur. Örlítið saffran gefur sósunni enn sterkari gulan lit."
+  },
+  "source": {
+    "url": "http://www.recetariocanecositas.com/filetes-de-pescado-en-salsa-amarilla/",
+    "site": "recetariocanecositas.com"
+  }
+}

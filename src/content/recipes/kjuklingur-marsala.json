@@ -1,0 +1,191 @@
+{
+  "title": "Kjúklingur Marsala",
+  "subtitle": "ítalskur pönnuréttur með sveppum og rjóma",
+  "description": "Þunnar kjúklingasneiðar hægeldaðar í rjómakenndri Marsala-sveppasósu með parmesan. Ítalskur klassíker – pollo al Marsala – sem á heima með kartöflumús, hrísgrjónum eða pasta.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 20,
+    "cook": 50
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingur",
+      "amount": 400,
+      "unit": "g",
+      "item": "kjúklingabringur"
+    },
+    {
+      "id": "hveiti",
+      "amount": 4,
+      "unit": "msk",
+      "item": "hveiti"
+    },
+    {
+      "id": "hvitlauksduft",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "hvítlauksduft"
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "kryddjurtir",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ferskt tímían og steinselja",
+      "note": "saxað"
+    },
+    {
+      "id": "smjor",
+      "amount": 4,
+      "unit": "msk",
+      "item": "smjör"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "skalottlaukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "skalottlaukur"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 1,
+      "unit": "rif",
+      "item": "hvítlaukur"
+    },
+    {
+      "id": "sveppir",
+      "amount": 250,
+      "unit": "g",
+      "item": "kastaníusveppir"
+    },
+    {
+      "id": "marsala",
+      "amount": 1,
+      "unit": "dl",
+      "item": "Marsala-vín"
+    },
+    {
+      "id": "teningur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sveppateningur",
+      "note": "eða kjúklingateningur"
+    },
+    {
+      "id": "vatn",
+      "amount": 1.5,
+      "unit": "dl",
+      "item": "sjóðandi vatn"
+    },
+    {
+      "id": "rjomi",
+      "amount": 1.75,
+      "unit": "dl",
+      "item": "rjómi"
+    },
+    {
+      "id": "parmesan",
+      "amount": 50,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "rifinn, og meira við framreiðslu"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Skerið {{kjuklingur}} í eins þunnar sneiðar og hægt er. Leggið sneiðarnar milli plastfilmu eða bökunarpappírs og berjið þær flatar með kökukefli.",
+      "refs": [
+        "kjuklingur"
+      ]
+    },
+    {
+      "text": "Blandið {{hveiti}}, {{hvitlauksduft}}, {{salt}}, {{pipar}} og helmingnum af {{kryddjurtir}} saman á diski. Veltið hverri kjúklingasneið upp úr blöndunni.",
+      "refs": [
+        "hveiti",
+        "hvitlauksduft",
+        "salt",
+        "pipar",
+        "kryddjurtir"
+      ]
+    },
+    {
+      "text": "Saxið {{skalottlaukur}} og {{hvitlaukur}} smátt og skerið {{sveppir}} í sneiðar.",
+      "refs": [
+        "skalottlaukur",
+        "hvitlaukur",
+        "sveppir"
+      ]
+    },
+    {
+      "text": "Brúnið kjúklingasneiðarnar vel á báðum hliðum upp úr {{smjor}} og {{olia}} á stórri pönnu. Steikið í hollum – ekki troða á pönnuna, annars sýður kjötið í stað þess að brúnast. Takið af pönnunni og geymið á diski.",
+      "refs": [
+        "smjor",
+        "olia"
+      ]
+    },
+    {
+      "text": "Mýkið laukinn, hvítlaukinn og sveppina í fitunni sem eftir er á pönnunni og bætið við örlitlu smjöri ef þarf. Bætið afganginum af kryddjurtunum út í og smakkið til með salti og pipar. Hellið {{marsala}} á pönnuna og látið sjóða niður um stund.",
+      "refs": [
+        "marsala"
+      ]
+    },
+    {
+      "text": "Leysið {{teningur}} upp í {{vatn}} og hellið á pönnuna. Setjið kjúklinginn aftur út í, lækkið hitann og látið malla rólega í 10 mínútur.",
+      "refs": [
+        "teningur",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Hrærið {{rjomi}} saman við þegar mesti hitinn er farinn úr sósunni – þannig skilur rjóminn sig ekki. Bætið {{parmesan}} út í og hrærið þar til sósan er kremuð.",
+      "refs": [
+        "rjomi",
+        "parmesan"
+      ]
+    },
+    {
+      "text": "Látið réttinn malla við mjög vægan hita í 25 mínútur. Við hæga eldun verður kjúklingurinn meyr og sósan silkimjúk.",
+      "refs": []
+    },
+    {
+      "text": "Raðið kjúklingnum á fat og ausið sósunni yfir. Stráið söxuðu tímíani og steinselju yfir og berið fram með rifnum parmesan, ásamt kartöflumús, hrísgrjónum eða pasta.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: óljósar magntölur festar í tölur – „sletta“ af Marsala varð 1 dl, „sletta“ af ólífuolíu 1 msk, „tvær lúkur“ af parmesan 50 g, salt- og piparmagn tilgreint og ómælt magn af ferskum kryddjurtum fest í 2 msk. Uppgefnir tímar frumuppskriftarinnar ganga ekki upp (1½ klst undirbúningur og 1½ klst eldun en 2 klst samtals); raunhæfur tími er um 20 mínútna undirbúningur og 50 mínútna eldun.",
+    "storage": "Geymist í 2–3 daga í kæli og er jafnvel enn betri daginn eftir. Hitið varlega við lágan hita svo rjómasósan skilji sig ekki. Hentar síður í frysti því sósan getur skilið sig við uppþíðingu.",
+    "variants": "Ef Marsala fæst ekki má nota Madeira eða sérrí í staðinn – opin Marsala-flaska geymist vel í rúmt hálft ár. Kastaníusveppum má skipta út fyrir venjulega hvíta sveppi eða villisveppi, og kjúklingalæri má nota í stað bringa. Helmingurinn af sósunni er frábær út á pasta."
+  },
+  "source": {
+    "url": "https://cookingqueens.nl/recipe/kip-marsala-pollo-al-marsala/",
+    "site": "cookingqueens.nl"
+  }
+}

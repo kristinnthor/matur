@@ -1,0 +1,288 @@
+{
+  "title": "Lambakleftiko með kartöflum",
+  "subtitle": "hægeldað grískt lambalæri í einni skúffu",
+  "description": "Hægeldað lambalæri að grískum hætti sem dettur af beininu, ofan á kartöflum og grænmeti sem drekkur í sig allan safann úr kjötinu. Ein skúffa, lítil fyrirhöfn og veisla á borðið.",
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 20,
+    "cook": 180
+  },
+  "ingredients": [
+    {
+      "id": "lambalaeri",
+      "amount": 2.5,
+      "unit": "kg",
+      "item": "lambalæri með beini",
+      "note": "snyrt",
+      "group": "Kryddlögur"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "pressuð eða söxuð smátt",
+      "group": "Kryddlögur"
+    },
+    {
+      "id": "olifuolia",
+      "amount": 3,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Kryddlögur"
+    },
+    {
+      "id": "oregano",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ferskt oregano",
+      "note": "saxað",
+      "group": "Kryddlögur"
+    },
+    {
+      "id": "timjan",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ferskt timjan",
+      "note": "saxað",
+      "group": "Kryddlögur"
+    },
+    {
+      "id": "sinnep",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Dijon sinnep",
+      "group": "Kryddlögur"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "msk",
+      "item": "salt",
+      "group": "Kryddlögur",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "malaður",
+      "group": "Kryddlögur",
+      "scalable": false
+    },
+    {
+      "id": "sitronuborkur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "aðeins rifinn börkur",
+      "group": "Kryddlögur"
+    },
+    {
+      "id": "kartoflur",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kartöflur",
+      "note": "stórar, skornar í stóra báta",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "paprikur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "paprikur",
+      "note": "fræhreinsaðar, í grófum bitum",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "tomatar",
+      "amount": 2,
+      "unit": "stk",
+      "item": "tómatar",
+      "note": "stórir, í bátum",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "raudlaukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "rauðlaukur",
+      "note": "stór, í bátum",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "hvitlaukshaus",
+      "amount": 1,
+      "unit": "stk",
+      "item": "hvítlaukshaus",
+      "note": "skorinn í tvennt þversum",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "kapers",
+      "amount": 2,
+      "unit": "msk",
+      "item": "kapers",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "olifur",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "grænar ólífur",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "olifuolia2",
+      "amount": 3,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "vatn",
+      "amount": 2,
+      "unit": "dl",
+      "item": "vatn",
+      "note": "eða kjötsoð eða hvítvín",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "sitrona",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "safinn – geymið helmingana",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "oregano2",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "ferskt oregano",
+      "note": "saxað",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "timjan2",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "ferskt timjan",
+      "note": "saxað",
+      "group": "Grænmeti"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 1,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "group": "Grænmeti",
+      "scalable": false
+    },
+    {
+      "id": "feta",
+      "amount": 100,
+      "unit": "g",
+      "item": "fetaostur",
+      "note": "mulinn",
+      "group": "Til að bera fram"
+    },
+    {
+      "id": "skrautjurtir",
+      "amount": 1,
+      "unit": "búnt",
+      "item": "ferskt oregano og timjan",
+      "note": "til skrauts, má sleppa",
+      "group": "Til að bera fram"
+    },
+    {
+      "id": "sitronubatar",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "í bátum, til skrauts, má sleppa",
+      "group": "Til að bera fram"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þerrið {{lambalaeri}} með eldhúspappír og skerið grunnar rákir í fituhliðina með beittum hnífi svo kryddlögurinn nái inn í kjötið.",
+      "refs": [
+        "lambalaeri"
+      ]
+    },
+    {
+      "text": "Blandið saman {{hvitlaukur}}, {{olifuolia}}, {{oregano}}, {{timjan}}, {{sinnep}}, {{salt}}, {{pipar}} og berkinum af {{sitronuborkur}} í lítilli skál. Nuddið blöndunni vel inn í lambið á allar hliðar. Látið marinerast í kæli, helst yfir nótt en minnst klukkustund – bragðmunurinn er verulegur.",
+      "refs": [
+        "hvitlaukur",
+        "olifuolia",
+        "oregano",
+        "timjan",
+        "sinnep",
+        "salt",
+        "pipar",
+        "sitronuborkur"
+      ]
+    },
+    {
+      "text": "Hitið ofninn í 190°C og klæðið stóra og djúpa ofnskúffu með bökunarpappír. Stór pottjárnspottur með loki hentar líka vel.",
+      "refs": []
+    },
+    {
+      "text": "Setjið {{kartoflur}}, {{paprikur}}, {{tomatar}}, {{raudlaukur}}, {{olifur}} og {{kapers}} í skúffuna. Veltið öllu vel upp úr {{olifuolia2}}, {{oregano2}}, {{timjan2}}, safanum úr {{sitrona}} og {{vatn}}. Bætið {{larvidarlauf}} út í og saltið og piprið grænmetið eftir smekk.",
+      "refs": [
+        "kartoflur",
+        "paprikur",
+        "tomatar",
+        "raudlaukur",
+        "olifur",
+        "kapers",
+        "olifuolia2",
+        "oregano2",
+        "timjan2",
+        "sitrona",
+        "vatn",
+        "larvidarlauf"
+      ]
+    },
+    {
+      "text": "Leggið lambið ofan á grænmetið með fituhliðina upp og setjið helmingana af {{hvitlaukshaus}} ásamt kreistu sítrónuhelmingunum í skúffuna. Lokið þétt með bökunarpappír og álpappír yfir – eða loki – svo gufan haldist inni.",
+      "refs": [
+        "hvitlaukshaus"
+      ]
+    },
+    {
+      "text": "Eldið í ofninum í 2½–2¾ klukkustundir, eða þar til kjötið dettur af beininu. Kíkið á skúffuna um miðja eldun og bætið við smá vatni ef grænmetið er farið að þorna.",
+      "refs": []
+    },
+    {
+      "text": "Takið pappírinn eða lokið af, hækkið hitann í 220°C og eldið áfram í um 20 mínútur þar til lambið er fallega gyllt. Ef grænmetið á enn eftir að taka lit má færa lambið á fat og setja skúffuna undir grillið í ofninum í 2–3 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Fjarlægið sítrónuhelmingana og lárviðarlaufið og kreistið mjúku hvítlauksrifin úr hýðinu út í soðið. Rífið kjötið gróft, berið fram með grænmetinu og soðinu og stráið {{feta}} yfir. Skreytið með {{skrautjurtir}} og {{sitronubatar}} ef vill.",
+      "refs": [
+        "feta",
+        "skrautjurtir",
+        "sitronubatar"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: lárviðarlaufið var í hráefnalistanum en kom hvergi fyrir í leiðbeiningunum – hér fer það í skúffuna með grænmetinu. Magn af fetaosti var óskilgreint og er hér sett sem 100 g. Marineringin er færð fremst í skrefin svo hún gleymist ekki áður en ofninn er hitaður.",
+    "storage": "Afgangar geymast í 3 daga í kæli og allt að 3 mánuði í frysti. Hitið upp við vægan hita í potti eða ofni með smá vatni eða soði svo kjötið þorni ekki.",
+    "variants": "Ef ferskt oregano fæst ekki má nota 1 msk af þurrkuðu í kryddlöginn og klípu út í grænmetið. Hvítvín eða lambasoð í stað vatns gefur enn meira bragð í soðið. Ólífum og kapers má sleppa eða breyta eftir smekk, og grænmetið má aðlaga – veljið bara tegundir sem þola langa eldun."
+  },
+  "source": {
+    "url": "https://www.oliveandmango.com/greek-style-kleftiko-lamb-with-potatoes/",
+    "site": "oliveandmango.com"
+  }
+}

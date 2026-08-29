@@ -1,0 +1,228 @@
+{
+  "title": "Hægeldaðir lambaskankar",
+  "subtitle": "meyrt lambakjöt í rauðvínssósu",
+  "description": "Lambaskankar eldaðir lengi og rólega þar til kjötið dettur af beininu, bornir fram með djúpri rauðvínssósu. Fyrirhafnarlítill veislumatur sem sér að mestu um sig sjálfur.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur",
+    "frystivaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 20,
+    "cook": 480
+  },
+  "ingredients": [
+    {
+      "id": "skankar",
+      "amount": 4,
+      "unit": "stk",
+      "item": "lambaskankar"
+    },
+    {
+      "id": "hveiti",
+      "amount": 1.5,
+      "unit": "msk",
+      "item": "hveiti"
+    },
+    {
+      "id": "olia",
+      "amount": 3,
+      "unit": "msk",
+      "item": "matarolía",
+      "note": "til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "stór"
+    },
+    {
+      "id": "gulraetur",
+      "amount": 3,
+      "unit": "stk",
+      "item": "gulrætur",
+      "note": "meðalstórar"
+    },
+    {
+      "id": "selleri",
+      "amount": 3,
+      "unit": "stk",
+      "item": "sellerístilkar"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 5,
+      "unit": "rif",
+      "item": "hvítlaukur"
+    },
+    {
+      "id": "tomatpurra",
+      "amount": 2,
+      "unit": "msk",
+      "item": "tómatpúrra"
+    },
+    {
+      "id": "raudvin",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "þurrt rauðvín"
+    },
+    {
+      "id": "sod",
+      "amount": 5,
+      "unit": "dl",
+      "item": "lambasoð",
+      "note": "t.d. úr teningi"
+    },
+    {
+      "id": "salt",
+      "amount": 0.75,
+      "unit": "tsk",
+      "item": "fínt salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "malaður",
+      "scalable": false
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "þurrkað rósmarín"
+    },
+    {
+      "id": "timjan",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "þurrkað timjan"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 4,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "scalable": false
+    },
+    {
+      "id": "maismjol",
+      "amount": 2.5,
+      "unit": "msk",
+      "item": "maísmjöl",
+      "note": "maizena"
+    },
+    {
+      "id": "balsamedik",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "balsamedik"
+    },
+    {
+      "id": "sykur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "sykur",
+      "note": "má sleppa"
+    },
+    {
+      "id": "saltpipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt og svartur pipar",
+      "note": "eftir smekk",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Setjið {{skankar}} í stórt ílát, stráið um tveimur þriðju af {{hveiti}} yfir ásamt {{saltpipar}} og nuddið inn í kjötið. Klappið létt af skönkunum til að losa umframhveiti.",
+      "refs": [
+        "skankar",
+        "hveiti",
+        "saltpipar"
+      ]
+    },
+    {
+      "text": "Hitið tvo þriðju af {{olia}} á stórri pönnu og brúnið skankana á öllum hliðum, um 10 mínútur. Snúið þeim oft svo allar hliðar fái fallegan lit – brúnunin gefur sósunni bragðið. Færið kjötið í hægeldunarpottinn.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Saxið {{laukur}} og {{hvitlaukur}} smátt á meðan kjötið brúnast. Flysjið {{gulraetur}} og skerið á ská í frekar stóra bita og skerið {{selleri}} í litla bita.",
+      "refs": [
+        "laukur",
+        "hvitlaukur",
+        "gulraetur",
+        "selleri"
+      ]
+    },
+    {
+      "text": "Bætið afganginum af {{olia}} á pönnuna og brúnið grænmetið í um 3 mínútur, hrærið oft. Bætið {{tomatpurra}} og afganginum af {{hveiti}} út í og hrærið vel.",
+      "refs": [
+        "olia",
+        "tomatpurra",
+        "hveiti"
+      ]
+    },
+    {
+      "text": "Hellið {{raudvin}} á pönnuna og hrærið í um eina mínútu til að ná steikarskófinni upp af botninum. Bætið {{sod}}, {{salt}}, {{pipar}}, {{rosmarin}}, {{timjan}} og {{larvidarlauf}} út í. Hellið öllu yfir kjötið í hægeldunarpottinum.",
+      "refs": [
+        "raudvin",
+        "sod",
+        "salt",
+        "pipar",
+        "rosmarin",
+        "timjan",
+        "larvidarlauf"
+      ]
+    },
+    {
+      "text": "Eldið á hárri stillingu í 4 klukkustundir eða lágri stillingu í 8 klukkustundir.",
+      "refs": []
+    },
+    {
+      "text": "Athugið hvort kjötið sé meyrt – það á að losna auðveldlega af beininu með gaffli. Ef ekki, eldið áfram í 30 mínútur í senn og athugið aftur. Veiðið kjötið upp úr pottinum með gataspaða og haldið því heitu á meðan sósan er gerð.",
+      "refs": []
+    },
+    {
+      "text": "Hellið soðinu úr hægeldunarpottinum í stóran pott og fleytið mesta fitulagið ofan af. Hrærið {{maismjol}} saman við örlítið af köldu vatni í lítilli skál þar til úr verður þykk en rennandi blanda.",
+      "refs": [
+        "maismjol"
+      ]
+    },
+    {
+      "text": "Hitið sósuna að suðu og pískið maísmjölsblönduna saman við smátt og smátt. Látið malla rólega þar til sósan hefur þykknað að ykkar smekk, það tekur 2–4 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Smakkið sósuna til með {{balsamedik}}, {{sykur}} og {{saltpipar}}. Berið skankana fram með sósunni.",
+      "refs": [
+        "balsamedik",
+        "sykur",
+        "saltpipar"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: bætt við að fleyta fituna ofan af soðinu áður en sósan er þykkt – lambaskankar gefa frá sér töluverða fitu á löngum eldunartíma og sósan verður annars flotmikil. Einnig bætt við ofnaðferð í athugasemdum fyrir þau sem eiga ekki hægeldunarpott.",
+    "storage": "Geymist í 3–4 daga í kæli og allt að 3 mánuði í frysti. Geymið kjötið í sósunni svo það þorni ekki, og hitið rólega upp í potti.",
+    "variants": "Ef hægeldunarpottur er ekki til má nota pott með þéttu loki í ofni við 150 °C í 3–3½ klukkustund, þar til kjötið losnar af beininu. Nautasoð virkar vel í stað lambasoðs. Rauðvíninu má skipta út fyrir sama magn af soði ásamt 1 tsk af balsamediki til viðbótar."
+  },
+  "source": {
+    "url": "https://whereismyspoon.co/slow-cooker-lamb-shanks/",
+    "site": "whereismyspoon.co"
+  }
+}

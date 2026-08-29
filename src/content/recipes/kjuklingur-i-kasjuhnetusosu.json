@@ -1,0 +1,169 @@
+{
+  "title": "Kjúklingur í kasjúhnetusósu",
+  "subtitle": "fljótlegur asískur kvöldmatur með ristuðum kasjúhnetum",
+  "description": "Bragðmikill kjúklingaréttur með ristuðum kasjúhnetum, brokkolíi og papriku í asískri sósu úr hoisin-, ostru- og sojasósu. Fullkominn kvöldmatur á virkum degi, borinn fram með hrísgrjónum.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 10,
+    "cook": 20
+  },
+  "ingredients": [
+    {
+      "id": "kasjuhnetur",
+      "amount": 150,
+      "unit": "g",
+      "item": "kasjúhnetur",
+      "note": "ósaltaðar"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "stk",
+      "item": "rauð paprika"
+    },
+    {
+      "id": "brokkoli",
+      "amount": 1,
+      "unit": "stk",
+      "item": "brokkolí"
+    },
+    {
+      "id": "kjuklingur",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kjúklingabringur"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "olía til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "pressuð",
+      "group": "Sósa"
+    },
+    {
+      "id": "hrisgrjonaedik",
+      "amount": 1.5,
+      "unit": "msk",
+      "item": "hrísgrjónaedik",
+      "group": "Sósa"
+    },
+    {
+      "id": "fiskisosa",
+      "amount": 1.5,
+      "unit": "msk",
+      "item": "fiskisósa",
+      "group": "Sósa"
+    },
+    {
+      "id": "sojasosa",
+      "amount": 3,
+      "unit": "msk",
+      "item": "sojasósa",
+      "group": "Sósa"
+    },
+    {
+      "id": "hoisinsosa",
+      "amount": 3,
+      "unit": "msk",
+      "item": "hoisinsósa",
+      "group": "Sósa"
+    },
+    {
+      "id": "ostrusosa",
+      "amount": 0.5,
+      "unit": "dl",
+      "item": "ostrusósa",
+      "group": "Sósa"
+    },
+    {
+      "id": "engifer",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "malað engifer",
+      "group": "Sósa"
+    },
+    {
+      "id": "chilikrydd",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "chilíkrydd",
+      "note": "eftir smekk",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hrærið {{hvitlaukur}}, {{hrisgrjonaedik}}, {{fiskisosa}}, {{sojasosa}}, {{hoisinsosa}}, {{ostrusosa}} og {{engifer}} saman í skál.",
+      "refs": [
+        "hvitlaukur",
+        "hrisgrjonaedik",
+        "fiskisosa",
+        "sojasosa",
+        "hoisinsosa",
+        "ostrusosa",
+        "engifer"
+      ]
+    },
+    {
+      "text": "Ristið {{kasjuhnetur}} á þurri pönnu í 3–4 mínútur og hrærið reglulega svo þær brenni ekki. Takið af pönnunni og geymið.",
+      "refs": [
+        "kasjuhnetur"
+      ]
+    },
+    {
+      "text": "Skerið {{laukur}} í skífur, saxið {{paprika}} og skerið {{brokkoli}} í litla bita.",
+      "refs": [
+        "laukur",
+        "paprika",
+        "brokkoli"
+      ]
+    },
+    {
+      "text": "Skerið {{kjuklingur}} í litla bita. Hitið {{olia}} á pönnunni og steikið kjúklinginn í 4–5 mínútur, eða þar til hann hefur brúnast á öllum hliðum.",
+      "refs": [
+        "kjuklingur",
+        "olia"
+      ]
+    },
+    {
+      "text": "Bætið grænmetinu saman við og steikið áfram í 3–4 mínútur – grænmetið á að halda smá biti. Bætið hnetunum saman við og að lokum sósunni og látið malla við vægan hita í um 5 mínútur, eða þar til kjúklingurinn er eldaður í gegn.",
+      "refs": []
+    },
+    {
+      "text": "Smakkið til með {{chilikrydd}} ef þið viljið smá hita. Berið fram með soðnum hrísgrjónum.",
+      "refs": [
+        "chilikrydd"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: bætt við tímaviðmiðum á hverju eldunarstigi, en frumuppskriftin segir aðeins „nokkrar mínútur“ og „látið aðeins malla“. Fyrirsögnin lofar réttinum tilbúnum á 15 mínútum, sem gengur ekki upp fyrir fjórar bringur ásamt grænmeti og ristuðum hnetum – hér er gefinn raunhæfari heildartími, um 30 mínútur. Vörumerkjatilvísanir voru felldar burt, olía til steikingar sett inn sem hráefni og meðlætistillögu um hrísgrjón bætt við.",
+    "storage": "Geymist í 2–3 daga í kæli og má frysta í allt að 2 mánuði. Hitið upp á pönnu eða í örbylgjuofni – hneturnar missa þó stökkleikann við geymslu.",
+    "variants": "Hoisinsósa, ostrusósa og hrísgrjónaedik fást í flestum stórmörkuðum og asískum matvöruverslunum. Í stað fiskisósu má nota jafn mikið af sojasósu. Kasjúhnetum má skipta út fyrir ósaltaðar jarðhnetur. Berið fram með hrísgrjónum eða núðlum."
+  },
+  "source": {
+    "url": "https://grgs.is/recipe/faranlega-godur-kjuklingur-i-kasjuhnetusosu-tilbuinn-a-15-minutum/",
+    "site": "grgs.is"
+  }
+}

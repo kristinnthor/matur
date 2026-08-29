@@ -1,0 +1,41 @@
+{
+  "source": {
+    "url": "http://www.bestrecipes.com.au/recipe/mars-bar-cheesecake-L903.html",
+    "site": "bestrecipes.com.au"
+  },
+  "fetched": "2026-08-29T15:32:03.783Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Mars Bar Cheesecake recipe",
+    "yield": "12",
+    "prepTime": "PT60M",
+    "cookTime": "PT420M",
+    "totalTime": "PT480M",
+    "ingredients": [
+      "250g chocolate biscuits",
+      "125g butter, melted",
+      "1 tbs vanilla sugar",
+      "1 tbs brown sugar",
+      "20g butter",
+      "4.00 tbs cream",
+      "60g Baking Milk Chocolate, finely chopped",
+      "1/4 cup water boiling",
+      "3 tsp gelatine powder",
+      "500g cream cheese, softened",
+      "1/2 cup caster sugar",
+      "200ml thickened cream",
+      "3 Mars Bars, finely chopped"
+    ],
+    "instructions": [
+      "Base: Process biscuits until mixture resembles fine breadcrumbs. Mix in butter and vanilla sugar until just combined.",
+      "Press mixture evenly over base and up ½ the side of spring-form tin. Place on tray and refrigerate about 30 minutes or until firm.",
+      "Butterscotch Sauce: Combine brown sugar, butter and cream in small saucepan. Stir over low heat, without boiling, until sugar dissolves. Set aside to cool and thicken.",
+      "Chocolate Sauce: Combine chocolate and cream in another small saucepan, stir until chocolate melts. Set aside to cool and thicken.",
+      "Filling: Sprinkle gelatine 1 teaspoon at a time over the boiling water in a heatproof jug and stir until gelatine dissolves. Cool for several minutes.",
+      "Beat cream cheese in a medium bowl with electric mixer until smooth. Add caster sugar and beat until soft peaks form. Beat in cream until soft peaks form. Beat in gelatine mixture until combined. Stir through the chopped Mars Bars.",
+      "Spoon half of the cream cheese mixture into crumb crust and drizzle the butterscotch and chocolate sauce over cream cheese mixture. Pull skewer backwards and forwards through mixture to create a rippled effect.",
+      "Repeat with remaining cream cheese mixture and sauces. Cover cheesecake, refrigerate for several hours or overnight until set.",
+      "Garnish with extra Mars Bars for effect and drizzle with any remaining sauces."
+    ]
+  }
+}

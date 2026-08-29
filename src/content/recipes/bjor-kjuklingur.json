@@ -1,0 +1,242 @@
+{
+  "title": "Bjórkjúklingur með kartöflusalati, fylltum sveppum og kaldri sósu",
+  "subtitle": "heill kjúklingur á bjórdós með þrennu meðlæti",
+  "description": "Heill kjúklingur sem stendur uppréttur á bjórdós og gufusýðst að innan á meðan skinnið verður stökkt. Borinn fram með fersku kartöflusalati með chilli og graslauk, fylltum sveppum og kaldri ostasósu – alvöru veislumatur.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 30,
+    "cook": 90
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "heill kjúklingur",
+      "note": "um 1,2–1,5 kg",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "bjor",
+      "amount": 1,
+      "unit": "dós",
+      "item": "bjór",
+      "note": "33 cl, millidökkur",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "sitrona",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "í sneiðum",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "timjan",
+      "amount": 1,
+      "unit": "stk",
+      "item": "grein ferskt timjan",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1,
+      "unit": "stk",
+      "item": "grein ferskt rósmarín",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Kjúklingur",
+      "scalable": false
+    },
+    {
+      "id": "saltpipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt og nýmalaður pipar",
+      "note": "eftir smekk",
+      "group": "Kjúklingur",
+      "scalable": false
+    },
+    {
+      "id": "smaelki",
+      "amount": 600,
+      "unit": "g",
+      "item": "smælki",
+      "group": "Kartöflusalat"
+    },
+    {
+      "id": "syrdur",
+      "amount": 2,
+      "unit": "dl",
+      "item": "sýrður rjómi 18%",
+      "group": "Kartöflusalat"
+    },
+    {
+      "id": "graslaukur",
+      "amount": 2,
+      "unit": "msk",
+      "item": "graslaukur",
+      "note": "saxaður",
+      "group": "Kartöflusalat"
+    },
+    {
+      "id": "skalott",
+      "amount": 2,
+      "unit": "stk",
+      "item": "skalottlaukar",
+      "note": "fínt saxaðir",
+      "group": "Kartöflusalat"
+    },
+    {
+      "id": "chilli",
+      "amount": 1,
+      "unit": "stk",
+      "item": "rauður chilli",
+      "note": "fræhreinsaður og fínt saxaður",
+      "group": "Kartöflusalat"
+    },
+    {
+      "id": "sitrona_salat",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "rifinn börkur og safi",
+      "group": "Kartöflusalat"
+    },
+    {
+      "id": "hunang",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "hunang",
+      "group": "Kartöflusalat"
+    },
+    {
+      "id": "sveppir",
+      "amount": 8,
+      "unit": "stk",
+      "item": "stórir sveppir",
+      "group": "Fylltir sveppir"
+    },
+    {
+      "id": "beikonkurl",
+      "amount": 100,
+      "unit": "g",
+      "item": "beikonkurl",
+      "group": "Fylltir sveppir"
+    },
+    {
+      "id": "ostur",
+      "amount": 150,
+      "unit": "g",
+      "item": "hvítmygluostur",
+      "note": "t.d. camembert-hringur",
+      "group": "Fylltir sveppir"
+    },
+    {
+      "id": "mjolk",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "mjólk",
+      "group": "Köld sósa"
+    },
+    {
+      "id": "gradaostur",
+      "amount": 150,
+      "unit": "g",
+      "item": "gráðaostur eða piparostur",
+      "group": "Köld sósa"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Skolið {{kjuklingur}} og þerrið vel. Gerið lítil göt undir skinnið og stingið sneið af {{sitrona}}, {{timjan}} og {{rosmarin}} inn í götin.",
+      "refs": [
+        "kjuklingur",
+        "sitrona",
+        "timjan",
+        "rosmarin"
+      ]
+    },
+    {
+      "text": "Opnið {{bjor}} og hellið um þriðjungi úr dósinni. Komið dósinni fyrir í holi kjúklingsins þannig að fuglinn standi uppréttur – bjórinn gufusýður hann að innan og heldur kjötinu safaríku.",
+      "refs": [
+        "bjor"
+      ]
+    },
+    {
+      "text": "Nuddið kjúklinginn með {{olia}} og kryddið vel á öllum hliðum með {{saltpipar}}.",
+      "refs": [
+        "olia",
+        "saltpipar"
+      ]
+    },
+    {
+      "text": "Hitið grillið og eldið við óbeinan meðalhita: setjið kjúklinginn uppréttan á grillið, lokið og grillið í um 1,5 klst eftir stærð, þar til safinn rennur tær og kjarnhiti í læri nær 74 °C. Gott er að vefja álpappír lauslega um fuglinn fyrstu 15–25 mínúturnar svo skinnið brenni ekki. Í ofni: eldið kjúklinginn uppréttan á ofnskúffu við 200 °C í 75–90 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Sjóðið {{smaelki}} heilt í söltuðu vatni í 15–20 mínútur, þar til kartöflurnar eru rétt meyrar. Sigtið, kælið og skerið hverja kartöflu í fjóra bita.",
+      "refs": [
+        "smaelki"
+      ]
+    },
+    {
+      "text": "Blandið {{skalott}}, {{chilli}} og {{graslaukur}} saman í skál. Hrærið {{syrdur}}, {{hunang}} og rifnum berki af {{sitrona_salat}} saman við og smakkið til með safanum úr henni og {{saltpipar}}. Veltið kartöflubitunum varlega upp úr sósunni og geymið í kæli þar til borið er fram.",
+      "refs": [
+        "skalott",
+        "chilli",
+        "graslaukur",
+        "syrdur",
+        "hunang",
+        "sitrona_salat",
+        "saltpipar"
+      ]
+    },
+    {
+      "text": "Hreinsið stilkana úr {{sveppir}}. Steikið {{beikonkurl}} á þurri pönnu þar til það er stökkt og skiptið því jafnt ofan í sveppina. Skerið {{ostur}} smátt, leggið ofan á beikonið og kryddið með {{saltpipar}}.",
+      "refs": [
+        "sveppir",
+        "beikonkurl",
+        "ostur",
+        "saltpipar"
+      ]
+    },
+    {
+      "text": "Grillið sveppina í 10–15 mínútur þar til osturinn er bráðinn og sveppirnir meyrir – eða bakið þá í ofni við 200 °C jafn lengi.",
+      "refs": []
+    },
+    {
+      "text": "Hitið {{mjolk}} í potti upp að suðu. Bætið {{gradaostur}} út í og pískið, eða maukið með töfrasprota, þar til sósan er slétt. Smakkið til með {{saltpipar}} og kælið sósuna vel fyrir framreiðslu.",
+      "refs": [
+        "mjolk",
+        "gradaostur",
+        "saltpipar"
+      ]
+    },
+    {
+      "text": "Látið kjúklinginn hvíla í 10 mínútur áður en dósin er fjarlægð – varúð, dósin og vökvinn í henni eru brennheit. Hlutið fuglinn niður og berið fram með kartöflusalatinu, fylltu sveppunum og köldu sósunni.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: magntölurnar í frumuppskriftinni ganga ekki upp – þar stendur 6 g smælki, 3 ml sýrður rjómi, 2 g graslaukur, 1 g beikon, 5 ml mjólk og 2 g ostur í sósuna. Hér er magnið leiðrétt í 600 g smælki, 2 dl sýrðan rjóma, 2 msk graslauk, 100 g beikonkurl, 2½ dl mjólk og 150 g gráðaost. Bætt við ofnaðferð fyrir kjúklinginn og sveppina svo uppskriftin virki allt árið, kjarnhitaviðmiði (74 °C í læri) og hvíldartíma. Vörumerki almennuð: hvítmygluostur í stað Dala hrings. Sítrónan í kartöflusalatinu er minnkuð í hálfa því aðferðin notar aðeins börk og safa af hálfri sítrónu. Eldunartími er skráður 90 mínútur í samræmi við uppgefinn grilltíma frumuppskriftarinnar (yfirleitt um 1,5 klst) þótt hún gefi upp 110 mínútur í heild – sveppirnir grillast samhliða kjúklingnum.",
+    "storage": "Kjúklingurinn geymist í 3 daga í kæli og afgangar eru góðir í samlokur og salöt. Kartöflusalatið geymist í 2 daga í kæli en hentar ekki í frysti. Kalda sósan geymist í 3–4 daga í kæli.",
+    "variants": "Notið millidökkan bjór eða ljósan lager – mjög dökkur og beiskur bjór getur gefið rammt bragð, og óáfengur bjór virkar líka. Í sósuna má nota piparost í stað gráðaosts og í sveppina hvaða hvítmygluost sem er. Fyrir léttara kartöflusalat má nota sýrðan rjóma 10%."
+  },
+  "source": {
+    "url": "http://www.gottimatinn.is/uppskriftir/kjotrettir/kjuklingur/bjor-kjuklingur-med-kartoflusalati-fylltum-sveppum-og-kaldri-sosu/98",
+    "site": "gottimatinn.is"
+  }
+}

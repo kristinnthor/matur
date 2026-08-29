@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://whereismyspoon.co/slow-cooker-lamb-shanks/",
+    "site": "whereismyspoon.co"
+  },
+  "fetched": "2026-08-29T15:31:53.233Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Slow Cooker Lamb Shanks",
+    "yield": "4",
+    "prepTime": "PT20M",
+    "cookTime": "PT480M",
+    "ingredients": [
+      "4 lamb shanks",
+      "1 ½ tablespoon all-purpose flour (divided)",
+      "3 tablespoons vegetable oil (divided)",
+      "1 onion (large)",
+      "3 carrots ( medium)",
+      "3 celery sticks",
+      "5 garlic cloves",
+      "2 tablespoons tomato paste",
+      "1 cup dry red wine ( 250 ml, Note 1)",
+      "2 cups lamb stock (500 ml, Note 2)",
+      "¾ teaspoon fine sea salt",
+      "½ teaspoon ground black pepper",
+      "1 teaspoon rosemary",
+      "1 teaspoon thyme",
+      "4 bay leaves",
+      "2 ½ tablespoons cornstarch",
+      "1 teaspoon balsamic vinegar",
+      "1 teaspoon sugar (optional, Note 3)",
+      "more fine sea salt and black pepper"
+    ],
+    "instructions": [
+      "Season meat: Place the lamb shanks in a large container, sprinkle them with about ½ to 1 tablespoon flour, salt, and pepper, and rub them to coat. Pat gently to remove the excess flour.4&#32;lamb shanks + 1 ½ tablespoon&#32;all-purpose flour + salt + pepper",
+      "Brown lamb shanks: Heat 2 tablespoons of the oil in a large pan. Brown the meat on all sides; it will take about 10 minutes. Turn them often to make sure that all the sides are nicely colored. Transfer the meat to the slow cooker.",
+      "Chop the vegetables while the meat browns. Finely chop the onion and the garlic. Peel and cut the carrots at an angle into relatively larger pieces, and cut the celery sticks into small pieces.1&#32;onion + 3&#32;carrots + 3&#32;celery sticks + 5&#32;garlic cloves",
+      "Brown vegetables: Add another tablespoon of oil to the pan. Brown the vegetables for about 3 minutes, stirring often. Add tomato paste and about ½ tablespoon flour (you can use the leftover flour from flouring the shanks). Stir well.1 Tbsp of the oil + 2 tablespoons&#32;tomato paste + ½ Tbsp flour",
+      "Add liquids: Pour in the red wine and stir well for about one minute. Add the stock, fine sea salt, black pepper, rosemary, thyme, and bay leaves. Pour the liquid into the slow cooker over the meat.1 cup&#32;dry red wine/ 250 ml + 2 cups&#32;lamb stock / 500 ml + ¾ teaspoon&#32;fine sea salt + ½ teaspoon&#32;ground black pepper + 1 teaspoon&#32;rosemary + 1 teaspoon&#32;thyme + 4&#32;bay leaves",
+      "Cook on high for 4 hours or on low for 8 hours.",
+      "Check: Make sure that the meat is tender. Check with a fork; you should be able to pull the meat off the bone easily. If they are not quite there yet, give them another 30 minutes, then check again until they are as tender as possible. Remove the meat pieces from the crockpot with a slotted spoon. Keep warm until you make the sauce.",
+      "Cornstarch slurry: Pour the contents of the slow cooker into a large pan. Whisk the cornstarch with a bit of cold water in a small bowl until you have a thick yet pourable paste.2 ½ tablespoons&#32;cornstarch",
+      "Thicken gravy: Once the sauce starts to boil gently, start whisking in the cornstarch mixture. Stir well and let bubble gently until the sauce thickens to the desired consistency; it should take 2-4 minutes.",
+      "Adjust the taste with salt, pepper, balsamic vinegar, and sugar (if necessary, see Note 3).1 teaspoon&#32;balsamic vinegar + 1 teaspoon&#32;sugar + more fine sea salt and black pepper"
+    ]
+  }
+}

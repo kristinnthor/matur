@@ -1,0 +1,141 @@
+{
+  "title": "Basilkjúklingur með hlynsírópi og grilluðum fetaosti",
+  "subtitle": "fljótlegur ofnréttur með pestói og tómötum",
+  "description": "Kjúklingur bakaður í hlynsírópi með basilpestói, tómatsneiðum og gullnum fetaosti. Dásamlega fljótlegur í gerð og fullkominn með tagliatelle og góðu salati, hvort sem er á virkum degi eða yfir helgi.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "fljotlegt"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 15,
+    "cook": 45
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingur",
+      "amount": 600,
+      "unit": "g",
+      "item": "kjúklingabringur",
+      "note": "skinnlausar, eða úrbeinuð kjúklingalæri"
+    },
+    {
+      "id": "hlynsirop",
+      "amount": 2,
+      "unit": "dl",
+      "item": "hlynsíróp"
+    },
+    {
+      "id": "pesto",
+      "amount": 1,
+      "unit": "dl",
+      "item": "basilpestó",
+      "note": "aðkeypt eða heimagert, sjá hér að neðan"
+    },
+    {
+      "id": "tomatar",
+      "amount": 4,
+      "unit": "stk",
+      "item": "tómatar"
+    },
+    {
+      "id": "fetaostur",
+      "amount": 1,
+      "unit": "dós",
+      "item": "fetaostur í olíu"
+    },
+    {
+      "id": "basilika",
+      "amount": 50,
+      "unit": "g",
+      "item": "fersk basilíka",
+      "note": "stilkar fjarlægðir",
+      "group": "Heimagert basilpestó"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "group": "Heimagert basilpestó"
+    },
+    {
+      "id": "olifuolia",
+      "amount": 5,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Heimagert basilpestó"
+    },
+    {
+      "id": "furuhnetur",
+      "amount": 3,
+      "unit": "msk",
+      "item": "furuhnetur",
+      "group": "Heimagert basilpestó"
+    },
+    {
+      "id": "parmesan",
+      "amount": 3,
+      "unit": "msk",
+      "item": "parmesanostur",
+      "note": "rifinn",
+      "group": "Heimagert basilpestó"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 200 °C.",
+      "refs": []
+    },
+    {
+      "text": "Ef pestóið er heimagert: setjið {{basilika}}, {{hvitlaukur}}, {{furuhnetur}}, {{parmesan}} og {{olifuolia}} í matvinnsluvél eða könnu fyrir töfrasprota og maukið vel saman.",
+      "refs": [
+        "basilika",
+        "hvitlaukur",
+        "furuhnetur",
+        "parmesan",
+        "olifuolia"
+      ]
+    },
+    {
+      "text": "Hellið {{hlynsirop}} í eldfast mót og raðið {{kjuklingur}} ofan í. Sírópið ætti að ná um það bil ⅔ upp á kjúklingabitana.",
+      "refs": [
+        "hlynsirop",
+        "kjuklingur"
+      ]
+    },
+    {
+      "text": "Smyrjið {{pesto}} ofan á kjúklingabitana og verið óhrædd við að nota vel af því.",
+      "refs": [
+        "pesto"
+      ]
+    },
+    {
+      "text": "Skerið {{tomatar}} í sneiðar og raðið yfir kjúklinginn.",
+      "refs": [
+        "tomatar"
+      ]
+    },
+    {
+      "text": "Hellið olíunni af {{fetaostur}} og dreifið ostinum yfir allt.",
+      "refs": [
+        "fetaostur"
+      ]
+    },
+    {
+      "text": "Bakið í 40–50 mínútur, eða þar til kjúklingurinn er eldaður í gegn og fetaosturinn orðinn gullinn.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: skammtafjölda og undirbúningstíma vantaði og var bætt við (4 skammtar, um 15 mínútur í undirbúning). Heildarmagn af pestói var tilgreint (um 1 dl) í stað þess að gefa aðeins upp „rúmlega 1 msk á hvern bita“, svo hægt sé að skala uppskriftina.",
+    "storage": "Afgangar geymast í 2–3 daga í kæli. Hitið upp í ofni við 160 °C þar til rétturinn er heitur í gegn. Hentar síður í frysti því fetaosturinn og tómatarnir breyta um áferð við frystingu.",
+    "variants": "Úrbeinuð kjúklingalæri eru góð tilbreyting frá bringum og þola langan eldunartíma sérlega vel. Aðkeypt basilpestó virkar jafn vel og heimagert. Berið fram með tagliatelle og góðu salati."
+  },
+  "source": {
+    "url": "http://grgs.is/2014/02/24/5577/",
+    "site": "grgs.is"
+  }
+}

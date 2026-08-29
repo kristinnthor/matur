@@ -1,0 +1,29 @@
+{
+  "source": {
+    "url": "https://thecookful.com/make-beef-carpaccio/",
+    "site": "thecookful.com"
+  },
+  "fetched": "2026-08-29T15:31:51.251Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Beef Carpaccio Recipe",
+    "yield": "2",
+    "prepTime": "PT2H10M",
+    "cookTime": "",
+    "totalTime": "PT2H10M",
+    "ingredients": [
+      "⅓ lb. beef tenderloin",
+      "handful arugula",
+      "2 tsp. capers",
+      "2 tsp. red wine vinegar",
+      "4 tsp. olive oil",
+      "cracked black pepper",
+      "sea salt"
+    ],
+    "instructions": [
+      "Freeze beef tenderloin until very firm but not rock solid, about 1-2 hours. While the beef is in the freezer, place the plates in the fridge to chill.",
+      "Once the beef is firm, slice very thinly against the grain and place slices on chilled plates.",
+      "Top each serving with a handful of arugula and capers. Drizzle with vinegar and olive oil and add a pinch of freshly cracked black pepper and sea salt. Serve immediately."
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "title": "Sjónvarpskaka",
+  "subtitle": "dúnmjúk skúffukaka með stökkum kókostoppi",
+  "description": "Klassísk íslensk skúffukaka – dúnmjúkur botn með sætum og stökkum kókostoppi sem gyllist í ofninum. Dásamleg örlítið volg með ísköldu mjólkurglasi.",
+  "categories": [
+    "bakstur"
+  ],
+  "tags": [
+    "barnvaent",
+    "veislumatur"
+  ],
+  "servings": 24,
+  "time": {
+    "prep": 20,
+    "cook": 45
+  },
+  "ingredients": [
+    {
+      "id": "egg",
+      "amount": 4,
+      "unit": "stk",
+      "item": "egg",
+      "group": "Kakan"
+    },
+    {
+      "id": "sykur",
+      "amount": 300,
+      "unit": "g",
+      "item": "sykur",
+      "group": "Kakan"
+    },
+    {
+      "id": "vanilludropar",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "vanilludropar",
+      "group": "Kakan"
+    },
+    {
+      "id": "hveiti",
+      "amount": 250,
+      "unit": "g",
+      "item": "hveiti",
+      "group": "Kakan"
+    },
+    {
+      "id": "lyftiduft",
+      "amount": 3,
+      "unit": "tsk",
+      "item": "lyftiduft",
+      "group": "Kakan",
+      "scalable": false
+    },
+    {
+      "id": "smjor",
+      "amount": 50,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Kakan"
+    },
+    {
+      "id": "mjolk",
+      "amount": 2,
+      "unit": "dl",
+      "item": "mjólk",
+      "group": "Kakan"
+    },
+    {
+      "id": "smjor_toppur",
+      "amount": 100,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Kókostoppur"
+    },
+    {
+      "id": "pudursykur",
+      "amount": 200,
+      "unit": "g",
+      "item": "púðursykur",
+      "group": "Kókostoppur"
+    },
+    {
+      "id": "mjolk_toppur",
+      "amount": 70,
+      "unit": "ml",
+      "item": "mjólk",
+      "group": "Kókostoppur"
+    },
+    {
+      "id": "kokosmjol",
+      "amount": 150,
+      "unit": "g",
+      "item": "kókosmjöl",
+      "group": "Kókostoppur"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þeytið {{egg}} og {{sykur}} saman þar til blandan er létt og ljós og bætið þá {{vanilludropar}} saman við.",
+      "refs": [
+        "egg",
+        "sykur",
+        "vanilludropar"
+      ]
+    },
+    {
+      "text": "Blandið {{hveiti}} og {{lyftiduft}} saman og sigtið í nokkrum skömmtum út í eggjablönduna, blandið vel á milli.",
+      "refs": [
+        "hveiti",
+        "lyftiduft"
+      ]
+    },
+    {
+      "text": "Bræðið {{smjor}} við meðalhita og hrærið {{mjolk}} saman við. Hellið blöndunni varlega saman við deigið, blandið vel og skafið niður hliðarnar á milli.",
+      "refs": [
+        "smjor",
+        "mjolk"
+      ]
+    },
+    {
+      "text": "Hellið deiginu í skúffukökuform, um 30 × 40 cm að stærð. Klæðið formið með bökunarpappír og úðið með matarolíuspreyi – þá er auðveldara að ná kökunni úr þegar hún er kólnuð.",
+      "refs": []
+    },
+    {
+      "text": "Bakið við 175°C í 30–35 mínútur, eða þar til prjónn kemur hreinn út og kakan er farin að gyllast. Útbúið kókostoppinn á meðan.",
+      "refs": []
+    },
+    {
+      "text": "Bræðið {{smjor_toppur}}, {{pudursykur}} og {{mjolk_toppur}} saman í potti við meðalhita. Bætið {{kokosmjol}} saman við þegar allt er bráðið og blandið vel.",
+      "refs": [
+        "smjor_toppur",
+        "pudursykur",
+        "mjolk_toppur",
+        "kokosmjol"
+      ]
+    },
+    {
+      "text": "Hellið kókosblöndunni jafnt yfir heita kökuna, dreifið úr henni með spaða og bakið áfram í um 10 mínútur, eða þar til toppurinn er farinn að gyllast.",
+      "refs": []
+    },
+    {
+      "text": "Leyfið kökunni að kólna vel í forminu, lyftið henni síðan upp úr því og skerið í bita.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: skammtafjölda og undirbúningstíma vantaði og var bætt við – kakan gefur um 24 bita og undirbúningurinn tekur um 20 mínútur. Vörumerkjatilvísun á smjörinu var felld út.",
+    "storage": "Geymist í 3–4 daga í lokuðu íláti við stofuhita. Frystist vel í allt að 2 mánuði – skerið kökuna í bita fyrst og látið þiðna við stofuhita.",
+    "variants": "Í stað vanilludropa má nota vanillusykur í sama magni. Fyrir hátíðlegri útgáfu má dreypa bræddu dökku súkkulaði yfir kaldan kókostoppinn."
+  },
+  "source": {
+    "url": "https://www.gotteri.is/2018/10/05/sjonvarpskaka/",
+    "site": "gotteri.is"
+  }
+}

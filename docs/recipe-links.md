@@ -50,6 +50,51 @@ covers well under half the list.
 - `ljufmeti.com/page/4/` — a blog pagination page, not a recipe
 - `pinterest.com/pin-builder/` — Pinterest's own tool
 
+## Batch 2 — Pinterest food feed, 2026-08-29 (30 recipes)
+
+Source: the pins listed on the user's Pinterest "Food" board tab. 77 pins collected,
+57 with usable outbound links; junk (video/Facebook/Etsy/spam pins, tag-archive
+pages, dead domains) and duplicate dishes were dropped. 39 candidates imported —
+one fetch blocked (eefkooktzo.nl, 403) — and these 30 converted:
+
+| Slug | Source | Kind |
+|---|---|---|
+| eina-kjuklingauppskriftin | grgs.is | text |
+| sjonvarpskaka | gotteri.is | text |
+| bjor-kjuklingur | gottimatinn.is | jsonld |
+| franskur-kjuklingapottrettur | vinotek.is | text |
+| pizza-med-hakkbotni | eldhussogur.com | text |
+| kjuklingur-i-kasjuhnetusosu | grgs.is | text |
+| mexikofiskur | ljufmeti.com | text |
+| bayonne-skinka | gotteri.is | text |
+| haegeldad-lambalaeri | eldhussogur.com | text |
+| basilkjuklingur | grgs.is | text |
+| ostafylltar-kjuklingabringur | lindaben.is | text |
+| nautacarpaccio | thecookful.com | jsonld |
+| stracotto | closetcooking.com | text |
+| lambapottrettur-i-raudvini | vikalinka.com | jsonld |
+| lambaskankar | whereismyspoon.co | jsonld |
+| sitronu-estragon-kjuklingur | thefoodcharlatan.com | jsonld |
+| kleftiko | oliveandmango.com | text |
+| grillud-lambarif | simply-delicious-food.com | jsonld |
+| bolognese | oliviascuisine.com | jsonld |
+| nautakinnar-i-raudvini | recipetineats.com | jsonld |
+| spezzatino | supergoldenbakes.com | jsonld |
+| nauta-madras | foodleclub.com | jsonld |
+| fyllt-svinalund | neighborfoodblog.com | jsonld |
+| kjotbollusupa-med-sveppum | whatgreatgrandmaate.com | jsonld |
+| mars-ostakaka | bestrecipes.com.au | jsonld |
+| kokos-kjuklingakarri | gelukkigindekeuken.com | text |
+| kjuklingalaeri-i-sveppasosu | heerlijkehappen.nl | jsonld |
+| italskur-kjuklingapottrettur | 15gram.be | text |
+| kjuklingur-marsala | cookingqueens.nl | jsonld |
+| fiskur-i-gulri-sosu | recetariocanecositas.com | text |
+
+Eight spare drafts imported but not converted (run `npm run translate` when wanted):
+kjuklinga-ofnrettur-med-sveppum, dijon-kjuklingur-med-spinati, kjuklinga-cordon-bleu,
+cottage-pie, beef-wellington, ofnbakadir-lambaskankar, hunangs-dijon-kjuklingur,
+caesar-kjuklingur.
+
 ## Consequences for the plan
 
 1. **Translation is a smaller job than assumed.** 11 of 18 are already Icelandic. Those need

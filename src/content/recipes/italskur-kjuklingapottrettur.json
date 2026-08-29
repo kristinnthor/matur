@@ -1,0 +1,153 @@
+{
+  "title": "Ítalskur kjúklingapottréttur",
+  "subtitle": "með beikoni, sveppum og rósmarínkartöflum",
+  "description": "Ítalskur pottréttur með kjúklingaleggjum, beikoni, sveppum og tómatsósu, borinn fram með stökkum rósmarínkartöflum úr ofninum. Notaleg máltíð sem mallar að mestu sjálf.",
+  "categories": [
+    "kjuklingur",
+    "pottrettir"
+  ],
+  "tags": [
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 15,
+    "cook": 50
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingur",
+      "amount": 1,
+      "unit": "kg",
+      "item": "kjúklingaleggir",
+      "note": "eða læri"
+    },
+    {
+      "id": "beikon",
+      "amount": 125,
+      "unit": "g",
+      "item": "beikon",
+      "note": "í teningum"
+    },
+    {
+      "id": "kartoflur",
+      "amount": 1,
+      "unit": "kg",
+      "item": "kartöflur",
+      "note": "afhýddar og skornar í teninga"
+    },
+    {
+      "id": "raudlaukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "rauðlaukur",
+      "note": "gróft saxaður"
+    },
+    {
+      "id": "sveppir",
+      "amount": 150,
+      "unit": "g",
+      "item": "sveppir",
+      "note": "skornir í fjórðunga"
+    },
+    {
+      "id": "tomatsosa",
+      "amount": 5,
+      "unit": "dl",
+      "item": "tómatsósa",
+      "note": "passata"
+    },
+    {
+      "id": "vatn",
+      "amount": 1,
+      "unit": "dl",
+      "item": "vatn"
+    },
+    {
+      "id": "olifuolia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "scalable": false
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ferskt rósmarín",
+      "note": "fínt saxað"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "pipar",
+      "note": "eftir smekk",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Kryddið {{kjuklingur}} með helmingnum af {{salt}} og {{pipar}}. Brúnið leggina á öllum hliðum upp úr helmingnum af {{olifuolia}} í þykkbotna potti – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Takið þá upp úr og leggið til hliðar.",
+      "refs": [
+        "kjuklingur",
+        "salt",
+        "pipar",
+        "olifuolia"
+      ]
+    },
+    {
+      "text": "Steikið {{beikon}} og {{sveppir}} í sama potti í nokkrar mínútur, þar til sveppirnir hafa tekið lit.",
+      "refs": [
+        "beikon",
+        "sveppir"
+      ]
+    },
+    {
+      "text": "Setjið kjúklinginn aftur í pottinn ásamt {{tomatsosa}} og {{vatn}} og hitið að suðu. Lækkið hitann, setjið lok á og látið malla í 45 mínútur.",
+      "refs": [
+        "tomatsosa",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Hitið ofninn í 200 °C á meðan potturinn mallar.",
+      "refs": []
+    },
+    {
+      "text": "Sjóðið {{kartoflur}} í söltuðu vatni í 5 mínútur og hellið vatninu af. Veltið kartöflunum upp úr afganginum af olíunni, saltinu og piparnum og dreifið í eldfast mót. Bakið í 25 mínútur.",
+      "refs": [
+        "kartoflur"
+      ]
+    },
+    {
+      "text": "Snúið kartöflunum þegar bökunartíminn er hálfnaður og blandið {{raudlaukur}} saman við, svo laukurinn mýkist og sætist í ofninum. Stráið {{rosmarin}} yfir undir lokin og setjið mótið undir grillið í ofninum í 5 mínútur, þar til kartöflurnar eru stökkar.",
+      "refs": [
+        "raudlaukur",
+        "rosmarin"
+      ]
+    },
+    {
+      "text": "Smakkið pottréttinn til með salti og pipar og berið fram með rósmarínkartöflunum.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: í frumuppskriftinni fer rauðlaukurinn hrár undir grillið síðustu 5 mínúturnar og nær varla að eldast; hér er hann settur með kartöflunum þegar þeim er snúið, svo hann mýkist og sætist. Einnig bætt við að smakka réttinn til í lokin, því sósan er hvergi krydduð í frumuppskriftinni.",
+    "storage": "Pottrétturinn geymist í 3 daga í kæli og má frysta í allt að 3 mánuði. Kartöflurnar eru bestar nýbakaðar – bakið þær frekar ferskar þegar rétturinn er hitaður upp aftur.",
+    "variants": "Nota má kjúklingalæri eða -bringur í stað leggja, en styttið þá mallið í um 30 mínútur fyrir bringur. Ef ferskt rósmarín fæst ekki má nota 1 tsk af þurrkuðu. Í stað passata má nota dós af niðursoðnum tómötum, maukaða með töfrasprota."
+  },
+  "source": {
+    "url": "https://15gram.be/recepten/italiaanse-kipstoofschotel",
+    "site": "15gram.be"
+  }
+}

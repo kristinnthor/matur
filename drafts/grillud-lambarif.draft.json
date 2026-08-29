@@ -1,0 +1,34 @@
+{
+  "source": {
+    "url": "https://simply-delicious-food.com/easy-lemon-herb-grilled-lamb-ribs/",
+    "site": "simply-delicious-food.com"
+  },
+  "fetched": "2026-08-29T15:31:55.368Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Easy Lemon Herb Grilled Lamb Ribs",
+    "yield": "8",
+    "prepTime": "PT10M",
+    "cookTime": "PT30M",
+    "totalTime": "PT100M",
+    "ingredients": [
+      "1 kg (2lbs) lamb ribs",
+      "¼ cup olive oil",
+      "¼ cup lemon juice",
+      "2 tbsp chopped parsley",
+      "2 tsp chopped rosemary",
+      "1 tbsp dried mixed herbs",
+      "2-3 garlic cloves",
+      "1 tsp smoked paprika",
+      "½ tsp chilli flakes",
+      "2 tsp salt",
+      "1 tsp pepper"
+    ],
+    "instructions": [
+      "Finely chop the herbs and garlic then place in a bowl. Add the oil, lemon juice, dried herbs, smoked paprika and chilli flakes then season generously with salt and pepper.",
+      "Place the lamb ribs in a dish suitable for marinating then pour over the marinade. Cover and allow to marinate for at least 1 hour but up to 24 hours in the fridge.",
+      "Grill the ribs over medium-hot heat for 20-30 minutes. It's important to allow the fat to render out to give you the juiciest end result possible.",
+      "Once the ribs are cooked, remove from the heat and allow to rest for 5 minutes then serve with grilled lemons."
+    ]
+  }
+}

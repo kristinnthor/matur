@@ -1,0 +1,135 @@
+{
+  "title": "Grilluð lambarif með sítrónu og kryddjurtum",
+  "subtitle": "safarík lambarif í sítrónu- og kryddjurtalegi",
+  "description": "Lambarif marineruð í sítrónusafa, hvítlauk og kryddjurtum og grilluð þar til fitan er stökk og kjötið meyrt. Einfaldur veislumatur á grillið – eða í ofninn þegar ekki viðrar til að grilla.",
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 10,
+    "cook": 30
+  },
+  "ingredients": [
+    {
+      "id": "lambarif",
+      "amount": 1,
+      "unit": "kg",
+      "item": "lambarif"
+    },
+    {
+      "id": "olifuolia",
+      "amount": 4,
+      "unit": "msk",
+      "item": "ólífuolía"
+    },
+    {
+      "id": "sitronusafi",
+      "amount": 4,
+      "unit": "msk",
+      "item": "sítrónusafi",
+      "note": "úr 1–2 sítrónum"
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "ferskt rósmarín",
+      "note": "saxað"
+    },
+    {
+      "id": "kryddjurtir",
+      "amount": 1,
+      "unit": "msk",
+      "item": "þurrkuð kryddjurtablanda",
+      "note": "t.d. oregano, timjan og basilíka"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "reykt paprika"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "nýmalaður pipar",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Saxið {{steinselja}}, {{rosmarin}} og {{hvitlaukur}} smátt og setjið í skál. Bætið {{olifuolia}}, {{sitronusafi}}, {{kryddjurtir}}, {{paprika}} og {{chiliflogur}} út í ásamt {{salt}} og {{pipar}} og hrærið vel saman.",
+      "refs": [
+        "steinselja",
+        "rosmarin",
+        "hvitlaukur",
+        "olifuolia",
+        "sitronusafi",
+        "kryddjurtir",
+        "paprika",
+        "chiliflogur",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Leggið {{lambarif}} í fat, hellið kryddleginum yfir og veltið rifjunum vel upp úr honum. Hyljið og látið marinerast í kæli í minnst 1 klukkustund, allt að sólarhring – lengri tími gefur meira bragð.",
+      "refs": [
+        "lambarif"
+      ]
+    },
+    {
+      "text": "Grillið rifin við meðalháan hita í 20–30 mínútur og snúið þeim reglulega. Ekki hafa hitann of háan – fitan þarf tíma til að bráðna út, annars verða rifin seig í stað þess að verða safarík og stökk.",
+      "refs": []
+    },
+    {
+      "text": "Ef ekki er hægt að grilla: bakið rifin í ofni við 200 °C í 30–40 mínútur og kveikið á grillinu í ofninum síðustu mínúturnar til að fá stökka skorpu.",
+      "refs": []
+    },
+    {
+      "text": "Takið rifin af hitanum og látið þau hvíla í 5 mínútur áður en þau eru borin fram, gjarnan með grilluðum sítrónubátum.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: skammtafjölda breytt úr 8 í 4, því 1 kg af beinríkum lambarifjum dugar ekki fyrir 8 sem aðalréttur. Bætt við ofnaðferð, enda er grill ekki sjálfgefið allan ársins hring á Íslandi. Einnig bætt við ábendingu um að hafa hitann hóflegan svo fitan nái að bráðna út.",
+    "storage": "Geymist í 3–4 daga í kæli og má frysta elduð rif í allt að 3 mánuði. Hitið upp í ofni við 150 °C undir álpappír svo rifin þorni ekki.",
+    "variants": "Ferskt rósmarín má skipta út fyrir 1 tsk af þurrkuðu. Í stað kryddjurtablöndu má nota bara oregano. Kryddlögurinn hentar líka vel á lambakótilettur og kjúklingavængi."
+  },
+  "source": {
+    "url": "https://simply-delicious-food.com/easy-lemon-herb-grilled-lamb-ribs/",
+    "site": "simply-delicious-food.com"
+  }
+}

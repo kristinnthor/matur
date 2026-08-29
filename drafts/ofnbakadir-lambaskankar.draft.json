@@ -1,0 +1,46 @@
+{
+  "source": {
+    "url": "https://www.amourdecuisine.fr/en/article-slow-oven-braised-lamb-shanks-easy-recipe-for-a-cosy-meal.html",
+    "site": "amourdecuisine.fr"
+  },
+  "fetched": "2026-08-29T15:32:14.229Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Braised lamb shanks easy recipe in Dutch-oven",
+    "yield": "2",
+    "prepTime": "PT15M",
+    "cookTime": "PT2H15M",
+    "totalTime": "PT2H30M",
+    "ingredients": [
+      "2 lamb shanks of the same size",
+      "6 to 7 garlic cloves",
+      "2 tbsp honey",
+      "thyme as needed",
+      "rosemary as needed",
+      "2 tbsp extra virgin olive oil",
+      "2 tbsp butter",
+      "150 ml vegetable stock veal stock or just water",
+      "salt",
+      "black pepper"
+    ],
+    "instructions": [
+      "Preheat the oven: Set your oven to 150°C (300°F).",
+      "Season the lamb: Generously season the lamb shanks with salt and pepper.",
+      "Brown the meat: Heat olive oil in a large frying pan or ovenproof casserole over medium heat.",
+      "Sear the lamb shanks on all sides until golden brown.",
+      "Remove the shanks from the pan and set them aside.",
+      "Prepare the aromatic base: Add the unpeeled garlic cloves to the casserole.",
+      "Stir in butter, allowing it to melt, and add the rosemary and thyme sprigs.",
+      "Cook for a few minutes to release their aroma.",
+      "Prepare the sauce: Add honey (if using) and water or vegetable stock to the casserole.",
+      "Bring the mixture to a gentle boil.",
+      "Combine and cook: Return the browned lamb shanks to the casserole.",
+      "Cover with a lid and transfer the dish to the preheated oven.",
+      "Slow-cook the lamb: Cook for approximately 2 hours, or until the meat is tender and easily pulls away from the bone.",
+      "Turn the lamb shanks occasionally and baste them with the cooking juices to ensure even cooking.",
+      "Check the liquid levels and add more stock if needed to prevent the meat from drying out.",
+      "Caramelize the shanks: Once the lamb is tender, remove the lid from the casserole.",
+      "Roast the shanks uncovered for a few minutes to develop a golden, caramelized color."
+    ]
+  }
+}

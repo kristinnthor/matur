@@ -1,0 +1,40 @@
+{
+  "title": "Ostafylltar kjúklingabringur í rjómalegi",
+  "subtitle": "einfaldur haustréttur með serranoskinku og kartöflusmælki",
+  "description": "Kjúklingabringur fylltar með piparosti, vafðar serranoskinku og bakaðar í rjómalegi. Einfaldur haustmatur sem eldast að mestu sjálfur í ofninum ásamt krydduðu kartöflusmælki.",
+  "categories": ["kjuklingur"],
+  "tags": ["veislumatur"],
+  "servings": 4,
+  "time": { "prep": 20, "cook": 40 },
+  "ingredients": [
+    { "id": "bringur", "amount": 4, "unit": "stk", "item": "kjúklingabringur", "group": "Kjúklingurinn" },
+    { "id": "piparostur", "amount": 1, "unit": "stk", "item": "piparostur", "note": "eða annar kryddostur með pipar, u.þ.b. 150 g", "group": "Kjúklingurinn" },
+    { "id": "rosmarin", "amount": 1, "unit": "tsk", "item": "þurrkað rósmarín", "scalable": false, "group": "Kjúklingurinn" },
+    { "id": "timjan", "amount": 1, "unit": "tsk", "item": "þurrkað timjan", "scalable": false, "group": "Kjúklingurinn" },
+    { "id": "serrano", "amount": 8, "unit": "sneið", "item": "serranoskinka", "group": "Kjúklingurinn" },
+    { "id": "rjomi", "amount": 2.5, "unit": "dl", "item": "rjómi", "group": "Kjúklingurinn" },
+    { "id": "kraftur", "amount": 1, "unit": "tsk", "item": "kjúklingakraftur", "group": "Kjúklingurinn" },
+    { "id": "ferskt_rosmarin", "amount": 2, "unit": "stk", "item": "ferskt rósmarín", "note": "greinar, til skreytingar", "scalable": false, "group": "Kjúklingurinn" },
+    { "id": "kartoflur", "amount": 400, "unit": "g", "item": "kartöflusmælki með hýði", "group": "Kartöflusmælki" },
+    { "id": "olia", "amount": 2.5, "unit": "msk", "item": "ólífuolía", "group": "Kartöflusmælki" },
+    { "id": "salt", "amount": 0.5, "unit": "tsk", "item": "salt", "scalable": false, "group": "Kartöflusmælki" },
+    { "id": "pipar", "amount": 0.25, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false, "group": "Kartöflusmælki" },
+    { "id": "rosmarin_kart", "amount": 1, "unit": "tsk", "item": "þurrkað rósmarín", "scalable": false, "group": "Kartöflusmælki" },
+    { "id": "timjan_kart", "amount": 1, "unit": "tsk", "item": "þurrkað timjan", "scalable": false, "group": "Kartöflusmælki" }
+  ],
+  "steps": [
+    { "text": "Hitið ofninn í 200°C og takið til tvö eldföst mót – eitt fyrir kjúklinginn og annað fyrir kartöflurnar.", "refs": [] },
+    { "text": "Stingið hníf inn í þykkari enda {{bringur}} og myndið vasa fyrir ostinn, eins djúpan og hægt er án þess að skera í gegn.", "refs": ["bringur"] },
+    { "text": "Skerið {{piparostur}} í u.þ.b. hálfs sentímetra þykkar sneiðar og troðið þeim í vasana. Kryddið bringurnar með {{rosmarin}} og {{timjan}}.", "refs": ["piparostur", "rosmarin", "timjan"] },
+    { "text": "Vefjið {{serrano}} þétt utan um bringurnar – tvær sneiðar á hverja – þannig að skinkan loki vasanum og osturinn leki síður út. Raðið í annað mótið og bakið í 20 mínútur.", "refs": ["serrano"] },
+    { "text": "Skolið {{kartoflur}} vel undir köldu vatni og nuddið af öll óhreinindi. Skerið hverja kartöflu í fjóra báta og veltið þeim upp úr {{olia}}, {{salt}}, {{pipar}}, {{rosmarin_kart}} og {{timjan_kart}} í hinu mótinu. Setjið í ofninn með kjúklingnum.", "refs": ["kartoflur", "olia", "salt", "pipar", "rosmarin_kart", "timjan_kart"] },
+    { "text": "Þegar kjúklingurinn hefur bakast í 20 mínútur, hellið {{rjomi}} yfir bringurnar og hrærið {{kraftur}} saman við. Bakið áfram í 20 mínútur, þar til kjúklingurinn er eldaður í gegn og kartöflurnar gylltar og mjúkar.", "refs": ["rjomi", "kraftur"] },
+    { "text": "Takið úr ofninum og skreytið með {{ferskt_rosmarin}}. Berið fram með kartöflusmælkinu og fersku salati og ausið rjómasósunni úr botninum yfir.", "refs": ["ferskt_rosmarin"] }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: magn af kryddi, salti og pipar var hvergi tilgreint og hefur verið fest, og rjóma- og olíumagnið, sem var gefið sem bil, fest á miðju bilsins. Bætt við að skinkan eigi að loka ostavasanum svo osturinn leki síður út við bakstur. Skammtafjölda og undirbúningstíma vantaði og hefur verið bætt við.",
+    "storage": "Geymist í 2–3 daga í kæli. Rjómasósan getur skilið sig við frystingu, svo rétturinn hentar illa í frysti. Hitið afganga varlega í potti eða ofni við vægan hita.",
+    "variants": "Í frumuppskriftinni er notaður íslenskur kryddostur með pipar — hvaða piparostur sem er virkar, og rjómaostur með pipar eða fetaostur ef piparostur fæst ekki. Serranoskinku má skipta út fyrir parmaskinku eða beikon, og í stað smælkis má nota venjulegar kartöflur í bátum."
+  },
+  "source": { "url": "https://lindaben.is/recipes/ostafylltar-kjuklingabringur-i-rjomalegi/", "site": "lindaben.is" }
+}

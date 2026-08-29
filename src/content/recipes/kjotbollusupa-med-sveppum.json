@@ -1,0 +1,246 @@
+{
+  "title": "Kjötbollusúpa með sveppum",
+  "subtitle": "rjómakennd sveppasúpa með ofnbökuðum kjötbollum",
+  "description": "Matarmikil sveppasúpa með ofnbökuðum kjötbollum úr nauta- og svínahakki. Helmingurinn af sveppunum er maukaður út í soðið, sem gefur súpunni þykka áferð og djúpt sveppabragð án rjóma.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 15,
+    "cook": 30
+  },
+  "ingredients": [
+    {
+      "id": "nautahakk",
+      "amount": 450,
+      "unit": "g",
+      "item": "nautahakk",
+      "group": "Kjötbollur"
+    },
+    {
+      "id": "svinahakk",
+      "amount": 450,
+      "unit": "g",
+      "item": "svínahakk",
+      "group": "Kjötbollur"
+    },
+    {
+      "id": "egg",
+      "amount": 1,
+      "unit": "stk",
+      "item": "egg",
+      "note": "stórt",
+      "group": "Kjötbollur"
+    },
+    {
+      "id": "mondlumjol",
+      "amount": 25,
+      "unit": "g",
+      "item": "möndlumjöl",
+      "group": "Kjötbollur"
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð smátt",
+      "group": "Kjötbollur"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Kjötbollur",
+      "scalable": false
+    },
+    {
+      "id": "laukduft",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "laukduft",
+      "group": "Kjötbollur"
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "group": "Kjötbollur",
+      "scalable": false
+    },
+    {
+      "id": "sveppir",
+      "amount": 900,
+      "unit": "g",
+      "item": "sveppir",
+      "note": "sneiddir",
+      "group": "Súpa"
+    },
+    {
+      "id": "ghee",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ghee",
+      "note": "skipt í tvennt",
+      "group": "Súpa"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "stór, saxaður",
+      "group": "Súpa"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "saxaður smátt",
+      "group": "Súpa"
+    },
+    {
+      "id": "sod",
+      "amount": 1,
+      "unit": "l",
+      "item": "nautasoð",
+      "note": "eða beinaseyði",
+      "group": "Súpa"
+    },
+    {
+      "id": "kokosmjolk",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "kókosmjólk",
+      "group": "Súpa"
+    },
+    {
+      "id": "tapioka",
+      "amount": 2,
+      "unit": "msk",
+      "item": "tapíókasterkja",
+      "group": "Súpa"
+    },
+    {
+      "id": "kokosamino",
+      "amount": 2,
+      "unit": "msk",
+      "item": "kókosamínó",
+      "group": "Súpa"
+    },
+    {
+      "id": "eplaedik",
+      "amount": 1,
+      "unit": "msk",
+      "item": "eplaedik",
+      "group": "Súpa"
+    },
+    {
+      "id": "saltsupa",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "og meira eftir smekk",
+      "group": "Súpa",
+      "scalable": false
+    },
+    {
+      "id": "piparsupa",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "group": "Súpa",
+      "scalable": false
+    },
+    {
+      "id": "skraut",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð, til skreytingar",
+      "group": "Súpa"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 225 °C. Blandið saman {{nautahakk}}, {{svinahakk}}, {{egg}}, {{mondlumjol}}, {{steinselja}}, {{salt}}, {{laukduft}} og {{pipar}} í stórri skál – hnoðið aðeins þar til blandan er rétt samlöguð, annars verða bollurnar seigar.",
+      "refs": [
+        "nautahakk",
+        "svinahakk",
+        "egg",
+        "mondlumjol",
+        "steinselja",
+        "salt",
+        "laukduft",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Mótið úr blöndunni um 40 kjötbollur á stærð við golfkúlur og raðið þeim á bökunarplötu í einu lagi þannig að þær snertist ekki.",
+      "refs": []
+    },
+    {
+      "text": "Setjið {{sveppir}} á aðra bökunarplötu, veltið þeim upp úr helmingnum af {{ghee}} og dreifið úr þeim í jafnt lag.",
+      "refs": [
+        "sveppir",
+        "ghee"
+      ]
+    },
+    {
+      "text": "Bakið bæði kjötbollurnar og sveppina í 15 mínútur. Hrærið í sveppunum þegar tíminn er hálfnaður.",
+      "refs": []
+    },
+    {
+      "text": "Setjið helminginn af bökuðu sveppunum ásamt safanum af þeim í blandara með {{saltsupa}}, {{sod}}, {{kokosmjolk}}, {{tapioka}}, {{kokosamino}}, {{eplaedik}} og {{piparsupa}}. Maukið þar til blandan er silkimjúk og leggið til hliðar.",
+      "refs": [
+        "saltsupa",
+        "sod",
+        "kokosmjolk",
+        "tapioka",
+        "kokosamino",
+        "eplaedik",
+        "piparsupa"
+      ]
+    },
+    {
+      "text": "Hitið stóran pott við meðalháan hita og bræðið afganginn af {{ghee}}.",
+      "refs": [
+        "ghee"
+      ]
+    },
+    {
+      "text": "Steikið {{laukur}} og {{hvitlaukur}} í um 5 mínútur, þar til laukurinn er glær og ilmurinn kominn.",
+      "refs": [
+        "laukur",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið sveppamaukinu í pottinn. Þegar suðan kemur upp, bætið kjötbollunum og afganginum af bökuðu sveppunum út í og látið malla í 5 mínútur þar til allt er gegnheitt.",
+      "refs": []
+    },
+    {
+      "text": "Smakkið til með salti og berið fram með {{skraut}} stráðri yfir.",
+      "refs": [
+        "skraut"
+      ]
+    }
+  ],
+  "notes": {
+    "storage": "Geymist í 3–4 daga í kæli. Frystist vel í allt að 3 mánuði. Hitið rólega upp að suðu og hrærið vel – kókosmjólkin getur skilið sig aðeins ef súpan er hituð of hratt.",
+    "variants": "Uppskriftin er upprunalega paleo/Whole30. Kókosamínó og tapíókasterkja fást helst í heilsuhillum stórmarkaða – í staðinn má nota sojasósu og maísenamjöl. Ghee má skipta út fyrir smjör, kókosmjólkinni fyrir rjóma og möndlumjölinu fyrir brauðrasp, en þá er súpan ekki lengur paleo."
+  },
+  "source": {
+    "url": "https://whatgreatgrandmaate.com/creamy-meatball-mushroom-soup/",
+    "site": "whatgreatgrandmaate.com"
+  }
+}

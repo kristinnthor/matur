@@ -1,0 +1,185 @@
+{
+  "title": "Ítalskur pottréttur (stracotto)",
+  "subtitle": "hægeldað nautakjöt í tómatsósu",
+  "description": "Ítalskur pottréttur þar sem nautakjöt er hægeldað í tómatsósu með beikoni, rótargrænmeti og kryddjurtum þar til það dettur í sundur. Dásamlegur vetrarmatur yfir kartöflumús, pasta eða polentu.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "frystivaent"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 15,
+    "cook": 210
+  },
+  "ingredients": [
+    {
+      "id": "beikon",
+      "amount": 100,
+      "unit": "g",
+      "item": "beikon",
+      "note": "eða pancetta, saxað í bita – má sleppa"
+    },
+    {
+      "id": "nautakjot",
+      "amount": 1.5,
+      "unit": "kg",
+      "item": "nautakjöt",
+      "note": "t.d. hnakki eða heill gúllasvöðvi, skorið í 3 stóra bita"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "saxaður"
+    },
+    {
+      "id": "gulraetur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "gulrætur",
+      "note": "saxaðar"
+    },
+    {
+      "id": "selleri",
+      "amount": 2,
+      "unit": "stk",
+      "item": "sellerístilkar",
+      "note": "saxaðir"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "saxaður"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "note": "má sleppa",
+      "scalable": false
+    },
+    {
+      "id": "nautasod",
+      "amount": 5,
+      "unit": "dl",
+      "item": "nautasoð"
+    },
+    {
+      "id": "tomatar",
+      "amount": 1,
+      "unit": "dós",
+      "item": "niðursoðnir tómatar",
+      "note": "400 g, maukaðir"
+    },
+    {
+      "id": "timjan",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "ferskt timían",
+      "note": "saxað, eða ½ tsk þurrkað"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "ferskt rósmarín",
+      "note": "saxað, eða ½ tsk þurrkað"
+    },
+    {
+      "id": "kryddblanda",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "ítölsk kryddblanda",
+      "note": "eða oregano"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 2,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Steikið {{beikon}} í stórum potti sem má fara í ofn (t.d. pottjárnspotti) við meðalhita þar til það er stökkt. Takið upp úr og leggið til hliðar, en skiljið fituna eftir í pottinum.",
+      "refs": [
+        "beikon"
+      ]
+    },
+    {
+      "text": "Nuddið {{salt}} og {{pipar}} á {{nautakjot}} og brúnið bitana í beikonfitunni við meðalháan hita, 4–6 mínútur á hverri hlið – skorpan gefur sósunni bragð. Takið kjötið úr pottinum og leggið til hliðar.",
+      "refs": [
+        "nautakjot",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Setjið {{laukur}}, {{gulraetur}} og {{selleri}} í pottinn og steikið þar til grænmetið er orðið mjúkt, 7–10 mínútur.",
+      "refs": [
+        "laukur",
+        "gulraetur",
+        "selleri"
+      ]
+    },
+    {
+      "text": "Bætið {{hvitlaukur}} og {{chiliflogur}} út í og steikið í um eina mínútu, þar til fer að ilma.",
+      "refs": [
+        "hvitlaukur",
+        "chiliflogur"
+      ]
+    },
+    {
+      "text": "Hellið {{nautasod}} og {{tomatar}} í pottinn og bætið {{timjan}}, {{rosmarin}}, {{kryddblanda}} og {{larvidarlauf}} út í ásamt beikoninu. Hrærið saman og leggið kjötbitana ofan í sósuna.",
+      "refs": [
+        "nautasod",
+        "tomatar",
+        "timjan",
+        "rosmarin",
+        "kryddblanda",
+        "larvidarlauf"
+      ]
+    },
+    {
+      "text": "Látið suðuna koma upp, lækkið hitann og látið malla undir loki þar til kjötið er svo meyrt að það dettur í sundur, 2–4 klukkustundir. Einnig má setja pottinn með loki í 140 °C heitan ofn í sama tíma, eða færa allt í hægsuðupott og elda á lágum hita í 8–10 klukkustundir eða háum hita í 4–6 klukkustundir.",
+      "refs": []
+    },
+    {
+      "text": "Veiðið lárviðarlaufin upp úr og smakkið til með salti og pipar.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "storage": "Geymist í 3–4 daga í kæli og frystist mjög vel, í allt að 3 mánuði. Hitið rólega upp í potti og bætið við smá vatni eða soði ef sósan er orðin of þykk.",
+    "variants": "Skiptið helmingnum af soðinu út fyrir þurrt rauðvín fyrir dýpra bragð. Einnig má bæta 2 msk af tómatpúrru út í með hvítlauknum, 1 msk af balsamikediki, eða 25 g af þurrkuðum porcini-sveppum (lagðir í bleyti og saxaðir) með grænmetinu. Berið fram yfir kartöflumús, pasta, gnocchi eða polentu – og stráið gjarnan rifnum parmesan yfir í lokin."
+  },
+  "source": {
+    "url": "https://www.closetcooking.com/italian-pot-roast-straccato/",
+    "site": "closetcooking.com"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "source": {
+    "url": "https://whatgreatgrandmaate.com/creamy-meatball-mushroom-soup/",
+    "site": "whatgreatgrandmaate.com"
+  },
+  "fetched": "2026-08-29T15:32:00.372Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Creamy Meatball Mushroom Soup (Paleo, Whole30, Keto)",
+    "yield": "8",
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "totalTime": "PT45M",
+    "ingredients": [
+      "1 lb ground beef",
+      "1 lb ground pork",
+      "1 large egg",
+      "1/4 cup almond flour",
+      "2 tbsp parsley (finely chopped)",
+      "1 tsp sea salt",
+      "1 tsp onion powder",
+      "1/2 tsp ground black pepper",
+      "2 lb mushrooms (sliced)",
+      "2 tbsp ghee (divided)",
+      "1/4 tsp sea salt (plus more to taste)",
+      "4 cups bone broth (or beef broth)",
+      "1/2 cup coconut milk (or your favorite dairy free milk)",
+      "2 tbsp tapioca starch",
+      "2 tbsp coconut aminos",
+      "1 tbsp apple cider vinegar",
+      "1/4 tsp ground black pepper",
+      "1 large onion (chopped)",
+      "4 garlic cloves (minced)",
+      "Chopped parsley (for garnish)"
+    ],
+    "instructions": [
+      "Preheat oven to 450 degrees F. Combine all ingredients for the meatballs and mix together until just combined. Shape into golf-sized balls (approx. 40 meatballs). Place on a sheet pan in a single layer without touching each other.",
+      "In a separate sheet pan, add the sliced mushroom and coat with 1 tbsp of ghee. Spread out into an even layer.",
+      "Bake both the meatballs and mushrooms for 15 minutes in the preheated oven. Stir the mushrooms halfway through.",
+      "Once done baking, add half of the mushrooms (and their juice) into the blender with salt, broth, coconut milk, tapioca starch, coconut aminos, apple cider vinegar, and pepper. Blend until smooth and creamy. Set aside.",
+      "Heat a large stockpot over medium high heat, and add the remaining tablespoon of ghee.",
+      "Add onion and garlic and sauté for 5 minutes until fragrant and the onion is translucent.",
+      "Pour in the blended mushroom mixture. Once it starts boiling, add in the meatballs and the rest of the roasted mushrooms. Simmer for 5 minutes until heated through.",
+      "Taste to add more salt if needed, then serve sprinkled with chopped parsley."
+    ]
+  }
+}

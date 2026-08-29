@@ -1,0 +1,403 @@
+{
+  "title": "Bayonne skinka og hátíðarmeðlæti",
+  "subtitle": "gljáð hátíðarskinka með sósu og fjórum meðlætisréttum",
+  "description": "Gljáð Bayonne skinka með rjómalagaðri sósu, rósakálsgratíni, fersku ávaxtasalati og karamellukartöflum. Fullkomin hátíðarmáltíð á jólaborðið eða í sunnudagsmatinn.",
+  "categories": [
+    "kjot",
+    "medlaeti"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 40,
+    "cook": 120
+  },
+  "ingredients": [
+    {
+      "id": "skinka",
+      "amount": 1.7,
+      "unit": "kg",
+      "item": "Bayonne skinka",
+      "group": "Skinkan"
+    },
+    {
+      "id": "vatn_ofn",
+      "amount": 1,
+      "unit": "l",
+      "item": "vatn",
+      "note": "í ofnskúffu",
+      "group": "Skinkan",
+      "scalable": false
+    },
+    {
+      "id": "pudursykur",
+      "amount": 150,
+      "unit": "g",
+      "item": "púðursykur",
+      "group": "Gljái"
+    },
+    {
+      "id": "sinnep",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Dijon hunangssinnep",
+      "group": "Gljái"
+    },
+    {
+      "id": "tomatsosa",
+      "amount": 1,
+      "unit": "msk",
+      "item": "tómatsósa",
+      "group": "Gljái"
+    },
+    {
+      "id": "bbq_sosa",
+      "amount": 1,
+      "unit": "msk",
+      "item": "BBQ sósa",
+      "group": "Gljái"
+    },
+    {
+      "id": "rjomi_gljai",
+      "amount": 50,
+      "unit": "ml",
+      "item": "rjómi",
+      "group": "Gljái"
+    },
+    {
+      "id": "raudlaukur",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "rauðlaukur",
+      "group": "Sósa"
+    },
+    {
+      "id": "smjor_sosa",
+      "amount": 40,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Sósa"
+    },
+    {
+      "id": "steikarsosa",
+      "amount": 1,
+      "unit": "pakki",
+      "item": "steikarsósa",
+      "note": "þurrblanda í bréfi",
+      "group": "Sósa"
+    },
+    {
+      "id": "raudvinssosa",
+      "amount": 1,
+      "unit": "pakki",
+      "item": "rauðvínssósa",
+      "note": "þurrblanda í bréfi",
+      "group": "Sósa"
+    },
+    {
+      "id": "rjomi_sosa",
+      "amount": 4,
+      "unit": "dl",
+      "item": "rjómi",
+      "group": "Sósa"
+    },
+    {
+      "id": "vatn_sosa",
+      "amount": 3.5,
+      "unit": "dl",
+      "item": "vatn",
+      "group": "Sósa"
+    },
+    {
+      "id": "gljai_sosa",
+      "amount": 3,
+      "unit": "msk",
+      "item": "gljái",
+      "note": "sjá gljáann að ofan",
+      "group": "Sósa"
+    },
+    {
+      "id": "kjotkraftur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "kjötkraftur",
+      "group": "Sósa"
+    },
+    {
+      "id": "cayenne",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "cayennepipar",
+      "group": "Sósa",
+      "scalable": false
+    },
+    {
+      "id": "salt_pipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt og pipar",
+      "note": "eftir smekk",
+      "group": "Sósa",
+      "scalable": false
+    },
+    {
+      "id": "rosakal",
+      "amount": 500,
+      "unit": "g",
+      "item": "rósakál",
+      "note": "ferskt (um 1 poki)",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "laukur",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "laukur",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "rifin",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "smjor_gratin",
+      "amount": 20,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "kryddblanda",
+      "amount": 1,
+      "unit": "msk",
+      "item": "alhliða kryddblanda",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "sojasosa",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "sojasósa",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "rjomi_gratin",
+      "amount": 1,
+      "unit": "dl",
+      "item": "rjómi",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "ostur",
+      "amount": 50,
+      "unit": "g",
+      "item": "bragðmikill þroskaður ostur",
+      "note": "t.d. gouda-ættar, rifinn",
+      "group": "Rósakálsgratín"
+    },
+    {
+      "id": "epli",
+      "amount": 2,
+      "unit": "stk",
+      "item": "gul epli",
+      "group": "Ávaxtasalat"
+    },
+    {
+      "id": "jardarber",
+      "amount": 150,
+      "unit": "g",
+      "item": "jarðarber",
+      "group": "Ávaxtasalat"
+    },
+    {
+      "id": "banani",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "banani",
+      "group": "Ávaxtasalat"
+    },
+    {
+      "id": "sudusukkuladi",
+      "amount": 40,
+      "unit": "g",
+      "item": "suðusúkkulaði",
+      "note": "saxað",
+      "group": "Ávaxtasalat"
+    },
+    {
+      "id": "pekanhnetur",
+      "amount": 40,
+      "unit": "g",
+      "item": "pekanhnetur",
+      "note": "saxaðar",
+      "group": "Ávaxtasalat"
+    },
+    {
+      "id": "rjomi_salat",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "rjómi",
+      "note": "þeyttur",
+      "group": "Ávaxtasalat"
+    },
+    {
+      "id": "kartoflur",
+      "amount": 900,
+      "unit": "g",
+      "item": "kartöflur",
+      "note": "litlar, soðnar og afhýddar",
+      "group": "Karamellukartöflur"
+    },
+    {
+      "id": "sykur",
+      "amount": 200,
+      "unit": "g",
+      "item": "sykur",
+      "group": "Karamellukartöflur"
+    },
+    {
+      "id": "smjor_karamella",
+      "amount": 30,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Karamellukartöflur"
+    },
+    {
+      "id": "rjomi_karamella",
+      "amount": 50,
+      "unit": "ml",
+      "item": "rjómi",
+      "group": "Karamellukartöflur"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Bræðið {{pudursykur}}, {{sinnep}}, {{tomatsosa}}, {{bbq_sosa}} og {{rjomi_gljai}} saman í potti fyrir gljáann. Leyfið að bubbla stutta stund og slökkvið svo á hellunni.",
+      "refs": [
+        "pudursykur",
+        "sinnep",
+        "tomatsosa",
+        "bbq_sosa",
+        "rjomi_gljai"
+      ]
+    },
+    {
+      "text": "Hitið ofninn í 150°C og hellið {{vatn_ofn}} í ofnskúffu neðst í ofninum – vatnsgufan heldur skinkunni safaríkri.",
+      "refs": [
+        "vatn_ofn"
+      ]
+    },
+    {
+      "text": "Takið netið af {{skinka}} og setjið hana á ofngrind. Penslið eina umferð með gljáanum, stingið kjöthitamæli í miðja skinkuna og setjið grindina í ofninn fyrir ofan skúffuna með vatninu.",
+      "refs": [
+        "skinka"
+      ]
+    },
+    {
+      "text": "Eldið skinkuna þar til kjarnhiti sýnir um 55°C og penslið hana 1–2 sinnum með gljáanum á meðan. Hækkið þá hitann í 210°C, penslið eina lokaumferð og eldið þar til kjarnhiti sýnir 67°C. Ef þið eigið ekki kjöthitamæli er gott að miða við 45–60 mínútur á hvert kíló.",
+      "refs": []
+    },
+    {
+      "text": "Látið skinkuna standa í að minnsta kosti 15 mínútur áður en hún er skorin í sneiðar – annars lekur safinn úr kjötinu.",
+      "refs": []
+    },
+    {
+      "text": "Skerið {{raudlaukur}} smátt fyrir sósuna og steikið upp úr {{smjor_sosa}} í potti þar til laukurinn mýkist.",
+      "refs": [
+        "raudlaukur",
+        "smjor_sosa"
+      ]
+    },
+    {
+      "text": "Bætið {{rjomi_sosa}} og {{vatn_sosa}} í pottinn og pískið {{steikarsosa}} og {{raudvinssosa}} saman við.",
+      "refs": [
+        "rjomi_sosa",
+        "vatn_sosa",
+        "steikarsosa",
+        "raudvinssosa"
+      ]
+    },
+    {
+      "text": "Setjið {{gljai_sosa}} og {{kjotkraftur}} saman við, kryddið með {{cayenne}} og smakkið til með {{salt_pipar}}. Leyfið sósunni að malla í nokkrar mínútur.",
+      "refs": [
+        "gljai_sosa",
+        "kjotkraftur",
+        "cayenne",
+        "salt_pipar"
+      ]
+    },
+    {
+      "text": "Snyrtið {{rosakal}} fyrir gratínið og skerið í helminga. Sjóðið í um 7 mínútur og hellið vatninu þá af.",
+      "refs": [
+        "rosakal"
+      ]
+    },
+    {
+      "text": "Steikið {{laukur}} og {{hvitlaukur}} upp úr {{smjor_gratin}} þar til laukurinn mýkist og bætið rósakálinu á pönnuna. Kryddið með {{kryddblanda}} og {{sojasosa}}, hellið {{rjomi_gratin}} yfir og leyfið að malla augnablik.",
+      "refs": [
+        "laukur",
+        "hvitlaukur",
+        "smjor_gratin",
+        "kryddblanda",
+        "sojasosa",
+        "rjomi_gratin"
+      ]
+    },
+    {
+      "text": "Setjið blönduna í eldfast mót og rífið {{ostur}} yfir. Bakið við 200°C í um 10 mínútur, eða þar til osturinn er bráðinn og farinn að gyllast.",
+      "refs": [
+        "ostur"
+      ]
+    },
+    {
+      "text": "Flysjið {{epli}} fyrir ávaxtasalatið og skerið smátt niður ásamt {{jardarber}} og {{banani}}.",
+      "refs": [
+        "epli",
+        "jardarber",
+        "banani"
+      ]
+    },
+    {
+      "text": "Þeytið {{rjomi_salat}}, blandið {{sudusukkuladi}} og {{pekanhnetur}} saman við ávextina og veltið loks rjómanum varlega saman við með sleikju.",
+      "refs": [
+        "rjomi_salat",
+        "sudusukkuladi",
+        "pekanhnetur"
+      ]
+    },
+    {
+      "text": "Sjóðið {{kartoflur}} fyrir karamellukartöflurnar þar til þær eru rétt meyrar, hellið af og afhýðið. Þetta má gera fyrr um daginn.",
+      "refs": [
+        "kartoflur"
+      ]
+    },
+    {
+      "text": "Setjið {{sykur}} á þurra pönnu við háan hita. Þegar sykurinn byrjar að leysast upp, lækkið hitann, bætið {{smjor_karamella}} saman við og hrærið vel – fylgist stöðugt með, karamellan brennur auðveldlega.",
+      "refs": [
+        "sykur",
+        "smjor_karamella"
+      ]
+    },
+    {
+      "text": "Hellið {{rjomi_karamella}} saman við og leyfið blöndunni að bubbla augnablik. Setjið kartöflurnar á pönnuna og veltið þeim vel upp úr karamellunni.",
+      "refs": [
+        "rjomi_karamella"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: bætt við suðu og afhýðingu á kartöflunum fyrir karamellukartöflurnar – það skref vantar í frumuppskriftina, þar sem kartöflurnar færu annars hráar á pönnuna. Undirbúnings- og eldunartíma bætt við, sem vantaði. „1 poki“ af rósakáli tilgreindur sem 500 g og vörumerki á pakkasósum, kryddblöndu og osti almennt orðuð.",
+    "storage": "Skinkan geymist í 3–4 daga í kæli og sneiðar má frysta í allt að 2 mánuði. Sósan geymist í 2–3 daga í kæli; hitið hana rólega upp og hrærið í á meðan. Ávaxtasalatið er best samdægurs og hentar ekki í frysti.",
+    "variants": "Í stað Dijon hunangssinneps má nota 1 msk Dijon sinnep og 1 tsk hunang. Í stað pakkasósanna má nota heimalagaða brúna sósu og bragðbæta hana með gljáanum. Osturinn á gratínið getur verið hvaða bragðmikli harði ostur sem er, t.d. vel þroskaður gouda eða parmesan. Meðlætið passar líka vel með hamborgarhrygg eða öðru hátíðarkjöti."
+  },
+  "source": {
+    "url": "https://www.gotteri.is/2021/12/18/bayonne-skinka-og-hatidarmedlaeti/",
+    "site": "gotteri.is"
+  }
+}

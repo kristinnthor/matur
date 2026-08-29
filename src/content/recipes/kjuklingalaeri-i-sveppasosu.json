@@ -1,0 +1,146 @@
+{
+  "title": "Kjúklingalæri í sveppasósu",
+  "subtitle": "rjómakennd sveppasósa með parmesan",
+  "description": "Safarík kjúklingalæri í rjómakenndri sveppasósu með parmesan og hvítlauk. Einfaldur pönnuréttur sem sómir sér vel með hrísgrjónum, pasta eða góðu brauði.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 25,
+    "cook": 25
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingalaeri",
+      "amount": 1,
+      "unit": "kg",
+      "item": "kjúklingalæri",
+      "note": "mega vera með beini"
+    },
+    {
+      "id": "sveppir",
+      "amount": 400,
+      "unit": "g",
+      "item": "sveppir"
+    },
+    {
+      "id": "rjomi",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "rjómi"
+    },
+    {
+      "id": "parmesan",
+      "amount": 150,
+      "unit": "g",
+      "item": "parmesan",
+      "note": "rifinn"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur"
+    },
+    {
+      "id": "sitrona",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "safinn"
+    },
+    {
+      "id": "steinselja",
+      "amount": 1,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð"
+    },
+    {
+      "id": "persillade",
+      "amount": 2,
+      "unit": "msk",
+      "item": "persillade kryddblanda",
+      "note": "sjá ábendingu um staðgengil"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður pipar",
+      "note": "eftir smekk",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Kreistið safann úr {{sitrona}}. Setjið {{kjuklingalaeri}} í skál, kryddið með {{salt}} og {{pipar}} og nuddið kryddinu vel inn í kjötið. Hellið sítrónusafanum yfir, bætið {{persillade}} út í og látið marinerast í um 15 mínútur.",
+      "refs": [
+        "sitrona",
+        "kjuklingalaeri",
+        "salt",
+        "pipar",
+        "persillade"
+      ]
+    },
+    {
+      "text": "Skerið á meðan {{sveppir}} í sneiðar og pressið {{hvitlaukur}}.",
+      "refs": [
+        "sveppir",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hitið stóra pönnu og hellið {{olia}} á hana. Steikið kjúklingalærin á báðum hliðum þar til þau eru fallega gullinbrún, um 12–15 mínútur á miðlungshita. Takið þau af pönnunni og leggið til hliðar á disk.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Setjið sveppina og hvítlaukinn á pönnuna og steikið þar til sveppirnir eru orðnir mjúkir og hafa tekið lit.",
+      "refs": []
+    },
+    {
+      "text": "Hellið {{rjomi}} á pönnuna og hrærið. Bætið {{parmesan}} saman við og látið hann bráðna alveg – sósan þykknar og verður rjómakennd.",
+      "refs": [
+        "rjomi",
+        "parmesan"
+      ]
+    },
+    {
+      "text": "Setjið kjúklingalærin aftur á pönnuna og látið malla í sósunni í 5–8 mínútur, þar til kjötið er eldað í gegn – það skiptir sérstaklega máli ef lærin eru með beini. Stráið {{steinselja}} yfir og berið fram.",
+      "refs": [
+        "steinselja"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: 15 mínútna marineringartíminn var ekki talinn með í uppgefnum undirbúningstíma og er hér tekinn með. Í frumuppskriftinni eru lærin aðeins hituð stutt í sósunni í lokin og steikingin ein á að fulleldar kjötið; hér eru þau látin malla í 5–8 mínútur í sósunni til að tryggja að þau séu elduð í gegn, sérstaklega ef þau eru með beini.",
+    "storage": "Geymist í 2–3 daga í kæli. Hitið rólega upp á pönnu við vægan hita svo sósan skilji sig ekki. Hentar síður í frysti því rjómasósan getur skilið sig við þiðnun.",
+    "variants": "Persillade er frönsk kryddblanda úr steinselju og hvítlauk – fáist hún ekki má nota 1 msk þurrkaða steinselju og 1 tsk hvítlauksduft í staðinn. Kastaníusveppir gefa meira bragð en venjulegir sveppir. Nota má kjúklingabringur í stað læra, en styttið þá steikingartímann svo kjötið þorni ekki."
+  },
+  "source": {
+    "url": "https://heerlijkehappen.nl/kippendij-in-champignon-roomsaus/",
+    "site": "heerlijkehappen.nl"
+  }
+}

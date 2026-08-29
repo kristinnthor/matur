@@ -1,0 +1,45 @@
+{
+  "source": {
+    "url": "https://www.supergoldenbakes.com/spezzatino-italian-beef-stew/",
+    "site": "supergoldenbakes.com"
+  },
+  "fetched": "2026-08-29T15:31:58.161Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Spezzatino di Manzo (Italian beef stew)",
+    "yield": "6",
+    "prepTime": "PT10M",
+    "cookTime": "PT120M",
+    "ingredients": [
+      "3 tbsp olive oil (, or as needed)",
+      "2 lbs (900g) chuck steak, cubed",
+      "3 ½ oz (100g) pancetta (, roughly chopped)",
+      "1 large onion (, finely diced)",
+      "2 carrots (, finely diced)",
+      "2 celery stalks (, finely diced)",
+      "2 tsp sea salt",
+      "1 tsp black pepper",
+      "1 tsp brown sugar ((optional))",
+      "7 oz (200g) crimini mushrooms (, halved (chestnut mushrooms))",
+      "4 garlic cloves (, sliced)",
+      "2 tbsp tomato paste",
+      "2 tbsp balsamic vinegar",
+      "⅓ cup (80ml) red wine",
+      "2 ½ cups (620ml) beef broth",
+      "1 bay leaf",
+      "1 rosemary sprig",
+      "2 tsp cornstarch ((cornflour))"
+    ],
+    "instructions": [
+      "Preheat the oven to 320°F (160°C). Heat the olive oil in a large casserole and sear the beef over high heat, in batches, until browned. Transfer to a bowl and set aside.",
+      "Add the diced pancetta and cook, stirring, until it starts to crisp up. Transfer to the bowl with beef.",
+      "Add a splash of red wine to the pan and let it cook down. Reduce the heat, add a little olive oil and the onion, celery and carrots. Season with the salt and pepper and sprinkle with the sugar.",
+      "Sauté over low heat for 10 minutes, stirring frequently, until the vegetables are very soft. You can add a splash of broth or wine to the pan, as needed, while the soffrito is cooking.",
+      "Stir in the mushrooms and garlic and cook for a minute or so. Add the wine and balsamic vinegar and stir in the tomato paste.",
+      "Pour in the beef broth and bring to a simmer. Return the beef and pancetta plus any juices to the pan and stir everything together. Add the rosemary and bay leaf, cover the pot with a tight fitting lid and transfer to the oven for 90 minutes.",
+      "Check the stew at this point – is the beef very tender? If yes then take out of the oven. If not, continue to cook for a further 30 minutes.",
+      "Dissolve the cornstarch in a little cold water and add to the stew. Bring to a simmer and stir until the stew thickens.",
+      "Discard the bay leaf and check the seasoning, adding salt and pepper if needed. Serve over buttery soft polenta , mashed potatoes or pasta."
+    ]
+  }
+}

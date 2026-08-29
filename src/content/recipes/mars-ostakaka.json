@@ -1,0 +1,192 @@
+{
+  "title": "Mars-ostakaka",
+  "subtitle": "óbökuð ostakaka með karamellu og súkkulaði",
+  "description": "Óbökuð ostakaka með söxuðum Mars-bitum og marmaramynstri úr karamellusósu og súkkulaðisósu. Tilvalin á veisluborðið og gerð deginum áður, því hún þarf góða kælingu.",
+  "categories": [
+    "eftirrettir"
+  ],
+  "tags": [
+    "veislumatur",
+    "barnvaent"
+  ],
+  "servings": 12,
+  "time": {
+    "prep": 60,
+    "cook": 420
+  },
+  "ingredients": [
+    {
+      "id": "kex",
+      "amount": 250,
+      "unit": "g",
+      "item": "súkkulaðikex",
+      "group": "Botn"
+    },
+    {
+      "id": "smjor_botn",
+      "amount": 125,
+      "unit": "g",
+      "item": "smjör",
+      "note": "brætt",
+      "group": "Botn"
+    },
+    {
+      "id": "vanillusykur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "vanillusykur",
+      "group": "Botn"
+    },
+    {
+      "id": "pudursykur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "púðursykur",
+      "group": "Karamellusósa"
+    },
+    {
+      "id": "smjor_sosa",
+      "amount": 20,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Karamellusósa"
+    },
+    {
+      "id": "rjomi_karamella",
+      "amount": 2,
+      "unit": "msk",
+      "item": "rjómi",
+      "group": "Karamellusósa"
+    },
+    {
+      "id": "sukkuladi",
+      "amount": 60,
+      "unit": "g",
+      "item": "mjólkursúkkulaði",
+      "note": "fínt saxað",
+      "group": "Súkkulaðisósa"
+    },
+    {
+      "id": "rjomi_sukkuladi",
+      "amount": 2,
+      "unit": "msk",
+      "item": "rjómi",
+      "group": "Súkkulaðisósa"
+    },
+    {
+      "id": "vatn",
+      "amount": 60,
+      "unit": "ml",
+      "item": "sjóðandi vatn",
+      "group": "Fylling"
+    },
+    {
+      "id": "matarlim",
+      "amount": 3,
+      "unit": "tsk",
+      "item": "matarlím í duftformi",
+      "group": "Fylling"
+    },
+    {
+      "id": "rjomaostur",
+      "amount": 500,
+      "unit": "g",
+      "item": "rjómaostur",
+      "note": "við stofuhita",
+      "group": "Fylling"
+    },
+    {
+      "id": "sykur",
+      "amount": 110,
+      "unit": "g",
+      "item": "strásykur",
+      "group": "Fylling"
+    },
+    {
+      "id": "rjomi",
+      "amount": 2,
+      "unit": "dl",
+      "item": "rjómi",
+      "group": "Fylling"
+    },
+    {
+      "id": "mars",
+      "amount": 3,
+      "unit": "stk",
+      "item": "Mars súkkulaðistykki",
+      "note": "fínt söxuð",
+      "group": "Fylling"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Myljið {{kex}} í matvinnsluvél þar til kexið líkist fínum raspi. Blandið {{smjor_botn}} og {{vanillusykur}} saman við þar til blandan er jöfn.",
+      "refs": [
+        "kex",
+        "smjor_botn",
+        "vanillusykur"
+      ]
+    },
+    {
+      "text": "Þrýstið kexblöndunni í botninn og upp á hálfa hliðina á lausbotna formi, um 22 cm í þvermál. Setjið formið í kæli í um 30 mínútur eða þar til botninn er orðinn stífur.",
+      "refs": []
+    },
+    {
+      "text": "Búið til karamellusósuna: setjið {{pudursykur}}, {{smjor_sosa}} og {{rjomi_karamella}} í lítinn pott og hrærið við vægan hita, án þess að sjóða, þar til sykurinn er uppleystur. Takið af hitanum og látið kólna og þykkna.",
+      "refs": [
+        "pudursykur",
+        "smjor_sosa",
+        "rjomi_karamella"
+      ]
+    },
+    {
+      "text": "Búið til súkkulaðisósuna: setjið {{sukkuladi}} og {{rjomi_sukkuladi}} í annan lítinn pott og hrærið við vægan hita þar til súkkulaðið er bráðið. Látið kólna og þykkna.",
+      "refs": [
+        "sukkuladi",
+        "rjomi_sukkuladi"
+      ]
+    },
+    {
+      "text": "Stráið {{matarlim}} smám saman yfir {{vatn}} í hitaþolinni könnu og hrærið þar til matarlímið er alveg uppleyst. Látið kólna í nokkrar mínútur.",
+      "refs": [
+        "matarlim",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Þeytið {{rjomaostur}} í skál með rafmagnsþeytara þar til hann er mjúkur og kekkjalaus. Bætið {{sykur}} út í og þeytið vel saman.",
+      "refs": [
+        "rjomaostur",
+        "sykur"
+      ]
+    },
+    {
+      "text": "Þeytið {{rjomi}} saman við þar til blandan er létt og heldur lögun. Hrærið matarlímsblönduna saman við og blandið {{mars}} varlega út í með sleikju.",
+      "refs": [
+        "rjomi",
+        "mars"
+      ]
+    },
+    {
+      "text": "Setjið helminginn af ostablöndunni ofan á kexbotninn og dreypið helmingnum af karamellusósunni og súkkulaðisósunni yfir. Dragið grillpinna fram og aftur í gegnum blönduna til að mynda marmaramynstur.",
+      "refs": []
+    },
+    {
+      "text": "Endurtakið með afganginum af ostablöndunni og sósunum. Hyljið formið og kælið í minnst 6 klukkustundir, helst yfir nótt, þar til kakan er alveg stíf.",
+      "refs": []
+    },
+    {
+      "text": "Losið kökuna úr forminu og skreytið með auka Mars-bitum og afgangi af sósunum, ef eitthvað er eftir, rétt áður en kakan er borin fram.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: frumuppskriftin telur upp 4 msk af rjóma fyrir báðar sósurnar án þess að tilgreina skiptinguna – hér er honum skipt jafnt, 2 msk í hvora sósu. Stærð formsins vantaði og er hér tilgreind (22 cm lausbotna form), og óljós kælitími („several hours“) er tilgreindur sem minnst 6 klukkustundir eða yfir nótt.",
+    "storage": "Geymist í lokuðu íláti í kæli í 3–4 daga. Frysting er ekki ráðlögð, því matarlímsfyllingin getur skilið sig við þiðnun.",
+    "variants": "Mars má skipta út fyrir Snickers eða öðru karamellufylltu súkkulaðistykki. Ef súkkulaðikex fæst ekki má nota hafrakex (digestive) og bæta 2 msk af kakói í kexmylsnuna. Í stað vanillusykurs má nota 1 tsk af vanilludropum."
+  },
+  "source": {
+    "url": "http://www.bestrecipes.com.au/recipe/mars-bar-cheesecake-L903.html",
+    "site": "bestrecipes.com.au"
+  }
+}

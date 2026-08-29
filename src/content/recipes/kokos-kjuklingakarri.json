@@ -1,0 +1,175 @@
+{
+  "title": "Kókos-kjúklingakarrí",
+  "subtitle": "kjúklingapottréttur með masala og kókosmjólk",
+  "description": "Kjúklingur og grænmeti látið malla í súrínömsku masala-karríi og kókosmjólk. Ilmandi pottréttur sem hentar vel til að nýta grænmetisafganga og er bestur með basmatíhrísgrjónum.",
+  "categories": [
+    "kjuklingur",
+    "pottrettir"
+  ],
+  "tags": [
+    "frystivaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 15,
+    "cook": 35
+  },
+  "ingredients": [
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "olía",
+      "note": "til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "saxaður smátt"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "pressuð"
+    },
+    {
+      "id": "tomatar",
+      "amount": 2,
+      "unit": "stk",
+      "item": "þroskaðir tómatar",
+      "note": "litlir, skornir í smáa teninga"
+    },
+    {
+      "id": "kjuklingur",
+      "amount": 500,
+      "unit": "g",
+      "item": "úrbeinuð kjúklingalæri",
+      "note": "skorin í munnbita"
+    },
+    {
+      "id": "masala",
+      "amount": 3,
+      "unit": "tsk",
+      "item": "masala",
+      "note": "súrínamskt karrí"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "scalable": false
+    },
+    {
+      "id": "teningur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "kjúklingateningur"
+    },
+    {
+      "id": "vatn",
+      "amount": 2,
+      "unit": "dl",
+      "item": "vatn"
+    },
+    {
+      "id": "kokosmjolk",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "kókosmjólk"
+    },
+    {
+      "id": "baunir",
+      "amount": 250,
+      "unit": "g",
+      "item": "strengjabaunir",
+      "note": "skornar í tvennt"
+    },
+    {
+      "id": "gulraetur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "gulrætur",
+      "note": "stórar, skornar í bita"
+    },
+    {
+      "id": "kurbitur",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "kúrbítur",
+      "note": "skorinn í bita"
+    },
+    {
+      "id": "brokkoli",
+      "amount": 150,
+      "unit": "g",
+      "item": "brokkolí",
+      "note": "skorið í litla kvisti"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið {{olia}} í potti og steikið {{laukur}} þar til hann er mjúkur og glær.",
+      "refs": [
+        "olia",
+        "laukur"
+      ]
+    },
+    {
+      "text": "Bætið {{tomatar}} og {{hvitlaukur}} út í og steikið í 2–3 mínútur þar til tómatarnir eru orðnir mjúkir.",
+      "refs": [
+        "tomatar",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Bætið {{masala}} og {{chiliflogur}} út í og hrærið vel saman. Gætið þess að kryddið brenni ekki – lækkið hitann eða bætið örlítilli olíu við ef þarf.",
+      "refs": [
+        "masala",
+        "chiliflogur"
+      ]
+    },
+    {
+      "text": "Bætið {{kjuklingur}} út í og steikið í 5 mínútur með kryddinu.",
+      "refs": [
+        "kjuklingur"
+      ]
+    },
+    {
+      "text": "Myljið {{teningur}} út í og hellið {{vatn}} og {{kokosmjolk}} saman við. Látið suðuna koma upp og sjóðið við miðlungshita í um 10 mínútur.",
+      "refs": [
+        "teningur",
+        "vatn",
+        "kokosmjolk"
+      ]
+    },
+    {
+      "text": "Bætið {{baunir}} og {{gulraetur}} út í og sjóðið í 10 mínútur.",
+      "refs": [
+        "baunir",
+        "gulraetur"
+      ]
+    },
+    {
+      "text": "Bætið að lokum {{kurbitur}} og {{brokkoli}} út í og sjóðið í um 7 mínútur til viðbótar, eða þar til grænmetið er meyrt og kjúklingurinn eldaður í gegn. Berið fram með basmatíhrísgrjónum.",
+      "refs": [
+        "kurbitur",
+        "brokkoli"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: undirbúnings- og heildareldunartími var ekki tilgreindur í frumuppskriftinni og er áætlaður hér.",
+    "storage": "Geymist í 3 daga í kæli og allt að 3 mánuði í frysti. Hitið rólega upp og hrærið vel á meðan, því kókosmjólkin getur skilið sig við snögga upphitun.",
+    "variants": "Súrínamskt masala fæst í asískum matvöruverslunum; ef það fæst ekki má nota madras karríduft í staðinn. Nota má kjúklingabringur, en úrbeinuð læri haldast safaríkari eftir suðuna. Nánast hvaða grænmeti sem er gengur í réttinn – hann er tilvalinn til að klára afganga úr ísskápnum."
+  },
+  "source": {
+    "url": "https://gelukkigindekeuken.com/2023/03/05/kip-kerrie-kokoscurry/",
+    "site": "gelukkigindekeuken.com"
+  }
+}

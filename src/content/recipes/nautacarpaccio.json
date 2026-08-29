@@ -1,0 +1,100 @@
+{
+  "title": "Nautacarpaccio",
+  "subtitle": "ítalskur forréttur með klettasalati og kapers",
+  "description": "Næfurþunnar sneiðar af hrárri nautalund með klettasalati, kapers, rauðvínsediki og góðri ólífuolíu. Glæsilegur forréttur sem krefst lítillar fyrirhafnar en vekur alltaf athygli.",
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 2,
+  "time": {
+    "prep": 130,
+    "cook": 0
+  },
+  "ingredients": [
+    {
+      "id": "nautalund",
+      "amount": 150,
+      "unit": "g",
+      "item": "nautalund",
+      "note": "glæný, í heilu stykki"
+    },
+    {
+      "id": "klettasalat",
+      "amount": 40,
+      "unit": "g",
+      "item": "klettasalat"
+    },
+    {
+      "id": "kapers",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "kapers"
+    },
+    {
+      "id": "edik",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "rauðvínsedik"
+    },
+    {
+      "id": "olifuolia",
+      "amount": 4,
+      "unit": "tsk",
+      "item": "ólífuolía",
+      "note": "góð, extra virgin"
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "sjávarsalt",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Vefjið {{nautalund}} þétt inn í plastfilmu og frystið þar til kjötið er vel stíft en ekki gegnfrosið, um 1–2 klukkustundir. Setjið diskana í kæli á meðan svo þeir séu ískaldir þegar borið er fram.",
+      "refs": [
+        "nautalund"
+      ]
+    },
+    {
+      "text": "Skerið kjötið með beittum hníf í eins þunnar sneiðar og hægt er, þvert á vöðvaþræðina.",
+      "refs": []
+    },
+    {
+      "text": "Leggið sneiðarnar á milli tveggja laga af plastfilmu og fletjið varlega út með kökukefli þar til þær eru næfurþunnar. Raðið þeim svo á köldu diskana.",
+      "refs": []
+    },
+    {
+      "text": "Dreifið {{klettasalat}} og {{kapers}} yfir kjötið. Dreypið {{edik}} og {{olifuolia}} yfir og kryddið með {{pipar}} og {{salt}}. Berið fram strax.",
+      "refs": [
+        "klettasalat",
+        "kapers",
+        "edik",
+        "olifuolia",
+        "pipar",
+        "salt"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: bætt við að fletja sneiðarnar út á milli plastfilmulaga með kökukefli, sem gefur næfurþunnar sneiðar án áleggshnífavélar. Einnig tekið fram að vefja kjötið í plastfilmu fyrir frystingu og að nota glænýja nautalund frá traustum kjötkaupmanni, enda er kjötið borið fram hrátt.",
+    "storage": "Berið fram strax eftir að kjötið er skorið – rétturinn geymist ekki. Óskorna nautalund má þó frysta í heilu lagi og skera beint úr frysti síðar.",
+    "variants": "Klassískt er að bæta parmesanflögum og nokkrum dropum af sítrónusafa yfir í lokin. Klettasalatinu má skipta út fyrir spínat eða annað bragðmikið salat."
+  },
+  "source": {
+    "url": "https://thecookful.com/make-beef-carpaccio/",
+    "site": "thecookful.com"
+  }
+}

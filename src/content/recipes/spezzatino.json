@@ -1,0 +1,213 @@
+{
+  "title": "Spezzatino – ítalskur nautapottréttur",
+  "subtitle": "hægeldaður pottréttur með rauðvíni og pancettu",
+  "description": "Hægeldaður ítalskur nautapottréttur þar sem kjötið verður lungamjúkt í rauðvíns- og tómatsósu með pancettu, sveppum og rósmaríni. Berið fram með kartöflumús, polenta eða pasta.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "frystivaent"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 10,
+    "cook": 120
+  },
+  "ingredients": [
+    {
+      "id": "olifuolia",
+      "amount": 3,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "eða eftir þörfum",
+      "scalable": false
+    },
+    {
+      "id": "nautakjot",
+      "amount": 900,
+      "unit": "g",
+      "item": "nautagúllas",
+      "note": "í stórum bitum"
+    },
+    {
+      "id": "pancetta",
+      "amount": 100,
+      "unit": "g",
+      "item": "pancetta",
+      "note": "gróft söxuð"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "stór, smátt saxaður"
+    },
+    {
+      "id": "gulraetur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "gulrætur",
+      "note": "smátt saxaðar"
+    },
+    {
+      "id": "selleri",
+      "amount": 2,
+      "unit": "stk",
+      "item": "sellerístilkar",
+      "note": "smátt saxaðir"
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "sjávarsalt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "pudursykur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "púðursykur",
+      "note": "má sleppa"
+    },
+    {
+      "id": "sveppir",
+      "amount": 200,
+      "unit": "g",
+      "item": "kastaníusveppir",
+      "note": "skornir í tvennt"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "sneiddur"
+    },
+    {
+      "id": "tomatpurra",
+      "amount": 2,
+      "unit": "msk",
+      "item": "tómatpúrra"
+    },
+    {
+      "id": "balsamedik",
+      "amount": 2,
+      "unit": "msk",
+      "item": "balsamedik"
+    },
+    {
+      "id": "raudvin",
+      "amount": 0.75,
+      "unit": "dl",
+      "item": "rauðvín"
+    },
+    {
+      "id": "nautasod",
+      "amount": 6,
+      "unit": "dl",
+      "item": "nautasoð",
+      "note": "eða vatn og nautakraftur"
+    },
+    {
+      "id": "larvidarlauf",
+      "amount": 1,
+      "unit": "stk",
+      "item": "lárviðarlauf",
+      "scalable": false
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1,
+      "unit": "stk",
+      "item": "fersk rósmaríngrein",
+      "scalable": false
+    },
+    {
+      "id": "maissterkja",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "maíssterkja"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 160 °C. Hitið {{olifuolia}} í stórum eldföstum potti og brúnið {{nautakjot}} við háan hita í nokkrum skömmtum – ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Færið í skál og leggið til hliðar.",
+      "refs": [
+        "olifuolia",
+        "nautakjot"
+      ]
+    },
+    {
+      "text": "Steikið {{pancetta}} í sama potti þar til hún byrjar að verða stökk. Færið í skálina með kjötinu.",
+      "refs": [
+        "pancetta"
+      ]
+    },
+    {
+      "text": "Hellið smá skvettu af rauðvíninu í pottinn og skafið upp steikarskánina af botninum. Lækkið hitann, bætið smá olíu í ef þarf og setjið {{laukur}}, {{gulraetur}} og {{selleri}} út í. Kryddið með {{salt}} og {{pipar}} og stráið {{pudursykur}} yfir.",
+      "refs": [
+        "laukur",
+        "gulraetur",
+        "selleri",
+        "salt",
+        "pipar",
+        "pudursykur"
+      ]
+    },
+    {
+      "text": "Látið malla við lágan hita í 10 mínútur og hrærið oft, þar til grænmetið er orðið mjög mjúkt. Bætið skvettu af soði eða víni í pottinn ef blandan verður of þurr.",
+      "refs": []
+    },
+    {
+      "text": "Hrærið {{sveppir}} og {{hvitlaukur}} saman við og eldið í um það bil mínútu. Hellið afganginum af {{raudvin}} og {{balsamedik}} út í og hrærið {{tomatpurra}} saman við.",
+      "refs": [
+        "sveppir",
+        "hvitlaukur",
+        "raudvin",
+        "balsamedik",
+        "tomatpurra"
+      ]
+    },
+    {
+      "text": "Hellið {{nautasod}} út í og látið suðuna koma upp. Setjið kjötið og pancettuna ásamt öllum safa aftur í pottinn og hrærið saman. Bætið {{rosmarin}} og {{larvidarlauf}} út í, setjið þétt lok á pottinn og færið í ofninn í 90 mínútur.",
+      "refs": [
+        "nautasod",
+        "rosmarin",
+        "larvidarlauf"
+      ]
+    },
+    {
+      "text": "Athugið pottréttinn – er kjötið orðið vel meyrt? Ef ekki, eldið áfram í 30 mínútur í viðbót.",
+      "refs": []
+    },
+    {
+      "text": "Leysið {{maissterkja}} upp í smá köldu vatni og hrærið út í pottréttinn. Látið suðuna koma upp á hellunni og hrærið þar til sósan þykknar.",
+      "refs": [
+        "maissterkja"
+      ]
+    },
+    {
+      "text": "Veiðið lárviðarlaufið og rósmaríngreinina upp úr og smakkið til með salti og pipar. Berið fram með kartöflumús, mjúkri polenta eða pasta.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "storage": "Geymist í 3–4 daga í kæli og bragðast jafnvel betur daginn eftir. Frystist vel í allt að 3 mánuði – þíðið í kæli yfir nótt og hitið rólega upp að suðu.",
+    "variants": "Pancettu má skipta út fyrir beikon. Kastaníusveppum má skipta út fyrir venjulega hvíta sveppi. Í stað rauðvíns má nota jafn mikið nautasoð ásamt 1 tsk af balsamediki til viðbótar."
+  },
+  "source": {
+    "url": "https://www.supergoldenbakes.com/spezzatino-italian-beef-stew/",
+    "site": "supergoldenbakes.com"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "source": {
+    "url": "https://thefoodcharlatan.com/lemon-tarragon-grilled-chicken/",
+    "site": "thefoodcharlatan.com"
+  },
+  "fetched": "2026-08-29T15:31:53.778Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Lemon Tarragon Grilled Chicken",
+    "yield": "8",
+    "prepTime": "PT10M",
+    "cookTime": "PT55M",
+    "totalTime": "PT65M",
+    "ingredients": [
+      "12 chicken drumsticks (4-5 pounds)",
+      "6 chicken thighs (bone in (about 5 pounds))",
+      "2 tablespoons salt (to season the chicken)",
+      "2 teaspoon pepper (to season the chicken)",
+      "1/4 cup fresh lemon juice (1 large lemon)",
+      "1/4 cup fresh tarragon (finely chopped)",
+      "2 cloves garlic (finely minced)",
+      "1 & 1/2 teaspoons salt",
+      "1/2 teaspoon pepper",
+      "1/3 cup olive oil",
+      "fresh lemons (to garnish)"
+    ],
+    "instructions": [
+      "Set all the burners on your grill to high heat. Use paper towels to pat the drumsticks and chicken thighs dry. Use a sharp knife to remove any extra fat. Sprinkle with lots of salt and pepper on all sides.",
+      "Turn off one burner and grease the rack above it. Arrange the drumsticks on the rack that is over the turned-off side (you are grilling them over indirect heat). Grill for 20 minutes. Flip each drumstick, then grill for another 20 minutes or until a meat thermometer reaches 165 degrees F. If you would like to char the outside of the drumsticks, turn the burner directly underneath the chicken on to high heat and grill until nicely browned, flipping once.",
+      "Meanwhile, in a large bowl combine lemon juice, tarragon, garlic, salt and pepper. Add the olive oil in a thin stream while whisking constantly to make sure it emulsifies. When the chicken is done add it to the bowl with the sauce and turn to coat. Cover with foil and keep warm.",
+      "Repeat the process for the chicken thighs. High heat, then turn off one burner. Grease the rack above the turned off side and then put the chicken thighs on. Grill for about 15 minutes per side or until they reach 165 degrees F. Turn the burner on to high heat for the last couple minutes to get a nice char.",
+      "Add the thighs to the bowl with the sauce and turn to coat. Serve hot."
+    ]
+  }
+}

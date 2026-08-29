@@ -1,0 +1,37 @@
+{
+  "source": {
+    "url": "https://easydiycrafts.com/baked-caesar-chicken-creamy-parmesan-sauce/",
+    "site": "easydiycrafts.com"
+  },
+  "fetched": "2026-08-29T15:32:19.373Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Baked Caesar Chicken with Creamy Parmesan Sauce",
+    "yield": "4",
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "totalTime": "PT45M",
+    "ingredients": [
+      "3 boneless, skinless chicken breasts",
+      "2 tbsp olive oil",
+      "Salt and black pepper, to taste",
+      "1 tsp garlic powder",
+      "½ tsp paprika",
+      "1 cup heavy cream",
+      "½ cup grated Parmesan cheese",
+      "1 tsp Dijon mustard",
+      "1 tsp lemon juice",
+      "½ tsp dried thyme or Italian seasoning",
+      "Fresh parsley, chopped (for garnish)"
+    ],
+    "instructions": [
+      "Preheat oven to 375°F (190°C).",
+      "Pat chicken breasts dry. Rub with olive oil, salt, pepper, garlic powder, and paprika.",
+      "Optional: In a skillet over medium-high heat, sear chicken for 2–3 minutes per side until lightly golden.",
+      "In a small bowl, whisk together heavy cream, Parmesan, Dijon mustard, lemon juice, and thyme.",
+      "Place chicken in a greased baking dish and pour Parmesan sauce evenly over the top.",
+      "Cover with foil and bake 20–25 minutes, or until internal temperature reaches 165°F (74°C). Remove foil in the last 5 minutes for a lightly browned top.",
+      "Let chicken rest for 5 minutes, then slice and serve with sauce. Garnish with parsley."
+    ]
+  }
+}

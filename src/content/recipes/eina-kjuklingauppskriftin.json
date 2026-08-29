@@ -1,0 +1,163 @@
+{
+  "title": "Eina kjúklingauppskriftin",
+  "subtitle": "safaríkar bringur í soja- og balsamikmarineringu",
+  "description": "Safaríkar kjúklingabringur í einfaldri og ferskri marineringu úr sojasósu, balsamikediki, hvítlauk og límónu. Slær í gegn jafnt á virkum dögum sem í matarboði.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "veislumatur"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 10,
+    "cook": 20
+  },
+  "ingredients": [
+    {
+      "id": "bringur",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kjúklingabringur",
+      "note": "ferskar eða uppþíddar; allt að 6 bringur ganga í sama magn af marineringu"
+    },
+    {
+      "id": "sojasosa",
+      "amount": 60,
+      "unit": "ml",
+      "item": "sojasósa",
+      "note": "dökk ef til er",
+      "group": "Marinering"
+    },
+    {
+      "id": "balsamik",
+      "amount": 60,
+      "unit": "ml",
+      "item": "balsamikedik",
+      "group": "Marinering"
+    },
+    {
+      "id": "olifuolia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Marinering"
+    },
+    {
+      "id": "pudursykur",
+      "amount": 2,
+      "unit": "msk",
+      "item": "púðursykur",
+      "group": "Marinering"
+    },
+    {
+      "id": "worcestershire",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Worcestershire-sósa",
+      "group": "Marinering"
+    },
+    {
+      "id": "sinnep",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Dijon sinnep",
+      "group": "Marinering"
+    },
+    {
+      "id": "timian",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "timían",
+      "note": "þurrkað",
+      "group": "Marinering"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "söxuð",
+      "group": "Marinering"
+    },
+    {
+      "id": "limona",
+      "amount": 1,
+      "unit": "stk",
+      "item": "límóna",
+      "note": "safinn",
+      "group": "Marinering"
+    },
+    {
+      "id": "steinselja",
+      "amount": 3,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð, u.þ.b. handfylli",
+      "group": "Marinering"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt",
+      "scalable": false,
+      "group": "Marinering"
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "svartur pipar",
+      "scalable": false,
+      "group": "Marinering"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Blandið {{sojasosa}}, {{balsamik}}, {{olifuolia}}, {{pudursykur}}, {{worcestershire}}, {{sinnep}}, {{timian}}, {{hvitlaukur}}, {{limona}}, {{steinselja}}, {{salt}} og {{pipar}} vel saman í skál.",
+      "refs": [
+        "sojasosa",
+        "balsamik",
+        "olifuolia",
+        "pudursykur",
+        "worcestershire",
+        "sinnep",
+        "timian",
+        "hvitlaukur",
+        "limona",
+        "steinselja",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Bætið {{bringur}} út í og veltið þeim vel upp úr marineringunni. Látið liggja í kæli í minnst klukkustund, eða allt að sólarhring – því lengri tími, því bragðmeiri verður kjúklingurinn.",
+      "refs": [
+        "bringur"
+      ]
+    },
+    {
+      "text": "Takið bringurnar úr marineringunni og grillið í 5–8 mínútur á hvorri hlið, eða þar til þær eru eldaðar í gegn.",
+      "refs": []
+    },
+    {
+      "text": "Ef ekki viðrar til að grilla: steikið bringurnar á vel heitri pönnu í 2–3 mínútur á hvorri hlið þar til þær taka lit og klárið þær svo í ofni við 190 °C í 12–15 mínútur, þar til þær eru eldaðar í gegn.",
+      "refs": []
+    },
+    {
+      "text": "Látið bringurnar hvíla í 5 mínútur áður en þær eru skornar – þá halda þær safanum betur. Berið fram með góðu salati.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: bætt við pönnu- og ofnaðferð, því frumuppskriftin gerir aðeins ráð fyrir grilli. Bætt við 5 mínútna hvíldartíma áður en kjúklingurinn er skorinn, sem heldur honum safaríkari. „Handfylli af ferskri steinselju“ var fest sem 3 msk svo hægt sé að skala uppskriftina, og vörumerkjatilvísanir voru gerðar almennar.",
+    "storage": "Eldaður kjúklingur geymist í 3 daga í kæli og allt að 3 mánuði í frysti. Marineraðar, óeldaðar bringur má geyma í allt að sólarhring í kæli, en ekki lengur því edikið byrjar þá að brjóta kjötið niður.",
+    "variants": "Í stað límónu má nota hálfa sítrónu. Kjúklingalæri virka jafn vel og bringur og þola lengri eldun. Kaldur afgangskjúklingur er frábær í kjúklingasalat daginn eftir."
+  },
+  "source": {
+    "url": "http://grgs.is/2016/10/25/eina-kjuklingauppskriftin-sem-thu-tharft-ad-kunna/",
+    "site": "grgs.is"
+  }
+}

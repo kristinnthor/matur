@@ -1,0 +1,160 @@
+{
+  "title": "Sítrónu- og estragonkjúklingur",
+  "subtitle": "grillaður kjúklingur í ferskri sítrónusósu",
+  "description": "Safaríkur grillaður kjúklingur sem er velt upp úr ferskri sítrónu- og estragonsósu beint af grillinu. Einfaldur veislumatur fyrir stóran hóp – og ofnaðferðin bjargar málunum þegar ekki viðrar til að grilla.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 10,
+    "cook": 55
+  },
+  "ingredients": [
+    {
+      "id": "leggir",
+      "amount": 12,
+      "unit": "stk",
+      "item": "kjúklingaleggir",
+      "note": "um 2 kg",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "laeri",
+      "amount": 6,
+      "unit": "stk",
+      "item": "kjúklingalæri með beini",
+      "note": "um 2,2 kg",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "saltkrydd",
+      "amount": 2,
+      "unit": "msk",
+      "item": "salt",
+      "note": "til að krydda kjúklinginn",
+      "group": "Kjúklingur",
+      "scalable": false
+    },
+    {
+      "id": "piparkrydd",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "nýmalaður pipar",
+      "note": "til að krydda kjúklinginn",
+      "group": "Kjúklingur",
+      "scalable": false
+    },
+    {
+      "id": "sitrona",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "safinn (um ½ dl)",
+      "group": "Sítrónu-estragonsósa"
+    },
+    {
+      "id": "estragon",
+      "amount": 4,
+      "unit": "msk",
+      "item": "ferskt estragon",
+      "note": "fínt saxað",
+      "group": "Sítrónu-estragonsósa"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "fínt saxaður",
+      "group": "Sítrónu-estragonsósa"
+    },
+    {
+      "id": "saltsosa",
+      "amount": 1.5,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Sítrónu-estragonsósa",
+      "scalable": false
+    },
+    {
+      "id": "piparsosa",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "pipar",
+      "group": "Sítrónu-estragonsósa",
+      "scalable": false
+    },
+    {
+      "id": "olifuolia",
+      "amount": 0.75,
+      "unit": "dl",
+      "item": "ólífuolía",
+      "group": "Sítrónu-estragonsósa"
+    },
+    {
+      "id": "sitronubatar",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "skorin í báta",
+      "group": "Til að bera fram"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þerrið {{leggir}} og {{laeri}} vel með eldhúspappír og snyrtið mestu fituna af með beittum hníf. Stráið {{saltkrydd}} og {{piparkrydd}} yfir á allar hliðar.",
+      "refs": [
+        "leggir",
+        "laeri",
+        "saltkrydd",
+        "piparkrydd"
+      ]
+    },
+    {
+      "text": "Kveikið á öllum brennurum grillsins á fullum hita. Slökkvið svo á einum brennara og smyrjið grindina yfir honum með olíu. Raðið leggjunum á grindina yfir slökkta brennaranum – þeir eldast við óbeinan hita – og grillið undir loki í 20 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Snúið leggjunum og grillið í 20 mínútur í viðbót, eða þar til þeir eru eldaðir í gegn (kjarnhiti 74 °C). Viljið þið stökka, dökka skorpu, kveikið þá á brennaranum undir kjúklingnum í lokin og brúnið stutta stund á hvorri hlið.",
+      "refs": []
+    },
+    {
+      "text": "Á meðan kjúklingurinn grillast, blandið saman safanum úr {{sitrona}}, {{estragon}}, {{hvitlaukur}}, {{saltsosa}} og {{piparsosa}} í stórri skál. Hellið {{olifuolia}} út í í mjórri bunu og þeytið stöðugt á meðan, svo sósan blandist vel og skilji sig ekki.",
+      "refs": [
+        "sitrona",
+        "estragon",
+        "hvitlaukur",
+        "saltsosa",
+        "piparsosa",
+        "olifuolia"
+      ]
+    },
+    {
+      "text": "Setjið leggina í skálina með sósunni um leið og þeir koma af grillinu og veltið þeim upp úr henni. Breiðið álpappír yfir og haldið heitu.",
+      "refs": []
+    },
+    {
+      "text": "Endurtakið sama ferli með lærin: fullur hiti, slökkvið á einum brennara, smyrjið grindina og grillið lærin yfir óbeinum hita í um 15 mínútur á hvorri hlið, þar til þau eru elduð í gegn (74 °C). Kveikið á brennaranum síðustu mínúturnar fyrir fallega skorpu.",
+      "refs": []
+    },
+    {
+      "text": "Veltið lærunum upp úr sósunni og berið fram heitt með {{sitronubatar}}.",
+      "refs": [
+        "sitronubatar"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: upprunalega uppskriftin gerir eingöngu ráð fyrir gasgrilli. Bætt við ofnaðferð í athugasemdum, því grillveður er ekki sjálfgefið á Íslandi.",
+    "storage": "Geymist í 3–4 daga í kæli og má frysta í allt að 3 mánuði. Hitið upp í ofni við 175 °C þar til kjúklingurinn er heitur í gegn – í örbylgjuofni verður skinnið seigt.",
+    "variants": "Ef ekki viðrar til að grilla: hitið ofninn í 200 °C, raðið kjúklingnum á grind yfir ofnskúffu og bakið í 35–45 mínútur, snúið einu sinni, þar til kjarnhiti nær 74 °C. Kveikið á grillstillingu ofnsins síðustu mínúturnar fyrir stökka skorpu. Einnig má brúna bitana fyrst á pönnu og klára þá í ofni. Ferskt estragon fæst ekki alls staðar; í staðinn má nota 4 tsk af þurrkuðu estragoni."
+  },
+  "source": {
+    "url": "https://thefoodcharlatan.com/lemon-tarragon-grilled-chicken/",
+    "site": "thefoodcharlatan.com"
+  }
+}

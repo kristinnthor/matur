@@ -1,0 +1,202 @@
+{
+  "title": "Fyllt svínalund með spínati og fetaosti",
+  "subtitle": "svínalund með miðjarðarhafsfyllingu og balsamgljáa",
+  "description": "Safarík svínalund fyllt með spínati, sólþurrkuðum tómötum og fetaosti, pensluð með balsamediki, rósmaríni og sítrónuberki. Glæsilegur veislumatur sem er einfaldari en hann lítur út fyrir að vera.",
+  "categories": [
+    "kjot"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 25,
+    "cook": 45
+  },
+  "ingredients": [
+    {
+      "id": "svinalund",
+      "amount": 675,
+      "unit": "g",
+      "item": "svínalund"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "ólífuolía",
+      "group": "Fylling"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "group": "Fylling"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "chiliflögur",
+      "group": "Fylling",
+      "scalable": false
+    },
+    {
+      "id": "spinat",
+      "amount": 150,
+      "unit": "g",
+      "item": "ferskt spínat",
+      "group": "Fylling"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt",
+      "group": "Fylling",
+      "scalable": false
+    },
+    {
+      "id": "tomatar",
+      "amount": 110,
+      "unit": "g",
+      "item": "sólþurrkaðir tómatar í olíu",
+      "note": "saxaðir, um 6 bitar",
+      "group": "Fylling"
+    },
+    {
+      "id": "feta",
+      "amount": 85,
+      "unit": "g",
+      "item": "fetaostur",
+      "note": "mulinn",
+      "group": "Fylling"
+    },
+    {
+      "id": "balsamedik",
+      "amount": 2,
+      "unit": "msk",
+      "item": "balsamedik",
+      "note": "gott edik borgar sig hér",
+      "group": "Balsamblanda"
+    },
+    {
+      "id": "olia2",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Balsamblanda"
+    },
+    {
+      "id": "sinnep",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "Dijon sinnep",
+      "group": "Balsamblanda"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1.5,
+      "unit": "tsk",
+      "item": "ferskt rósmarín",
+      "note": "saxað",
+      "group": "Balsamblanda"
+    },
+    {
+      "id": "sitrona",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "rifinn börkurinn",
+      "group": "Balsamblanda"
+    },
+    {
+      "id": "hvitlauksrif",
+      "amount": 1,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "stórt, rifið",
+      "group": "Balsamblanda"
+    },
+    {
+      "id": "salt2",
+      "amount": 0.75,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Balsamblanda",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "group": "Balsamblanda",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 220 °C.",
+      "refs": []
+    },
+    {
+      "text": "Hitið {{olia}} á lítilli pönnu við meðalhita. Bætið {{chiliflogur}} út í og rífið {{hvitlaukur}} beint út í olíuna. Steikið þar til ilmurinn finnst, um 30 sekúndur.",
+      "refs": [
+        "olia",
+        "chiliflogur",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Bætið {{spinat}} á pönnuna og látið það falla saman, 2–3 mínútur. Stráið {{salt}} yfir og takið pönnuna af hitanum.",
+      "refs": [
+        "spinat",
+        "salt"
+      ]
+    },
+    {
+      "text": "Setjið spínatblönduna á eldhúspappír og kreistið varlega úr henni mesta vökvann – farið gætilega, hún er heit. Blandið spínatinu saman við {{tomatar}} og {{feta}} í lítilli skál og leggið til hliðar.",
+      "refs": [
+        "tomatar",
+        "feta"
+      ]
+    },
+    {
+      "text": "Pískið {{balsamedik}}, {{olia2}}, {{sinnep}}, {{rosmarin}}, {{sitrona}}, {{hvitlauksrif}}, {{salt2}} og {{pipar}} saman í lítilli skál þar til blandan er slétt.",
+      "refs": [
+        "balsamedik",
+        "olia2",
+        "sinnep",
+        "rosmarin",
+        "sitrona",
+        "hvitlauksrif",
+        "salt2",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Skerið {{svinalund}} eftir endilöngu án þess að skera alveg í gegn – skiljið eftir um 1 cm á annarri hliðinni. Opnið lundina eins og bók og dreifið spínatfyllingunni jafnt eftir miðjunni. Leggið efri helminginn aftur yfir og bindið lundina saman með eldhússnæri á 3–4 stöðum svo fyllingin haldist inni.",
+      "refs": [
+        "svinalund"
+      ]
+    },
+    {
+      "text": "Leggið lundina í ofnfast mót og smyrjið balsamblöndunni á allar hliðar.",
+      "refs": []
+    },
+    {
+      "text": "Steikið í ofninum í 15 mínútur. Lækkið þá hitann í 190 °C og steikið áfram í 20–30 mínútur, eða þar til kjarnhitinn í þykkasta hluta lundarinnar nær 63 °C. Látið kjötið hvíla í 10 mínútur áður en það er skorið í sneiðar – annars lekur safinn úr því.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "storage": "Afgangar geymast í 3 daga í kæli. Sneiðar má frysta í allt að 2 mánuði – þíðið í kæli og hitið varlega, til dæmis undir álpappír í ofni, svo kjötið þorni ekki.",
+    "variants": "Í stað fetaosts má nota geitaost eða rjómaost. Frosið spínat má nota í stað fersks – þíðið það og kreistið vel. Ef ferskt rósmarín fæst ekki má nota hálfa teskeið af þurrkuðu."
+  },
+  "source": {
+    "url": "https://neighborfoodblog.com/mediterranean-stuffed-balsamic-pork-loin/",
+    "site": "neighborfoodblog.com"
+  }
+}
