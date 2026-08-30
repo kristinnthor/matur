@@ -76,6 +76,10 @@ const credit = creditFor(recipe.id);
       </div>
       <p id="photo-dialog-status" role="status" aria-live="polite"></p>
     </dialog>
+
+    {/* Favourite + private note. Filled in by recipe-personal.ts only when
+        someone is signed in; empty and hidden for everyone else. */}
+    <div id="recipe-personal" class="recipe-personal" data-slug={recipe.id} hidden></div>
   </header>
 
   <div class="recipe-grid">
@@ -146,4 +150,5 @@ const credit = creditFor(recipe.id);
   import '../scripts/scaler.ts';
   import '../scripts/add-to-list.ts';
   import '../scripts/photo-edit.ts';
+  import '../scripts/recipe-personal.ts';
 </script>

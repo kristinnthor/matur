@@ -41,6 +41,32 @@ npm run translate                        # drafts → Icelandic recipe JSON via 
 `translate` needs a logged-in `claude` CLI (or `--backend=api` with
 `ANTHROPIC_API_KEY`) and is glossary-driven — see `glossary/`.
 
+## Accounts (off until configured)
+
+Sign-in with Google gives each family member their own favourites and private
+notes. It ships **disabled**: with no configuration the endpoints answer 503, no
+sign-in button appears, and the site behaves exactly as it did before. Turning it
+on is four steps:
+
+1. **Google OAuth client** — console.cloud.google.com → APIs & Services →
+   Credentials → OAuth client ID → *Web application*. Add
+   `https://matur.kristinn.eu` as an authorised JavaScript origin. Copy the
+   client ID (it is public; the client *secret* is not needed and is not used).
+2. **Database** — `npx wrangler d1 create matur`, then uncomment the
+   `d1_databases` block in `wrangler.jsonc` with the id it prints, and apply the
+   schema: `npx wrangler d1 execute matur --remote --file=worker/schema.sql`.
+3. **Worker settings** — set `GOOGLE_CLIENT_ID` (variable), and as *secrets*
+   `SESSION_SECRET` (any long random string — it signs session cookies) and
+   `ALLOWED_EMAILS` (comma-separated addresses allowed to sign in).
+4. Push. The gated build deploys and the sign-in button appears.
+
+`ALLOWED_EMAILS` **fails closed**: while it is empty nobody can sign in, so a
+half-finished setup turns people away rather than opening the site to anyone with
+a Google account.
+
+Notes live only in D1. They must never follow the photo path, which commits to
+this public repo — a private remark would become permanently world-readable.
+
 ## Structure
 
 | Path | Purpose |
@@ -50,7 +76,9 @@ npm run translate                        # drafts → Icelandic recipe JSON via 
 | `src/lib/lint.ts` + `scripts/check.ts` | Recipe rules the schema cannot express |
 | `src/lib/steps.ts` | `{{ingredient}}` refs inlined into step text, scaled live |
 | `src/content/recipes/` | One JSON file per recipe (+ `photos/<slug>.jpg`) |
-| `worker/index.ts` | `/api/photo` upload endpoint + asset passthrough |
+| `worker/index.ts` | API router: photo upload, accounts, asset passthrough |
+| `worker/account.ts` + `google.ts` | Sign-in, favourites, private notes; Google token verification |
+| `src/lib/session.ts` | Signed session cookies and the sign-in allowlist |
 | `scripts/import.ts` / `translate.ts` | Source-to-Icelandic recipe pipeline |
 | `glossary/` | House rules: units idiom, product names, tone |
 | `docs/superpowers/` | Design spec and implementation plans |

@@ -15,5 +15,17 @@
     "run_worker_first": ["/api/*"]
   },
   "observability": { "enabled": true },
-  "vars": { "GITHUB_REPO": "kristinnthor/matur" }
+  "vars": { "GITHUB_REPO": "kristinnthor/matur" },
+  // Personal data (favourites, private notes) for signed-in family members.
+  // Deliberately left commented out: a binding with a database_id that does not
+  // exist fails the real deploy (dry-run does not catch it), which would take
+  // the whole site down for a feature nobody has turned on yet.
+  //
+  // To enable, run `npx wrangler d1 create matur`, then uncomment this with the
+  // database_id it prints and apply worker/schema.sql. Until then the account
+  // endpoints answer 503 and the site behaves exactly as before.
+  //
+  // "d1_databases": [
+  //   { "binding": "DB", "database_name": "matur", "database_id": "<id>" }
+  // ]
 }

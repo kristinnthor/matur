@@ -1,9 +1,13 @@
 /**
- * Matur worker: serves the static site, plus POST /api/photo which
- * commits an uploaded JPEG to the GitHub repo (triggering the normal
- * build). Auth is a shared passphrase; both it and the GitHub token are
- * Worker secrets set outside this codebase.
+ * Matur worker: serves the static site, plus the API.
+ *
+ * POST /api/photo commits an uploaded JPEG to the GitHub repo (triggering the
+ * normal build), authenticated by a shared passphrase. /api/auth/*, /api/me,
+ * /api/personal, /api/favourite and /api/note handle sign-in and personal data
+ * — see account.ts. Every secret is set on the Worker, outside this codebase.
  */
+import { handleAccount, type AccountEnv } from './account';
+
 /** Minimal binding type — avoids pulling @cloudflare/workers-types, whose
  * global Request/Response redefinitions clash with the DOM lib the client
  * scripts compile against. */
@@ -11,7 +15,7 @@ interface Fetcher {
   fetch(req: Request): Promise<Response>;
 }
 
-export interface Env {
+export interface Env extends AccountEnv {
   ASSETS: Fetcher;
   GITHUB_REPO: string;
   GITHUB_TOKEN?: string;
@@ -178,6 +182,8 @@ export default {
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
     if (url.pathname === '/api/photo') return handlePhoto(req, env);
+    const account = await handleAccount(req, env, url);
+    if (account) return account;
     return env.ASSETS.fetch(req);
   },
 };

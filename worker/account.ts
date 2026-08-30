@@ -1,0 +1,199 @@
+/**
+ * Sign-in, favourites and private notes.
+ *
+ * Every endpoint is off until the site is configured (Google client id, session
+ * secret, allowlist, D1 binding) and says so plainly, the same way the photo
+ * endpoint shipped disabled until its secrets existed.
+ */
+import { isAllowed, parseAllowlist, signSession, verifySession, type SessionUser } from '../src/lib/session';
+import { verifyGoogleToken } from './google';
+
+const COOKIE = 'matur_session';
+const SESSION_DAYS = 30;
+const SLUG = /^[a-z0-9-]{3,80}$/;
+const MAX_NOTE = 4000;
+
+/** Minimal D1 surface — avoids pulling workers-types, whose globals clash with
+ * the DOM lib the client scripts compile against. */
+export interface D1Like {
+  prepare(query: string): {
+    bind(...values: unknown[]): {
+      run(): Promise<unknown>;
+      all<T = unknown>(): Promise<{ results: T[] }>;
+    };
+    all<T = unknown>(): Promise<{ results: T[] }>;
+  };
+}
+
+export interface AccountEnv {
+  DB?: D1Like;
+  GOOGLE_CLIENT_ID?: string;
+  SESSION_SECRET?: string;
+  ALLOWED_EMAILS?: string;
+}
+
+function json(status: number, body: unknown, headers: Record<string, string> = {}): Response {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: {
+      'content-type': 'application/json; charset=utf-8',
+      // Personal data must never be held by a cache, shared or otherwise.
+      'cache-control': 'no-store',
+      ...headers,
+    },
+  });
+}
+
+function configured(env: AccountEnv): boolean {
+  return Boolean(env.GOOGLE_CLIENT_ID && env.SESSION_SECRET && env.DB);
+}
+
+const notConfigured = () =>
+  json(503, { error: 'Innskráning er ekki virkjuð enn.' });
+
+function cookieValue(req: Request, name: string): string | null {
+  const header = req.headers.get('cookie');
+  if (!header) return null;
+  for (const part of header.split(';')) {
+    const [key, ...rest] = part.trim().split('=');
+    if (key === name) return rest.join('=');
+  }
+  return null;
+}
+
+function setCookie(token: string, maxAgeSeconds: number): string {
+  // HttpOnly so no script can read it; Lax so it survives a normal navigation
+  // back to the site but is not sent from someone else's form post.
+  return `${COOKIE}=${token}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${maxAgeSeconds}`;
+}
+
+async function currentUser(req: Request, env: AccountEnv, now: number): Promise<SessionUser | null> {
+  if (!env.SESSION_SECRET) return null;
+  return verifySession(cookieValue(req, COOKIE), env.SESSION_SECRET, Math.floor(now / 1000));
+}
+
+async function readJson(req: Request): Promise<Record<string, unknown> | null> {
+  try {
+    return (await req.json()) as Record<string, unknown>;
+  } catch {
+    return null;
+  }
+}
+
+export async function handleAccount(
+  req: Request,
+  env: AccountEnv,
+  url: URL,
+): Promise<Response | null> {
+  const path = url.pathname;
+  const now = Date.now();
+
+  // What the client needs to decide whether to offer a sign-in button at all.
+  if (path === '/api/auth/config') {
+    return json(200, {
+      enabled: configured(env),
+      clientId: configured(env) ? env.GOOGLE_CLIENT_ID : null,
+    });
+  }
+
+  if (path === '/api/auth/google') {
+    if (req.method !== 'POST') return json(405, { error: 'POST only' });
+    if (!configured(env)) return notConfigured();
+    const body = await readJson(req);
+    const credential = typeof body?.credential === 'string' ? body.credential : '';
+    if (!credential) return json(400, { error: 'Innskráning mistókst.' });
+
+    const identity = await verifyGoogleToken(credential, env.GOOGLE_CLIENT_ID!, now).catch(
+      () => null,
+    );
+    if (!identity) return json(401, { error: 'Innskráning mistókst.' });
+
+    if (!isAllowed(identity.email, parseAllowlist(env.ALLOWED_EMAILS))) {
+      console.warn(`sign-in refused for ${identity.email}`);
+      return json(403, { error: 'Þetta netfang hefur ekki aðgang að síðunni.' });
+    }
+
+    const maxAge = SESSION_DAYS * 24 * 60 * 60;
+    const token = await signSession(identity, env.SESSION_SECRET!, Math.floor(now / 1000) + maxAge);
+    return json(
+      200,
+      { signedIn: true, email: identity.email, name: identity.name },
+      { 'set-cookie': setCookie(token, maxAge) },
+    );
+  }
+
+  if (path === '/api/auth/signout') {
+    if (req.method !== 'POST') return json(405, { error: 'POST only' });
+    return json(200, { signedIn: false }, { 'set-cookie': setCookie('', 0) });
+  }
+
+  if (path === '/api/me') {
+    if (!configured(env)) return json(200, { enabled: false, signedIn: false });
+    const user = await currentUser(req, env, now);
+    return json(200, {
+      enabled: true,
+      signedIn: Boolean(user),
+      email: user?.email ?? null,
+      name: user?.name ?? null,
+    });
+  }
+
+  // Everything below needs a signed-in user.
+  if (path === '/api/personal' || path === '/api/favourite' || path === '/api/note') {
+    if (!configured(env)) return notConfigured();
+    const user = await currentUser(req, env, now);
+    if (!user) return json(401, { error: 'Þú þarft að skrá þig inn.' });
+    const db = env.DB!;
+
+    if (path === '/api/personal') {
+      const favourites = await db
+        .prepare('SELECT slug FROM favourites WHERE user_sub = ?')
+        .bind(user.sub)
+        .all<{ slug: string }>();
+      const notes = await db
+        .prepare('SELECT slug, body, updated FROM notes WHERE user_sub = ?')
+        .bind(user.sub)
+        .all<{ slug: string; body: string; updated: number }>();
+      return json(200, {
+        favourites: favourites.results.map((r) => r.slug),
+        notes: Object.fromEntries(notes.results.map((n) => [n.slug, { body: n.body, updated: n.updated }])),
+      });
+    }
+
+    const body = await readJson(req);
+    const slug = typeof body?.slug === 'string' ? body.slug : '';
+    if (!SLUG.test(slug)) return json(400, { error: 'Ógilt uppskriftarheiti.' });
+
+    if (path === '/api/favourite') {
+      if (body?.on === true) {
+        await db
+          .prepare('INSERT OR IGNORE INTO favourites (user_sub, slug, created) VALUES (?, ?, ?)')
+          .bind(user.sub, slug, now)
+          .run();
+      } else {
+        await db
+          .prepare('DELETE FROM favourites WHERE user_sub = ? AND slug = ?')
+          .bind(user.sub, slug)
+          .run();
+      }
+      return json(200, { ok: true });
+    }
+
+    // /api/note — an empty body deletes rather than storing a blank row.
+    const text = typeof body?.body === 'string' ? body.body.trim().slice(0, MAX_NOTE) : '';
+    if (text) {
+      await db
+        .prepare(
+          `INSERT INTO notes (user_sub, slug, body, updated) VALUES (?, ?, ?, ?)
+           ON CONFLICT (user_sub, slug) DO UPDATE SET body = excluded.body, updated = excluded.updated`,
+        )
+        .bind(user.sub, slug, text, now)
+        .run();
+    } else {
+      await db.prepare('DELETE FROM notes WHERE user_sub = ? AND slug = ?').bind(user.sub, slug).run();
+    }
+    return json(200, { ok: true, updated: now });
+  }
+
+  return null;
+}

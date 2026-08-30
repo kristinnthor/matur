@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { skammtar } from '../lib/units';
+
+// The page is static; which of these to show is decided in the browser from
+// the signed-in person's favourites, so nobody's list is baked into the HTML.
+const recipes = await getCollection('recipes');
+const manifest = Object.fromEntries(
+  recipes.map((r) => [
+    r.id,
+    {
+      title: r.data.title,
+      subtitle: r.data.subtitle ?? '',
+      time: r.data.time.prep + r.data.time.cook,
+      servings: r.data.servings,
+      word: skammtar(r.data.servings),
+    },
+  ]),
+);
+---
+<Base title="Mínar uppskriftir — Matur">
+  <meta name="robots" content="noindex" slot="head" />
+  <div class="wrap">
+    <h1>Mínar uppskriftir</h1>
+    <p class="tagline muted">Uppskriftirnar sem þú hefur sett í uppáhald.</p>
+
+    <div id="mine-signedout" hidden>
+      <p class="muted">Skráðu þig inn efst á síðunni til að sjá uppáhaldsuppskriftirnar þínar.</p>
+    </div>
+
+    <div id="mine-empty" hidden>
+      <p class="muted">
+        Engin uppskrift í uppáhaldi enn. Opnaðu <a href="/">uppskrift</a> og smelltu á
+        „Setja í uppáhald“.
+      </p>
+    </div>
+
+    <div class="grid" id="mine-grid"></div>
+
+    <p class="muted privacy-note">
+      Uppáhaldslistinn og athugasemdirnar þínar eru einkamál: þær sjást aðeins þegar þú ert
+      skráð(ur) inn, eru geymdar í gagnagrunni vefsins og fara hvorki í kóðasafnið né til annarra.
+      Myndir sem hlaðið er upp fara hins vegar í opið kóðasafn og sjást öllum.
+    </p>
+  </div>
+
+  <script type="application/json" id="recipe-manifest" set:html={JSON.stringify(manifest).replaceAll('<', '\\u003c')} />
+  <script>
+    import '../scripts/mine.ts';
+  </script>
+</Base>

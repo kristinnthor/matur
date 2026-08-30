@@ -220,6 +220,40 @@ h2::before {
 @media (min-width: 60rem) {
   .recipe-hero { aspect-ratio: 5 / 2; }
 }
+/* Account: header control, favourite, private note */
+.account-slot { display: flex; align-items: center; gap: 0.5rem; min-height: 2rem; }
+.account-name { font-size: 0.85rem; }
+.account-signout,
+.fav-btn {
+  font: inherit;
+  font-family: var(--font-display);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+}
+.account-signout { font-size: 0.8rem; padding: 0.3rem 0.7rem; }
+.account-error { font-size: 0.8rem; color: var(--accent-ink); }
+
+.recipe-personal { display: flex; flex-direction: column; gap: 0.5rem; margin: 1.25rem 0 0; }
+.fav-btn { align-self: flex-start; font-size: 0.9rem; padding: 0.45rem 1rem; }
+.fav-btn.on { background: var(--accent-soft); color: var(--accent-ink); border-color: var(--accent); }
+.note-label { font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; }
+.note-box {
+  font: inherit;
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  resize: vertical;
+}
+.note-status { font-size: 0.8rem; min-height: 1.1em; }
+.privacy-note { margin-top: 2.5rem; font-size: 0.82rem; max-width: 44rem; }
+
 /* Crop control (photo upload) */
 .cropper { margin: 0.75rem 0 0; }
 .crop-frame {

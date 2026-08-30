@@ -53,6 +53,8 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
           <a class="wordmark" href="/">Matur</a>
           <a class="list-link" href="/myndir/">Myndir</a>
           <a class="list-link" href="/innkaupalisti/">Innkaupalisti<span class="badge" data-list-badge hidden>0</span></a>
+          {/* Filled by account-ui.ts, and left empty when sign-in is unconfigured. */}
+          <div id="account-slot" class="account-slot"></div>
         </div>
       </header>
     )}
@@ -78,6 +80,9 @@ const ogImage = image ? new URL(image, Astro.site).href : undefined;
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
       }
+    </script>
+    <script>
+      import '../scripts/account-ui.ts';
     </script>
   </body>
 </html>

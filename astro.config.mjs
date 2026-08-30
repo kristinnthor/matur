@@ -7,7 +7,11 @@ export default defineConfig({
   build: { format: 'directory' },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/offline/') && !page.includes('/myndir/'),
+      // Pages that only mean anything to a signed-in person, or to nobody.
+      filter: (page) =>
+        !page.includes('/offline/') &&
+        !page.includes('/myndir/') &&
+        !page.includes('/uppskriftirnar-minar/'),
     }),
   ],
 });
