@@ -9,9 +9,7 @@ export default defineConfig({
     sitemap({
       // Pages that only mean anything to a signed-in person, or to nobody.
       filter: (page) =>
-        !page.includes('/offline/') &&
-        !page.includes('/myndir/') &&
-        !page.includes('/uppskriftirnar-minar/'),
+        !page.includes('/offline/') && !page.includes('/uppskriftirnar-minar/'),
     }),
   ],
 });

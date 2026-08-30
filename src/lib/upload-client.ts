@@ -1,4 +1,4 @@
-/** Shared client-side photo upload helpers — used by /myndir/ and the per-recipe editor. */
+/** Client-side photo upload helpers for the per-recipe photo editor. */
 
 /**
  * Uploading used to be gated by a passphrase everyone shared. It is now gated by
