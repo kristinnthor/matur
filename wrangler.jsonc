@@ -15,17 +15,17 @@
     "run_worker_first": ["/api/*"]
   },
   "observability": { "enabled": true },
-  "vars": { "GITHUB_REPO": "kristinnthor/matur" },
+  // The Google client id is public by design — it identifies the site to
+  // Google and is visible in the page anyway. The signing secret and the
+  // allowlist are Worker secrets, set outside this file.
+  "vars": {
+    "GITHUB_REPO": "kristinnthor/matur",
+    "GOOGLE_CLIENT_ID": "344138002711-n7k79d3m789ppqr05mqhsg7e8jre125a.apps.googleusercontent.com"
+  },
   // Personal data (favourites, private notes) for signed-in family members.
-  // Deliberately left commented out: a binding with a database_id that does not
-  // exist fails the real deploy (dry-run does not catch it), which would take
-  // the whole site down for a feature nobody has turned on yet.
-  //
-  // To enable, run `npx wrangler d1 create matur`, then uncomment this with the
-  // database_id it prints and apply worker/schema.sql. Until then the account
-  // endpoints answer 503 and the site behaves exactly as before.
-  //
-  // "d1_databases": [
-  //   { "binding": "DB", "database_name": "matur", "database_id": "<id>" }
-  // ]
+  // Schema lives in worker/schema.sql; apply it with
+  //   npx wrangler d1 execute matur --remote --file=worker/schema.sql
+  "d1_databases": [
+    { "binding": "DB", "database_name": "matur", "database_id": "2f744044-ac1d-4f8c-9457-1fb4b3b4a1b3" }
+  ]
 }
