@@ -220,7 +220,43 @@ h2::before {
 @media (min-width: 60rem) {
   .recipe-hero { aspect-ratio: 5 / 2; }
 }
-.recipe-hero.crop-low { object-position: center 72%; }
+/* Crop control (photo upload) */
+.cropper { margin: 0.75rem 0 0; }
+.crop-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--border);
+  cursor: grab;
+  /* The browser must not steal the drag for scrolling. */
+  touch-action: none;
+  user-select: none;
+}
+.crop-frame:active { cursor: grabbing; }
+.crop-frame:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.crop-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+  pointer-events: none;
+}
+/* The band a wide screen keeps: the hero switches to 5:2 above 60rem, and
+ * (3/2)/(5/2) = 0.6 of the frame's height, so 20% is trimmed top and bottom.
+ * The shadow spreads outward and is clipped by the frame, dimming what is lost. */
+.crop-guide {
+  position: absolute;
+  inset: 20% 0;
+  pointer-events: none;
+  border-top: 1px dashed rgba(255, 255, 255, 0.8);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.32);
+}
+.crop-zoom { width: 100%; margin: 0.6rem 0 0; accent-color: var(--accent); }
+.crop-hint { margin: 0.15rem 0 0; font-size: 0.8rem; }
 
 .recipe-grid { display: block; }
 @media (min-width: 60rem) {
@@ -574,7 +610,7 @@ h2::before {
   background: var(--surface);
   color: var(--text);
 }
-.upload-page #preview { max-width: 100%; border-radius: var(--radius); aspect-ratio: 3 / 2; object-fit: cover; }
+.upload-page .cropper { margin-bottom: 1.25rem; }
 .upload-page #upload-btn { border: none; cursor: pointer; font-size: 1rem; align-self: flex-start; }
 .upload-page #status { min-height: 1.5em; font-weight: 600; }
 
@@ -637,14 +673,7 @@ h2::before {
 }
 #photo-dialog::backdrop { background: rgba(15, 17, 21, 0.5); }
 #photo-dialog h2 { margin-top: 0.25rem; }
-#photo-dialog-preview {
-  width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  background: var(--border);
-}
+#photo-dialog .crop-frame { border-radius: 10px; }
 #photo-dialog .field { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 1rem; }
 #photo-dialog .field span { font-family: var(--font-display); font-weight: 600; font-size: 0.88rem; }
 #photo-dialog input {

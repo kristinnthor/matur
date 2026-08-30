@@ -1,7 +1,6 @@
 /** Shared client-side photo upload helpers — used by /myndir/ and the per-recipe editor. */
 
 const PASS_KEY = 'matur:uploadpass';
-const MAX_DIM = 1600;
 
 export function readPass(): string {
   try {
@@ -25,23 +24,6 @@ export function clearPass(): void {
   } catch {
     // fine
   }
-}
-
-/** Downscale to MAX_DIM and re-encode as JPEG; phones send 8 MB originals otherwise. */
-export async function toJpeg(file: File): Promise<Blob> {
-  const bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' }).catch(() =>
-    createImageBitmap(file),
-  );
-  const scale = Math.min(1, MAX_DIM / Math.max(bitmap.width, bitmap.height));
-  const w = Math.round(bitmap.width * scale);
-  const h = Math.round(bitmap.height * scale);
-  const canvas = document.createElement('canvas');
-  canvas.width = w;
-  canvas.height = h;
-  canvas.getContext('2d')!.drawImage(bitmap, 0, 0, w, h);
-  return new Promise((resolve, reject) =>
-    canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('encode failed'))), 'image/jpeg', 0.82),
-  );
 }
 
 export function toBase64(blob: Blob): Promise<string> {

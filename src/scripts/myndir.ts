@@ -1,35 +1,38 @@
-import { readPass, toJpeg, uploadPhoto } from '../lib/upload-client';
+import { readPass, uploadPhoto } from '../lib/upload-client';
+import { createCropper } from './cropper';
 
 const form = document.querySelector<HTMLFormElement>('#upload-form')!;
 const select = document.querySelector<HTMLSelectElement>('#recipe-select')!;
 const fileInput = document.querySelector<HTMLInputElement>('#photo-input')!;
 const passInput = document.querySelector<HTMLInputElement>('#pass-input')!;
-const preview = document.querySelector<HTMLImageElement>('#preview')!;
+const cropMount = document.querySelector<HTMLElement>('#preview-crop')!;
 const status = document.querySelector<HTMLElement>('#status')!;
 const btn = document.querySelector<HTMLButtonElement>('#upload-btn')!;
+
+const cropper = createCropper();
+cropMount.append(cropper.element);
 
 passInput.value = readPass();
 
 fileInput.addEventListener('change', async () => {
   const file = fileInput.files?.[0];
   if (!file) return;
-  const blob = await toJpeg(file).catch(() => null);
-  if (blob) {
-    if (preview.src.startsWith('blob:')) URL.revokeObjectURL(preview.src);
-    preview.src = URL.createObjectURL(blob);
-    preview.hidden = false;
+  status.textContent = '';
+  try {
+    await cropper.load(file);
+  } catch {
+    status.textContent = 'Gat ekki unnið úr myndinni — reyndu aðra.';
   }
 });
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const file = fileInput.files?.[0];
-  if (!file || !select.value) return;
+  if (!select.value || !cropper.hasImage()) return;
 
   btn.disabled = true;
   status.textContent = 'Vinn úr myndinni …';
   try {
-    const blob = await toJpeg(file);
+    const blob = await cropper.toBlob();
     status.textContent = `Hleð upp (${Math.round(blob.size / 1024)} KB) …`;
     const reply = await uploadPhoto(select.value, blob, passInput.value);
 
@@ -39,7 +42,7 @@ form.addEventListener('submit', async (e) => {
         : 'Tókst! Myndin fer í loftið eftir um 2 mínútur.';
       form.reset();
       passInput.value = readPass() || passInput.value;
-      preview.hidden = true;
+      cropper.element.hidden = true;
     } else {
       status.textContent = reply.error ?? 'Villa.';
     }

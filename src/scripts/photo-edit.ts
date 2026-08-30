@@ -1,15 +1,19 @@
-import { readPass, toJpeg, uploadPhoto } from '../lib/upload-client';
+import { readPass, uploadPhoto } from '../lib/upload-client';
+import { createCropper } from './cropper';
 
 const openBtn = document.querySelector<HTMLButtonElement>('#photo-edit-open');
 const dialog = document.querySelector<HTMLDialogElement>('#photo-dialog');
 
 if (openBtn && dialog && typeof dialog.showModal === 'function') {
   const slug = openBtn.dataset.slug!;
-  const preview = dialog.querySelector<HTMLImageElement>('#photo-dialog-preview')!;
+  const cropMount = dialog.querySelector<HTMLElement>('#photo-dialog-crop')!;
   const passInput = dialog.querySelector<HTMLInputElement>('#photo-dialog-pass')!;
   const submit = dialog.querySelector<HTMLButtonElement>('#photo-dialog-submit')!;
   const cancel = dialog.querySelector<HTMLButtonElement>('#photo-dialog-cancel')!;
   const status = dialog.querySelector<HTMLElement>('#photo-dialog-status')!;
+
+  const cropper = createCropper();
+  cropMount.append(cropper.element);
 
   const fileInput = document.createElement('input');
   fileInput.type = 'file';
@@ -18,21 +22,12 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
   fileInput.hidden = true;
   document.body.append(fileInput);
 
-  let jpeg: Blob | null = null;
-  let previewUrl: string | null = null;
-  // The blob URL currently shown by the page hero (via swapHero) — it must
-  // survive dialog cleanup, or the hero image goes blank.
+  // The blob URL the page hero is showing, so it can be released when replaced.
   let heroUrl: string | null = null;
   let closeTimer: ReturnType<typeof setTimeout> | undefined;
   // Bumped on every close: an upload still in flight when the dialog closes
   // belongs to a dead session and must not touch the UI again.
   let session = 0;
-
-  const setPreview = (blob: Blob) => {
-    if (previewUrl && previewUrl !== heroUrl) URL.revokeObjectURL(previewUrl);
-    previewUrl = URL.createObjectURL(blob);
-    preview.src = previewUrl;
-  };
 
   openBtn.addEventListener('click', () => fileInput.click());
 
@@ -40,16 +35,17 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
     const file = fileInput.files?.[0];
     if (!file) return;
     status.textContent = '';
+    passInput.value = readPass();
+    // Open first: the crop frame has no width until it is laid out, and the
+    // initial framing is computed from that width.
+    submit.disabled = true;
+    dialog.showModal();
     try {
-      jpeg = await toJpeg(file);
-      setPreview(jpeg);
+      await cropper.load(file);
+      submit.disabled = false;
     } catch {
-      jpeg = null;
       status.textContent = 'Gat ekki unnið úr myndinni — reyndu aðra.';
     }
-    passInput.value = readPass();
-    submit.disabled = false;
-    dialog.showModal();
   });
 
   // Whatever closes the dialog (Hætta við, Esc, success timer): reset the
@@ -58,7 +54,6 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
     session++;
     clearTimeout(closeTimer);
     fileInput.value = '';
-    jpeg = null;
     submit.disabled = false;
   });
 
@@ -72,19 +67,19 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
   });
 
   submit.addEventListener('click', async () => {
-    if (!jpeg || submit.disabled) return;
+    if (!cropper.hasImage() || submit.disabled) return;
     const mySession = session;
-    const myPreview = previewUrl;
     submit.disabled = true;
     status.textContent = 'Hleð upp …';
     try {
+      const jpeg = await cropper.toBlob();
       const result = await uploadPhoto(slug, jpeg, passInput.value);
       if (session !== mySession) return;
       if (result.ok) {
         status.textContent = result.replaced
           ? 'Tókst! Nýja myndin fer í loftið eftir um 2 mínútur.'
           : 'Tókst! Myndin fer í loftið eftir um 2 mínútur.';
-        if (myPreview) swapHero(myPreview);
+        swapHero(URL.createObjectURL(jpeg));
         // Stay disabled through the close window so a second tap cannot
         // commit the same photo twice.
         closeTimer = setTimeout(() => dialog.close(), 1800);
