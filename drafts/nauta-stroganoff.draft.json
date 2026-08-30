@@ -1,0 +1,38 @@
+{
+  "source": {
+    "url": "https://theferventmama.com/slow-cooker-beef-stroganoff/",
+    "site": "theferventmama.com"
+  },
+  "fetched": "2026-08-30T01:32:52.638Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Slow Cooker Beef Stroganoff",
+    "prepTime": "PT15M",
+    "cookTime": "PT360M",
+    "ingredients": [
+      "2 pounds beef stew meat (or chuck roast, cut into 1-inch cubes)",
+      "1 medium onion (finely chopped)",
+      "3 cloves garlic (minced)",
+      "8 ounces fresh mushrooms (sliced)",
+      "3 cups beef broth (low sodium preferred)",
+      "2 tablespoons Worcestershire sauce",
+      "1 tablespoon Dijon mustard (optional, for depth of flavor)",
+      "1 teaspoon paprika",
+      "1 teaspoon salt (or to taste)",
+      "½ teaspoon black pepper",
+      "2 tablespoons cornstarch (for thickening)",
+      "2 tablespoons water (to mix with cornstarch)",
+      "1 cup sour cream",
+      "12 ounces egg noodles (cooked separately)",
+      "2 tablespoons fresh parsley (chopped (for garnish))"
+    ],
+    "instructions": [
+      "Prepare the slow cooker base: Place beef, onion, garlic, and mushrooms into the slow cooker.",
+      "Add seasonings: Pour in beef broth, Worcestershire sauce, Dijon mustard, paprika, salt, and black pepper. Stir to combine.",
+      "Cook: Cover and cook on low for 6–7 hours or on high for 4 hours, until beef is tender.",
+      "Thicken the sauce: In a small bowl, mix cornstarch and water until smooth. Stir this slurry into the slow cooker during the last 30 minutes of cooking to thicken the sauce.",
+      "Finish with sour cream: Just before serving, stir in sour cream until fully combined and creamy.",
+      "Serve: Spoon beef and sauce over cooked egg noodles. Garnish with parsley."
+    ]
+  }
+}

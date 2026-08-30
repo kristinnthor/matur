@@ -1,0 +1,156 @@
+{
+  "title": "Fokkasía með rósmaríni og flögusalti",
+  "subtitle": "loftmikið ólífuolíubrauð með kaldri hefun",
+  "description": "Klassísk ítölsk fokkasía með stökkri, olíuborinni skorpu og mjúkri, gataðri miðju. Deigið hefast í kæli yfir nótt, sem gefur bragðið og stóru loftbólurnar — byrjið því daginn áður.",
+  "categories": [
+    "bakstur",
+    "medlaeti"
+  ],
+  "tags": [
+    "haegeldad",
+    "frystivaent"
+  ],
+  "servings": 12,
+  "time": {
+    "prep": 20,
+    "cook": 25
+  },
+  "ingredients": [
+    {
+      "id": "hveiti",
+      "amount": 360,
+      "unit": "g",
+      "item": "brauðhveiti",
+      "note": "venjulegt hveiti gengur líka",
+      "group": "Deigið"
+    },
+    {
+      "id": "ger",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "þurrger",
+      "note": "skyndiger",
+      "scalable": false,
+      "group": "Deigið"
+    },
+    {
+      "id": "salt",
+      "amount": 1.5,
+      "unit": "tsk",
+      "item": "fínt sjávarsalt",
+      "scalable": false,
+      "group": "Deigið"
+    },
+    {
+      "id": "vatn",
+      "amount": 3,
+      "unit": "dl",
+      "item": "fingurvolgt vatn",
+      "note": "38–43°C",
+      "group": "Deigið"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Deigið"
+    },
+    {
+      "id": "pannuolia",
+      "amount": 3,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "í mótið",
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "yfirolia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "ofan á fyrir bakstur",
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "flogusalt",
+      "amount": 1.5,
+      "unit": "tsk",
+      "item": "flögusalt",
+      "note": "Maldon eða annað gróft saltflögusalt",
+      "scalable": false,
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ferskt rósmarín",
+      "note": "aðeins nálarnar",
+      "group": "Í mótið og ofan á"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Setjið {{hveiti}}, {{ger}} og {{salt}} í stóra skál og hafið gerið og saltið sitt hvorum megin í skálinni — bein snerting við salt dregur úr virkni gersins. Hellið {{vatn}} og {{olia}} út í og hrærið með stífri sleikju þar til deigið er samfellt og klístrað og ekkert þurrt hveiti er eftir.",
+      "refs": [
+        "hveiti",
+        "ger",
+        "salt",
+        "vatn",
+        "olia"
+      ]
+    },
+    {
+      "text": "Breiðið yfir skálina og látið deigið standa í 10 mínútur svo hveitið nái að drekka í sig vatnið.",
+      "refs": []
+    },
+    {
+      "text": "Vætið aðra höndina, rennið henni undir deigið, teygið það upp og brjótið yfir sig. Snúið skálinni fjórðung hring og endurtakið fjórum sinnum. Breiðið yfir og látið hvíla í 30 mínútur. Endurtakið þessa lotu þrisvar til viðbótar, alls fjórar umferðir á tveimur klukkustundum.",
+      "refs": []
+    },
+    {
+      "text": "Þekið skálina vel með plastfilmu og setjið í kæli í 8–24 klukkustundir. Kalda hefunin er það sem gefur fokkasíunni bragðið og stóru loftbólurnar, svo ekki sleppa henni.",
+      "refs": []
+    },
+    {
+      "text": "Hellið {{pannuolia}} í eldfast mót eða djúpa bökunarform, um 23x33 cm, og dreifið olíunni yfir botn og hliðar. Hvolfið kalda deiginu í miðjuna, olíuberið fingurgómana og ýtið deiginu varlega út í hornin. Ef það togar sig til baka, breiðið yfir og bíðið í 10 mínútur áður en haldið er áfram.",
+      "refs": [
+        "pannuolia"
+      ]
+    },
+    {
+      "text": "Breiðið laust yfir mótið og látið hefast við stofuhita í 2–4 klukkustundir, þar til deigið er þrútið og skoppar til þegar hreyft er við mótinu.",
+      "refs": []
+    },
+    {
+      "text": "Hitið ofninn í 230°C með grindina neðarlega í ofninum og látið hann hitna í minnst hálftíma. Ef blástur er notaður nægir 210°C.",
+      "refs": []
+    },
+    {
+      "text": "Dreypið {{yfirolia}} yfir hefað deigið og þrýstið öllum tíu fingurgómunum þétt niður í það svo djúpar holur myndist um allt yfirborðið. Stráið {{flogusalt}} og {{rosmarin}} strax yfir.",
+      "refs": [
+        "yfirolia",
+        "flogusalt",
+        "rosmarin"
+      ]
+    },
+    {
+      "text": "Bakið í 20–25 mínútur og snúið mótinu við eftir um 15 mínútur. Brauðið á að vera djúpgyllt að ofan. Lyftið einu horninu með spaða og gætið að því að botninn sé líka brúnaður.",
+      "refs": []
+    },
+    {
+      "text": "Rennið brauðinu strax úr mótinu yfir á grind, annars mýkist stökki botninn í olíunni sem eftir situr. Skerið í bita og berið fram volgt.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: frumuppskriftin gefur tvo möguleika, ofnskúffu (46x33 cm) eða mót um 23x33 cm; hér er aðeins minna mótið gefið upp, því tæplega 700 g af deigi dreifast of þunnt í stærra mótinu. Ofnhitinn er umreiknaður úr 450°F í 230°C og bætt við lægri stillingu fyrir blástursofn, og vatnshitinn gefinn í °C (38–43°C) í stað 100–110°F. Bætt við skýringu á því hvers vegna geri og salti er haldið aðskildu í skálinni.",
+    "storage": "Best samdægurs. Geymist í 2 daga í loftþéttu íláti við stofuhita — ekki í kæli, það þurrkar brauðið. Frystist mjög vel niðurskorið í allt að 3 mánuði; hitið beint úr frysti í 200°C heitum ofni í 5–7 mínútur og skorpan verður eins og ný.",
+    "variants": "Rósmarín má skipta út fyrir timjan eða salvíu, og þunnar sneiðar af rauðlauk, ólífur eða sólþurrkaðir tómatar ofan í holurnar fyrir bakstur eru sígild viðbót. Brauðhveiti gefur meiri seiglu en venjulegt hveiti virkar vel, brauðið verður aðeins þéttara. Ef flögusalt fæst ekki má nota gróft sjávarsalt en þá minna, því það leysist hraðar upp og verður saltara á tungu."
+  },
+  "source": {
+    "url": "https://melissajanelee.com/focaccia-bread-recipe/",
+    "site": "melissajanelee.com"
+  }
+}

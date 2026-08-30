@@ -1,0 +1,200 @@
+{
+  "title": "Nauta-stroganoff í hægsuðupotti",
+  "subtitle": "meyrt nautakjöt í rjómalagaðri sveppasósu",
+  "description": "Nautagúllas sem mallar allan daginn þar til það dettur í sundur, í rjómalagaðri sveppasósu með Worcestershire og Dijon. Borið fram yfir eggjanúðlum.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "barnvaent"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 25,
+    "cook": 360
+  },
+  "ingredients": [
+    {
+      "id": "nautakjot",
+      "amount": 900,
+      "unit": "g",
+      "item": "nautagúllas",
+      "note": "í 2–3 cm bitum"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "matarolía"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "smátt saxaður"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "fínsaxaður"
+    },
+    {
+      "id": "sveppir",
+      "amount": 225,
+      "unit": "g",
+      "item": "kastaníusveppir",
+      "note": "sneiddir"
+    },
+    {
+      "id": "sod",
+      "amount": 5,
+      "unit": "dl",
+      "item": "nautasoð",
+      "note": "helst saltlítið"
+    },
+    {
+      "id": "worcester",
+      "amount": 2,
+      "unit": "msk",
+      "item": "Worcestershire-sósa"
+    },
+    {
+      "id": "sinnep",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Dijon sinnep"
+    },
+    {
+      "id": "paprikuduft",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "paprikuduft"
+    },
+    {
+      "id": "maisena",
+      "amount": 2,
+      "unit": "msk",
+      "item": "maísenamjöl"
+    },
+    {
+      "id": "vatn",
+      "amount": 2,
+      "unit": "msk",
+      "item": "kalt vatn"
+    },
+    {
+      "id": "syrdur",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "sýrður rjómi 36%"
+    },
+    {
+      "id": "nudlur",
+      "amount": 350,
+      "unit": "g",
+      "item": "eggjanúðlur"
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð, til skreytingar"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þerrið {{nautakjot}} vel og kryddið með {{salt}} og {{pipar}}.",
+      "refs": [
+        "nautakjot",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á stórri pönnu við háan hita og brúnið kjötið í tveimur til þremur skömmtum. Ekki troða á pönnuna, annars sýður kjötið í stað þess að brúnast. Færið kjötið yfir í hægsuðupottinn jafnóðum.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Steikið {{laukur}} á sömu pönnu í 3–4 mínútur, bætið {{hvitlaukur}} út í síðustu mínútuna og setjið hvort tveggja út í pottinn.",
+      "refs": [
+        "laukur",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið {{sod}} á heita pönnuna og skafið upp allt sem hefur fest við botninn – þar situr mesta bragðið. Hellið soðinu yfir kjötið.",
+      "refs": [
+        "sod"
+      ]
+    },
+    {
+      "text": "Setjið {{sveppir}}, {{worcester}}, {{sinnep}} og {{paprikuduft}} út í pottinn og hrærið saman.",
+      "refs": [
+        "sveppir",
+        "worcester",
+        "sinnep",
+        "paprikuduft"
+      ]
+    },
+    {
+      "text": "Setjið lokið á og eldið á lágum hita í 6–7 klukkustundir eða á háum hita í 4 klukkustundir, þar til kjötið er svo meyrt að það dettur í sundur.",
+      "refs": []
+    },
+    {
+      "text": "Hrærið {{maisena}} saman við {{vatn}} í lítilli skál þar til blandan er alveg kekkjalaus. Hrærið henni út í pottinn síðasta hálftímann af eldunartímanum og látið sósuna þykkna með lokið á.",
+      "refs": [
+        "maisena",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Sjóðið {{nudlur}} eftir leiðbeiningum á pakkanum rétt áður en borið er fram og hellið vatninu af.",
+      "refs": [
+        "nudlur"
+      ]
+    },
+    {
+      "text": "Slökkvið á pottinum. Hrærið nokkrar matskeiðar af heitri sósunni saman við {{syrdur}} í skál og hellið blöndunni svo út í pottinn. Sósan má ekki sjóða eftir þetta, annars skilur sýrði rjóminn sig.",
+      "refs": [
+        "syrdur"
+      ]
+    },
+    {
+      "text": "Smakkið til með salti og pipar, ausið kjötinu og sósunni yfir núðlurnar og stráið {{steinselja}} yfir.",
+      "refs": [
+        "steinselja"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: kjötið og laukurinn eru brúnuð á pönnu áður en þau fara í hægsuðupottinn og pannan er svo skoluð með soðinu. Frumuppskriftin setur allt hrátt í pottinn, sem gefur fölan og bragðdaufan rétt – hægsuðupottur brúnar ekkert sjálfur. Soðið var minnkað úr 3 bollum (rúmlega 7 dl) í 5 dl; ekkert gufar upp úr lokuðum hægsuðupotti og 2 msk af maísenamjöli ná ekki að þykkja meira magn. Sýrði rjóminn er tempraður með heitri sósu áður en hann fer út í, sem kemur í veg fyrir að hann skilji sig, og tekið er fram að nota eigi 36% sýrðan rjóma. Fjöldi skammta vantaði í frumuppskriftina og er hér settur á 6. Undirbúningstíminn var lengdur úr 15 í 25 mínútur, enda bætist við að brúna kjötið í tveimur til þremur skömmtum og steikja laukinn.",
+    "storage": "Geymist í 3 daga í kæli. Hitið upp við vægan hita og látið ekki sjóða, því sýrði rjóminn skilur sig. Best er að frysta kjötið og sósuna áður en sýrða rjómanum er bætt út í – þannig geymist rétturinn í 3 mánuði í frysti og rjóminn fer út í við upphitun.",
+    "variants": "Ef þið eigið ekki hægsuðupott: brúnið eins og lýst er, setjið allt í pott með þéttu loki og eldið í ofni við 150 °C í 3–3½ klukkustund. Eggjanúðlur má skipta út fyrir tagliatelle, breitt pasta, hrísgrjón eða kartöflumús. Nautagúllas má skipta út fyrir lambagúllas, sem þarf heldur skemmri tíma. Dijon sinnepið má sleppa; það dýpkar bragðið en er ekki nauðsynlegt."
+  },
+  "source": {
+    "url": "https://theferventmama.com/slow-cooker-beef-stroganoff/",
+    "site": "theferventmama.com"
+  }
+}

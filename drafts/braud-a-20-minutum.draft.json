@@ -1,0 +1,31 @@
+{
+  "source": {
+    "url": "https://www.steelheaddiner.com/recipes/bread-in-20-minutes-recipe/",
+    "site": "steelheaddiner.com"
+  },
+  "fetched": "2026-08-30T01:32:53.046Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Bread In 20 Minutes Recipe",
+    "yield": "8",
+    "prepTime": "PT10M",
+    "cookTime": "PT15M",
+    "totalTime": "PT25M",
+    "ingredients": [
+      "2 cups (480 milliliters) all-purpose flour",
+      "3/4 cup (180 milliliters) milk",
+      "1/4 cup (60 milliliters) olive oil or melted butter",
+      "1 tablespoon (15 milliliters) baking powder",
+      "1/2 teaspoon (2.5 milliliters) salt",
+      "1 tablespoon (15 milliliters) sugar"
+    ],
+    "instructions": [
+      "Prepare the oven environment by heating to 425F (220C) and coating a baking pan with a light grease to prevent sticking.",
+      "In a spacious mixing bowl, thoroughly blend the powdery components &#8211; ensuring an even distribution of flour, baking powder, salt, and sugar.",
+      "Create a unified mixture by gently incorporating milk and olive oil (or melted butter) into the dry ingredients, stirring minimally to form a cohesive dough without overmixing.",
+      "Carefully transfer the dough into the prepared baking pan, using gentle motions to spread it evenly across the surface, creating a uniform thickness.",
+      "Position the pan in the preheated oven and bake for 12-15 minutes, monitoring the bread&#8217;s transformation to a golden-brown hue and checking doneness with a toothpick test.",
+      "Remove from the oven and allow the bread to rest momentarily, then slice into desired portions, serving while still warm for optimal texture and flavor."
+    ]
+  }
+}

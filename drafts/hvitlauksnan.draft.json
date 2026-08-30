@@ -1,0 +1,39 @@
+{
+  "source": {
+    "url": "https://saltedmint.com/easy-garlic-naan/",
+    "site": "saltedmint.com"
+  },
+  "fetched": "2026-08-30T01:32:54.838Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "The Best Easy Garlic Naan Bread",
+    "yield": "8",
+    "prepTime": "PT20M",
+    "cookTime": "PT10M",
+    "ingredients": [
+      "3 cups all-purpose flour",
+      "1 package (0.25 oz active dry yeast or instant yeast)",
+      "1 teaspoon sugar",
+      "1 cup warm water (110°F)",
+      "1 teaspoon salt",
+      "4 tablespoons plain yogurt",
+      "2 tablespoons oil or ghee",
+      "3 tablespoons minced garlic",
+      "2 tablespoons melted butter",
+      "2 tablespoons chopped cilantro or parsley"
+    ],
+    "instructions": [
+      "In a bowl, combine yeast, sugar, and warm water. Let it sit for 10 minutes, until frothy.",
+      "In a large bowl, mix flour, salt, yogurt, and oil.",
+      "Add activated yeast mixture, and knead for 10 minutes until smooth.",
+      "Cover and let rise for 1 hour, or until doubled.",
+      "Divide the dough into 8 equal balls.",
+      "Roll each ball into an oval shape, about 8 inches long.",
+      "Heat a greased skillet over medium-high heat.",
+      "Cook each naan until bubbly and golden brown, about 1 minute per side.",
+      "Mix garlic with melted butter.",
+      "Brush the garlic butter mixture over the naans.",
+      "Sprinkle with salt, and garnish with cilantro or parsley."
+    ]
+  }
+}

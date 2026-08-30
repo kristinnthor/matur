@@ -1,0 +1,155 @@
+{
+  "title": "Ítalskt kryddbrauð með osti",
+  "subtitle": "mjúkt gerbrauð með mozzarella og parmesan",
+  "description": "Mjúkt gerbrauð með ítölskum kryddjurtum, mozzarella og parmesan, bakað með gufu svo skorpan verði stökk. Frábært eitt og sér, með súpu eða undir samloku.",
+  "categories": [
+    "bakstur",
+    "medlaeti"
+  ],
+  "tags": [
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 25,
+    "cook": 30
+  },
+  "ingredients": [
+    {
+      "id": "vatn",
+      "amount": 3.25,
+      "unit": "dl",
+      "item": "fingurvolgt vatn",
+      "note": "um 40°C"
+    },
+    {
+      "id": "ger",
+      "amount": 7,
+      "unit": "g",
+      "item": "þurrger",
+      "note": "einn bréfpoki",
+      "scalable": false
+    },
+    {
+      "id": "sykur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sykur",
+      "scalable": false
+    },
+    {
+      "id": "hveiti",
+      "amount": 500,
+      "unit": "g",
+      "item": "hveiti",
+      "note": "um 8 dl"
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "kryddjurtir",
+      "amount": 2,
+      "unit": "msk",
+      "item": "þurrkaðar ítalskar kryddjurtir",
+      "note": "basilíka, óreganó, timjan og rósmarín",
+      "scalable": false
+    },
+    {
+      "id": "mozzarella",
+      "amount": 100,
+      "unit": "g",
+      "item": "mozzarella",
+      "note": "rifinn"
+    },
+    {
+      "id": "parmesan",
+      "amount": 50,
+      "unit": "g",
+      "item": "parmesan",
+      "note": "fínrifinn"
+    },
+    {
+      "id": "hveiti_bord",
+      "amount": 2,
+      "unit": "msk",
+      "item": "hveiti til að strá á borðið",
+      "scalable": false
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "til að smyrja skál og form",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hrærið {{vatn}}, {{sykur}} og {{ger}} saman í stórri skál og látið standa í 5–10 mínútur, þar til blandan freyðir. Ef ekkert gerist er gerið dautt og rétt að byrja upp á nýtt frekar en að baka við það.",
+      "refs": [
+        "vatn",
+        "sykur",
+        "ger"
+      ]
+    },
+    {
+      "text": "Bætið {{hveiti}}, {{salt}} og {{kryddjurtir}} út í og hrærið saman þar til deigið loðir saman í kekki.",
+      "refs": [
+        "hveiti",
+        "salt",
+        "kryddjurtir"
+      ]
+    },
+    {
+      "text": "Stráið {{hveiti_bord}} á borðið og hnoðið deigið í 8–10 mínútur, þar til það er slétt og teygjanlegt. Notið ekki meira hveiti en þarf – deigið á að vera mjúkt og örlítið klístrað.",
+      "refs": [
+        "hveiti_bord"
+      ]
+    },
+    {
+      "text": "Fletjið deigið gróflega út og dreifið þremur fjórðu af {{mozzarella}} og {{parmesan}} yfir. Brjótið deigið saman og hnoðið aðeins þar til osturinn er kominn inn í það. Geymið afganginn af ostinum. Osturinn fer út í eftir hnoðun, annars merst hann út í deigið og glúteinnetið gefur eftir.",
+      "refs": [
+        "mozzarella",
+        "parmesan"
+      ]
+    },
+    {
+      "text": "Smyrjið skál með helmingnum af {{olia}}, setjið deigið í hana og breiðið hreint viskastykki yfir. Látið hefast á hlýjum stað í 1–1½ klukkustund, eða þar til deigið hefur tvöfaldast.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Sláið deigið niður, mótið það í lengju og setjið í smurt brauðform eða á bökunarpappír. Breiðið yfir og látið hefast í 30 mínútur til viðbótar.",
+      "refs": []
+    },
+    {
+      "text": "Hitið ofninn í 220°C. Setjið eldfast mót með sjóðandi vatni neðst í ofninn – gufan heldur skorpunni mjúkri á meðan brauðið lyftist og gefur stökkari skorpu að lokum.",
+      "refs": []
+    },
+    {
+      "text": "Stráið afganginum af ostinum yfir brauðið og bakið í miðjum ofni í 25–30 mínútur, þar til það er gullinbrúnt og hljómar holt þegar bankað er í botninn. Kjarnhiti á að vera 95–99°C. Leggið álpappír laust yfir síðustu mínúturnar ef osturinn dökknar of hratt.",
+      "refs": []
+    },
+    {
+      "text": "Látið brauðið kólna á grind í minnst 20 mínútur áður en það er skorið – annars verður myljan klístruð.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: vatnsmagnið gekk ekki upp. Í frumuppskriftinni fara 1¾ bolli af vatni á móti 4 bollum af hveiti, sem svarar til um 83% vatnshlutfalls – deig sem er nánast ómögulegt að hnoða á borði. Hér fara 3¼ dl af vatni á móti 500 g af hveiti, eða um 65%. Saltið var lækkað úr 1 msk (um 18 g) í 2 tsk, enda kemur töluvert salt úr parmesaninum. Osturinn er hnoðaður inn í deigið eftir hnoðun en ekki fyrir, og fjórðungur hans geymdur til að strá yfir brauðið. Ofnhitinn var lækkaður úr 230°C í 220°C svo osturinn brenni ekki áður en brauðið er bakað í gegn, og bætt við kjarnhita, hvíldartíma á grind og viðvörun um álpappír. Ólífuolía til að smyrja skál og form var sett inn sem eiginlegt hráefni, 1 msk, enda gerir frumuppskriftin ráð fyrir smurðri skál og smurðu formi án þess að telja olíuna með. Undirbúningstíminn var hækkaður úr 15 í 25 mínútur, enda bætist við að fletja deigið út og hnoða ostinn inn í það eftir hnoðun.",
+    "storage": "Brauðið er best samdægurs. Geymist í 2 daga í loftþéttu íláti við stofuhita – ekki í kæli, þar þornar það hraðar. Frystist vel í 2–3 mánuði, heilt eða niðurskorið; hitið beint úr frysti í 180°C heitum ofni í 8–10 mínútur.",
+    "variants": "Þurrgerið má skipta út fyrir 25 g af pressugeri sem leyst er upp í volga vatninu. Ítölsku kryddjurtirnar má setja saman sjálf úr þurrkaðri basilíku, óreganó, timjan og rósmaríni, um það bil jafnmiklu af hverju. Mozzarella má skipta út fyrir rifinn óðalsost eða annan bragðmildan ost sem bráðnar vel, og parmesan fyrir Grana Padano eða vel þroskaðan íslenskan ost."
+  },
+  "source": {
+    "url": "https://apertureoncourt.com/italian-herbs-and-cheese-bread-savory-secrets-revealed/",
+    "site": "apertureoncourt.com"
+  }
+}

@@ -95,6 +95,23 @@ kjuklinga-ofnrettur-med-sveppum, dijon-kjuklingur-med-spinati, kjuklinga-cordon-
 cottage-pie, beef-wellington, ofnbakadir-lambaskankar, hunangs-dijon-kjuklingur,
 caesar-kjuklingur.
 
+## Batch 3 — docs/new_links.txt, 2026-08-30 (8 recipes)
+
+Eight of the nine links converted; five are breads, which fills out `bakstur`.
+
+| Slug | Source | Kind |
+|---|---|---|
+| nautakjot-i-bjorsosu | chefnotrequired.com | jsonld |
+| nautabitar-i-hvitlaukssmjori | dinnerideasforall.com | text |
+| nauta-stroganoff | theferventmama.com | jsonld |
+| braud-a-20-minutum | steelheaddiner.com | jsonld |
+| italskt-kryddbraud-med-osti | apertureoncourt.com | jsonld |
+| hvitlauksnan | saltedmint.com | jsonld |
+| foccacia | melissajanelee.com | jsonld |
+| foccacia-an-hnodunar | themodernnonna.com | jsonld |
+
+Excluded: the etsy.com link is a shop listing selling a recipe, not a recipe page.
+
 ## Consequences for the plan
 
 1. **Translation is a smaller job than assumed.** 11 of 18 are already Icelandic. Those need

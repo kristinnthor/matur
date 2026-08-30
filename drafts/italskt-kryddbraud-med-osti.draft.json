@@ -1,0 +1,45 @@
+{
+  "source": {
+    "url": "https://apertureoncourt.com/italian-herbs-and-cheese-bread-savory-secrets-revealed/",
+    "site": "apertureoncourt.com"
+  },
+  "fetched": "2026-08-30T01:32:54.055Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Italian Herbs and Cheese Bread",
+    "yield": "8",
+    "prepTime": "PT15M",
+    "cookTime": "PT30M",
+    "totalTime": "PT135M",
+    "ingredients": [
+      "List of Ingredients:",
+      "4 cups all-purpose flour",
+      "1 packet (2¼ teaspoons active dry yeast)",
+      "1¾ cups warm water (about 110°F)",
+      "1 tablespoon salt",
+      "1 tablespoon sugar",
+      "2 tablespoons dried Italian herbs (like basil, oregano, thyme, and rosemary)",
+      "1 cup shredded mozzarella cheese",
+      "½ cup grated Parmesan cheese",
+      "Extra flour for dusting"
+    ],
+    "instructions": [
+      "Step-by-Step Guide:",
+      "Prepare the Dough:",
+      "In a large mixing bowl, combine the warm water, sugar, and yeast. Let it sit for about 5 minutes until it becomes frothy.",
+      "Add the flour, salt, dried herbs, mozzarella, and Parmesan cheese to the yeast mixture. Mix until a sticky dough forms.",
+      "Knead the Dough:",
+      "Transfer the dough to a floured surface and knead it for about 8-10 minutes, until it is smooth and elastic. Add a little more flour if the dough is too sticky.",
+      "Proof the Dough:",
+      "Place the kneaded dough in a greased bowl. Cover it with a clean kitchen towel and let it rise in a warm place for about 1-2 hours, or until it doubles in size.",
+      "Shape the Bread:",
+      "Punch down the risen dough to release air. Shape it into a loaf or place it in a greased bread pan. Cover it again and let it rise for another 30 minutes.",
+      "Preheat the Oven:",
+      "Preheat your oven to 450°F (230°C). Place a shallow pan of water at the bottom of the oven to create steam.",
+      "Bake the Bread:",
+      "Bake the bread for 25-30 minutes or until it turns golden brown and sounds hollow when tapped. The internal temperature should reach 200-210°F.",
+      "Cool and Serve:",
+      "Let the bread cool on a wire rack before slicing. Enjoy it warm or at room temperature!"
+    ]
+  }
+}

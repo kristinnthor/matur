@@ -1,0 +1,42 @@
+{
+  "source": {
+    "url": "https://www.chefnotrequired.com/beer-braised-short-ribs-mustard/",
+    "site": "chefnotrequired.com"
+  },
+  "fetched": "2026-08-30T01:32:50.479Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Beef Carbonnade",
+    "yield": "4",
+    "totalTime": "PT155M",
+    "ingredients": [
+      "1.5 kg beef short ribs - trimmed (3.3lbs (see notes))",
+      "2 tbsp olive oil",
+      "¼ cup plain/all purpose flour",
+      "1 large carrot (diced)",
+      "2 brown onions (sliced)",
+      "300 g button mushrooms (if small leave whole, or thickly sliced)",
+      "150 g speck (diced)",
+      "2 tbsp tomato paste",
+      "2 fresh garlic cloves (crushed)",
+      "2 tbsp wholegrain mustard",
+      "1 tbsp fresh thyme leaves (or 1 tsp dried)",
+      "1 tbsp fresh rosemary (finely chopped)",
+      "350 ml beer ((see my notes))",
+      "500 ml beef stock",
+      "salt & pepper to taste"
+    ],
+    "instructions": [
+      "Preheat oven to 160c / 320f.",
+      "Cut beef into individual ribs, then dust ribs in plain/all-purpose flour.",
+      "Heat 1 tbsp of olive oil in a large flameproof casserole dish/dutch oven over medium high heat.",
+      "Fry ribs in batches until well browned all over (adding extra oil if needed) and then remove to a plate.",
+      "Add carrot, brown onion, mushrooms and speck to pot and fry until the vegetables start to soften.",
+      "Add tomato paste (2 tbsp) and garlic cloves (2 - crushed) to vegetable mixture and continue to cook for 30 seconds.",
+      "Add beer and bring to a simmer.",
+      "Add wholegrain mustard, fresh thyme leaves and fresh rosemary and stir to combine & scrape any flavour spots from the base of the pot.",
+      "Add beef stock and return beef ribs (along with any resting juices) to the pot then bring to a simmer.",
+      "Cover & bake for 2 hours or until beef is tender (see my notes), add salt and pepper to taste and serve."
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "title": "Fokkasía án hnoðunar",
+  "subtitle": "loftmikið ólífuolíubrauð með hefun yfir nótt",
+  "description": "Loftmikil fokkasía sem er hrærð saman með sleikju á fimm mínútum og þarf enga hnoðun – gerið vinnur verkið yfir nótt. Stökk í köntunum, mjúk og götótt í miðjunni og bökuð með kirsuberjatómötum, ólífum og oregano.",
+  "categories": [
+    "bakstur",
+    "medlaeti"
+  ],
+  "tags": [
+    "haegeldad",
+    "frystivaent"
+  ],
+  "servings": 12,
+  "time": {
+    "prep": 20,
+    "cook": 40
+  },
+  "ingredients": [
+    {
+      "id": "hveiti",
+      "amount": 600,
+      "unit": "g",
+      "item": "hveiti",
+      "note": "um 10 dl",
+      "group": "Deigið"
+    },
+    {
+      "id": "ger",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "þurrger",
+      "note": "skyndiger, um 2 g",
+      "scalable": false,
+      "group": "Deigið"
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "fínt salt",
+      "scalable": false,
+      "group": "Deigið"
+    },
+    {
+      "id": "vatn",
+      "amount": 5,
+      "unit": "dl",
+      "item": "fingurvolgt vatn",
+      "note": "37–43°C",
+      "group": "Deigið"
+    },
+    {
+      "id": "deigolia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "utan á deigkúluna",
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "pannuolia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "í mótið",
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "yfirolia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "yfir deigið fyrir bakstur",
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "tomatar",
+      "amount": 150,
+      "unit": "g",
+      "item": "kirsuberjatómatar",
+      "note": "skornir í tvennt",
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "olifur",
+      "amount": 75,
+      "unit": "g",
+      "item": "kalamata-ólífur",
+      "note": "steinlausar",
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "oregano",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "þurrkað oregano",
+      "scalable": false,
+      "group": "Í mótið og ofan á"
+    },
+    {
+      "id": "flogusalt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "flögusalt",
+      "note": "Maldon eða annað gróft saltflögusalt",
+      "scalable": false,
+      "group": "Í mótið og ofan á"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Setjið {{hveiti}}, {{ger}} og {{salt}} í stóra skál og hrærið þurrefnin saman. Hellið {{vatn}} út í og hrærið með stífri sleikju þar til ekkert þurrt hveiti er eftir. Vatnið verður að vera fingurvolgt – of heitt vatn drepur gerið og of kalt vekur það ekki.",
+      "refs": [
+        "hveiti",
+        "ger",
+        "salt",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Klárið að vinna deigið saman með höndunum ef sleikjan ræður ekki lengur við það og mótið það í grófa kúlu í skálinni. Deigið á að vera blautt, klístrað og ójafnt og það á alls ekki að hnoða – glútenið myndast af sjálfu sér í löngu hefuninni.",
+      "refs": []
+    },
+    {
+      "text": "Dreypið {{deigolia}} yfir deigkúluna og veltið henni upp úr olíunni svo hún skorpni ekki að ofan. Breiðið plastfilmu eða rakt viskastykki yfir skálina.",
+      "refs": [
+        "deigolia"
+      ]
+    },
+    {
+      "text": "Látið deigið hefast við stofuhita í 8–12 klukkustundir, á hlýjum stað fjarri dragsúg – til dæmis inni í köldum ofni, í örbylgjuofni eða í skáp. Deigið á að þrefaldast og verða loftbólótt að ofan. Hrærið því saman að kvöldi og bakið morguninn eftir, eða hrærið að morgni og bakið um kvöldmatarleytið.",
+      "refs": []
+    },
+    {
+      "text": "Sláið deigið niður í miðjunni með hnefanum þegar það hefur þrefaldast.",
+      "refs": []
+    },
+    {
+      "text": "Klæðið eldfast mót, um 23x33 cm, með bökunarpappír og hellið {{pannuolia}} í botninn. Hvolfið deiginu út í og togið það varlega út í hornin með olíubornum fingrum. Það togar sig til baka í fyrstu; breiðið þá yfir, bíðið í 10 mínútur og haldið áfram.",
+      "refs": [
+        "pannuolia"
+      ]
+    },
+    {
+      "text": "Breiðið aftur yfir mótið og látið deigið hefast í um klukkustund, þar til það hefur tvöfaldast og fyllir mótið. Hitið ofninn í 220°C á meðan.",
+      "refs": []
+    },
+    {
+      "text": "Dreypið {{yfirolia}} yfir deigið og þrýstið öllum fingurgómunum djúpt niður í það, alla leið að botni mótsins, svo klassísku holurnar myndist.",
+      "refs": [
+        "yfirolia"
+      ]
+    },
+    {
+      "text": "Dreifið {{tomatar}} og {{olifur}} yfir og þrýstið þeim ofan í holurnar svo þau sitji föst í bakstrinum. Stráið {{oregano}} og {{flogusalt}} yfir.",
+      "refs": [
+        "tomatar",
+        "olifur",
+        "oregano",
+        "flogusalt"
+      ]
+    },
+    {
+      "text": "Bakið í miðjum ofni í 35–40 mínútur, þar til brauðið er djúpgyllt að ofan og stökkt á jöðrunum. Bökunartíminn fer eftir ofni og móti, svo fylgist með síðasta korterinu.",
+      "refs": []
+    },
+    {
+      "text": "Rennið brauðinu strax úr mótinu yfir á grind og látið það kólna í minnst 10 mínútur áður en það er skorið – annars situr botninn í olíunni sem eftir verður og mýkist.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: germagnið er lækkað úr heilu bréfi (um 7 g) í ½ tsk. Heilt bréf af þurrgeri er ætlað hefun sem tekur eina til tvær klukkustundir; í 8–12 klukkustunda hefun við stofuhita ofgerjast slíkt deig, fellur saman og fær áfengiskeim. Hveitið er gefið upp í grömmum í stað bollamáls, því bollamál af hveiti getur skeikað fimmtungi og deigið verður þá annaðhvort rennandi blautt eða of þurrt. Ólífuolían var hækkuð úr 3 msk í 5 msk og henni skipt á deigið, mótið og yfirborðið, enda duga 3 msk ekki í allt þrennt. Magn af áleggi er fest í stað „eftir smekk“, ofnhitinn umreiknaður úr 425°F í 220°C og vatnshitinn gefinn í °C. Bætt við kælingu á grind eftir bakstur, því annars mýkist stökki botninn í olíunni sem eftir situr í mótinu. Undirbúningstíminn er hækkaður úr 10 mínútum í 20, enda telur hann bæði hræringu deigsins, útteygingu í mótið, holugerðina og áleggið.",
+    "storage": "Best samdægurs og volg. Geymist í 2 daga í loftþéttu íláti við stofuhita – ekki í kæli, það þurrkar brauðið. Frystist vel niðurskorin í allt að 3 mánuði; hitið beint úr frysti í 200°C heitum ofni í 5–7 mínútur og skorpan verður eins og ný.",
+    "variants": "Ef baka á samdægurs má nota heilt bréf af þurrgeri, um 7 g, og þá nægir 1½–2 klukkustunda hefun á hlýjum stað, en bragðið verður einfaldara og brauðið þéttara. Áleggið má velja að vild: þunnar rauðlaukssneiðar, sólþurrkaðir tómatar, ferskt rósmarín eða timjan. Kalamata-ólífur má skipta út fyrir hvaða steinlausu svörtu ólífur sem er, og brauðið er alveg eins gott án alls áleggs, aðeins með olíu og flögusalti. Ef flögusalt fæst ekki má nota gróft sjávarsalt, en þá minna, því það leysist hraðar upp."
+  },
+  "source": {
+    "url": "https://themodernnonna.com/no-knead-focaccia/",
+    "site": "themodernnonna.com"
+  }
+}

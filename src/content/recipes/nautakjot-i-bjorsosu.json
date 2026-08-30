@@ -1,0 +1,230 @@
+{
+  "title": "Nautakjöt í bjórsósu",
+  "subtitle": "hægelduð nautarif með grófkorna sinnepi",
+  "description": "Nautarif hægelduð í dökkum bjór ásamt sveppum, beikoni og grófkorna sinnepi. Kjötið verður svo meyrt að það losnar af beininu og sósan er dökk og bragðmikil – rólegur sunnudagsmatur sem eldar sig að mestu sjálfur.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "veislumatur",
+    "frystivaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 30,
+    "cook": 150
+  },
+  "ingredients": [
+    {
+      "id": "nautarif",
+      "amount": 1.5,
+      "unit": "kg",
+      "item": "nautarif",
+      "note": "snyrt"
+    },
+    {
+      "id": "hveiti",
+      "amount": 40,
+      "unit": "g",
+      "item": "hveiti",
+      "note": "til að velta kjötinu upp úr"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "skipt",
+      "scalable": false
+    },
+    {
+      "id": "beikon",
+      "amount": 150,
+      "unit": "g",
+      "item": "beikon í bitum",
+      "note": "eða reykt hráskinka, skorin í teninga"
+    },
+    {
+      "id": "laukur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "sneiddur"
+    },
+    {
+      "id": "gulrot",
+      "amount": 1,
+      "unit": "stk",
+      "item": "stór gulrót",
+      "note": "skorin í teninga"
+    },
+    {
+      "id": "sveppir",
+      "amount": 300,
+      "unit": "g",
+      "item": "sveppir",
+      "note": "heilir ef þeir eru litlir, annars þykkt sneiddir"
+    },
+    {
+      "id": "tomatpurra",
+      "amount": 2,
+      "unit": "msk",
+      "item": "tómatpúrra"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "pressaður"
+    },
+    {
+      "id": "sinnep",
+      "amount": 2,
+      "unit": "msk",
+      "item": "grófkorna sinnep"
+    },
+    {
+      "id": "timjan",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ferskt timjan",
+      "note": "eða 1 tsk þurrkað"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ferskt rósmarín",
+      "note": "fínsaxað"
+    },
+    {
+      "id": "bjor",
+      "amount": 3.5,
+      "unit": "dl",
+      "item": "dökkur bjór",
+      "note": "t.d. dökkur lager, brown ale eða stout"
+    },
+    {
+      "id": "nautasod",
+      "amount": 5,
+      "unit": "dl",
+      "item": "nautasoð",
+      "note": "eða vatn og nautakraftur"
+    },
+    {
+      "id": "salt",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "salt",
+      "note": "skipt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "note": "skipt",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 160 °C.",
+      "refs": []
+    },
+    {
+      "text": "Skerið {{nautarif}} í einstök rif ef þau koma í heilu stykki og þerrið þau vel. Kryddið á öllum hliðum með helmingnum af {{salt}} og helmingnum af {{pipar}}.",
+      "refs": [
+        "nautarif",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Veltið rifjunum upp úr {{hveiti}} rétt áður en þau fara í pottinn – hveitið á að vera þurrt þegar rifin fara í pottinn, annars límist það við botninn í stað þess að brúnast.",
+      "refs": [
+        "hveiti"
+      ]
+    },
+    {
+      "text": "Hitið helminginn af {{olia}} í stórum, ofnföstum potti við háan hita og brúnið rifin vel á öllum hliðum í tveimur til þremur umferðum. Ekki troða í pottinn, annars sýður kjötið í stað þess að brúnast. Færið á disk.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Lækkið hitann í meðalháan, setjið afganginn af {{olia}} í pottinn og steikið {{beikon}} þar til það tekur lit.",
+      "refs": [
+        "olia",
+        "beikon"
+      ]
+    },
+    {
+      "text": "Bætið {{laukur}}, {{gulrot}} og {{sveppir}} út í og steikið í 8–10 mínútur, þar til grænmetið er farið að mýkjast og vökvinn úr sveppunum hefur gufað upp.",
+      "refs": [
+        "laukur",
+        "gulrot",
+        "sveppir"
+      ]
+    },
+    {
+      "text": "Hrærið {{tomatpurra}} og {{hvitlaukur}} saman við og steikið áfram í hálfa mínútu, þar til ilmurinn losnar.",
+      "refs": [
+        "tomatpurra",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið {{bjor}} út í og látið sjóða upp. Skafið brúnuðu agnirnar af botninum með sleif – þar liggur bragðið. Látið malla í 2–3 mínútur svo mesta beiskjan sjóði úr bjórnum.",
+      "refs": [
+        "bjor"
+      ]
+    },
+    {
+      "text": "Hrærið {{sinnep}}, {{timjan}} og {{rosmarin}} saman við.",
+      "refs": [
+        "sinnep",
+        "timjan",
+        "rosmarin"
+      ]
+    },
+    {
+      "text": "Hellið {{nautasod}} í pottinn, leggið rifin aftur út í ásamt safanum sem hefur runnið af þeim og hitið að suðu.",
+      "refs": [
+        "nautasod"
+      ]
+    },
+    {
+      "text": "Setjið lokið á og eldið í ofninum í um 2 klukkustundir, þar til kjötið er meyrt og losnar auðveldlega frá beini. Á hellu má í staðinn láta malla undir loki við lágan hita í 2–2½ klukkustund og hræra öðru hverju.",
+      "refs": []
+    },
+    {
+      "text": "Veiðið rifin upp úr og haldið þeim heitum undir álpappír. Fleytið fitunni ofan af soðinu með ausu – hún er töluverð í nautarifjum og sósan verður miklu betri fyrir vikið.",
+      "refs": []
+    },
+    {
+      "text": "Sjóðið sósuna við meðalháan hita í 10–15 mínútur, þar til hún þykknar og hjúpar sleifina. Smakkið til með afganginum af {{salt}} og {{pipar}}.",
+      "refs": [
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Leggið rifin aftur í sósuna, hitið í gegn og berið fram með kartöflumús eða soðnum kartöflum.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: kjötið er saltað og piprað áður en það er brúnað. Í frumuppskriftinni er saltinu bætt út í alveg í lokin og það nær þá aldrei inn í kjötið sjálft. Bætt var við skrefi þar sem fitan er fleytt ofan af soðinu og sósan soðin niður í 10–15 mínútur; frumuppskriftin ber réttinn fram beint úr ofninum og sósan er þá bæði feit og þunn. Þá er kjötinu velt upp úr hveitinu rétt fyrir brúnun en ekki löngu áður, og bætt við aðferð á hellu fyrir þá sem eiga ekki ofnfastan pott. Undirbúningstíminn var loks sundurliðaður, enda tekur brúnun í umferðum drjúgan tíma. Beikonið er steikt sér á undan grænmetinu svo fitan bræðist og það taki lit, og bjórinn látinn malla stutta stund áður en soðið fer út í svo beiskjan mildist.",
+    "storage": "Geymist í 3–4 daga í kæli og er enn betri daginn eftir. Frystist vel í allt að 3 mánuði – frystið kjötið í sósunni. Þíðið í kæli yfir nótt og hitið rólega upp í potti.",
+    "variants": "Frumuppskriftin notar speck, ítalska reykta hráskinku, sem fæst sjaldan hér; beikon í bitum eða reykt hráskinka gera sama gagn. Veljið maltaðan og mildan bjór – mjög beiskur IPA verður óþægilega beiskur við niðursuðu. Fáist nautarif ekki má nota nautagúllas eða bógsteik í stórum bitum og stytta eldunartímann um hálftíma. Rétturinn er líka góður með kartöflumús, sellerírótarmauki eða einfaldlega góðu brauði."
+  },
+  "source": {
+    "url": "https://www.chefnotrequired.com/beer-braised-short-ribs-mustard/",
+    "site": "chefnotrequired.com"
+  }
+}

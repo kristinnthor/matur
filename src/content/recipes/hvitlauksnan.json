@@ -1,0 +1,174 @@
+{
+  "title": "Hvítlauksnan",
+  "subtitle": "mjúk pönnubrauð með hvítlaukssmjöri",
+  "description": "Mjúk og loftkennd nanbrauð sem eru steikt á pönnu og pensluð með bráðnu hvítlaukssmjöri. Ómissandi með karrí og pottréttum, en líka góð ein og sér beint af pönnunni.",
+  "categories": [
+    "bakstur",
+    "medlaeti"
+  ],
+  "tags": [
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 20,
+    "cook": 20
+  },
+  "ingredients": [
+    {
+      "id": "ger",
+      "amount": 7,
+      "unit": "g",
+      "item": "þurrger",
+      "note": "eitt bréf",
+      "scalable": false,
+      "group": "Deigið"
+    },
+    {
+      "id": "sykur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "sykur",
+      "scalable": false,
+      "group": "Deigið"
+    },
+    {
+      "id": "vatn",
+      "amount": 2,
+      "unit": "dl",
+      "item": "fingurvolgt vatn",
+      "note": "um 40°C",
+      "group": "Deigið"
+    },
+    {
+      "id": "hveiti",
+      "amount": 375,
+      "unit": "g",
+      "item": "hveiti",
+      "note": "og örlítið meira til að hnoða upp úr",
+      "group": "Deigið"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false,
+      "group": "Deigið"
+    },
+    {
+      "id": "jogurt",
+      "amount": 4,
+      "unit": "msk",
+      "item": "hrein jógúrt",
+      "note": "við stofuhita",
+      "group": "Deigið"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "bragðlaus olía",
+      "note": "eða ghee",
+      "group": "Deigið"
+    },
+    {
+      "id": "smjor",
+      "amount": 50,
+      "unit": "g",
+      "item": "smjör",
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "pressuð eða söxuð fínt",
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "flogusalt",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "flögusalt",
+      "scalable": false,
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "koriander",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ferskur kóríander",
+      "note": "saxaður – steinselja gengur líka",
+      "group": "Hvítlaukssmjörið"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hrærið {{ger}} og {{sykur}} saman við {{vatn}} í skál og látið standa í 10 mínútur, þar til blandan freyðir. Vatnið á að vera fingurvolgt en ekki heitt – of heitt vatn drepur gerið.",
+      "refs": [
+        "ger",
+        "sykur",
+        "vatn"
+      ]
+    },
+    {
+      "text": "Blandið {{hveiti}} og {{salt}} saman í stórri skál og hrærið {{jogurt}} og {{olia}} saman við.",
+      "refs": [
+        "hveiti",
+        "salt",
+        "jogurt",
+        "olia"
+      ]
+    },
+    {
+      "text": "Hellið gerblöndunni út í og hnoðið í 10 mínútur, þar til deigið er slétt og teygjanlegt. Deigið á að vera mjúkt og örlítið klístrað – notið ekki meira hveiti en nauðsynlegt er, annars verða brauðin þurr og hörð.",
+      "refs": []
+    },
+    {
+      "text": "Setjið deigið í olíuborna skál, breiðið yfir og látið hefast á hlýjum stað í um klukkustund, eða þar til það hefur tvöfaldast.",
+      "refs": []
+    },
+    {
+      "text": "Sláið deigið niður og skiptið því í átta jafnar kúlur. Látið þær hvíla undir viskastykki í 10 mínútur – þá teygist deigið mun betur.",
+      "refs": []
+    },
+    {
+      "text": "Fletjið hverja kúlu út í sporöskjulaga köku, um 20 cm langa og hálfan sentimetra á þykkt.",
+      "refs": []
+    },
+    {
+      "text": "Hitið þykkbotna pönnu við meðalháan hita og smyrjið hana örþunnt með olíu. Pannan þarf að vera vel heit svo brauðin bólgni upp í stað þess að þorna.",
+      "refs": []
+    },
+    {
+      "text": "Steikið hverja köku í um mínútu á hvorri hlið, þar til stórar bólur myndast og brúnir blettir koma á brauðið. Geymið tilbúnu brauðin undir hreinu viskastykki svo þau haldist mjúk.",
+      "refs": []
+    },
+    {
+      "text": "Bræðið {{smjor}} í litlum potti, takið af hitanum og hrærið {{hvitlaukur}} saman við. Látið standa í tvær mínútur – ylurinn mildar hvítlaukinn án þess að hann brenni og verði beiskur.",
+      "refs": [
+        "smjor",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Penslið hvítlaukssmjörinu yfir heit brauðin, stráið {{flogusalt}} yfir og dreifið {{koriander}} yfir. Berið fram strax.",
+      "refs": [
+        "flogusalt",
+        "koriander"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: vatnið er lækkað úr 2,4 dl (einum bolla) í 2 dl. Ásamt jógúrtinni og olíunni varð deigið annars svo blautt að ekki var hægt að fletja það út. Hvítlaukurinn er lækkaður úr 3 msk (um níu rifjum) í 4 rif og smjörið hækkað úr 2 msk í 50 g – þrjár matskeiðar af hráum hvítlauk í tæp 30 g af smjöri er bæði of sterkt og allt of lítið smjör til að pensla átta brauð. Hvítlaukurinn er hrærður út í heitt smjörið og látinn standa svo hann sé ekki hrár og beiskur ofan á brauðinu. Uppgefinn eldunartími, 10 mínútur, dugar ekki fyrir átta brauð sem eru steikt eitt í einu og er hækkaður í 20 mínútur. Þá er bætt við stuttri hvíld eftir að deiginu er skipt í kúlur, sem gerir útflatninguna miklu auðveldari.",
+    "storage": "Best samdægurs, en geymast í 2 daga í lokuðu íláti. Hitið aftur á þurri pönnu í hálfa mínútu á hlið. Frystast vel í allt að 3 mánuði með smjörpappír á milli – þiðnuð brauð eru hituð beint á pönnu.",
+    "variants": "Grísk jógúrt eða súrmjólk virka jafn vel og hrein jógúrt. Ghee gefur upprunalegra bragð, en bragðlaus olía eða brætt smjör gengur alveg. Ferskur kóríander fæst ekki alltaf og steinselja kemur vel í staðinn. Svartlauksfræ (nigella) stráð yfir fyrir steikingu eru klassísk viðbót. Þeir sem eiga bökunarstál geta bakað brauðin í 250°C heitum ofni í 4–5 mínútur í stað þess að steikja þau."
+  },
+  "source": {
+    "url": "https://saltedmint.com/easy-garlic-naan/",
+    "site": "saltedmint.com"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "title": "Nautabitar í hvítlaukssmjöri með kartöflum",
+  "subtitle": "hægeldaður pottréttur með smjörsoði",
+  "description": "Meyrir nautabitar og smáar kartöflur sem malla saman í hvítlaukssmjöri og kjötsoði þar til kjötið losnar í sundur með gaffli. Rétturinn sér að mestu um sig sjálfur og fyllir húsið af ilmi allan daginn.",
+  "categories": [
+    "kjot",
+    "pottrettir"
+  ],
+  "tags": [
+    "haegeldad",
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 20,
+    "cook": 390
+  },
+  "ingredients": [
+    {
+      "id": "nautakjot",
+      "amount": 900,
+      "unit": "g",
+      "item": "nautagúllas",
+      "note": "skorið í munnbita"
+    },
+    {
+      "id": "kartoflur",
+      "amount": 800,
+      "unit": "g",
+      "item": "smáar kartöflur",
+      "note": "helmingaðar, stærstu í fernt"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "til steikingar",
+      "scalable": false
+    },
+    {
+      "id": "smjor",
+      "amount": 60,
+      "unit": "g",
+      "item": "ósaltað smjör"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 6,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "saxaður smátt"
+    },
+    {
+      "id": "nautasod",
+      "amount": 1.25,
+      "unit": "dl",
+      "item": "nautasoð",
+      "note": "t.d. úr teningi"
+    },
+    {
+      "id": "worcestershire",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Worcestershire-sósa"
+    },
+    {
+      "id": "timjan",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "þurrkað timjan"
+    },
+    {
+      "id": "rosmarin",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "þurrkað rósmarín"
+    },
+    {
+      "id": "salt",
+      "amount": 1.5,
+      "unit": "tsk",
+      "item": "fínt salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "nýmalaður",
+      "scalable": false
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð, til að strá yfir"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þerrið {{nautakjot}} vel með eldhúspappír og kryddið það með helmingnum af {{salt}} og {{pipar}}. Þurrt yfirborð er forsenda þess að kjötið brúnist en gufusjóði ekki.",
+      "refs": [
+        "nautakjot",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á stórri pönnu við háan meðalhita og brúnið kjötið í nokkrum hollum, 2–3 mínútur á hvorri hlið. Ekki troða á pönnuna, annars sýður kjötið í stað þess að brúnast. Færið bitana í hægeldunarpottinn jafnóðum.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Lækkið hitann og bræðið helminginn af {{smjor}} á sömu pönnu. Mýkið {{hvitlaukur}} í um eina mínútu, þar til ilmurinn kemur – hvítlaukurinn má alls ekki brúnast, þá verður hann beiskur.",
+      "refs": [
+        "smjor",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið {{nautasod}} og {{worcestershire}} á pönnuna og skafið vel upp allt sem hefur fest við botninn. Hrærið {{timjan}} og {{rosmarin}} saman við og hellið blöndunni yfir kjötið í pottinum.",
+      "refs": [
+        "nautasod",
+        "worcestershire",
+        "timjan",
+        "rosmarin"
+      ]
+    },
+    {
+      "text": "Bætið {{kartoflur}} út í og veltið öllu saman svo þær liggi niðri í soðinu. Dreifið afganginum af {{smjor}} í bitum yfir kjötið og kartöflurnar.",
+      "refs": [
+        "kartoflur",
+        "smjor"
+      ]
+    },
+    {
+      "text": "Setjið lokið á og eldið á lágri stillingu í 6–7 klukkustundir eða á hárri stillingu í 3–4 klukkustundir. Kjötið á að losna auðveldlega í sundur með gaffli og kartöflurnar að vera gegneldaðar.",
+      "refs": []
+    },
+    {
+      "text": "Ef þið eigið ekki hægeldunarpott má nota þykkbotna pott með þéttu loki: setjið allt í pottinn eins og að ofan, bætið við soði eða vatni þar til vökvinn nær upp á miðjar hliðar kjötsins og eldið í ofni við 150 °C í 2½–3 klukkustundir.",
+      "refs": []
+    },
+    {
+      "text": "Hrærið varlega í réttinum svo smjörið og soðið blandist saman og smakkið til með afganginum af {{salt}} og {{pipar}}.",
+      "refs": [
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Stráið {{steinselja}} yfir og berið fram heitt með soðinu ausið yfir.",
+      "refs": [
+        "steinselja"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: á upprunalegu síðunni eru tveir ósamhljóða hráefnalistar – aðaltextinn með hvítlauk, smjöri, soði og kryddjurtum og uppskriftarkort með lauk- og hvítlauksdufti og krydduðu salti. Hér er farið eftir aðaltextanum, enda eiga leiðbeiningarnar við hann. Kartöflurnar voru hækkaðar úr 450 g í 800 g, því 450 g duga skammt á sex manns þegar kjötið er 900 g. Smjörið er gefið upp í grömmum í stað matskeiða. Undirbúningstíminn var hækkaður úr 10–15 mínútum í 20, sem er raunhæfara þegar kjötið er brúnað í hollum. Ofnaðferð með venjulegum potti var færð úr spurningum og svörum inn í sjálfa uppskriftina, ásamt leiðbeiningum um vökvamagn, því hægeldunarpottur er ekki á hverju heimili.",
+    "storage": "Geymist í 3 daga í kæli í loftþéttu íláti og allt að 3 mánuði í frysti. Geymið kjötið í soðinu svo það þorni ekki og hitið rólega upp í potti; kartöflurnar verða örlítið mjúkari eftir frystingu.",
+    "variants": "Nautagúllas má skipta út fyrir nautabóg eða bringu skorna í bita. Fyrir léttari útgáfu má nota kjúklingalæri, en þá dugar 3–4 klukkustunda hægelding á lágri stillingu. Gulrótum, sellerí eða strengjabaunum má bæta út í síðustu tvær klukkustundirnar svo þær maukist ekki. Smjörinu má skipta út fyrir ghee eða ólífuolíu og Worcestershire-sósunni fyrir sojasósu."
+  },
+  "source": {
+    "url": "https://dinnerideasforall.com/slow-cooker-garlic-butter-beef-bites-with-potatoes/",
+    "site": "dinnerideasforall.com"
+  }
+}

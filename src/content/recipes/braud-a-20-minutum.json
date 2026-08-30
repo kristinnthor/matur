@@ -1,0 +1,104 @@
+{
+  "title": "Brauð á 20 mínútum",
+  "subtitle": "gerlaust skyndibrauð beint í ofninn",
+  "description": "Mjúkt brauð sem er hrært saman á nokkrum mínútum og þarf hvorki ger né hefun. Fullkomið með súpunni eða pottréttinum þegar brauðið gleymdist.",
+  "categories": [
+    "bakstur",
+    "medlaeti"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 10,
+    "cook": 15
+  },
+  "ingredients": [
+    {
+      "id": "hveiti",
+      "amount": 5,
+      "unit": "dl",
+      "item": "hveiti",
+      "note": "um 300 g"
+    },
+    {
+      "id": "lyftiduft",
+      "amount": 1,
+      "unit": "msk",
+      "item": "lyftiduft",
+      "scalable": false
+    },
+    {
+      "id": "sykur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sykur",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "mjolk",
+      "amount": 1.75,
+      "unit": "dl",
+      "item": "mjólk"
+    },
+    {
+      "id": "olia",
+      "amount": 4,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "note": "eða brætt smjör"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 220°C. Smyrjið ferkantað form eða lítið ofnfast fat, um 20×20 cm, með olíu eða smjöri — eða klæðið það með bökunarpappír.",
+      "refs": []
+    },
+    {
+      "text": "Blandið {{hveiti}}, {{lyftiduft}}, {{sykur}} og {{salt}} vel saman í stórri skál. Lyftiduftið verður að dreifast jafnt um hveitið, annars lyftir brauðið sér misjafnt.",
+      "refs": [
+        "hveiti",
+        "lyftiduft",
+        "sykur",
+        "salt"
+      ]
+    },
+    {
+      "text": "Hellið {{mjolk}} og {{olia}} út í og hrærið aðeins þar til deigið loðir saman. Hrærið sem minnst — annars myndast of mikið glúten og brauðið verður seigt. Ef deigið er þurrt og molnar má bæta örlítilli mjólk við, matskeið í senn.",
+      "refs": [
+        "mjolk",
+        "olia"
+      ]
+    },
+    {
+      "text": "Setjið deigið í formið og þrýstið því jafnt út með blautum fingrum eða sleikju. Deigið á að vera um 2 cm þykkt svo brauðið bakist jafnt í gegn.",
+      "refs": []
+    },
+    {
+      "text": "Bakið í miðjum ofni í 12–15 mínútur, þar til brauðið er gullinbrúnt og tannstöngull kemur hreinn upp úr miðjunni.",
+      "refs": []
+    },
+    {
+      "text": "Látið brauðið jafna sig í forminu í 5 mínútur — það molnar ef það er skorið glóðvolgt beint úr ofninum. Skerið síðan í bita og berið fram volgt.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: þar er hvorki gefin upp stærð á forminu né þykkt á deiginu, þótt hvort tveggja ráði bökunartímanum — hér er miðað við um 20×20 cm form og 2 cm þykkt deig. Bætt við leiðbeiningum um að drýgja deigið með örlítilli mjólk ef það er of þurrt, og hvíldin fyrir skurð, sem frumuppskriftin nefnir aðeins í framhjáhlaupi, er tímasett í 5 mínútur í forminu.",
+    "storage": "Best nýbakað og volgt. Geymist í 2 daga í lokuðu íláti við stofuhita og hressist vel við stutta upphitun í 180°C heitum ofni. Frystist niðurskorið í allt að mánuð og er þítt beint í ofni.",
+    "variants": "Ólífuolíuna má skipta út fyrir brætt smjör; brauðið verður þá mýkra og mildara. Rifinn ostur, saxað rósmarín eða hvítlauksduft út í þurrefnin gerir brauðið bragðmeira með súpu. Mjólkina má nota beint úr kæli og jurtamjólk virkar eins."
+  },
+  "source": {
+    "url": "https://www.steelheaddiner.com/recipes/bread-in-20-minutes-recipe/",
+    "site": "steelheaddiner.com"
+  }
+}
