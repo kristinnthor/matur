@@ -7,6 +7,7 @@ interface Entry {
   time: number;
   servings: number;
   word: string;
+  photo: string | null;
 }
 
 const grid = document.querySelector<HTMLElement>('#mine-grid')!;
@@ -36,9 +37,26 @@ function render(): void {
     card.className = 'card';
     card.href = `/uppskrift/${slug}/`;
 
-    const ph = document.createElement('div');
-    ph.className = 'card-ph';
-    ph.textContent = r.title.slice(0, 1);
+    // Show the real photo where there is one; otherwise the lettered
+    // placeholder, carrying the same "vantar mynd" marker as every other card.
+    let art: HTMLElement;
+    if (r.photo) {
+      const img = document.createElement('img');
+      img.src = r.photo;
+      img.alt = '';
+      img.loading = 'lazy';
+      art = img;
+    } else {
+      art = document.createElement('div');
+      art.className = 'card-ph';
+      art.setAttribute('aria-hidden', 'true');
+      const initial = document.createElement('span');
+      initial.textContent = r.title.slice(0, 1);
+      const marker = document.createElement('em');
+      marker.className = 'needs-photo';
+      marker.textContent = 'Vantar mynd';
+      art.append(initial, marker);
+    }
 
     const h2 = document.createElement('h2');
     h2.className = 'card-title';
@@ -52,7 +70,7 @@ function render(): void {
     meta.className = 'muted card-meta';
     meta.textContent = `${r.time} mín · ${r.servings} ${r.word}`;
 
-    card.append(ph, h2, sub, meta);
+    card.append(art, h2, sub, meta);
     grid.append(card);
   }
 }

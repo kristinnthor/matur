@@ -12,7 +12,15 @@ const photo = photoFor(recipe.id);
 <a class="card" href={`/uppskrift/${recipe.id}/`}>
   {photo
     ? <Image src={photo} alt="" widths={[400, 800]} sizes="(max-width: 40rem) 92vw, 400px" />
-    : <div class="card-ph" aria-hidden="true"><span>{initial}</span></div>}
+    : (
+      <div class="card-ph" aria-hidden="true">
+        <span>{initial}</span>
+        {/* Only shown to signed-in family members — see .needs-photo. A visitor
+            does not need telling that the site is unfinished, and only someone
+            signed in can do anything about it. */}
+        <em class="needs-photo">Vantar mynd</em>
+      </div>
+    )}
   <div class="body">
     <h2 class="card-title">{d.title}</h2>
     <p class="muted">{d.subtitle ?? d.description.slice(0, 90)}</p>

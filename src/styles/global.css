@@ -194,6 +194,26 @@ h2::before {
   color: var(--accent);
   opacity: 0.35;
 }
+/* Hidden until account-ui.ts marks the page as signed in: a to-do for the
+   family, not a notice to visitors that the site is half-finished. */
+.needs-photo { display: none; }
+[data-signed-in] .needs-photo {
+  display: block;
+  position: absolute;
+  left: 0.7rem;
+  bottom: 0.7rem;
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  border: 1px solid var(--accent);
+}
+.card .card-ph { position: relative; }
 .card .body { padding: 0.95rem 1.1rem 1.1rem; }
 .card h3 { margin: 0 0 0.3rem; font-size: 1.12rem; line-height: 1.25; }
 .card p { margin: 0 0 0.4rem; font-size: 0.92rem; }
@@ -703,7 +723,8 @@ h2::before {
   background: var(--bg);
   color: var(--text);
 }
-#photo-dialog .dialog-actions { display: flex; gap: 0.6rem; margin-top: 1.1rem; }
+#photo-dialog .dialog-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.1rem; }
+#photo-dialog .dialog-hint { margin: 0.5rem 0 0; font-size: 0.8rem; }
 #photo-dialog .dialog-actions button {
   flex: 1;
   padding: 0.75rem;

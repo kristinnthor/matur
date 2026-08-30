@@ -43,20 +43,53 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
     fileInput.click();
   });
 
-  fileInput.addEventListener('change', async () => {
-    const file = fileInput.files?.[0];
-    if (!file) return;
+  // Hoisted function declarations lose the null-narrowing above, so hold the
+  // already-checked element in a local the whole block can rely on.
+  const modal = dialog;
+
+  /** Put an image into the cropper, opening the dialog if it is not already up. */
+  async function openWith(file: File): Promise<void> {
     status.textContent = '';
+    submit.disabled = true;
     // Open first: the crop frame has no width until it is laid out, and the
     // initial framing is computed from that width.
-    submit.disabled = true;
-    dialog.showModal();
+    if (!modal.open) modal.showModal();
     try {
       await cropper.load(file);
       submit.disabled = false;
     } catch {
       status.textContent = 'Gat ekki unnið úr myndinni — reyndu aðra.';
     }
+  }
+
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files?.[0];
+    if (file) void openWith(file);
+  });
+
+  /** The first image in a clipboard payload, ignoring any text alongside it. */
+  function imageFrom(data: DataTransfer | null): File | null {
+    if (!data) return null;
+    for (const item of data.items) {
+      if (item.kind === 'file' && item.type.startsWith('image/')) {
+        const file = item.getAsFile();
+        if (file) return file;
+      }
+    }
+    for (const file of data.files) {
+      if (file.type.startsWith('image/')) return file;
+    }
+    return null;
+  }
+
+  // Ctrl/Cmd+V anywhere on the recipe: copy a photo, paste it, crop it.
+  // Text pastes are untouched — only a clipboard carrying an image is claimed.
+  document.addEventListener('paste', (e) => {
+    if (!state.signedIn) return;
+    const file = imageFrom((e as ClipboardEvent).clipboardData);
+    if (!file) return;
+    e.preventDefault();
+    void openWith(file);
   });
 
   // Whatever closes the dialog (Hætta við, Esc, success timer): reset the
@@ -69,6 +102,27 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
   });
 
   cancel.addEventListener('click', () => dialog.close());
+
+  // Reading the clipboard directly needs both API support and permission, so
+  // the button only appears where it can actually work; Ctrl+V always does.
+  const pasteBtn = dialog.querySelector<HTMLButtonElement>('#photo-dialog-paste')!;
+  if (typeof navigator.clipboard?.read === 'function') {
+    pasteBtn.hidden = false;
+    pasteBtn.addEventListener('click', async () => {
+      try {
+        for (const item of await navigator.clipboard.read()) {
+          const type = item.types.find((t) => t.startsWith('image/'));
+          if (!type) continue;
+          const blob = await item.getType(type);
+          await openWith(new File([blob], 'clipboard.jpg', { type }));
+          return;
+        }
+        status.textContent = 'Engin mynd á klippiborðinu.';
+      } catch {
+        status.textContent = 'Fékk ekki aðgang að klippiborðinu.';
+      }
+    });
+  }
 
   submit.addEventListener('click', async () => {
     if (!cropper.hasImage() || submit.disabled) return;

@@ -66,7 +66,10 @@ const credit = creditFor(recipe.id);
     <dialog id="photo-dialog" aria-labelledby="photo-dialog-title">
       <h2 id="photo-dialog-title">Mynd af réttinum</h2>
       <div id="photo-dialog-crop"></div>
+      <p class="dialog-hint muted">Þú getur líka límt mynd af klippiborðinu (Ctrl+V).</p>
       <div class="dialog-actions">
+        {/* Unhidden by photo-edit.ts only where the clipboard can be read. */}
+        <button type="button" id="photo-dialog-paste" hidden>Líma mynd</button>
         <button type="button" id="photo-dialog-cancel">Hætta við</button>
         <button type="button" id="photo-dialog-submit" class="primary">Hlaða upp</button>
       </div>

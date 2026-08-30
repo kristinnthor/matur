@@ -9,6 +9,9 @@ const slot = document.querySelector<HTMLElement>('#account-slot');
 
 if (slot) {
   const render = () => {
+    // Lets CSS reveal things only a signed-in person can act on, such as the
+    // "vantar mynd" marker on photo-less cards, without per-element scripting.
+    document.documentElement.toggleAttribute('data-signed-in', state.signedIn);
     slot.replaceChildren();
     if (!state.enabled) return;
 

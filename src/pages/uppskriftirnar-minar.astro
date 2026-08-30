@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { photoFor } from '../lib/photos';
 import { skammtar } from '../lib/units';
 
 // The page is static; which of these to show is decided in the browser from
@@ -15,6 +16,7 @@ const manifest = Object.fromEntries(
       time: r.data.time.prep + r.data.time.cook,
       servings: r.data.servings,
       word: skammtar(r.data.servings),
+      photo: photoFor(r.id)?.src ?? null,
     },
   ]),
 );
