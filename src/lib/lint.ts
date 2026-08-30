@@ -10,6 +10,8 @@ const ENGLISH_UNITS = /\b(cups?|tsp|tbsp|teaspoons?|tablespoons?|ounces?|oz|poun
 // Only spice forms of chili count as seasoning — a whole fresh chili is
 // produce and scales with servings.
 const SEASONING = /salt\b|\bpipar\b|chiliflög|chiliduft|chilikrydd|cayenne|lárviðar|múskat/i;
+const NOTE_QUANTITY = /\d+([.,]\d+)?\s*(dl|ml|l|g|kg|msk|tsk|stk|rif)\b/i;
+const PER_UNIT = /\bhvor|\bhvert\b|\bhver\b|á mann|hvora|hverju/i;
 /** The renderer's ref grammar (steps.ts REF_PATTERN) only resolves these ids. */
 const SAFE_ID = /^[a-z0-9_]+$/;
 /** A number immediately followed by an Icelandic unit token inside step prose. */
@@ -20,6 +22,7 @@ interface Ing {
   amount?: unknown;
   unit?: unknown;
   item?: unknown;
+  note?: unknown;
   scalable?: unknown;
 }
 
@@ -66,6 +69,12 @@ export function lintRecipe(r: unknown): LintResult {
     }
     if (typeof i.item === 'string' && /kúmen\b/i.test(i.item)) {
       warnings.push(`${label}: 'kúmen' is caraway — did you mean kúmín (cumin)?`);
+    }
+    // A note restating the whole amount ("600 g hveiti — um 10 dl") silently
+    // goes wrong the moment the reader scales the recipe. Per-item and
+    // per-person notes stay true at any serving count, so let those through.
+    if (typeof i.note === 'string' && i.scalable !== false && NOTE_QUANTITY.test(i.note) && !PER_UNIT.test(i.note)) {
+      warnings.push(`${label}: note "${i.note}" fixes a quantity that scaling will invalidate`);
     }
   }
 

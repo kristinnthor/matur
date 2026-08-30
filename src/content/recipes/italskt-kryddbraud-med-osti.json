@@ -42,8 +42,7 @@
       "id": "hveiti",
       "amount": 500,
       "unit": "g",
-      "item": "hveiti",
-      "note": "um 8 dl"
+      "item": "hveiti"
     },
     {
       "id": "salt",

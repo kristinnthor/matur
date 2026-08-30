@@ -118,3 +118,25 @@ describe('issue #6: taxonomy checks ignore the prototype chain', () => {
     expect(lintRecipe({ ...valid, tags: ['constructor'] }).errors.join()).toMatch(/tag/);
   });
 });
+
+describe('notes that scaling would invalidate', () => {
+  it('warns when a note restates the whole amount', () => {
+    const r = lintRecipe(withIngredient({ id: 'hveiti', amount: 600, unit: 'g', item: 'hveiti', note: 'um 10 dl' }));
+    expect(r.warnings.some((w) => w.includes('scaling will invalidate'))).toBe(true);
+  });
+
+  it('allows a per-unit note, which stays true at any serving count', () => {
+    const r = lintRecipe(withIngredient({ id: 'tomatar', amount: 2, unit: 'dós', item: 'niðursoðnir tómatar', note: 'hver dós 400 g' }));
+    expect(r.warnings.some((w) => w.includes('scaling will invalidate'))).toBe(false);
+  });
+
+  it('allows a per-person note', () => {
+    const r = lintRecipe(withIngredient({ id: 'steik', amount: 2, unit: 'kg', item: 'nautasteik', note: '400–500 g á mann' }));
+    expect(r.warnings.some((w) => w.includes('scaling will invalidate'))).toBe(false);
+  });
+
+  it('ignores non-scalable ingredients, which never change', () => {
+    const r = lintRecipe(withIngredient({ id: 'ger', amount: 15, unit: 'g', item: 'þurrger', note: 'eða 50 g pressuger', scalable: false }));
+    expect(r.warnings.some((w) => w.includes('scaling will invalidate'))).toBe(false);
+  });
+});

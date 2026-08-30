@@ -20,7 +20,7 @@
       "amount": 1,
       "unit": "stk",
       "item": "lambalæri",
-      "note": "ca. 3 kg",
+      "note": "hvert um 3 kg",
       "group": "Lambalæri og grænmeti"
     },
     {
@@ -133,7 +133,7 @@
       "amount": 2,
       "unit": "tsk",
       "item": "lambakraftur",
-      "note": "2–3 tsk eftir smekk; má nota nautakraft",
+      "note": "eftir smekk; má nota nautakraft",
       "group": "Sósa"
     },
     {

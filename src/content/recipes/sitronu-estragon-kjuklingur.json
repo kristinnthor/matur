@@ -19,7 +19,6 @@
       "amount": 12,
       "unit": "stk",
       "item": "kjúklingaleggir",
-      "note": "um 2 kg",
       "group": "Kjúklingur"
     },
     {
@@ -27,7 +26,6 @@
       "amount": 6,
       "unit": "stk",
       "item": "kjúklingalæri með beini",
-      "note": "um 2,2 kg",
       "group": "Kjúklingur"
     },
     {
