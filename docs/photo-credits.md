@@ -7,9 +7,10 @@ replaced in place (same `<slug>.jpg` filename) by uploads from the site:
 git log --follow --oneline src/content/recipes/photos/<slug>.jpg
 ```
 
-A commit message `photo: <slug> (upphlaðin af síðunni)` means a family photo
-uploaded through `/myndir/` or the recipe page; the table below then no longer
-describes what is shown.
+A commit message `photo: <slug> (upphlaðin af <nafni>)` means a family photo
+uploaded through `/myndir/` or the recipe page, credited to whoever was signed
+in; the table below then no longer describes what is shown. Older uploads say
+`(upphlaðin af síðunni)`, from before uploads required signing in.
 
 ## Stock photo origins (initial seeding)
 

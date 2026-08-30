@@ -2,11 +2,11 @@
  * Matur worker: serves the static site, plus the API.
  *
  * POST /api/photo commits an uploaded JPEG to the GitHub repo (triggering the
- * normal build), authenticated by a shared passphrase. /api/auth/*, /api/me,
+ * normal build), authenticated by the signed-in user. /api/auth/*, /api/me,
  * /api/personal, /api/favourite and /api/note handle sign-in and personal data
  * — see account.ts. Every secret is set on the Worker, outside this codebase.
  */
-import { handleAccount, type AccountEnv } from './account';
+import { handleAccount, sessionUser, type AccountEnv } from './account';
 
 /** Minimal binding type — avoids pulling @cloudflare/workers-types, whose
  * global Request/Response redefinitions clash with the DOM lib the client
@@ -19,48 +19,10 @@ export interface Env extends AccountEnv {
   ASSETS: Fetcher;
   GITHUB_REPO: string;
   GITHUB_TOKEN?: string;
-  UPLOAD_PASS?: string;
 }
 
 const SLUG = /^[a-z0-9-]{3,80}$/;
 const MAX_BYTES = 4.5 * 1024 * 1024;
-
-/**
- * Passphrase brute-force protection. In-memory per isolate, so a determined
- * attacker rotating IPs or hitting many PoPs can exceed it — acceptable for a
- * household site where the passphrase gates repo writes, not secrets. The
- * window is generous enough that a family member fat-fingering the passphrase
- * a few times is never locked out.
- */
-const FAIL_LIMIT = 8;
-const FAIL_WINDOW_MS = 15 * 60 * 1000;
-const failures = new Map<string, { count: number; windowStart: number }>();
-
-function tooManyFailures(ip: string, now: number): boolean {
-  const entry = failures.get(ip);
-  if (!entry || now - entry.windowStart > FAIL_WINDOW_MS) return false;
-  return entry.count >= FAIL_LIMIT;
-}
-
-function recordFailure(ip: string, now: number): void {
-  const entry = failures.get(ip);
-  if (!entry || now - entry.windowStart > FAIL_WINDOW_MS) {
-    failures.set(ip, { count: 1, windowStart: now });
-  } else {
-    entry.count++;
-  }
-  // Keep the map bounded even under IP rotation: purge expired entries first,
-  // then evict oldest (Map preserves insertion order) until under the cap.
-  if (failures.size > 1000) {
-    for (const [key, e] of failures) {
-      if (now - e.windowStart > FAIL_WINDOW_MS) failures.delete(key);
-    }
-    for (const key of failures.keys()) {
-      if (failures.size <= 1000) break;
-      failures.delete(key);
-    }
-  }
-}
 
 function json(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), {
@@ -73,31 +35,18 @@ function json(status: number, body: unknown): Response {
   });
 }
 
-function safeEqual(a: string, b: string): boolean {
-  if (a.length !== b.length) return false;
-  let diff = 0;
-  for (let i = 0; i < a.length; i++) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
-  return diff === 0;
-}
-
 async function handlePhoto(req: Request, env: Env): Promise<Response> {
   if (req.method !== 'POST') return json(405, { error: 'POST only' });
-  if (!env.GITHUB_TOKEN || !env.UPLOAD_PASS) {
-    return json(503, { error: 'Upphleðsla er ekki virkjuð enn — leyninúmer og GitHub-lykil vantar á vefþjóninn.' });
+  if (!env.GITHUB_TOKEN) {
+    return json(503, { error: 'Upphleðsla er ekki virkjuð enn — GitHub-lykil vantar á vefþjóninn.' });
   }
-  const ip = req.headers.get('cf-connecting-ip') ?? 'unknown';
-  const now = Date.now();
-  if (tooManyFailures(ip, now)) {
-    return json(429, { error: 'Of margar tilraunir — reyndu aftur eftir korter.' });
+  // Uploading is a repo write, so it takes a real account rather than a secret
+  // everyone shares: the commit can then say who took the photo, and there is
+  // no passphrase sitting in every family phone waiting to leak.
+  const uploader = await sessionUser(req, env, Date.now());
+  if (!uploader) {
+    return json(401, { error: 'Skráðu þig inn til að hlaða upp mynd.' });
   }
-
-  const pass = req.headers.get('x-upload-pass') ?? '';
-  if (!safeEqual(pass, env.UPLOAD_PASS)) {
-    recordFailure(ip, now);
-    return json(401, { error: 'Rangt leyninúmer.' });
-  }
-  // A successful login forgives earlier typos — nobody sits one mistake from lockout.
-  failures.delete(ip);
 
   // Reject oversized bodies before buffering/decoding anything. Base64 inflates
   // by 4/3, so the wire limit is the byte limit times 4/3 plus JSON overhead.
@@ -132,6 +81,14 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
 
   const path = `src/content/recipes/photos/${slug}.jpg`;
   const api = `https://api.github.com/repos/${env.GITHUB_REPO}/contents/${path}`;
+  // This lands in a public repo's history, so credit by first name only —
+  // enough for the family to know who cooked it, without publishing an
+  // address or a full name.
+  // Never the full address: an email in a public commit message is permanent.
+  const credit =
+    uploader.name.trim().split(/\s+/)[0] ||
+    uploader.email.split('@')[0]?.trim() ||
+    'fjölskyldunni';
   const gh = {
     Authorization: `Bearer ${env.GITHUB_TOKEN}`,
     Accept: 'application/vnd.github+json',
@@ -150,7 +107,7 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
       method: 'PUT',
       headers: { ...gh, 'content-type': 'application/json' },
       body: JSON.stringify({
-        message: `photo: ${slug} (upphlaðin af síðunni)`,
+        message: `photo: ${slug} (upphlaðin af ${credit})`,
         content: data,
         ...(sha ? { sha } : {}),
       }),

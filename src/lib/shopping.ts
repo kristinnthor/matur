@@ -145,10 +145,17 @@ export interface ListRecipeLine {
 /**
  * Render the list as plain text for sharing — the aisle order and totals are
  * exactly what the page shows, so what arrives in someone's messages matches
- * what the sender is looking at. Ticked-off items are included: the recipient
- * has not ticked anything, and a list missing half its items is a trap.
+ * what the sender is looking at.
+ *
+ * Ticked-off items are left out: sharing happens mid-shop ("grab the rest"),
+ * and a list repeating what is already in the trolley is worse than useless.
+ * A section whose items are all ticked disappears with them.
  */
-export function formatListText(sections: Section[], recipes: ListRecipeLine[] = []): string {
+export function formatListText(
+  sections: Section[],
+  recipes: ListRecipeLine[] = [],
+  checked: Record<string, boolean> = {},
+): string {
   const lines: string[] = ['Innkaupalisti — Matur'];
 
   if (recipes.length > 0) {
@@ -157,9 +164,16 @@ export function formatListText(sections: Section[], recipes: ListRecipeLine[] = 
   }
 
   for (const section of sections) {
+    const remaining = section.items.filter((i) => !checked[i.key]);
+    if (remaining.length === 0) continue;
     lines.push('', section.name.toUpperCase());
-    for (const item of section.items) lines.push(`- ${item.amount} ${item.label}`);
+    for (const item of remaining) lines.push(`- ${item.amount} ${item.label}`);
   }
 
   return lines.join('\n');
+}
+
+/** Whether anything is left to buy — the share button has nothing to say otherwise. */
+export function remainingCount(sections: Section[], checked: Record<string, boolean> = {}): number {
+  return sections.reduce((n, s) => n + s.items.filter((i) => !checked[i.key]).length, 0);
 }

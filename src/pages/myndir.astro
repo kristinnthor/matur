@@ -16,7 +16,11 @@ const manifest = recipes
       Taktu mynd af réttinum og hladdu henni upp — hún fer sjálfkrafa í loftið á um tveimur mínútum.
     </p>
 
-    <form id="upload-form">
+    <p id="upload-signin" class="muted" hidden>
+      Skráðu þig inn efst á síðunni til að hlaða upp mynd.
+    </p>
+
+    <form id="upload-form" hidden>
       <label class="field">
         <span>Uppskrift</span>
         <select id="recipe-select" required>
@@ -36,11 +40,6 @@ const manifest = recipes
       </label>
 
       <div id="preview-crop"></div>
-
-      <label class="field">
-        <span>Leyninúmer</span>
-        <input type="password" id="pass-input" autocomplete="current-password" required />
-      </label>
 
       <button type="submit" id="upload-btn" class="cook-link">Hlaða upp</button>
       <p id="status" role="status" aria-live="polite"></p>

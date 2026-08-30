@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { aggregate, formatListText, sectionFor, SECTIONS, type RecipeData } from './shopping';
+import { aggregate, formatListText, remainingCount, sectionFor, SECTIONS, type RecipeData } from './shopping';
 import type { Ingredient } from './units';
 
 const ing = (over: Partial<Ingredient> & Pick<Ingredient, 'id' | 'amount' | 'unit' | 'item'>): Ingredient => ({
@@ -170,5 +170,35 @@ describe('formatListText', () => {
 
   it('produces nothing but the title for an empty list', () => {
     expect(formatListText([])).toBe('Innkaupalisti — Matur');
+  });
+});
+
+describe('formatListText leaves out what is already in the trolley', () => {
+  const sections = aggregate({ carbonara: 4 }, recipes);
+  const first = sections[0]!.items[0]!;
+
+  it('omits a ticked item', () => {
+    const text = formatListText(sections, [], { [first.key]: true });
+    expect(text).not.toContain(`- ${first.amount} ${first.label}`);
+    // Everything else is still there.
+    const others = sections.flatMap((s) => s.items).filter((i) => i.key !== first.key);
+    for (const item of others) expect(text).toContain(`- ${item.amount} ${item.label}`);
+  });
+
+  it('drops a section once all of its items are ticked', () => {
+    const section = sections[0]!;
+    const checked = Object.fromEntries(section.items.map((i) => [i.key, true]));
+    expect(formatListText(sections, [], checked)).not.toContain(section.name.toUpperCase());
+  });
+
+  it('shares everything when nothing is ticked', () => {
+    expect(formatListText(sections, [], {})).toBe(formatListText(sections, []));
+  });
+
+  it('counts what is left to buy', () => {
+    const all = sections.flatMap((s) => s.items);
+    expect(remainingCount(sections, {})).toBe(all.length);
+    expect(remainingCount(sections, { [first.key]: true })).toBe(all.length - 1);
+    expect(remainingCount(sections, Object.fromEntries(all.map((i) => [i.key, true])))).toBe(0);
   });
 });

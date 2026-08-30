@@ -11,7 +11,7 @@ this repo.
 
 Astro 7 static output served by a small **Cloudflare Worker** (`worker/index.ts`):
 static assets flow through the assets binding, `POST /api/photo` accepts
-passphrase-gated photo uploads and commits them via the GitHub API — which
+photo uploads from signed-in family members and commits them via the GitHub API — which
 triggers a rebuild, so uploaded photos ride the same image pipeline as everything
 else. Photos attach to recipes purely by filename: `src/content/recipes/photos/<slug>.jpg`.
 
@@ -41,28 +41,30 @@ npm run translate                        # drafts → Icelandic recipe JSON via 
 `translate` needs a logged-in `claude` CLI (or `--backend=api` with
 `ANTHROPIC_API_KEY`) and is glossary-driven — see `glossary/`.
 
-## Accounts (off until configured)
+## Accounts
 
-Sign-in with Google gives each family member their own favourites and private
-notes. It ships **disabled**: with no configuration the endpoints answer 503, no
-sign-in button appears, and the site behaves exactly as it did before. Turning it
-on is four steps:
+Signing in with Google gives each family member their own favourites, their own
+private notes, and the right to upload photos. It is live.
 
-1. **Google OAuth client** — console.cloud.google.com → APIs & Services →
-   Credentials → OAuth client ID → *Web application*. Add
-   `https://matur.kristinn.eu` as an authorised JavaScript origin. Copy the
-   client ID (it is public; the client *secret* is not needed and is not used).
-2. **Database** — `npx wrangler d1 create matur`, then uncomment the
-   `d1_databases` block in `wrangler.jsonc` with the id it prints, and apply the
-   schema: `npx wrangler d1 execute matur --remote --file=worker/schema.sql`.
-3. **Worker settings** — set `GOOGLE_CLIENT_ID` (variable), and as *secrets*
-   `SESSION_SECRET` (any long random string — it signs session cookies) and
-   `ALLOWED_EMAILS` (comma-separated addresses allowed to sign in).
-4. Push. The gated build deploys and the sign-in button appears.
+**Who can sign in** is the `ALLOWED_EMAILS` Worker secret — a comma-separated
+list of addresses. It **fails closed**: an empty list admits nobody. This is the
+only gate that matters, because with basic sign-in scopes Google itself does not
+restrict who may authenticate. Adding someone means rewriting the whole secret,
+which is not additive:
 
-`ALLOWED_EMAILS` **fails closed**: while it is empty nobody can sign in, so a
-half-finished setup turns people away rather than opening the site to anyone with
-a Google account.
+```bash
+printf 'a@gmail.com,b@gmail.com' | npx wrangler secret put ALLOWED_EMAILS
+```
+
+**Configuration** (already in place): `GOOGLE_CLIENT_ID` is a var in
+`wrangler.jsonc` — client ids are public by design — while `SESSION_SECRET`
+(signs the session cookies) and `ALLOWED_EMAILS` are Worker secrets. The D1
+database `matur` is bound as `DB`; its schema is `worker/schema.sql`.
+
+Sessions are signed cookies (`HttpOnly; Secure; SameSite=Lax`), so there is no
+session table and a stolen cookie expires on its own. Google's ID token is
+verified properly — RS256 against Google's published keys, then issuer,
+audience, expiry and a confirmed address.
 
 Notes live only in D1. They must never follow the photo path, which commits to
 this public repo — a private remark would become permanently world-readable.

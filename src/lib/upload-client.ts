@@ -1,28 +1,15 @@
 /** Shared client-side photo upload helpers — used by /myndir/ and the per-recipe editor. */
 
-const PASS_KEY = 'matur:uploadpass';
-
-export function readPass(): string {
+/**
+ * Uploading used to be gated by a passphrase everyone shared. It is now gated by
+ * signing in, so remove any copy still sitting in a family member's browser
+ * rather than leaving a dead secret behind on their phone.
+ */
+export function forgetLegacyPassphrase(): void {
   try {
-    return localStorage.getItem(PASS_KEY) ?? '';
+    localStorage.removeItem('matur:uploadpass');
   } catch {
-    return '';
-  }
-}
-
-export function writePass(pass: string): void {
-  try {
-    localStorage.setItem(PASS_KEY, pass);
-  } catch {
-    // Storage unavailable — the passphrase simply is not remembered.
-  }
-}
-
-export function clearPass(): void {
-  try {
-    localStorage.removeItem(PASS_KEY);
-  } catch {
-    // fine
+    // Storage unavailable; nothing to forget.
   }
 }
 
@@ -42,11 +29,12 @@ export interface UploadResult {
   error?: string;
 }
 
-export async function uploadPhoto(slug: string, jpeg: Blob, pass: string): Promise<UploadResult> {
+export async function uploadPhoto(slug: string, jpeg: Blob): Promise<UploadResult> {
   const data = await toBase64(jpeg);
   const res = await fetch('/api/photo', {
     method: 'POST',
-    headers: { 'content-type': 'application/json', 'x-upload-pass': pass },
+    credentials: 'same-origin',
+    headers: { 'content-type': 'application/json' },
     body: JSON.stringify({ slug, data }),
   });
   const reply = (await res.json().catch(() => ({}))) as {
@@ -55,9 +43,7 @@ export async function uploadPhoto(slug: string, jpeg: Blob, pass: string): Promi
     error?: string;
   };
   if (res.ok && reply.ok) {
-    writePass(pass);
     return { ok: true, replaced: reply.replaced, status: res.status };
   }
-  if (res.status === 401) clearPass();
   return { ok: false, status: res.status, error: reply.error ?? `Villa (${res.status}).` };
 }

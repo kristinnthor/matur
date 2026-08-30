@@ -72,6 +72,9 @@ async function currentUser(req: Request, env: AccountEnv, now: number): Promise<
   return verifySession(cookieValue(req, COOKIE), env.SESSION_SECRET, Math.floor(now / 1000));
 }
 
+/** The signed-in user, for endpoints outside this module (photo upload). */
+export const sessionUser = currentUser;
+
 async function readJson(req: Request): Promise<Record<string, unknown> | null> {
   try {
     return (await req.json()) as Record<string, unknown>;

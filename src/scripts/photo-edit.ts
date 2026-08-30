@@ -1,4 +1,5 @@
-import { readPass, uploadPhoto } from '../lib/upload-client';
+import { forgetLegacyPassphrase, uploadPhoto } from '../lib/upload-client';
+import { state } from './account';
 import { createCropper } from './cropper';
 
 const openBtn = document.querySelector<HTMLButtonElement>('#photo-edit-open');
@@ -7,7 +8,6 @@ const dialog = document.querySelector<HTMLDialogElement>('#photo-dialog');
 if (openBtn && dialog && typeof dialog.showModal === 'function') {
   const slug = openBtn.dataset.slug!;
   const cropMount = dialog.querySelector<HTMLElement>('#photo-dialog-crop')!;
-  const passInput = dialog.querySelector<HTMLInputElement>('#photo-dialog-pass')!;
   const submit = dialog.querySelector<HTMLButtonElement>('#photo-dialog-submit')!;
   const cancel = dialog.querySelector<HTMLButtonElement>('#photo-dialog-cancel')!;
   const status = dialog.querySelector<HTMLElement>('#photo-dialog-status')!;
@@ -29,13 +29,24 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
   // belongs to a dead session and must not touch the UI again.
   let session = 0;
 
-  openBtn.addEventListener('click', () => fileInput.click());
+  forgetLegacyPassphrase();
+
+  openBtn.addEventListener('click', () => {
+    // Say why up front rather than letting someone frame a photo and only then
+    // discover the upload will be refused.
+    if (!state.signedIn) {
+      status.textContent = 'Skráðu þig inn efst á síðunni til að hlaða upp mynd.';
+      submit.disabled = true;
+      dialog.showModal();
+      return;
+    }
+    fileInput.click();
+  });
 
   fileInput.addEventListener('change', async () => {
     const file = fileInput.files?.[0];
     if (!file) return;
     status.textContent = '';
-    passInput.value = readPass();
     // Open first: the crop frame has no width until it is laid out, and the
     // initial framing is computed from that width.
     submit.disabled = true;
@@ -59,13 +70,6 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
 
   cancel.addEventListener('click', () => dialog.close());
 
-  passInput.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      submit.click();
-    }
-  });
-
   submit.addEventListener('click', async () => {
     if (!cropper.hasImage() || submit.disabled) return;
     const mySession = session;
@@ -73,7 +77,7 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
     status.textContent = 'Hleð upp …';
     try {
       const jpeg = await cropper.toBlob();
-      const result = await uploadPhoto(slug, jpeg, passInput.value);
+      const result = await uploadPhoto(slug, jpeg);
       if (session !== mySession) return;
       if (result.ok) {
         status.textContent = result.replaced
@@ -86,7 +90,6 @@ if (openBtn && dialog && typeof dialog.showModal === 'function') {
         return;
       }
       status.textContent = result.error ?? 'Villa.';
-      if (result.status === 401) passInput.value = '';
       submit.disabled = false;
     } catch {
       if (session !== mySession) return;

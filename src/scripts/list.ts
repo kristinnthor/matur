@@ -1,4 +1,4 @@
-import { aggregate, formatListText, type RecipeData } from '../lib/shopping';
+import { aggregate, formatListText, remainingCount, type RecipeData } from '../lib/shopping';
 import { skammtar } from '../lib/units';
 
 const LIST_KEY = 'matur:list';
@@ -171,8 +171,8 @@ document.querySelector('#clear-list')?.addEventListener('click', () => {
 });
 document.querySelector('#print-list')?.addEventListener('click', () => window.print());
 
-/** Rebuild the text at share time so it always matches what is on screen. */
-function currentListText(): string {
+/** Rebuild at share time so it always matches what is on screen right now. */
+function currentList(): { text: string; remaining: number } {
   const selections = Object.fromEntries(
     Object.entries(readJson<Record<string, number>>(LIST_KEY, {})).filter(([slug]) => recipes[slug]),
   );
@@ -180,7 +180,12 @@ function currentListText(): string {
     title: recipes[slug]!.title,
     servings,
   }));
-  return formatListText(aggregate(selections, recipes), chosen);
+  const sections = aggregate(selections, recipes);
+  const checked = readJson<Record<string, boolean>>(CHECKED_KEY, {});
+  return {
+    text: formatListText(sections, chosen, checked),
+    remaining: remainingCount(sections, checked),
+  };
 }
 
 const shareBtn = document.querySelector<HTMLButtonElement>('#share-list');
@@ -206,7 +211,12 @@ if (shareBtn) {
     if (!canShare) shareBtn.textContent = 'Afrita lista';
 
     shareBtn.addEventListener('click', async () => {
-      const text = currentListText();
+      const { text, remaining } = currentList();
+      // Everything ticked off: say so rather than sharing a bare heading.
+      if (remaining === 0) {
+        flash('Allt komið — ekkert eftir á listanum.');
+        return;
+      }
       if (canShare) {
         try {
           await navigator.share({ title: 'Innkaupalisti', text });
