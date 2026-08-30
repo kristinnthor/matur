@@ -89,5 +89,26 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_pot_roast.jpg",
     "sha256": "ce4872bdfd8ea37710cf848e04f03bdaf7d7efc9569a3762b7fe4b8d644ba56b"
+  },
+  "haegeldad-lambalaeri": {
+    "creator": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_02.jpg",
+    "sha256": "0f7e8ec87030134eb903d209ff0139dd7443d6dfef2448dec57778e3cb67de85"
+  },
+  "mars-ostakaka": {
+    "creator": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snickers_Cheesecake_-_Garden_Caf%C3%A9_Brighton_2025-05-01.jpg",
+    "sha256": "479f89da22e992aa7a492d6fc1c5c394a31476608a2b068502a43a965d625d3f"
+  },
+  "lambapottrettur-i-raudvini": {
+    "creator": "jeffreyw",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_stew_(13393166514).jpg",
+    "sha256": "6df6983ca019cfdf4f620ec5dafeb1f4c253e8660f49bd30442b6a614907ca82"
   }
 }
