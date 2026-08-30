@@ -27,8 +27,11 @@ const data = Object.fromEntries(
     <section id="shopping-sections"></section>
 
     <div class="list-actions" id="list-actions" hidden>
+      {/* Unhidden by list.ts only when the browser can share or copy. */}
+      <button type="button" id="share-list" hidden>Deila</button>
       <button type="button" id="print-list">Prenta</button>
       <button type="button" id="clear-list" class="danger">Hreinsa lista</button>
+      <span id="share-status" class="muted share-status" role="status" aria-live="polite"></span>
     </div>
   </div>
 

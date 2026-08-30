@@ -1,5 +1,5 @@
 /** Shopping-list aggregation — pure. Spec §8 plus the Vínbúðin reality. */
-import { UNITS, formatAmount, toCanonical, type Ingredient, type Unit } from './units';
+import { UNITS, formatAmount, skammtar, toCanonical, type Ingredient, type Unit } from './units';
 
 export interface RecipeData {
   title: string;
@@ -135,4 +135,31 @@ export function aggregate(
     name,
     items: bySection.get(name)!.sort((a, b) => a.label.localeCompare(b.label, 'is')),
   }));
+}
+
+export interface ListRecipeLine {
+  title: string;
+  servings: number;
+}
+
+/**
+ * Render the list as plain text for sharing — the aisle order and totals are
+ * exactly what the page shows, so what arrives in someone's messages matches
+ * what the sender is looking at. Ticked-off items are included: the recipient
+ * has not ticked anything, and a list missing half its items is a trap.
+ */
+export function formatListText(sections: Section[], recipes: ListRecipeLine[] = []): string {
+  const lines: string[] = ['Innkaupalisti — Matur'];
+
+  if (recipes.length > 0) {
+    lines.push('');
+    for (const r of recipes) lines.push(`${r.title} (${r.servings} ${skammtar(r.servings)})`);
+  }
+
+  for (const section of sections) {
+    lines.push('', section.name.toUpperCase());
+    for (const item of section.items) lines.push(`- ${item.amount} ${item.label}`);
+  }
+
+  return lines.join('\n');
 }

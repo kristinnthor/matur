@@ -1,4 +1,4 @@
-import { aggregate, type RecipeData } from '../lib/shopping';
+import { aggregate, formatListText, type RecipeData } from '../lib/shopping';
 import { skammtar } from '../lib/units';
 
 const LIST_KEY = 'matur:list';
@@ -170,5 +170,64 @@ document.querySelector('#clear-list')?.addEventListener('click', () => {
   }
 });
 document.querySelector('#print-list')?.addEventListener('click', () => window.print());
+
+/** Rebuild the text at share time so it always matches what is on screen. */
+function currentListText(): string {
+  const selections = Object.fromEntries(
+    Object.entries(readJson<Record<string, number>>(LIST_KEY, {})).filter(([slug]) => recipes[slug]),
+  );
+  const chosen = Object.entries(selections).map(([slug, servings]) => ({
+    title: recipes[slug]!.title,
+    servings,
+  }));
+  return formatListText(aggregate(selections, recipes), chosen);
+}
+
+const shareBtn = document.querySelector<HTMLButtonElement>('#share-list');
+const shareStatus = document.querySelector<HTMLElement>('#share-status');
+let statusTimer: ReturnType<typeof setTimeout> | undefined;
+
+function flash(message: string): void {
+  if (!shareStatus) return;
+  shareStatus.textContent = message;
+  clearTimeout(statusTimer);
+  statusTimer = setTimeout(() => {
+    shareStatus.textContent = '';
+  }, 2500);
+}
+
+if (shareBtn) {
+  const canShare = typeof navigator.share === 'function';
+  const canCopy = typeof navigator.clipboard?.writeText === 'function';
+  // No share sheet and no clipboard: leave the button hidden rather than
+  // offering something that would do nothing.
+  if (canShare || canCopy) {
+    shareBtn.hidden = false;
+    if (!canShare) shareBtn.textContent = 'Afrita lista';
+
+    shareBtn.addEventListener('click', async () => {
+      const text = currentListText();
+      if (canShare) {
+        try {
+          await navigator.share({ title: 'Innkaupalisti', text });
+          return;
+        } catch (e) {
+          // Dismissing the share sheet is a choice, not an error.
+          if ((e as Error | undefined)?.name === 'AbortError') return;
+          if (!canCopy) {
+            flash('Ekki tókst að deila listanum.');
+            return;
+          }
+        }
+      }
+      try {
+        await navigator.clipboard.writeText(text);
+        flash('Listinn er kominn á klippiborðið.');
+      } catch {
+        flash('Ekki tókst að afrita listann.');
+      }
+    });
+  }
+}
 
 render();

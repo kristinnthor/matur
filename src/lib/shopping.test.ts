@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { aggregate, sectionFor, SECTIONS, type RecipeData } from './shopping';
+import { aggregate, formatListText, sectionFor, SECTIONS, type RecipeData } from './shopping';
 import type { Ingredient } from './units';
 
 const ing = (over: Partial<Ingredient> & Pick<Ingredient, 'id' | 'amount' | 'unit' | 'item'>): Ingredient => ({
@@ -130,5 +130,45 @@ describe('mass totals at or above 1 kg round UP in the display unit (issue #3)',
       ),
     );
     expect(items.find((i) => i.label === 'spaghetti')!.amount).toBe('1¼ kg');
+  });
+});
+
+describe('formatListText', () => {
+  const sections = aggregate({ carbonara: 4 }, recipes);
+
+  it('groups items under uppercase aisle headings in shop order', () => {
+    const text = formatListText(sections);
+    const headings = text.split('\n').filter((l) => /^[A-ZÁÉÍÓÚÝÞÆÖÐ ]+$/.test(l) && l.trim());
+    expect(headings).toEqual(
+      sections.map((s) => s.name.toUpperCase()),
+    );
+  });
+
+  it('lists each item as "- <amount> <label>"', () => {
+    const text = formatListText(sections);
+    for (const item of sections.flatMap((s) => s.items)) {
+      expect(text).toContain(`- ${item.amount} ${item.label}`);
+    }
+  });
+
+  it('heads the text with the chosen recipes and their serving counts', () => {
+    const text = formatListText(sections, [
+      { title: 'Spaghetti carbonara', servings: 4 },
+      { title: 'Boeuf Bourguignon', servings: 1 },
+    ]);
+    expect(text.startsWith('Innkaupalisti — Matur')).toBe(true);
+    expect(text).toContain('Spaghetti carbonara (4 skammtar)');
+    // Icelandic singular: 1 skammtur, not "1 skammtar".
+    expect(text).toContain('Boeuf Bourguignon (1 skammtur)');
+  });
+
+  it('omits the recipe header when none is given', () => {
+    const text = formatListText(sections);
+    expect(text.split('\n')[1]).toBe('');
+    expect(text).not.toContain('skammt');
+  });
+
+  it('produces nothing but the title for an empty list', () => {
+    expect(formatListText([])).toBe('Innkaupalisti — Matur');
   });
 });
