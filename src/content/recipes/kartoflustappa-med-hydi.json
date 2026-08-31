@@ -1,0 +1,113 @@
+{
+  "title": "Kartöflustappa með hýði",
+  "subtitle": "gróf stappa með smjöri, rjóma og vorlauk",
+  "description": "Kartöflustappa þar sem hýðið fær að fylgja með og gefur bæði áferð og lit. Smjör og rjómi eru hituð áður en þeim er hrært saman við, svo stappan verður rjómakennd en aldrei límkennd. Tilbúin á hálftíma og passar með öllu steiktu kjöti og fiski.",
+  "categories": [
+    "medlaeti"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 10,
+    "cook": 20
+  },
+  "ingredients": [
+    {
+      "id": "kartoflur",
+      "amount": 800,
+      "unit": "g",
+      "item": "litlar rauðar kartöflur",
+      "note": "óafhýddar"
+    },
+    {
+      "id": "smjor",
+      "amount": 57,
+      "unit": "g",
+      "item": "ósaltað smjör",
+      "note": "skorið í bita"
+    },
+    {
+      "id": "rjomi",
+      "amount": 1.75,
+      "unit": "dl",
+      "item": "rjómi"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "vorlaukur",
+      "amount": 3,
+      "unit": "stk",
+      "item": "vorlaukur",
+      "note": "smátt saxaður"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Skolið {{kartoflur}} vel og skerið í fernt en látið hýðið fylgja með – það heldur stöppunni grófri og setur lit á hana.",
+      "refs": [
+        "kartoflur"
+      ]
+    },
+    {
+      "text": "Setjið kartöflurnar í pott, hellið köldu vatni yfir svo það fljóti vel yfir þær og saltið vatnið vel strax. Saltið á að fara í frá byrjun, annars sest bragðið aðeins utan á kartöflurnar.",
+      "refs": []
+    },
+    {
+      "text": "Látið suðuna koma upp og sjóðið í 15–20 mínútur, þar til gaffall rennur átakalaust í gegn. Kartöflur sem byrja í köldu vatni eldast jafnt í gegn í stað þess að verða mjúkar að utan og harðar í miðjunni.",
+      "refs": []
+    },
+    {
+      "text": "Hellið vatninu af og setjið kartöflurnar aftur í pottinn yfir meðalháum hita. Hrærið í þeim í um mínútu svo gufan rjúki úr þeim – þurrar kartöflur taka fituna betur í sig.",
+      "refs": []
+    },
+    {
+      "text": "Hitið á meðan {{rjomi}} og {{smjor}} í litlum potti þar til smjörið er bráðnað og blandan vel heit. Kaldur rjómi og kalt smjör kæla stöppuna og gera hana klístraða.",
+      "refs": [
+        "rjomi",
+        "smjor"
+      ]
+    },
+    {
+      "text": "Slökkvið undir kartöflunum og stappið þær gróft. Hellið heitu rjómablöndunni út í ásamt {{salt}} og {{pipar}} og hrærið saman þar til allt hefur blandast.",
+      "refs": [
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Stappið áfram þar til áferðin er eins og þið viljið hafa hana, en ekki lengur – ofunnin stappa verður límkennd. Notið aldrei matvinnsluvél.",
+      "refs": []
+    },
+    {
+      "text": "Hrærið {{vorlaukur}} saman við, smakkið til með salti og pipar og berið fram strax á meðan stappan er vel heit.",
+      "refs": [
+        "vorlaukur"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: magnhlutföllin ganga ekki upp. Þar eru 450 g af kartöflum á móti 1¾ dl af rjóma og 57 g af smjöri, sem gefur bæði of blauta stöppu og rýran skammt fyrir fjóra. Hér eru kartöflurnar hækkaðar í 800 g og fitan höfð óbreytt, og saltið hækkað úr ¾ tsk í 1 tsk í samræmi við það. Saltið fer nú í vatnið strax í stað þess að saltklípu sé bætt út í eftir að suðan kemur upp. Bætt við að hita rjómann og smjörið áður en þeim er hrært saman við, sem heldur stöppunni heitri og kemur í veg fyrir að hún verði klístruð, og við viðvörun um að stappa ekki of lengi. Vorlaukurinn var valkvæður í frumuppskriftinni en er hér fastur hluti hennar.",
+    "storage": "Geymist í 2–3 daga í kæli. Hitið upp við vægan hita með skvettu af rjóma eða mjólk og hrærið varlega, því stappan þykknar í kæli. Hana má frysta í allt að 2 mánuði en áferðin verður kornóttari eftir þiðnun.",
+    "variants": "Rauðar kartöflur með þunnu hýði fást ekki alltaf hér á landi; íslenskar gullauga eða litlar sumarkartöflur virka jafn vel og hýðið er jafn fínt á þeim. Rjómann má að hluta leysa af hólmi með soðinu af kartöflunum eða mjólk fyrir léttari stöppu. Vorlaukinn má skipta út fyrir graslauk eða steinselju, og tvö hvítlauksrif soðin með kartöflunum gefa mildan hvítlaukskeim."
+  },
+  "source": {
+    "url": "https://www.theculinarycompass.com/red-skin-mashed-potatoes",
+    "site": "theculinarycompass.com"
+  }
+}

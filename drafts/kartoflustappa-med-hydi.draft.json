@@ -1,0 +1,29 @@
+{
+  "source": {
+    "url": "https://www.theculinarycompass.com/red-skin-mashed-potatoes",
+    "site": "theculinarycompass.com"
+  },
+  "fetched": "2026-08-31T08:49:10.342Z",
+  "kind": "jsonld",
+  "recipe": {
+    "name": "Red Skin Mashed Potatoes",
+    "yield": "4",
+    "prepTime": "PT10M",
+    "cookTime": "PT20M",
+    "totalTime": "PT30M",
+    "ingredients": [
+      "1 lb. red skin potatoes, quartered",
+      "1/4 cup unsalted butter",
+      "3/4 cup heavy cream",
+      "3/4 tsp. salt, plus more for water",
+      "1/2 tsp. pepper",
+      "2-3 stalks green onions, diced"
+    ],
+    "instructions": [
+      "Add potatoes to a pot and cover with water. Cover and bring to a boil. Once the water is boiling, remove the lid and add a pinch of salt.",
+      "Let boil for 15-20 minutes or until potatoes are fork tender. Drain the water from the potatoes and add the potatoes back to the pot.",
+      "Increase heat to medium high and stir potatoes around to help dry them out. Turn off heat and lightly mash the potatoes.",
+      "Add in butter, heavy cream, salt, and pepper and stir until incorporated and butter is melted. Mash until you reach your desired consistency. Stir in green onions, if desired."
+    ]
+  }
+}
