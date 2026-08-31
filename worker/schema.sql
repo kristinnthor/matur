@@ -22,5 +22,20 @@ CREATE TABLE IF NOT EXISTS notes (
   PRIMARY KEY (user_sub, slug)
 );
 
+-- Links the family wants turned into recipes. Unlike notes this is a shared
+-- queue: everyone signed in sees it, because the point is to hand it to whoever
+-- is doing the converting.
+CREATE TABLE IF NOT EXISTS suggestions (
+  id        INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_sub  TEXT NOT NULL,
+  user_name TEXT NOT NULL,
+  url       TEXT NOT NULL UNIQUE,
+  note      TEXT NOT NULL DEFAULT '',
+  status    TEXT NOT NULL DEFAULT 'nytt',
+  slug      TEXT,
+  created   INTEGER NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS favourites_by_user ON favourites (user_sub);
 CREATE INDEX IF NOT EXISTS notes_by_user ON notes (user_sub);
+CREATE INDEX IF NOT EXISTS suggestions_by_status ON suggestions (status, created);

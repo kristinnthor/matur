@@ -26,13 +26,19 @@ if (slot) {
       mine.href = '/uppskriftirnar-minar/';
       mine.textContent = 'Mínar';
 
+      // Only useful signed in, so it stays out of a visitor's header entirely.
+      const suggest = document.createElement('a');
+      suggest.className = 'list-link';
+      suggest.href = '/tillogur/';
+      suggest.textContent = 'Tillögur';
+
       const out = document.createElement('button');
       out.type = 'button';
       out.className = 'account-signout';
       out.textContent = 'Út';
       out.addEventListener('click', () => void signOut());
 
-      slot.append(mine, name, out);
+      slot.append(suggest, mine, name, out);
       return;
     }
 

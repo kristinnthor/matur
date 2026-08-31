@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Tillögur — Matur">
+  <meta name="robots" content="noindex" slot="head" />
+  <div class="wrap">
+    <h1>Tillögur</h1>
+    <p class="tagline muted">
+      Fannstu uppskrift sem ætti heima hér? Límdu slóðina inn — hún fer á listann og verður
+      þýdd yfir á íslensku og bætt við vefinn.
+    </p>
+
+    <div id="sug-signedout" hidden>
+      <p class="muted">Skráðu þig inn efst á síðunni til að senda inn tillögu.</p>
+    </div>
+
+    <form id="sug-form" hidden>
+      <label class="sug-field">
+        <span>Vefslóð</span>
+        <input type="url" id="sug-url" required placeholder="https://…" autocomplete="off" />
+      </label>
+      <label class="sug-field">
+        <span>Athugasemd <span class="muted">(valfrjálst)</span></span>
+        <input type="text" id="sug-note" maxlength="500" placeholder="T.d. „mamma gerir þetta um jólin“" />
+      </label>
+      <button type="submit" id="sug-submit" class="cook-link">Senda tillögu</button>
+      <p id="sug-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <section id="sug-list"></section>
+  </div>
+
+  <script>
+    import '../scripts/suggestions.ts';
+  </script>
+</Base>

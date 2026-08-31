@@ -1,7 +1,7 @@
 {
   "name": "matur",
   "version": "1.0.0",
-  "description": "Persónulegur uppskriftavefur",
+  "description": "Pers\u00f3nulegur uppskriftavefur",
   "directories": {
     "doc": "docs"
   },
@@ -14,7 +14,8 @@
     "import": "node scripts/import.ts",
     "translate": "node scripts/translate.ts",
     "check": "node scripts/check.ts",
-    "verify": "astro check && vitest run && node scripts/check.ts && astro build"
+    "verify": "astro check && vitest run && node scripts/check.ts && astro build",
+    "suggestions": "node scripts/suggestions.ts"
   },
   "repository": {
     "type": "git",

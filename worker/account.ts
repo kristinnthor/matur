@@ -6,6 +6,7 @@
  * endpoint shipped disabled until its secrets existed.
  */
 import { isAllowed, parseAllowlist, signSession, verifySession, type SessionUser } from '../src/lib/session';
+import { MAX_NOTE as MAX_SUGGESTION_NOTE, normaliseUrl } from '../src/lib/suggestions';
 import { verifyGoogleToken } from './google';
 
 const COOKIE = 'matur_session';
@@ -139,6 +140,52 @@ export async function handleAccount(
       email: user?.email ?? null,
       name: user?.name ?? null,
     });
+  }
+
+  // Shared suggestion queue — everyone signed in sees the same list.
+  if (path === '/api/suggestions' || path === '/api/suggestion') {
+    if (!configured(env)) return notConfigured();
+    const user = await currentUser(req, env, now);
+    if (!user) return json(401, { error: 'Þú þarft að skrá þig inn.' });
+    const db = env.DB!;
+
+    if (path === '/api/suggestions') {
+      const rows = await db
+        .prepare(
+          'SELECT id, user_name, url, note, status, slug, created FROM suggestions ORDER BY created DESC LIMIT 200',
+        )
+        .all<Record<string, unknown>>();
+      return json(200, { suggestions: rows.results, me: user.sub });
+    }
+
+    const body = await readJson(req);
+
+    if (req.method === 'DELETE') {
+      const id = Number(body?.id);
+      if (!Number.isInteger(id)) return json(400, { error: 'Ógilt auðkenni.' });
+      // Only your own, and only while it is still untouched.
+      await db
+        .prepare("DELETE FROM suggestions WHERE id = ? AND user_sub = ? AND status = 'nytt'")
+        .bind(id, user.sub)
+        .run();
+      return json(200, { ok: true });
+    }
+
+    if (req.method !== 'POST') return json(405, { error: 'POST only' });
+    const url = normaliseUrl(typeof body?.url === 'string' ? body.url : '');
+    if (!url) return json(400, { error: 'Þetta er ekki gild vefslóð.' });
+    const note = typeof body?.note === 'string' ? body.note.trim().slice(0, MAX_SUGGESTION_NOTE) : '';
+
+    // The same link from two phones is one suggestion, not two.
+    await db
+      .prepare(
+        `INSERT INTO suggestions (user_sub, user_name, url, note, status, created)
+         VALUES (?, ?, ?, ?, 'nytt', ?)
+         ON CONFLICT (url) DO NOTHING`,
+      )
+      .bind(user.sub, user.name || user.email.split('@')[0] || 'fjölskyldan', url, note, now)
+      .run();
+    return json(200, { ok: true, url });
   }
 
   // Everything below needs a signed-in user.

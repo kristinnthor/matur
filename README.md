@@ -41,6 +41,22 @@ npm run translate                        # drafts → Icelandic recipe JSON via 
 `translate` needs a logged-in `claude` CLI (or `--backend=api` with
 `ANTHROPIC_API_KEY`) and is glossary-driven — see `glossary/`.
 
+### Suggestions
+
+Signed-in family members post links at `/tillogur/`; the queue lives in D1 and
+is worked through from here:
+
+```bash
+npm run suggestions                                  # what is waiting
+npm run suggestions -- --all                         # including processed ones
+npm run import -- <url> <slug>                       # then translate as above
+npm run suggestions -- --done <id> --slug <slug>     # links it to the recipe
+npm run suggestions -- --skip <id>                   # not going to happen
+```
+
+Marking one done makes the site show it as *Komið á vefinn* with a link to the
+recipe, so whoever suggested it can see it landed.
+
 ## Accounts
 
 Signing in with Google gives each family member their own favourites, their own
