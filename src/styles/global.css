@@ -242,8 +242,60 @@ h2::before {
 }
 /* Account: header control, favourite, private note */
 .account-slot { display: flex; align-items: center; gap: 0.5rem; min-height: 2rem; }
-.account-name { font-size: 0.85rem; }
-.account-signout,
+
+/* Personal links live behind one button: four of them overflowed a phone. */
+.account-menu { position: relative; }
+.account-btn {
+  font: inherit;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  max-width: 8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.account-btn::after { content: ' ▾'; color: var(--muted); }
+.account-btn[aria-expanded='true'] { border-color: var(--accent); }
+.account-pop[hidden] { display: none; }
+.account-pop {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 20;
+  min-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.account-pop a,
+.account-pop button {
+  font: inherit;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-align: left;
+  text-decoration: none;
+  color: var(--text);
+  background: none;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+  cursor: pointer;
+}
+.account-pop a:hover,
+.account-pop button:hover { background: var(--accent-soft); color: var(--accent-ink); }
+
 .fav-btn {
   font: inherit;
   font-family: var(--font-display);
@@ -254,7 +306,6 @@ h2::before {
   background: var(--surface);
   color: var(--text);
 }
-.account-signout { font-size: 0.8rem; padding: 0.3rem 0.7rem; }
 .account-error { font-size: 0.8rem; color: var(--accent-ink); }
 
 .recipe-personal { display: flex; flex-direction: column; gap: 0.5rem; margin: 1.25rem 0 0; }
@@ -581,7 +632,7 @@ h2::before {
 /* Shopping list                                                       */
 /* ------------------------------------------------------------------ */
 
-.site-head .inner { display: flex; align-items: center; justify-content: space-between; }
+.site-head .inner { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
 .list-link {
   font-family: var(--font-display);
   font-weight: 600;
