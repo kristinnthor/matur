@@ -1280,16 +1280,22 @@ export async function handleRecipe(req: Request, env: RecipeEnv): Promise<Respon
   const length = Number(req.headers.get('content-length') ?? '0');
   if (length > MAX_BYTES) return json(413, { error: 'Textinn er of langur.' });
 
-  let body: { slug?: unknown; patch?: unknown };
+  let parsed: unknown;
   try {
-    body = (await req.json()) as { slug?: unknown; patch?: unknown };
+    parsed = await req.json();
   } catch {
     return json(400, { error: 'Ógilt beiðniform.' });
   }
+  // null is valid JSON and an array is typeof 'object', so neither a bare
+  // `null` body nor `patch: []` is caught by a truthiness-and-typeof check.
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    return json(400, { error: 'Ógilt beiðniform.' });
+  }
+  const body = parsed as { slug?: unknown; patch?: unknown };
 
   const slug = typeof body.slug === 'string' ? body.slug : '';
   if (!SLUG.test(slug)) return json(400, { error: 'Ógilt uppskriftarheiti.' });
-  if (!body.patch || typeof body.patch !== 'object') {
+  if (!body.patch || typeof body.patch !== 'object' || Array.isArray(body.patch)) {
     return json(400, { error: 'Engar breytingar fylgdu.' });
   }
 
