@@ -7,6 +7,7 @@
  * — see account.ts. Every secret is set on the Worker, outside this codebase.
  */
 import { handleAccount, sessionUser, type AccountEnv } from './account';
+import { commitCredit, fileSha, putFile, type GitHubRepo } from './github';
 
 /** Minimal binding type — avoids pulling @cloudflare/workers-types, whose
  * global Request/Response redefinitions clash with the DOM lib the client
@@ -80,55 +81,30 @@ async function handlePhoto(req: Request, env: Env): Promise<Response> {
   if (bytes[0] !== 0xff || bytes[1] !== 0xd8) return json(415, { error: 'Aðeins JPEG-myndir.' });
 
   const path = `src/content/recipes/photos/${slug}.jpg`;
-  const api = `https://api.github.com/repos/${env.GITHUB_REPO}/contents/${path}`;
-  // This lands in a public repo's history, so credit by first name only —
-  // enough for the family to know who cooked it, without publishing an
-  // address or a full name.
-  // Never the full address: an email in a public commit message is permanent.
-  const credit =
-    uploader.name.trim().split(/\s+/)[0] ||
-    uploader.email.split('@')[0]?.trim() ||
-    'fjölskyldunni';
-  const gh = {
-    Authorization: `Bearer ${env.GITHUB_TOKEN}`,
-    Accept: 'application/vnd.github+json',
-    'User-Agent': 'matur-photo-upload',
-  };
-
-  const fetchSha = async (): Promise<string | undefined | null> => {
-    const existing = await fetch(api, { headers: gh });
-    if (existing.ok) return ((await existing.json()) as { sha?: string }).sha;
-    if (existing.status === 404) return undefined;
-    return null; // upstream error
-  };
-
-  const putPhoto = (sha: string | undefined) =>
-    fetch(api, {
-      method: 'PUT',
-      headers: { ...gh, 'content-type': 'application/json' },
-      body: JSON.stringify({
-        message: `photo: ${slug} (upphlaðin af ${credit})`,
-        content: data,
-        ...(sha ? { sha } : {}),
-      }),
-    });
+  const repo: GitHubRepo = { repo: env.GITHUB_REPO, token: env.GITHUB_TOKEN };
+  // This lands in a public repo's history, so credit by first name only.
+  const credit = commitCredit(uploader.name, uploader.email);
+  const message = `photo: ${slug} (upphlaðin af ${credit})`;
 
   // Replacing an existing photo needs its current blob SHA.
-  let sha = await fetchSha();
+  let sha = await fileSha(repo, path);
   if (sha === null) return json(502, { error: 'GitHub svaraði ekki — reyndu aftur.' });
 
-  let put = await putPhoto(sha);
-  // Two uploads racing the same file: the loser's SHA is stale (409/422).
-  // Refetch once and retry so the second photo wins instead of erroring.
-  if (put.status === 409 || put.status === 422) {
-    sha = await fetchSha();
-    if (sha !== null) put = await putPhoto(sha);
+  let put = await putFile(repo, path, data, message, sha);
+  // Two uploads racing the same file: the loser's SHA is stale. Refetch once
+  // and retry so the second photo wins instead of erroring. A text edit
+  // deliberately does the opposite — see worker/recipe.ts.
+  if (put.conflict) {
+    const fresh = await fileSha(repo, path);
+    if (fresh !== null) {
+      sha = fresh;
+      put = await putFile(repo, path, data, message, sha);
+    }
   }
 
   if (!put.ok) {
     // Upstream details go to the logs, not to the client.
-    const detail = ((await put.json().catch(() => ({}))) as { message?: string }).message ?? '';
-    console.error(`github put failed for ${slug}: ${put.status} ${detail}`);
+    console.error(`github put failed for ${slug}: ${put.status} ${put.detail}`);
     return json(502, { error: 'GitHub hafnaði myndinni — reyndu aftur eftir smástund.' });
   }
 
