@@ -11,7 +11,8 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/offline/') &&
         !page.includes('/uppskriftirnar-minar/') &&
-        !page.includes('/tillogur/'),
+        !page.includes('/tillogur/') &&
+        !page.includes('/breyta/'),
     }),
   ],
 });

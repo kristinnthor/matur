@@ -105,7 +105,7 @@ export function applyPatch(recipe: Recipe, patch: RecipePatch): PatchOutcome {
     return {
       ok: false,
       reason: 'conflict',
-      message: 'Uppskriftin hefur breyst síðan síðan var opnuð. Endurhlaðið og reynið aftur.',
+      message: 'Uppskriftin hefur breyst frá því að síðan var opnuð. Endurhlaðið og reynið aftur.',
     };
   }
 
