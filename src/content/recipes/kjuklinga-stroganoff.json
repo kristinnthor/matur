@@ -2,39 +2,172 @@
   "title": "Kjúklinga-stroganoff með sveppum",
   "subtitle": "rjómalagaður sveppapottréttur á pönnu",
   "description": "Meyrir kjúklingabitar í rjómalagaðri sveppasósu með Dijon og Worcestershire. Tilbúið á hálftíma og passar með hrísgrjónum, pasta eða kartöflumús.",
-  "categories": ["kjuklingur"],
-  "tags": ["fljotlegt", "barnvaent"],
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
   "servings": 4,
-  "time": { "prep": 15, "cook": 25 },
+  "time": {
+    "prep": 15,
+    "cook": 25
+  },
   "ingredients": [
-    { "id": "kjuklingur", "amount": 600, "unit": "g", "item": "kjúklingabringur", "note": "í 2–3 cm bitum" },
-    { "id": "hvitlauksduft", "amount": 0.5, "unit": "tsk", "item": "hvítlauksduft" },
-    { "id": "salt", "amount": 1, "unit": "tsk", "item": "salt", "scalable": false },
-    { "id": "pipar", "amount": 0.5, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false },
-    { "id": "hveiti", "amount": 3, "unit": "msk", "item": "hveiti", "note": "til að velta kjúklingnum upp úr" },
-    { "id": "olia", "amount": 3, "unit": "msk", "item": "ólífuolía" },
-    { "id": "smjor", "amount": 1, "unit": "msk", "item": "smjör" },
-    { "id": "sveppir", "amount": 225, "unit": "g", "item": "kastaníusveppir", "note": "sneiddir" },
-    { "id": "laukur", "amount": 1, "unit": "stk", "item": "laukur", "note": "smátt saxaður" },
-    { "id": "sinnep", "amount": 1, "unit": "msk", "item": "Dijon sinnep" },
-    { "id": "worcester", "amount": 1, "unit": "msk", "item": "Worcestershire-sósa" },
-    { "id": "hvitlaukur", "amount": 3, "unit": "rif", "item": "hvítlaukur", "note": "fínsaxaður" },
-    { "id": "sod", "amount": 1.5, "unit": "dl", "item": "kjúklingasoð" },
-    { "id": "syrdur", "amount": 1.5, "unit": "dl", "item": "sýrður rjómi 36%" },
-    { "id": "steinselja", "amount": 2, "unit": "msk", "item": "fersk steinselja", "note": "söxuð, til skreytingar" }
+    {
+      "id": "kjuklingur",
+      "amount": 600,
+      "unit": "g",
+      "item": "kjúklingabringur",
+      "note": "í 2–3 cm bitum"
+    },
+    {
+      "id": "hvitlauksduft",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "hvítlauksduft"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "hveiti",
+      "amount": 3,
+      "unit": "msk",
+      "item": "hveiti",
+      "note": "til að velta kjúklingnum upp úr"
+    },
+    {
+      "id": "olia",
+      "amount": 3,
+      "unit": "msk",
+      "item": "ólífuolía"
+    },
+    {
+      "id": "smjor",
+      "amount": 1,
+      "unit": "msk",
+      "item": "smjör"
+    },
+    {
+      "id": "sveppir",
+      "amount": 225,
+      "unit": "g",
+      "item": "kastaníusveppir",
+      "note": "sneiddir"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "smátt saxaður"
+    },
+    {
+      "id": "sinnep",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Dijon sinnep"
+    },
+    {
+      "id": "worcester",
+      "amount": 1,
+      "unit": "msk",
+      "item": "Worcestershire-sósa"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "fínsaxaður"
+    },
+    {
+      "id": "sod",
+      "amount": 1.5,
+      "unit": "dl",
+      "item": "kjúklingasoð"
+    },
+    {
+      "id": "syrdur",
+      "amount": 1.5,
+      "unit": "dl",
+      "item": "sýrður rjómi 36%"
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð, til skreytingar"
+    }
   ],
   "steps": [
-    { "text": "Kryddið {{kjuklingur}} með {{hvitlauksduft}}, {{salt}} og {{pipar}}. Veltið bitunum upp úr {{hveiti}} og hristið umframhveitið af.", "refs": ["kjuklingur", "hvitlauksduft", "salt", "pipar", "hveiti"] },
-    { "text": "Hitið tvo þriðju af {{olia}} á djúpri pönnu við meðalháan hita. Steikið kjúklinginn í tveimur skömmtum, um 3 mínútur á hlið, þar til hann er gullinn og eldaður í gegn. Bætið restinni af olíunni á pönnuna fyrir seinni skammtinn. Takið kjúklinginn frá.", "refs": ["olia"] },
-    { "text": "Bræðið {{smjor}} á sömu pönnu. Steikið {{sveppir}} og {{laukur}} í 6–8 mínútur, þar til vökvinn hefur gufað upp og sveppirnir taka fallegan lit. Ekki flýta þessu skrefi – bragðið kemur héðan.", "refs": ["smjor", "sveppir", "laukur"] },
-    { "text": "Hrærið {{sinnep}}, {{worcester}} og {{hvitlaukur}} saman við og steikið í um 1 mínútu.", "refs": ["sinnep", "worcester", "hvitlaukur"] },
-    { "text": "Hellið {{sod}} á pönnuna og skafið upp allt sem hefur fest við botninn. Setjið kjúklinginn aftur út í og látið malla í 2 mínútur.", "refs": ["sod"] },
-    { "text": "Takið pönnuna af hitanum. Hrærið nokkrum matskeiðum af heitri sósunni saman við {{syrdur}} í lítilli skál, hellið blöndunni svo út á pönnuna og hrærið saman. Sósan má ekki sjóða eftir þetta. Smakkið til með salti og pipar og stráið {{steinselja}} yfir.", "refs": ["syrdur", "steinselja"] }
+    {
+      "text": "Kryddið {{kjuklingur}} með {{hvitlauksduft}}, {{salt}} og {{pipar}}. Veltið bitunum upp úr {{hveiti}} og hristið umframhveitið af.",
+      "refs": [
+        "kjuklingur",
+        "hvitlauksduft",
+        "salt",
+        "pipar",
+        "hveiti"
+      ]
+    },
+    {
+      "text": "Hitið tvo þriðju af {{olia}} á djúpri pönnu við meðalháan hita. Steikið kjúklinginn í tveimur skömmtum, um 3 mínútur á hlið, þar til hann er gullinn og eldaður í gegn. Bætið restinni af olíunni á pönnuna fyrir seinni skammtinn. Takið kjúklinginn frá.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Bræðið {{smjor}} á sömu pönnu. Steikið {{sveppir}} og {{laukur}} í 6–8 mínútur, þar til vökvinn hefur gufað upp og sveppirnir taka fallegan lit. Ekki flýta þessu skrefi – bragðið kemur héðan.",
+      "refs": [
+        "smjor",
+        "sveppir",
+        "laukur"
+      ]
+    },
+    {
+      "text": "Hrærið {{sinnep}}, {{worcester}} og {{hvitlaukur}} saman við og steikið í um 1 mínútu.",
+      "refs": [
+        "sinnep",
+        "worcester",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið {{sod}} á pönnuna og skafið upp allt sem hefur fest við botninn. Setjið kjúklinginn aftur út í og látið malla í 2 mínútur.",
+      "refs": [
+        "sod"
+      ]
+    },
+    {
+      "text": "Takið pönnuna af hitanum. Hrærið nokkrum matskeiðum af heitri sósunni saman við {{syrdur}} í lítilli skál, hellið blöndunni svo út á pönnuna og hrærið saman. Sósan má ekki sjóða eftir þetta. Smakkið til með salti og pipar og stráið {{steinselja}} yfir.",
+      "refs": [
+        "syrdur",
+        "steinselja"
+      ]
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: sýrði rjóminn er tempraður – nokkrar matskeiðar af heitri sósu eru hrærðar saman við hann áður en hann fer á pönnuna. Það kemur í veg fyrir að hann skilji sig, sem er algengasta vandamálið við þennan rétt. Notið 36% sýrðan rjóma; léttari gerðir skilja sig mun frekar. Eldunartíminn í frumuppskriftinni (10 mínútur) er óraunhæfur þegar kjúklingurinn er steiktur í tveimur skömmtum – gerið ráð fyrir 25 mínútum.",
     "storage": "Geymist í 2 daga í kæli. Hitið varlega upp við lágan hita svo sósan skilji sig ekki. Hentar illa í frysti vegna sýrða rjómans.",
     "variants": "Sveppina má skipta út fyrir blandaða villisveppi. Fyrir mildari útgáfu má sleppa Dijon sinnepinu og nota hálfa Worcestershire-sósu."
   },
-  "source": { "url": "https://anorganizedchaos.com/chicken-mushroom-stroganoff/", "site": "anorganizedchaos.com" }
+  "source": {
+    "url": "https://anorganizedchaos.com/chicken-mushroom-stroganoff/",
+    "site": "anorganizedchaos.com"
+  }
 }

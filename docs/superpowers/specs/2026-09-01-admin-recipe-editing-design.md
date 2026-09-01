@@ -106,8 +106,10 @@ present. Typing `{{vorlaukur}}` into a step adds it; deleting one drops it. Leav
 client is the single most likely way to silently break scaling.
 
 **Empty optional fields delete their key** rather than storing `""`. `subtitle`, `ingredients[].note`
-and each key of `notes` are removed when blank; `ingredients[].group` becomes `null`, matching its
-schema default. This mirrors how `/api/note` already deletes on an empty body, and keeps the JSON
+and each key of `notes` are removed when blank; `ingredients[].group` has its key **deleted**, not set to `null`. 468 of the corpus's 746
+ingredients omit `group` entirely and not one stores an explicit `null`, so writing `null` on
+blank would add a key to hundreds of lines on every save. An absent `group` and a `null` one are
+identical to the schema, which defaults it to `null`. This mirrors how `/api/note` already deletes on an empty body, and keeps the JSON
 free of empty strings that were never authored.
 
 Required fields — `title`, `description`, every `steps[].text` — are rejected when blank after
@@ -134,6 +136,10 @@ shipped with.
 Serialised as `JSON.stringify(recipe, null, 2) + '\n'`, byte-identical to how the existing files are
 formatted, so a one-word fix produces a one-line diff. Key order survives the parse/stringify round
 trip because the patch mutates an existing object rather than rebuilding one.
+
+This holds only because every recipe file is written in exactly that form. Seven were originally
+hand-authored with compact arrays and were normalised in a separate content-only commit before
+this feature shipped; `scripts/translate.ts` has always emitted the canonical form for new ones.
 
 **On SHA conflict, refuse.** The photo endpoint refetches and retries, so the second photo wins.
 This endpoint returns `409` and asks the editor to reload. Losing a paragraph someone just wrote is

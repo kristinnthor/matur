@@ -2,34 +2,129 @@
   "title": "Kramdar kartöflur með kryddblöndu og osti",
   "subtitle": "stökkt kryddað meðlæti með grillmatnum",
   "description": "Litlar kartöflur soðnar, kramdar og bakaðar með kryddaðri smjör- og olíublöndu þar til þær eru stökkar, toppaðar með rifnum parmesan. Klárast alltaf upp til agna.",
-  "categories": ["medlaeti"],
-  "tags": ["barnvaent"],
+  "categories": [
+    "medlaeti"
+  ],
+  "tags": [
+    "barnvaent"
+  ],
   "servings": 4,
-  "time": { "prep": 20, "cook": 40 },
+  "time": {
+    "prep": 20,
+    "cook": 40
+  },
   "ingredients": [
-    { "id": "kartoflur", "amount": 500, "unit": "g", "item": "litlar kartöflur" },
-    { "id": "olia", "amount": 0.5, "unit": "dl", "item": "ólífuolía" },
-    { "id": "smjor", "amount": 60, "unit": "g", "item": "smjör", "note": "brætt" },
-    { "id": "koriander", "amount": 2, "unit": "msk", "item": "þurrkað kóríanderlauf" },
-    { "id": "hvitlauksduft", "amount": 2, "unit": "tsk", "item": "hvítlauksduft" },
-    { "id": "laukduft", "amount": 2, "unit": "tsk", "item": "laukduft" },
-    { "id": "paprikuduft", "amount": 2, "unit": "tsk", "item": "paprikuduft" },
-    { "id": "salt", "amount": 1, "unit": "tsk", "item": "salt", "scalable": false },
-    { "id": "pipar", "amount": 0.5, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false },
-    { "id": "parmesan", "amount": 40, "unit": "g", "item": "parmesanostur", "note": "rifinn — magn eftir smekk" }
+    {
+      "id": "kartoflur",
+      "amount": 500,
+      "unit": "g",
+      "item": "litlar kartöflur"
+    },
+    {
+      "id": "olia",
+      "amount": 0.5,
+      "unit": "dl",
+      "item": "ólífuolía"
+    },
+    {
+      "id": "smjor",
+      "amount": 60,
+      "unit": "g",
+      "item": "smjör",
+      "note": "brætt"
+    },
+    {
+      "id": "koriander",
+      "amount": 2,
+      "unit": "msk",
+      "item": "þurrkað kóríanderlauf"
+    },
+    {
+      "id": "hvitlauksduft",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "hvítlauksduft"
+    },
+    {
+      "id": "laukduft",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "laukduft"
+    },
+    {
+      "id": "paprikuduft",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "paprikuduft"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "parmesan",
+      "amount": 40,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "rifinn — magn eftir smekk"
+    }
   ],
   "steps": [
-    { "text": "Hitið ofninn í 180°C. Sjóðið {{kartoflur}} í söltuðu vatni í um 12 mínútur, þar til gaffall rennur auðveldlega í gegn.", "refs": ["kartoflur"] },
-    { "text": "Blandið á meðan {{olia}}, {{smjor}}, {{koriander}}, {{hvitlauksduft}}, {{laukduft}}, {{paprikuduft}}, {{salt}} og {{pipar}} saman í skál.", "refs": ["olia", "smjor", "koriander", "hvitlauksduft", "laukduft", "paprikuduft", "salt", "pipar"] },
-    { "text": "Hellið vatninu af kartöflunum, setjið þær í stóra skál, hellið kryddblöndunni yfir og veltið vel saman.", "refs": [] },
-    { "text": "Dreifið kartöflunum á bökunarplötu og kremjið hverja og eina létt með botninum á glasi eða kartöflustöppu — þær eiga að springa út en hanga saman.", "refs": [] },
-    { "text": "Bakið í um 40 mínútur. Þegar 20 mínútur eru liðnar, stráið helmingnum af {{parmesan}} yfir kartöflurnar og klárið baksturinn.", "refs": ["parmesan"] },
-    { "text": "Færið kartöflurnar í framreiðsluskál og stráið afganginum af ostinum yfir á meðan þær eru vel heitar.", "refs": [] }
+    {
+      "text": "Hitið ofninn í 180°C. Sjóðið {{kartoflur}} í söltuðu vatni í um 12 mínútur, þar til gaffall rennur auðveldlega í gegn.",
+      "refs": [
+        "kartoflur"
+      ]
+    },
+    {
+      "text": "Blandið á meðan {{olia}}, {{smjor}}, {{koriander}}, {{hvitlauksduft}}, {{laukduft}}, {{paprikuduft}}, {{salt}} og {{pipar}} saman í skál.",
+      "refs": [
+        "olia",
+        "smjor",
+        "koriander",
+        "hvitlauksduft",
+        "laukduft",
+        "paprikuduft",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hellið vatninu af kartöflunum, setjið þær í stóra skál, hellið kryddblöndunni yfir og veltið vel saman.",
+      "refs": []
+    },
+    {
+      "text": "Dreifið kartöflunum á bökunarplötu og kremjið hverja og eina létt með botninum á glasi eða kartöflustöppu — þær eiga að springa út en hanga saman.",
+      "refs": []
+    },
+    {
+      "text": "Bakið í um 40 mínútur. Þegar 20 mínútur eru liðnar, stráið helmingnum af {{parmesan}} yfir kartöflurnar og klárið baksturinn.",
+      "refs": [
+        "parmesan"
+      ]
+    },
+    {
+      "text": "Færið kartöflurnar í framreiðsluskál og stráið afganginum af ostinum yfir á meðan þær eru vel heitar.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: vörumerkjatilvísanir í kryddin gerðar almennar og ostamagnið fest — „eftir smekk“ er nú 40 g með svigrúmi. Osta­stráningunni skipt í tvennt svo hluti bakist á og hluti bráðni ferskur yfir.",
     "storage": "Bestar beint úr ofninum. Afgangar geymast í 2 daga í kæli og verða aftur stökkir í 200°C heitum ofni í 10 mínútur.",
     "variants": "Tvöfaldið kryddblönduna ef ykkur finnst gott að hafa vel kryddað — hún er líka frábær á ofnbakaða kartöflubáta. Reykt paprika í stað venjulegrar gefur grillkeim."
   },
-  "source": { "url": "https://www.mbl.is/matur/frettir/2021/11/10/kramdar_kartoflur_med_kryddblondu_og_osti/", "site": "mbl.is" }
+  "source": {
+    "url": "https://www.mbl.is/matur/frettir/2021/11/10/kramdar_kartoflur_med_kryddblondu_og_osti/",
+    "site": "mbl.is"
+  }
 }

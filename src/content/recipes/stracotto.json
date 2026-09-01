@@ -134,9 +134,9 @@
     {
       "text": "Nuddið {{salt}} og {{pipar}} á {{nautakjot}} og brúnið bitana í beikonfitunni við meðalháan hita, 4–6 mínútur á hverri hlið – skorpan gefur sósunni bragð. Takið kjötið úr pottinum og leggið til hliðar.",
       "refs": [
-        "nautakjot",
         "salt",
-        "pipar"
+        "pipar",
+        "nautakjot"
       ]
     },
     {

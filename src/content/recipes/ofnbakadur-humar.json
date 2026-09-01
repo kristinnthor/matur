@@ -2,35 +2,142 @@
   "title": "Ofnbakaður humar með hvítlaukssmjöri",
   "subtitle": "veisluforréttur sem fátt slær við",
   "description": "Humar baðaður í kryddjurta-hvítlaukssmjöri, bakaður stutt í rjóma og hvítvíni. Sósan sem myndast í mótinu kallar á gott brauð. Þrír humrar á mann í forrétt, fimm til sex í aðalrétt.",
-  "categories": ["fiskur"],
-  "tags": ["veislumatur"],
+  "categories": [
+    "fiskur"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
   "servings": 8,
-  "time": { "prep": 45, "cook": 5 },
+  "time": {
+    "prep": 45,
+    "cook": 5
+  },
   "ingredients": [
-    { "id": "chili", "amount": 1, "unit": "stk", "item": "rauður chilipipar", "note": "fræhreinsaður", "group": "Hvítlaukssmjörið" },
-    { "id": "steinselja", "amount": 1, "unit": "búnt", "item": "fersk steinselja", "group": "Hvítlaukssmjörið" },
-    { "id": "hvitlaukur", "amount": 2, "unit": "stk", "item": "hvítlaukur", "note": "heilir hausar, afhýddir — já, heilir", "group": "Hvítlaukssmjörið" },
-    { "id": "smjor", "amount": 500, "unit": "g", "item": "smjör", "note": "við stofuhita", "group": "Hvítlaukssmjörið" },
-    { "id": "flogusalt", "amount": 1, "unit": "msk", "item": "flögusalt", "scalable": false, "group": "Hvítlaukssmjörið" },
-    { "id": "paprika", "amount": 1, "unit": "klípa", "item": "reykt paprika", "scalable": false, "group": "Hvítlaukssmjörið" },
-    { "id": "pipar", "amount": 0.5, "unit": "tsk", "item": "nýmalaður svartur pipar", "scalable": false, "group": "Hvítlaukssmjörið" },
-
-    { "id": "humar", "amount": 2, "unit": "kg", "item": "humar", "note": "helst stór eða millistór", "group": "Humarinn" },
-    { "id": "hvitvin", "amount": 1.5, "unit": "dl", "item": "hvítvín", "group": "Humarinn" },
-    { "id": "rjomi", "amount": 1.5, "unit": "dl", "item": "rjómi", "group": "Humarinn" }
+    {
+      "id": "chili",
+      "amount": 1,
+      "unit": "stk",
+      "item": "rauður chilipipar",
+      "note": "fræhreinsaður",
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "steinselja",
+      "amount": 1,
+      "unit": "búnt",
+      "item": "fersk steinselja",
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "hvítlaukur",
+      "note": "heilir hausar, afhýddir — já, heilir",
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "smjor",
+      "amount": 500,
+      "unit": "g",
+      "item": "smjör",
+      "note": "við stofuhita",
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "flogusalt",
+      "amount": 1,
+      "unit": "msk",
+      "item": "flögusalt",
+      "scalable": false,
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "reykt paprika",
+      "scalable": false,
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false,
+      "group": "Hvítlaukssmjörið"
+    },
+    {
+      "id": "humar",
+      "amount": 2,
+      "unit": "kg",
+      "item": "humar",
+      "note": "helst stór eða millistór",
+      "group": "Humarinn"
+    },
+    {
+      "id": "hvitvin",
+      "amount": 1.5,
+      "unit": "dl",
+      "item": "hvítvín",
+      "group": "Humarinn"
+    },
+    {
+      "id": "rjomi",
+      "amount": 1.5,
+      "unit": "dl",
+      "item": "rjómi",
+      "group": "Humarinn"
+    }
   ],
   "steps": [
-    { "text": "Hvítlaukssmjörið: setjið {{chili}}, {{steinselja}}, {{hvitlaukur}}, {{smjor}}, {{flogusalt}}, {{paprika}} og {{pipar}} í matvinnsluvél og vinnið saman í slétt, grænt smjör.", "refs": ["chili", "steinselja", "hvitlaukur", "smjor", "flogusalt", "paprika", "pipar"] },
-    { "text": "Takið {{humar}} úr frysti upp úr hádegi fyrir kvöldverð og vinnið hann hálffrosinn upp úr köldu vatni — hann dökknar ef hann er þiðinn of lengi.", "refs": ["humar"] },
-    { "text": "Klippið humarinn upp eftir bakinu, hreinsið svörtu röndina úr undir köldu rennandi vatni og þerrið með viskastykki. Losið kjötið úr skelinni og leggið það upp á bakið, fast við halaendann — þolinmæðisvinna sem borgar sig á diskinum.", "refs": [] },
-    { "text": "Makið hvítlaukssmjörinu rausnarlega á humarinn — ekki spara það — og raðið honum í eldfast mót. Hellið {{rjomi}} og {{hvitvin}} yfir. Á þessu stigi má setja plastfilmu yfir mótið og geyma í kæli í allt að 3 tíma.", "refs": ["rjomi", "hvitvin"] },
-    { "text": "Bakið undir grillelementi við 225°C í 3–4 mínútur. Ekki lengur — ofeldaður humar verður seigur.", "refs": [] },
-    { "text": "Berið fram á diskum og ausið sósunni úr mótinu yfir — smjörið, hvítvínið og rjóminn hafa myndað ljúffenga sósu. Brauð eða hvítlauksbrauð til að dýfa í sósuna er ekki valkvætt.", "refs": [] }
+    {
+      "text": "Hvítlaukssmjörið: setjið {{chili}}, {{steinselja}}, {{hvitlaukur}}, {{smjor}}, {{flogusalt}}, {{paprika}} og {{pipar}} í matvinnsluvél og vinnið saman í slétt, grænt smjör.",
+      "refs": [
+        "chili",
+        "steinselja",
+        "hvitlaukur",
+        "smjor",
+        "flogusalt",
+        "paprika",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Takið {{humar}} úr frysti upp úr hádegi fyrir kvöldverð og vinnið hann hálffrosinn upp úr köldu vatni — hann dökknar ef hann er þiðinn of lengi.",
+      "refs": [
+        "humar"
+      ]
+    },
+    {
+      "text": "Klippið humarinn upp eftir bakinu, hreinsið svörtu röndina úr undir köldu rennandi vatni og þerrið með viskastykki. Losið kjötið úr skelinni og leggið það upp á bakið, fast við halaendann — þolinmæðisvinna sem borgar sig á diskinum.",
+      "refs": []
+    },
+    {
+      "text": "Makið hvítlaukssmjörinu rausnarlega á humarinn — ekki spara það — og raðið honum í eldfast mót. Hellið {{rjomi}} og {{hvitvin}} yfir. Á þessu stigi má setja plastfilmu yfir mótið og geyma í kæli í allt að 3 tíma.",
+      "refs": [
+        "rjomi",
+        "hvitvin"
+      ]
+    },
+    {
+      "text": "Bakið undir grillelementi við 225°C í 3–4 mínútur. Ekki lengur — ofeldaður humar verður seigur.",
+      "refs": []
+    },
+    {
+      "text": "Berið fram á diskum og ausið sósunni úr mótinu yfir — smjörið, hvítvínið og rjóminn hafa myndað ljúffenga sósu. Brauð eða hvítlauksbrauð til að dýfa í sósuna er ekki valkvætt.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: saltið í smjörinu var „á hnífsoddi eftir smekk“ og hefur verið fest; skammtaviðmiðin (þrír á mann í forrétt, fimm til sex í aðalrétt) færð í lýsinguna svo þau sjáist strax.",
     "storage": "Afgangs hvítlaukssmjör frystist frábærlega í rúllu í plastfilmu — sneiðið beint á steik, fisk eða brauð. Eldaður humar geymist í 1 dag í kæli en er langbestur strax.",
     "variants": "Sama aðferð virkar á risarækjur; styttið ofntímann í 2–3 mínútur. Áfengislaus útgáfa: fiskisoð í stað hvítvíns og smá sítrónusafi."
   },
-  "source": { "url": "http://eldhussogur.com/2012/11/17/ofnbakadur-humar-med-heimatilbunu-hvitlaukssmjori/", "site": "eldhussogur.com" }
+  "source": {
+    "url": "http://eldhussogur.com/2012/11/17/ofnbakadur-humar-med-heimatilbunu-hvitlaukssmjori/",
+    "site": "eldhussogur.com"
+  }
 }

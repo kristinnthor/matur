@@ -2,34 +2,134 @@
   "title": "Fylltar sætar kartöflur með pekanhnetum og trönuberjum",
   "subtitle": "sætt og seðjandi meðlæti",
   "description": "Sætar kartöflur skornar í þunnar raufar og bakaðar undir fyllingu úr smjöri, eplum, pekanhnetum, trönuberjum og hlynsírópi. Passa með flestum mat — sérstaklega kjúklingi.",
-  "categories": ["medlaeti", "graenmeti"],
-  "tags": ["veislumatur"],
+  "categories": [
+    "medlaeti",
+    "graenmeti"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
   "servings": 4,
-  "time": { "prep": 15, "cook": 55 },
+  "time": {
+    "prep": 15,
+    "cook": 55
+  },
   "ingredients": [
-    { "id": "kartoflur", "amount": 2, "unit": "stk", "item": "sætar kartöflur", "note": "meðalstórar" },
-    { "id": "olia", "amount": 1, "unit": "msk", "item": "ólífuolía", "scalable": false },
-    { "id": "smjor", "amount": 2, "unit": "msk", "item": "smjör", "note": "skorið í litla bita" },
-    { "id": "eplamauk", "amount": 2, "unit": "msk", "item": "eplamauk", "note": "ósætt — barnamauk virkar prýðilega" },
-    { "id": "sirop", "amount": 2, "unit": "msk", "item": "hlynsíróp" },
-    { "id": "pekanhnetur", "amount": 30, "unit": "g", "item": "pekanhnetur", "note": "gróft saxaðar" },
-    { "id": "tronuber", "amount": 30, "unit": "g", "item": "þurrkuð trönuber" },
-    { "id": "epli", "amount": 0.5, "unit": "stk", "item": "epli", "note": "afhýtt og smátt skorið" },
-    { "id": "kanill", "amount": 0.5, "unit": "tsk", "item": "kanill", "scalable": false },
-    { "id": "salt", "amount": 1, "unit": "klípa", "item": "salt", "scalable": false }
+    {
+      "id": "kartoflur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "sætar kartöflur",
+      "note": "meðalstórar"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "scalable": false
+    },
+    {
+      "id": "smjor",
+      "amount": 2,
+      "unit": "msk",
+      "item": "smjör",
+      "note": "skorið í litla bita"
+    },
+    {
+      "id": "eplamauk",
+      "amount": 2,
+      "unit": "msk",
+      "item": "eplamauk",
+      "note": "ósætt — barnamauk virkar prýðilega"
+    },
+    {
+      "id": "sirop",
+      "amount": 2,
+      "unit": "msk",
+      "item": "hlynsíróp"
+    },
+    {
+      "id": "pekanhnetur",
+      "amount": 30,
+      "unit": "g",
+      "item": "pekanhnetur",
+      "note": "gróft saxaðar"
+    },
+    {
+      "id": "tronuber",
+      "amount": 30,
+      "unit": "g",
+      "item": "þurrkuð trönuber"
+    },
+    {
+      "id": "epli",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "epli",
+      "note": "afhýtt og smátt skorið"
+    },
+    {
+      "id": "kanill",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "kanill",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt",
+      "scalable": false
+    }
   ],
   "steps": [
-    { "text": "Hitið ofninn í 180°C. Þvoið og afhýðið {{kartoflur}}.", "refs": ["kartoflur"] },
-    { "text": "Skerið þunnar raufar þvert yfir hverja kartöflu, næstum í gegn en ekki alveg — eins og hasselback-kartöflur. Penslið þær með {{olia}} og leggið í smurt eða pappírsklætt eldfast mót.", "refs": ["olia"] },
-    { "text": "Blandið {{smjor}}, {{epli}}, {{tronuber}}, {{pekanhnetur}}, {{eplamauk}} og {{sirop}} saman í skál og kryddið með {{kanill}} og {{salt}}.", "refs": ["smjor", "epli", "tronuber", "pekanhnetur", "eplamauk", "sirop", "kanill", "salt"] },
-    { "text": "Dreifið fyllingunni yfir kartöflurnar og ýtið örlítilli fyllingu ofan í raufarnar; hellið restinni yfir.", "refs": [] },
-    { "text": "Leggið álpappír yfir mótið og bakið í 40 mínútur. Takið pappírinn af og bakið í 10–15 mínútur í viðbót — fylgist með svo fyllingin brenni ekki.", "refs": [] },
-    { "text": "Látið standa í 5 mínútur og berið fram. Frábærar með kjúklingi í léttri BBQ-sósu, eins og höfundurinn mælir með.", "refs": [] }
+    {
+      "text": "Hitið ofninn í 180°C. Þvoið og afhýðið {{kartoflur}}.",
+      "refs": [
+        "kartoflur"
+      ]
+    },
+    {
+      "text": "Skerið þunnar raufar þvert yfir hverja kartöflu, næstum í gegn en ekki alveg — eins og hasselback-kartöflur. Penslið þær með {{olia}} og leggið í smurt eða pappírsklætt eldfast mót.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Blandið {{smjor}}, {{epli}}, {{tronuber}}, {{pekanhnetur}}, {{eplamauk}} og {{sirop}} saman í skál og kryddið með {{kanill}} og {{salt}}.",
+      "refs": [
+        "smjor",
+        "epli",
+        "tronuber",
+        "pekanhnetur",
+        "eplamauk",
+        "sirop",
+        "kanill",
+        "salt"
+      ]
+    },
+    {
+      "text": "Dreifið fyllingunni yfir kartöflurnar og ýtið örlítilli fyllingu ofan í raufarnar; hellið restinni yfir.",
+      "refs": []
+    },
+    {
+      "text": "Leggið álpappír yfir mótið og bakið í 40 mínútur. Takið pappírinn af og bakið í 10–15 mínútur í viðbót — fylgist með svo fyllingin brenni ekki.",
+      "refs": []
+    },
+    {
+      "text": "Látið standa í 5 mínútur og berið fram. Frábærar með kjúklingi í léttri BBQ-sósu, eins og höfundurinn mælir með.",
+      "refs": []
+    }
   ],
   "notes": {
     "improvements": "Endurbætur frá upprunalegu uppskriftinni: bollamál færð í grömm og eplamagnið gert skýrt (hálft epli í stað „¼ bolla af skornum eplum“). Hasselback-tæknin nefnd með nafni svo skurðurinn sé auðskilinn.",
     "storage": "Geymast í 3 daga í kæli og hitna vel í 160°C heitum ofni undir álpappír.",
     "variants": "Valhnetur í stað pekanhneta virka vel. Fyrir jólalegri útgáfu: örlítið af múskati með kanilnum."
   },
-  "source": { "url": "http://pjatt.is/2012/11/05/uppskrift-thessar-fylltu-saetu-kartoflur-eru-himneskar/", "site": "pjatt.is" }
+  "source": {
+    "url": "http://pjatt.is/2012/11/05/uppskrift-thessar-fylltu-saetu-kartoflur-eru-himneskar/",
+    "site": "pjatt.is"
+  }
 }
