@@ -11,7 +11,11 @@
  * Navigations that miss both cache and network fall back to /offline/.
  */
 const STATIC = 'matur-static-v1';
-const PAGES = 'matur-pages-v1';
+// v2 drops every page cached under v1. Those caches can hold pages that no
+// longer exist on the site (see the 404 handling in the page branch below),
+// and until this bump there was no way for an already-poisoned client to
+// shed them. Activate deletes any cache whose name is not current.
+const PAGES = 'matur-pages-v2';
 const OFFLINE_URL = '/offline/';
 const PAGE_LIMIT = 120;
 const STATIC_LIMIT = 300;
@@ -93,6 +97,14 @@ self.addEventListener('fetch', (event) => {
             const cache = await caches.open(PAGES);
             await cache.put(request, response.clone());
             await trimCache(PAGES, PAGE_LIMIT);
+          } else if (response.status === 404 || response.status === 410) {
+            // A page removed from the site has to leave the cache too.
+            // Without this a deleted route is served from here forever: the
+            // revalidation fetch 404s, the write above is skipped, and the
+            // stale copy is never touched again. Dropping it means the next
+            // visit gets the real 404.
+            const cache = await caches.open(PAGES);
+            await cache.delete(request);
           }
           return response;
         })
