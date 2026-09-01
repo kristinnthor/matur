@@ -1,0 +1,193 @@
+{
+  "title": "Tom yum-súpa",
+  "subtitle": "tælensk súpa með sjávarfangi, sítrónugrasi og kókosmjólk",
+  "description": "Súrsæt og sterk súpa úr eldhúsi Bangkok í Kópavogi, full af sjávarfangi. Soðið er dregið af sítrónugrasi, galangal og kaffírlime-laufum áður en kókosmjólkin fer út í, og sjávarfangið sýður aðeins síðustu mínúturnar svo það haldist meyrt. Tilbúin á hálftíma.",
+  "categories": [
+    "fiskur",
+    "pottrettir"
+  ],
+  "tags": [
+    "fljotlegt",
+    "hollt"
+  ],
+  "servings": 2,
+  "time": {
+    "prep": 15,
+    "cook": 15
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingasod",
+      "amount": 7.5,
+      "unit": "dl",
+      "item": "kjúklingasoð"
+    },
+    {
+      "id": "sitronugras",
+      "amount": 1,
+      "unit": "stk",
+      "item": "sítrónugras"
+    },
+    {
+      "id": "galangal",
+      "amount": 20,
+      "unit": "g",
+      "item": "galangal"
+    },
+    {
+      "id": "limelauf",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kaffírlime-lauf"
+    },
+    {
+      "id": "tomyummauk",
+      "amount": 1,
+      "unit": "msk",
+      "item": "tom yum-mauk"
+    },
+    {
+      "id": "kokosmjolk",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "kókosmjólk"
+    },
+    {
+      "id": "fiskisosa",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fiskisósa"
+    },
+    {
+      "id": "sykur",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sykur"
+    },
+    {
+      "id": "tomatur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "tómatur"
+    },
+    {
+      "id": "sveppir",
+      "amount": 100,
+      "unit": "g",
+      "item": "sveppir"
+    },
+    {
+      "id": "risaraekjur",
+      "amount": 100,
+      "unit": "g",
+      "item": "risarækjur",
+      "note": "hráar og hreinsaðar"
+    },
+    {
+      "id": "fiskur",
+      "amount": 100,
+      "unit": "g",
+      "item": "hvít fiskflök",
+      "note": "skorin í munnbita"
+    },
+    {
+      "id": "skelfiskur",
+      "amount": 100,
+      "unit": "g",
+      "item": "skelfiskur"
+    },
+    {
+      "id": "smokkfiskur",
+      "amount": 100,
+      "unit": "g",
+      "item": "smokkfiskur",
+      "note": "í hringjum"
+    },
+    {
+      "id": "limesafi",
+      "amount": 2,
+      "unit": "msk",
+      "item": "limesafi"
+    },
+    {
+      "id": "koriander",
+      "amount": 10,
+      "unit": "g",
+      "item": "ferskur kóríander"
+    },
+    {
+      "id": "vorlaukur",
+      "amount": 2,
+      "unit": "stk",
+      "item": "vorlaukur"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Skerið {{sitronugras}} í grófa bita og merjið þá með hnífsbakinu, og sneiðið {{galangal}} þunnt. Hvorugt er borðað heldur gefur bragð í soðið, svo hafið bitana stóra og auðvelt að tína þá upp.",
+      "refs": [
+        "sitronugras",
+        "galangal"
+      ]
+    },
+    {
+      "text": "Hitið {{kjuklingasod}} að suðu í potti og setjið sítrónugrasið og galangalið út í ásamt {{limelauf}}. Sjóðið í tvær mínútur svo soðið dragi í sig ilminn.",
+      "refs": [
+        "kjuklingasod",
+        "limelauf"
+      ]
+    },
+    {
+      "text": "Hrærið {{tomyummauk}} saman við og látið það leysast alveg upp í soðinu.",
+      "refs": [
+        "tomyummauk"
+      ]
+    },
+    {
+      "text": "Hellið {{kokosmjolk}} út í ásamt {{fiskisosa}} og {{sykur}}. Haldið súpunni við vægan hita héðan í frá — kókosmjólk sem bullsýður skilur sig.",
+      "refs": [
+        "kokosmjolk",
+        "fiskisosa",
+        "sykur"
+      ]
+    },
+    {
+      "text": "Skerið {{tomatur}} í báta og setjið hann út í ásamt {{sveppir}}. Þeir fara ekki út í á sama tíma og sítrónugrasið, því þeir þurfa mun styttri tíma.",
+      "refs": [
+        "tomatur",
+        "sveppir"
+      ]
+    },
+    {
+      "text": "Bætið {{risaraekjur}}, {{fiskur}}, {{skelfiskur}} og {{smokkfiskur}} út í og látið malla þar til allt er rétt eldað í gegn, um fimm mínútur. Sjávarfang verður seigt um leið og það er ofeldað.",
+      "refs": [
+        "risaraekjur",
+        "fiskur",
+        "skelfiskur",
+        "smokkfiskur"
+      ]
+    },
+    {
+      "text": "Takið pottinn af hitanum og hrærið {{limesafi}} saman við. Sýran fer út í eftir á, því hún dofnar við suðu.",
+      "refs": [
+        "limesafi"
+      ]
+    },
+    {
+      "text": "Saxið {{koriander}} og {{vorlaukur}}, stráið yfir og berið fram strax.",
+      "refs": [
+        "koriander",
+        "vorlaukur"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: sítrónusafi er notaður í aðferðinni en vantar alveg í hráefnalistann — hann er hér tekinn með, og sem limesafi, sem á betur við tom yum og fylgir kaffírlime-laufunum sem þegar eru í súpunni. Kaffírlime-laufin eru gefin upp í grömmum, 10 g, sem eru um tuttugu lauf í súpu fyrir tvo og margfalt of mikið; hér eru þau fjögur. Sveppirnir fara úr 30 g í 100 g, því 30 g skipt á tvo skammta sjást varla í súpunni. Bollamálið er umreiknað í desilítra. Loks er tekið fram að kókosmjólkin má ekki bullsjóða og að sjávarfangið fer síðast út í, hvort tveggja skilyrði fyrir því að súpan verði eins og til stóð.",
+    "storage": "Súpan er best borin fram strax. Sjávarfang verður seigt við upphitun, svo geymið afgang í mesta lagi einn dag í kæli og hitið hann rétt að suðumarki. Hana á ekki að frysta.",
+    "variants": "Skelfiskinn má sleppa eða skipta út fyrir meiri rækju; kræklingur er það sem helst fæst hér. Galangal fæst frosið eða þurrkað í asískum búðum — engifer er ekki sama bragð en gengur ef ekkert annað er í boði, og sama gildir um þurrkuð kaffírlime-lauf. Grænmetissoð í stað kjúklingasoðs gerir léttari súpu, og með tvöföldu magni af sveppum og sleppu á sjávarfanginu verður hún grænmetisréttur."
+  },
+  "source": {
+    "url": "https://www.mbl.is/matur/frettir/2018/08/01/tom_yum_supa_sem_svikur_engan/",
+    "site": "mbl.is"
+  }
+}

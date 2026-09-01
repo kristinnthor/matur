@@ -1,0 +1,159 @@
+{
+  "title": "Ofnbakað pasta með beikoni, skinku og fetaosti",
+  "subtitle": "afgangapasta með þremur kjöttegundum og bræddum fetaosti",
+  "description": "Réttur sem verður til úr því sem á að klárast: beikonendinn, skinkan, pepperóníið sem gekk af pizzunni. Pastað er soðið hálfsoðið, blandað í rjómasósu með lauk og papriku og bakað undir fetaosti og rifnum osti þar til það er gullinbrúnt. Saðsamt og dugar sex manns.",
+  "categories": [
+    "pasta",
+    "kjot"
+  ],
+  "tags": [
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 6,
+  "time": {
+    "prep": 20,
+    "cook": 30
+  },
+  "ingredients": [
+    {
+      "id": "pasta",
+      "amount": 500,
+      "unit": "g",
+      "item": "pasta",
+      "note": "penne eða fusilli"
+    },
+    {
+      "id": "beikon",
+      "amount": 150,
+      "unit": "g",
+      "item": "beikon"
+    },
+    {
+      "id": "skinka",
+      "amount": 150,
+      "unit": "g",
+      "item": "skinka",
+      "note": "í teningum"
+    },
+    {
+      "id": "pepperoni",
+      "amount": 100,
+      "unit": "g",
+      "item": "pepperóní",
+      "note": "í sneiðum"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "gulur laukur"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur"
+    },
+    {
+      "id": "rjomi",
+      "amount": 4,
+      "unit": "dl",
+      "item": "rjómi"
+    },
+    {
+      "id": "paprikuduft",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "paprikuduft"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "nýmalaður svartur pipar",
+      "scalable": false
+    },
+    {
+      "id": "fetaostur",
+      "amount": 200,
+      "unit": "g",
+      "item": "fetaostur"
+    },
+    {
+      "id": "rifinnostur",
+      "amount": 150,
+      "unit": "g",
+      "item": "rifinn ostur",
+      "note": "mozzarella eða pizzaostur"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 200°C og saltið vatn í stórum potti vel. Sjóðið {{pasta}} en takið það upp tveimur mínútum áður en það er al dente — það heldur áfram að eldast í ofninum og verður annars mjúkt í gegn. Sigtið og setjið til hliðar.",
+      "refs": [
+        "pasta"
+      ]
+    },
+    {
+      "text": "Skerið {{beikon}} í bita og steikið á þurri pönnu þar til það er stökkt. Takið það upp með gataspaða og skiljið fituna eftir á pönnunni; hún er steikingarfitan fyrir næsta skref.",
+      "refs": [
+        "beikon"
+      ]
+    },
+    {
+      "text": "Saxið {{laukur}} og pressið {{hvitlaukur}}. Mýkið hvort tveggja í beikonfitunni við meðalhita þar til laukurinn er glær, um fimm mínútur.",
+      "refs": [
+        "laukur",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Bætið {{skinka}} og {{pepperoni}} á pönnuna og steikið í tvær til þrjár mínútur, þar til jaðrarnir taka lit og fitan úr pepperóníinu fer út í.",
+      "refs": [
+        "skinka",
+        "pepperoni"
+      ]
+    },
+    {
+      "text": "Lækkið hitann og hellið {{rjomi}} út á pönnuna. Kryddið með {{paprikuduft}}, {{salt}} og {{pipar}} og látið malla þar til sósan hefur þykknað örlítið, um fimm mínútur.",
+      "refs": [
+        "rjomi",
+        "paprikuduft",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Blandið pastanu og beikoninu saman við sósuna og hrærið þar til allt er jafnt húðað. Smakkið til — fetaosturinn er saltur, svo saltið varlega á þessu stigi.",
+      "refs": []
+    },
+    {
+      "text": "Hellið blöndunni í smurt eldfast mót. Myljið {{fetaostur}} yfir og stráið {{rifinnostur}} þar ofan á.",
+      "refs": [
+        "fetaostur",
+        "rifinnostur"
+      ]
+    },
+    {
+      "text": "Bakið í 20–25 mínútur, þar til osturinn er gullinbrúnn og sósan bullar við barmana. Látið standa í fimm mínútur áður en borið er fram, svo sósan setjist.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: einingarnar voru á ensku í frumgerðinni — „500 grams“, „400 milliliters“, „1 teaspoons“ — og eru hér á íslensku, rjóminn í desilítrum. Bökunartími vantaði alveg, aðeins sagt að baka þar til osturinn væri gullinbrúnn; hér eru gefnar 20–25 mínútur við 200°C. Pastað er nú soðið tveimur mínútum skemur en al dente, því pasta sem er fullsoðið áður en það fer í ofninn verður mjúkt í gegn. Loks er tekið fram að salta varlega vegna fetaostsins og að láta réttinn standa áður en hann er borinn fram.",
+    "storage": "Geymist í 2–3 daga í kæli. Hitið upp undir álpappír við 180°C svo osturinn brenni ekki, eða í örbylgjuofni með skvettu af mjólk út í. Rétturinn frystist vel í allt að 2 mánuði, óbakaður eða bakaður.",
+    "variants": "Kjötið er hugsað sem afgangar og má skipta út að vild — chorizo, salami eða steiktur kjúklingur ganga jafn vel, og magnið skiptir meira máli en tegundirnar. Léttrjómi í stað rjóma og minna af rifnum osti gera réttinn léttari. Grænmeti fer vel út í: spínat sem er hrært saman við í lokin, eða paprika og sveppir steiktir með lauknum."
+  },
+  "source": {
+    "url": "https://claude.ai/share/179569ba-37cf-4a6f-a210-3a8e3c1030a6",
+    "site": "Jóhanna Bogadóttir"
+  }
+}
