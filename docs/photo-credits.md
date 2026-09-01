@@ -36,3 +36,28 @@ necessarily what it shows today; check git history per the note above.
 Family uploads (never Pexels): `fylltar-saetar-kartoflur.jpg` and anything newer —
 see git history. Recipes without any photo show the designed fallback card until
 someone cooks them with a phone at hand.
+
+## Wikimedia Commons photos
+
+Everything sourced from Commons is recorded in
+`src/content/recipes/photos/credits.json` rather than in this table, because
+the site *displays* those credits — CC BY and CC BY-SA both require
+attribution. Each entry carries the creator, the licence, the licence URL, the
+Commons file page, and the **sha256 of the bytes it describes**. `creditFor()`
+in `src/lib/photos.ts` only shows a credit while that hash still matches the
+file on disk, so the moment someone uploads their own shot over one the
+stranger's byline disappears by itself. Nothing needs cleaning up by hand.
+
+A second Commons sweep filled 20 of the 27 photo-less recipes. Seven were left
+on the fallback card deliberately, because no accurate photo existed and a
+misleading one is worse than none:
+
+| Recipe | Why no photo |
+|---|---|
+| `pizza-med-hakkbotni` | Every candidate is a dough pizza; the whole point is a minced-meat base |
+| `kramdar-kartoflur` | Nothing on Commons shows smashed-then-roasted potatoes |
+| `sjonvarpskaka` | No Icelandic sheet cake; the near matches were whoopie pies |
+| `mexikofiskur` | No candidates at all — the dish is an Icelandic invention |
+| `basilkjuklingur` | Nearest matches were frittata and tomato stew |
+| `italskur-ponnukjuklingur` | Search drifted to rice dishes and mince skillets |
+| `nautabitar-i-hvitlaukssmjori` | Only match was a dim food-court shot; the fallback card looks better |

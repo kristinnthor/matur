@@ -20,12 +20,110 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tajarin_al_rag%C3%B9.jpg",
     "sha256": "1f760364d7156588acae11fa94b821b20d640e8f41971bdda072b5d5d3f27641"
   },
-  "kokos-kjuklingakarri": {
-    "creator": "Andy Li",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Curry_with_Chicken_-_Little_Thai,_Brighton_2024-03-01.jpg",
-    "sha256": "ab224cab457e00b7811fc5c69d37c3f2bac3efae952ea25ba71412af597c41e7"
+  "braud-a-20-minutum": {
+    "creator": "Fæ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honey_milk_bread.jpg",
+    "sha256": "ecad947eaab39286ad6658bdf034d2fa82abb16c5d6e488a0158a6ef63a043d0"
+  },
+  "fiskur-i-gulri-sosu": {
+    "creator": "Benreis",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuhler_Pannfisch.jpg",
+    "sha256": "0a8a486b42c75e187b0b9269ab7efc3e5f4706e8bc289b1396e12291958e3e68"
+  },
+  "foccacia": {
+    "creator": "Parkerman &amp; Christie from San Diego, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosemary_Focaccia.jpg",
+    "sha256": "4c02f46cd238076bc34984edf5ff4d9f453d58d1efdfde2952a8ae9c7e8400c3"
+  },
+  "foccacia-an-hnodunar": {
+    "creator": "Fred Benenson",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Focaccia_Crust.jpg",
+    "sha256": "73f663707e7378cc66327f3b2d4179ff22cb2cdc80de831f8506a9ec7d3ce4c2"
+  },
+  "franskur-kjuklingapottrettur": {
+    "creator": "naotakem",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coq_au_vin-01.jpg",
+    "sha256": "4c6eadb1ac0bfeb7d425f73b9b863d43bf2795566d06ce421e0074b7754648bd"
+  },
+  "fyllt-svinalund": {
+    "creator": "User:Ɱ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pork_tenderloin_dish.png",
+    "sha256": "487ae35e9f636b8470df48085a77b82570f1081f7bc7664b0862027d902be4c1"
+  },
+  "grillud-lambarif": {
+    "creator": "E4024",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuzu_kaburga_(Lamb_ribs).jpg",
+    "sha256": "606e10ac516defbea9f8c2a7387cae35147f9c1df5507ba9fbaa610f923929a4"
+  },
+  "haegeldad-lambalaeri": {
+    "creator": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_02.jpg",
+    "sha256": "0f7e8ec87030134eb903d209ff0139dd7443d6dfef2448dec57778e3cb67de85"
+  },
+  "hvitlauksnan": {
+    "creator": "Yakshitha",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheat_Naan_3.jpg",
+    "sha256": "ae55be723e981f444322f419f42a4e510f0b32fd792d1b3d52b57ebb1e31b94d"
+  },
+  "italskt-kryddbraud-med-osti": {
+    "creator": "Sourab Pahari",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garlic_bread_variation_topped_with_mozarella_cheese.jpg",
+    "sha256": "3ea2c3efb892a375f70ea2f94d8342a36eb4769b791727964b68e9425daadcd1"
+  },
+  "italskur-kjuklingapottrettur": {
+    "creator": "Evan Joshua Swigart (TheCulinaryGeek) from Chicago, Illinois, USA; hometown of Ames, Iowa,",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_preppybyday_4618397089--Chicken_cacciatore.jpg",
+    "sha256": "aed55c02adfa580eb1dbd63f3af225e3b22d9ccc4b2023d33c2f7c219ca0a81c"
+  },
+  "kjotbollusupa-med-sveppum": {
+    "creator": "Robert Loescher",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homemade_Meatball_Stew.JPG",
+    "sha256": "cd243b1e479b08621d0dc56ba46645954fbb9de5571838ee890db1f23db49996"
+  },
+  "kjuklinga-stroganoff": {
+    "creator": "V 2",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Stroganoff-04.jpg",
+    "sha256": "12c51926f790e1ad780d7995d010cac9498d04f4422a3d7e7ff950ace0cc5794"
+  },
+  "kjuklingalaeri-i-sveppasosu": {
+    "creator": "Kritzolina",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Food_at_the_Restaurante_Associa%C3%A7%C3%A3o_Agr%C3%ADcola_de_S%C3%A3o_Miguel_01.jpg",
+    "sha256": "9d5bedc738325553449d16d1cd737308dbb448172f8889b4f5941aef03c44a84"
+  },
+  "kjuklingur-i-hvitvinsrjomasosu": {
+    "creator": "French Recipes",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Fricasse.jpg",
+    "sha256": "c0a9ed783ea775d074812e3213e9d0831434c5efe605c2f299cba503792cf711"
   },
   "kjuklingur-i-kasjuhnetusosu": {
     "creator": "Tamorlan",
@@ -33,6 +131,104 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cashew_chicken_-_Pollo_con_anacardos.JPG",
     "sha256": "ccf5ffa6eddd4a86c2cd3de516eb9f0c597fb048d2148f2041d689124b5081cc"
+  },
+  "kjuklingur-marsala": {
+    "creator": "Evan Joshua Swigart (TheCulinaryGeek) from Chicago, Illinois, USA; hometown of Ames, Iowa,",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_preppybyday_4843102799--Chicken_marsala.jpg",
+    "sha256": "b3ce599d986d83879ccb9a78de3689a65d09c11278557141ac975828543f6c45"
+  },
+  "kjuklingur-med-saetum-kartoflum": {
+    "creator": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Home_Cooked_Chicken_and_Roasted_Vegetables.jpg",
+    "sha256": "3d39e9f4d080af67548944c2a62876c78d0a7ecf28d7d57329d5d03c2e202834"
+  },
+  "kleftiko": {
+    "creator": "Haydn Blackey",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kleftiko_-_Brunswick_Centre_-_London_2026-06-04.jpg",
+    "sha256": "cd72caef5bfce487a78373b47ad5d1403b286e24bea836b804739ed0c00e9528"
+  },
+  "kokos-kjuklingakarri": {
+    "creator": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Curry_with_Chicken_-_Little_Thai,_Brighton_2024-03-01.jpg",
+    "sha256": "ab224cab457e00b7811fc5c69d37c3f2bac3efae952ea25ba71412af597c41e7"
+  },
+  "lambapottrettur-i-raudvini": {
+    "creator": "jeffreyw",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_stew_(13393166514).jpg",
+    "sha256": "6df6983ca019cfdf4f620ec5dafeb1f4c253e8660f49bd30442b6a614907ca82"
+  },
+  "lambaskankar": {
+    "creator": "Peachyeung316",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamb_Shank_with_Purple_vegetables_and_Potato.jpg",
+    "sha256": "b35b836586ee486c5a3839731b5e74f4ee7c60bec32cb50aec48282e1acf9b8b"
+  },
+  "mars-ostakaka": {
+    "creator": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snickers_Cheesecake_-_Garden_Caf%C3%A9_Brighton_2025-05-01.jpg",
+    "sha256": "479f89da22e992aa7a492d6fc1c5c394a31476608a2b068502a43a965d625d3f"
+  },
+  "nauta-madras": {
+    "creator": "Peachyeung316",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Indian_style_Beef_Curry_from_Tuen_Mun_Curry_House.jpg",
+    "sha256": "4216dc2658ac1c0849ee8dbd8409d3afb456cdcf0491591399c024e528e0345e"
+  },
+  "nauta-stroganoff": {
+    "creator": "Pittaya Sroilong (original file) ; cropped and retouched by Off-shell",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Stroganoff-02_cropped.jpg",
+    "sha256": "b056536220988b944962b0caec85fb5b72f1d1f5f694d392dee3a963854b0895"
+  },
+  "nautacarpaccio": {
+    "creator": "Peachyeung316",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marinated_Angus_Beef_Carpaccio_with_Rockets,_Cherry_Tomatoes_and_Parmesan_Shaves.jpg",
+    "sha256": "eddb07e9d789e0e969e8b6046a98fc54469ad286420223d2d44c508966287dc0"
+  },
+  "nautakinnar-i-raudvini": {
+    "creator": "Ceeseven",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Braised_Beef_Cheek.jpg",
+    "sha256": "f119def7fd94954eb9f86e09357e1d6c0e69d3e18bee0d7adbb8d501f1288856"
+  },
+  "nautakjot-i-bjorsosu": {
+    "creator": "Arnaud 25",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carbonade_flamande_1.jpg",
+    "sha256": "0cb7d50fc1058e9274efc37c453904d6380d9ab1b296d29fc2263b4c98a8359b"
+  },
+  "ofnbakadur-pesto-kjuklingur": {
+    "creator": "Infrogmation of New Orleans",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pesto_Chicken_and_Grilled_Zucchini.jpg",
+    "sha256": "fc2b0d0753522a38e8769e961fd9c41e4976e3234650ce35e7036b4bdce3a02f"
+  },
+  "ostafylltar-kjuklingabringur": {
+    "creator": "Jon Konrath from Oakland, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Cordon_Bleu_(27068674677).jpg",
+    "sha256": "260e00669467558eb5b71d3bbe737209853b08be7bd92e4bcc95f64d3691a151"
   },
   "sitronu-estragon-kjuklingur": {
     "creator": "Shixart1985",
@@ -48,67 +244,11 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_stew_with_red_wine_(25729768926).jpg",
     "sha256": "65a0d18591a8750f5a7ffbe13b357ee203f04eb9c0b94f85b1fd0c6c28859125"
   },
-  "kjuklingalaeri-i-sveppasosu": {
-    "creator": "Kritzolina",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Food_at_the_Restaurante_Associa%C3%A7%C3%A3o_Agr%C3%ADcola_de_S%C3%A3o_Miguel_01.jpg",
-    "sha256": "9d5bedc738325553449d16d1cd737308dbb448172f8889b4f5941aef03c44a84"
-  },
-  "lambaskankar": {
-    "creator": "Peachyeung316",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamb_Shank_with_Purple_vegetables_and_Potato.jpg",
-    "sha256": "b35b836586ee486c5a3839731b5e74f4ee7c60bec32cb50aec48282e1acf9b8b"
-  },
-  "nautacarpaccio": {
-    "creator": "Peachyeung316",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marinated_Angus_Beef_Carpaccio_with_Rockets,_Cherry_Tomatoes_and_Parmesan_Shaves.jpg",
-    "sha256": "eddb07e9d789e0e969e8b6046a98fc54469ad286420223d2d44c508966287dc0"
-  },
-  "nauta-madras": {
-    "creator": "Peachyeung316",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_Indian_style_Beef_Curry_from_Tuen_Mun_Curry_House.jpg",
-    "sha256": "4216dc2658ac1c0849ee8dbd8409d3afb456cdcf0491591399c024e528e0345e"
-  },
-  "nautakinnar-i-raudvini": {
-    "creator": "Ceeseven",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Braised_Beef_Cheek.jpg",
-    "sha256": "f119def7fd94954eb9f86e09357e1d6c0e69d3e18bee0d7adbb8d501f1288856"
-  },
   "stracotto": {
     "creator": "Mark Miller",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_pot_roast.jpg",
     "sha256": "ce4872bdfd8ea37710cf848e04f03bdaf7d7efc9569a3762b7fe4b8d644ba56b"
-  },
-  "haegeldad-lambalaeri": {
-    "creator": "Acabashi",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_02.jpg",
-    "sha256": "0f7e8ec87030134eb903d209ff0139dd7443d6dfef2448dec57778e3cb67de85"
-  },
-  "mars-ostakaka": {
-    "creator": "Andy Li",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snickers_Cheesecake_-_Garden_Caf%C3%A9_Brighton_2025-05-01.jpg",
-    "sha256": "479f89da22e992aa7a492d6fc1c5c394a31476608a2b068502a43a965d625d3f"
-  },
-  "lambapottrettur-i-raudvini": {
-    "creator": "jeffreyw",
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Irish_stew_(13393166514).jpg",
-    "sha256": "6df6983ca019cfdf4f620ec5dafeb1f4c253e8660f49bd30442b6a614907ca82"
   }
 }
