@@ -1,0 +1,102 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { formatScaled, type Ingredient } from '../../../lib/units';
+
+export async function getStaticPaths() {
+  const recipes = await getCollection('recipes');
+  return recipes.map((r) => ({ params: { slug: r.id }, props: { recipe: r } }));
+}
+
+const { recipe } = Astro.props;
+const d = recipe.data;
+const ings = d.ingredients as Ingredient[];
+// Written out rather than typed inline, so the {{ }} never reaches Astro's parser.
+const refExample = '{{hveiti}}';
+---
+<Base title={`${d.title} — breyta texta`}>
+  <meta name="robots" content="noindex" slot="head" />
+  <article class="wrap recipe-edit" data-slug={recipe.id}>
+    <p id="edit-signedout" class="muted" hidden>
+      Þú hefur ekki aðgang að þessari síðu.
+      <a href={`/uppskrift/${recipe.id}/`}>Til baka í uppskriftina</a>.
+    </p>
+
+    <form id="edit-form" hidden>
+      <h1>Breyta texta</h1>
+      <p class="muted">
+        Aðeins texti breytist hér. Magn, einingar, skammtar, flokkar og upprunaslóð eru
+        óbreytt — þau stýra útreikningi og innkaupalistanum og eiga heima í yfirlesinni
+        breytingu. <a href={`/uppskrift/${recipe.id}/`}>Til baka í uppskriftina</a>.
+      </p>
+
+      <label class="edit-field">
+        <span>Titill</span>
+        <input type="text" name="title" value={d.title} required />
+      </label>
+      <label class="edit-field">
+        <span>Undirtitill <span class="muted">(valfrjálst)</span></span>
+        <input type="text" name="subtitle" value={d.subtitle ?? ''} />
+      </label>
+      <label class="edit-field">
+        <span>Lýsing</span>
+        <textarea name="description" rows="5" required set:text={d.description} />
+      </label>
+
+      <h2>Hráefni</h2>
+      <p class="muted">Magnið er sýnt til viðmiðunar og breytist ekki hér.</p>
+      {ings.map((i) => (
+        <fieldset class="edit-ing" data-id={i.id}>
+          <legend class="muted">{formatScaled(i, 1)}</legend>
+          <label class="edit-field">
+            <span>Hráefni</span>
+            <input type="text" name={`item:${i.id}`} value={i.item} required />
+          </label>
+          <label class="edit-field">
+            <span>Athugasemd <span class="muted">(valfrjálst)</span></span>
+            <input type="text" name={`note:${i.id}`} value={i.note ?? ''} />
+          </label>
+          <label class="edit-field">
+            <span>Hópur <span class="muted">(valfrjálst)</span></span>
+            <input type="text" name={`group:${i.id}`} value={i.group ?? ''} />
+          </label>
+        </fieldset>
+      ))}
+
+      <h2>Aðferð</h2>
+      <p class="muted">
+        {refExample} vísar í hráefni og reiknast sjálfkrafa eftir skömmtum — skrifaðu
+        þau eins og þau standa. Ekki skrifa magn beint í textann.
+      </p>
+      {d.steps.map((s: { text: string }, n: number) => (
+        <label class="edit-field edit-step">
+          <span>Skref {n + 1}</span>
+          <textarea name={`step:${n}`} rows="4" required set:text={s.text} />
+        </label>
+      ))}
+
+      <h2>Athugasemdir</h2>
+      <label class="edit-field">
+        <span>Endurbætur <span class="muted">(valfrjálst)</span></span>
+        <textarea name="improvements" rows="5" set:text={d.notes.improvements ?? ''} />
+      </label>
+      <label class="edit-field">
+        <span>Geymsla <span class="muted">(valfrjálst)</span></span>
+        <textarea name="storage" rows="4" set:text={d.notes.storage ?? ''} />
+      </label>
+      <label class="edit-field">
+        <span>Tilbrigði <span class="muted">(valfrjálst)</span></span>
+        <textarea name="variants" rows="4" set:text={d.notes.variants ?? ''} />
+      </label>
+
+      <div class="edit-actions">
+        <button type="submit" id="edit-save" class="cook-link">Vista</button>
+      </div>
+      <p id="edit-status" role="status" aria-live="polite"></p>
+    </form>
+  </article>
+
+  <script>
+    import '../../../scripts/recipe-edit.ts';
+  </script>
+</Base>

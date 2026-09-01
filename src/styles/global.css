@@ -878,3 +878,51 @@ h2::before {
 @media print {
   .list-btn, .list-page .tagline, .tag-row, .tag-rail { display: none; }
 }
+
+/* Editing recipe text is an admin's affordance. Hidden by default and revealed
+   by the role, the same way .needs-photo is revealed by being signed in — the
+   API is the real gate, this just keeps the button out of everyone else's way. */
+.edit-link { display: none; }
+[data-admin] .edit-link {
+  display: inline-block;
+  align-self: center;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+.recipe-edit .edit-field {
+  display: block;
+  margin: 0 0 1rem;
+}
+.recipe-edit .edit-field > span {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+.recipe-edit input[type='text'],
+.recipe-edit textarea {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  font: inherit;
+  border: 1px solid currentColor;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: inherit;
+}
+.recipe-edit textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+.recipe-edit .edit-ing {
+  margin: 0 0 1rem;
+  padding: 0.75rem;
+  border: 1px solid rgb(0 0 0 / 0.15);
+  border-radius: 0.5rem;
+}
+.recipe-edit .edit-ing legend {
+  padding: 0 0.4rem;
+  font-family: var(--font-display);
+}
+.recipe-edit .edit-actions {
+  margin: 1.5rem 0 0.5rem;
+}

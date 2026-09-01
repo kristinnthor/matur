@@ -19,6 +19,7 @@ export interface Personal {
 export interface AccountState {
   enabled: boolean;
   signedIn: boolean;
+  admin: boolean;
   email: string | null;
   name: string | null;
   personal: Personal;
@@ -29,6 +30,7 @@ const empty: Personal = { favourites: [], notes: {} };
 export const state: AccountState = {
   enabled: false,
   signedIn: false,
+  admin: false,
   email: null,
   name: null,
   personal: readCache(),
@@ -199,6 +201,7 @@ export async function signOut(): Promise<void> {
   await api('/api/auth/signout', { method: 'POST' });
   (window as unknown as { google?: GoogleIdApi }).google?.accounts.id.disableAutoSelect();
   state.signedIn = false;
+  state.admin = false;
   state.email = null;
   state.name = null;
   clearCache();
@@ -217,6 +220,7 @@ export async function refresh(): Promise<AccountState> {
   const wasSignedIn = state.signedIn;
   state.enabled = Boolean(data?.enabled);
   state.signedIn = Boolean(data?.signedIn);
+  state.admin = Boolean(data?.admin);
   state.email = data?.email ?? null;
   state.name = data?.name ?? null;
   if (state.signedIn) await loadPersonal();

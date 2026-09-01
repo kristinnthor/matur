@@ -140,6 +140,8 @@ const credit = creditFor(recipe.id);
       <div class="recipe-actions">
         <a class="cook-link" href={`/uppskrift/${recipe.id}/elda/`}>Byrja að elda</a>
         <button type="button" id="add-to-list" class="list-btn" data-slug={recipe.id} data-servings={d.servings}>Setja á innkaupalista</button>
+        {/* Revealed by CSS only under [data-admin]; the API is the real gate. */}
+        <a class="edit-link" href={`/uppskrift/${recipe.id}/breyta/`}>Breyta texta</a>
       </div>
     </div>
   </div>
