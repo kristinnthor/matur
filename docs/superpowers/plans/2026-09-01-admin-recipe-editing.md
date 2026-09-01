@@ -303,7 +303,7 @@ describe('applyPatch — what it refuses to change', () => {
     expect(out.ok).toBe(true);
     if (!out.ok) return;
     const r = out.recipe as Record<string, unknown>;
-    const kart = (r.ingredients as { id: string; amount: number; unit: string }[])[0]!;
+    const kart = (r.ingredients as { id: string; item: string; amount: number; unit: string }[])[0]!;
     expect(kart.item).toBe('nýjar kartöflur');
     expect(kart.amount).toBe(800);
     expect(kart.unit).toBe('g');
