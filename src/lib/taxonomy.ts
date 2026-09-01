@@ -25,4 +25,8 @@ export const TAGS = {
   veislumatur: 'Veislumatur',
   barnvaent: 'Barnvænt',
   frystivaent: 'Frystivænt',
+  // Léttur matur borinn uppi af grænmeti eða mögru prótíni: engin rjóma- eða
+  // smjörsósa, ostur ekki uppistaða. Þröngt afmarkað viljandi — merkið segir
+  // ekkert ef flestir réttir bera það.
+  hollt: 'Hollt',
 } as const;
