@@ -114,3 +114,13 @@ export function isAllowed(email: string, allowlist: string[]): boolean {
   if (allowlist.length === 0) return false;
   return allowlist.includes(email.trim().toLowerCase());
 }
+
+/**
+ * Whether an address holds the admin role, which is the right to rewrite
+ * recipe text. Same fail-closed rule as the sign-in allowlist, and deliberately
+ * a separate list: ALLOWED_EMAILS opens the door, ADMIN_EMAILS hands over the
+ * pen, and an admin needs to be on both.
+ */
+export function isAdmin(email: string, admins: string[]): boolean {
+  return isAllowed(email, admins);
+}

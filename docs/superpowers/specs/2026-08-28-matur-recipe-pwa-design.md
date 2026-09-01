@@ -47,6 +47,9 @@ representation**, rather than as display formatting. Everything in §5 follows f
 
 - No user accounts, comments, ratings, or social features
 - No admin/CMS UI — recipes are files, edited in git
+  (**revised 2026-09-01:** an admin may edit recipe *text* from the site, but it
+  commits to this repo — the files stay the only source of truth. See
+  `specs/2026-09-01-admin-recipe-editing-design.md`.)
 - No languages other than Icelandic
 - Not a public community site; it is a personal/household site that happens to be publicly readable
 - No recipe discovery or search across the internet; recipes enter only via explicitly supplied links

@@ -5,7 +5,7 @@
  * secret, allowlist, D1 binding) and says so plainly, the same way the photo
  * endpoint shipped disabled until its secrets existed.
  */
-import { isAllowed, parseAllowlist, signSession, verifySession, type SessionUser } from '../src/lib/session';
+import { isAdmin, isAllowed, parseAllowlist, signSession, verifySession, type SessionUser } from '../src/lib/session';
 import { MAX_NOTE as MAX_SUGGESTION_NOTE, normaliseUrl } from '../src/lib/suggestions';
 import { verifyGoogleToken } from './google';
 
@@ -31,6 +31,7 @@ export interface AccountEnv {
   GOOGLE_CLIENT_ID?: string;
   SESSION_SECRET?: string;
   ALLOWED_EMAILS?: string;
+  ADMIN_EMAILS?: string;
 }
 
 function json(status: number, body: unknown, headers: Record<string, string> = {}): Response {
@@ -75,6 +76,16 @@ async function currentUser(req: Request, env: AccountEnv, now: number): Promise<
 
 /** The signed-in user, for endpoints outside this module (photo upload). */
 export const sessionUser = currentUser;
+
+/**
+ * Whether a signed-in user may edit recipes. Recomputed from the secret on
+ * every call — the session cookie carries only who someone is, never what they
+ * may do, so dropping an address from ADMIN_EMAILS takes effect on their next
+ * request rather than whenever their 30-day cookie happens to expire.
+ */
+export function isAdminUser(user: SessionUser, env: AccountEnv): boolean {
+  return isAdmin(user.email, parseAllowlist(env.ADMIN_EMAILS));
+}
 
 async function readJson(req: Request): Promise<Record<string, unknown> | null> {
   try {
@@ -139,6 +150,7 @@ export async function handleAccount(
       signedIn: Boolean(user),
       email: user?.email ?? null,
       name: user?.name ?? null,
+      admin: user ? isAdminUser(user, env) : false,
     });
   }
 

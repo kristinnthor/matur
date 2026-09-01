@@ -72,6 +72,24 @@ which is not additive:
 printf 'a@gmail.com,b@gmail.com' | npx wrangler secret put ALLOWED_EMAILS
 ```
 
+**Who may edit recipes** is the separate `ADMIN_EMAILS` secret, in the same
+comma-separated form and equally fail-closed — unset means nobody:
+
+```bash
+printf 'kristinns72@gmail.com' | npx wrangler secret put ADMIN_EMAILS
+```
+
+The two lists are independent: `ALLOWED_EMAILS` grants sign-in, `ADMIN_EMAILS`
+grants editing, and an admin has to be on **both**. Being an admin does not let
+you in the door. The role is read fresh on every request rather than stored in
+the session cookie, so removing someone takes effect immediately instead of
+whenever their 30-day cookie expires.
+
+Admins get an *Breyta texta* link on each recipe, which edits the recipe's
+wording and commits it here — see `worker/recipe.ts`. Amounts, units, categories
+and tags are deliberately not editable from the site: they feed the units engine
+and the shopping list, and belong in a reviewed commit.
+
 **Configuration** (already in place): `GOOGLE_CLIENT_ID` is a var in
 `wrangler.jsonc` — client ids are public by design — while `SESSION_SECRET`
 (signs the session cookies) and `ALLOWED_EMAILS` are Worker secrets. The D1

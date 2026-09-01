@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { isAllowed, parseAllowlist, signSession, verifySession } from './session';
+import { isAdmin, isAllowed, parseAllowlist, signSession, verifySession } from './session';
 
 const SECRET = 'leynilykill-fyrir-prufur';
 const user = { sub: '1234567890', email: 'kristinn@example.com', name: 'Kristinn' };
@@ -65,5 +65,26 @@ describe('allowlist', () => {
     for (const raw of [undefined, null, '', '   ', ',,']) {
       expect(isAllowed('anyone@example.com', parseAllowlist(raw))).toBe(false);
     }
+  });
+});
+
+describe('the admin role', () => {
+  it('grants the role to a listed address', () => {
+    expect(isAdmin('kristinn@example.com', parseAllowlist('kristinn@example.com'))).toBe(true);
+  });
+
+  it('is case- and whitespace-insensitive, like the sign-in allowlist', () => {
+    const admins = parseAllowlist(' Kristinn@Example.com , annar@example.com ');
+    expect(isAdmin('  KRISTINN@example.com ', admins)).toBe(true);
+  });
+
+  it('refuses an address that is not listed', () => {
+    expect(isAdmin('gestur@example.com', parseAllowlist('kristinn@example.com'))).toBe(false);
+  });
+
+  it('fails closed on an empty or unset list', () => {
+    expect(isAdmin('kristinn@example.com', parseAllowlist(''))).toBe(false);
+    expect(isAdmin('kristinn@example.com', parseAllowlist(undefined))).toBe(false);
+    expect(isAdmin('kristinn@example.com', [])).toBe(false);
   });
 });
