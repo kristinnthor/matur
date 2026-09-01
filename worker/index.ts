@@ -2,12 +2,14 @@
  * Matur worker: serves the static site, plus the API.
  *
  * POST /api/photo commits an uploaded JPEG to the GitHub repo (triggering the
- * normal build), authenticated by the signed-in user. /api/auth/*, /api/me,
+ * normal build), authenticated by the signed-in user. PUT /api/recipe does the
+ * same for a recipe's text, for admins only — see recipe.ts. /api/auth/*, /api/me,
  * /api/personal, /api/favourite and /api/note handle sign-in and personal data
  * — see account.ts. Every secret is set on the Worker, outside this codebase.
  */
 import { handleAccount, sessionUser, type AccountEnv } from './account';
 import { commitCredit, fileSha, putFile, type GitHubRepo } from './github';
+import { handleRecipe } from './recipe';
 
 /** Minimal binding type — avoids pulling @cloudflare/workers-types, whose
  * global Request/Response redefinitions clash with the DOM lib the client
@@ -115,6 +117,7 @@ export default {
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
     if (url.pathname === '/api/photo') return handlePhoto(req, env);
+    if (url.pathname === '/api/recipe') return handleRecipe(req, env);
     const account = await handleAccount(req, env, url);
     if (account) return account;
     return env.ASSETS.fetch(req);
