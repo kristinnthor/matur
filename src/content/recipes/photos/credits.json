@@ -1,4 +1,11 @@
 {
+  "basilkjuklingur": {
+    "creator": "MBC Foods from Australia",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roasted_Chicken_Breast_(32868373128).jpg",
+    "sha256": "99ca69f882865509984dbb5c67fc8c21f2a4f066b4f26b0f8129691c1e8c9fd2"
+  },
   "bayonne-skinka": {
     "creator": "Tim Dawson from Kaukapakapa, Auckland, New Zealand",
     "license": "CC BY-SA 2.0",
@@ -35,7 +42,7 @@
     "sha256": "0a8a486b42c75e187b0b9269ab7efc3e5f4706e8bc289b1396e12291958e3e68"
   },
   "foccacia": {
-    "creator": "Parkerman &amp; Christie from San Diego, USA",
+    "creator": "Parkerman & Christie from San Diego, USA",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosemary_Focaccia.jpg",
@@ -96,6 +103,13 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flickr_preppybyday_4618397089--Chicken_cacciatore.jpg",
     "sha256": "aed55c02adfa580eb1dbd63f3af225e3b22d9ccc4b2023d33c2f7c219ca0a81c"
+  },
+  "italskur-ponnukjuklingur": {
+    "creator": "Parkerman & Christie from San Diego, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_piccata.jpg",
+    "sha256": "f2118cba7cfe83bb2fc41112a4e9e0b238ccec8374066f404aa8f4c160cfb559"
   },
   "kjotbollusupa-med-sveppum": {
     "creator": "Robert Loescher",
@@ -243,6 +257,13 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_chicken_with_lemon_and_herbs_served_on_a_dark_platter.jpg",
     "sha256": "f988a7c62037cc23a32548c0a40451c72e080d3dac84fc8dbf7741429e75ac7c"
+  },
+  "sjonvarpskaka": {
+    "creator": "Katrin Gilger",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coconut-Cake_(4492957588).jpg",
+    "sha256": "a7cead0139d5666fef6413e4f127c268e05e046770d0bfa7dd5e5d30c8eacd8e"
   },
   "spezzatino": {
     "creator": "Luca Nebuloni from Milan, Italy",

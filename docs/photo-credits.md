@@ -48,18 +48,24 @@ in `src/lib/photos.ts` only shows a credit while that hash still matches the
 file on disk, so the moment someone uploads their own shot over one the
 stranger's byline disappears by itself. Nothing needs cleaning up by hand.
 
-A second Commons sweep filled 21 of the 27 photo-less recipes. Six were left
-on the fallback card deliberately, because no accurate photo existed and a
-misleading one is worse than none:
+A Commons sweep filled 24 of the 27 photo-less recipes. Three were left on the
+fallback card deliberately, because no accurate photo existed and a misleading
+one is worse than none:
 
 | Recipe | Why no photo |
 |---|---|
 | `pizza-med-hakkbotni` | Every candidate is a dough pizza; the whole point is a minced-meat base |
-| `kramdar-kartoflur` | Nothing on Commons shows smashed-then-roasted potatoes |
-| `sjonvarpskaka` | No Icelandic sheet cake; the near matches were whoopie pies |
-| `mexikofiskur` | No candidates at all — the dish is an Icelandic invention |
-| `basilkjuklingur` | Nearest matches were frittata and tomato stew |
-| `italskur-ponnukjuklingur` | Search drifted to rice dishes and mince skillets |
+| `kramdar-kartoflur` | Nothing on Commons is a photo *of* smashed potatoes — only plates where some appear in a corner |
+| `mexikofiskur` | No candidates across eight queries; the dish is an Icelandic invention, and "fish mornay" matches marionberry pies |
+
+Three more were nearly missed for a bad reason worth recording: the first pass
+judged candidates from 300 px contact-sheet tiles, and searched on the wrong
+description. `sjonvarpskaka` was queried as a chocolate cake when it is a
+coconut-topped tray bake; `basilkjuklingur` and `italskur-ponnukjuklingur` were
+queried on their categories rather than what is actually in them. Re-reading the
+recipe before writing the query, and judging at the real crop size, found all
+three. `nautabitar-i-hvitlaukssmjori` was rejected outright on a thumbnail and is
+in fact a clean shot of beef cubes with the garlic visible.
 
 Most of these photos are cropped and resized only. One is also tone-adjusted:
 `nautabitar-i-hvitlaukssmjori.jpg` was brightened (brightness 1.14, saturation
