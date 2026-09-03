@@ -23,9 +23,11 @@ const STATIC_LIMIT = 300;
 const isFontFile = (url) => url.hostname === 'fonts.gstatic.com';
 const isFontCss = (url) => url.hostname === 'fonts.googleapis.com';
 const isImmutable = (url) => url.pathname.startsWith('/_astro/') || isFontFile(url);
-const PRECACHED = ['/', OFFLINE_URL, '/manifest.webmanifest'].map(
-  (p) => new URL(p, self.location.origin).href,
-);
+// The picker is precached too: its recipe manifest is embedded in the page and
+// favourites are already cached by the account script, so with the page itself
+// on hand the whole draw → shopping list flow works with no signal.
+const PRECACHE_PATHS = ['/', OFFLINE_URL, '/manifest.webmanifest', '/handahof/'];
+const PRECACHED = PRECACHE_PATHS.map((p) => new URL(p, self.location.origin).href);
 
 async function trimCache(name, max) {
   const cache = await caches.open(name);
@@ -39,7 +41,7 @@ async function trimCache(name, max) {
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(PAGES).then((c) => c.addAll(['/', OFFLINE_URL, '/manifest.webmanifest'])),
+    caches.open(PAGES).then((c) => c.addAll(PRECACHE_PATHS)),
   );
   self.skipWaiting();
 });

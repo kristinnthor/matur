@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { photoFor } from '../lib/photos';
+import { MAX_COUNT, MIN_COUNT } from '../lib/random';
+import { skammtar } from '../lib/units';
+
+// Static page; the draw happens in the browser from this manifest, and the
+// favourites pool comes from the signed-in person's account state — nobody's
+// favourites are baked into the HTML.
+const recipes = await getCollection('recipes');
+const manifest = Object.fromEntries(
+  recipes.map((r) => [
+    r.id,
+    {
+      title: r.data.title,
+      subtitle: r.data.subtitle ?? '',
+      time: r.data.time.prep + r.data.time.cook,
+      servings: r.data.servings,
+      word: skammtar(r.data.servings),
+      photo: photoFor(r.id)?.src ?? null,
+    },
+  ]),
+);
+const counts = Array.from({ length: MAX_COUNT - MIN_COUNT + 1 }, (_, i) => MIN_COUNT + i);
+const DEFAULT_COUNT = 3;
+---
+<Base
+  title="Af handahófi — Matur"
+  description="Veistu ekki hvað á að elda? Láttu tilviljun draga nokkrar uppskriftir og fáðu innkaupalista."
+>
+  <div class="wrap random-page">
+    <h1>Hvað á að elda?</h1>
+    <p class="tagline muted">
+      Láttu tilviljun ráða: dragðu nokkrar uppskriftir, lagaðu listann til og fáðu innkaupalista.
+    </p>
+
+    <form id="random-form" class="random-controls">
+      <fieldset class="count-picker">
+        <legend>Fjöldi uppskrifta</legend>
+        <div class="count-opts">
+          {counts.map((n) => (
+            <label class="count-opt">
+              <input type="radio" name="count" value={n} checked={n === DEFAULT_COUNT} />
+              <span>{n}</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
+      {/* Shown by random.ts only when signed in; favourites are per person. */}
+      <label class="pool-toggle" id="pool-toggle" hidden>
+        <input type="checkbox" id="pool-fav" />
+        <span>Bara úr uppáhaldi</span>
+        <small id="pool-hint" class="muted" hidden>
+          Engin uppskrift í uppáhaldi enn — opnaðu uppskrift og smelltu á „Setja í uppáhald“.
+        </small>
+      </label>
+
+      <button type="submit" id="draw" class="primary-btn">Velja af handahófi</button>
+    </form>
+
+    <p id="draw-notice" class="muted draw-notice" role="status" aria-live="polite"></p>
+
+    <section id="draw-results" hidden>
+      <h2>Dregið</h2>
+      <ol id="draw-list" class="draw-list" aria-live="polite"></ol>
+
+      <div class="draw-actions">
+        <button type="button" id="draw-more">+ Draga eina í viðbót</button>
+        <button type="button" id="draw-again">Draga aftur</button>
+      </div>
+
+      <div class="draw-commit">
+        <button type="button" id="make-list" class="primary-btn">Búa til innkaupalista →</button>
+      </div>
+    </section>
+
+    <dialog id="list-dialog" aria-labelledby="list-dialog-title">
+      <h2 id="list-dialog-title">Innkaupalistinn er ekki tómur</h2>
+      <p id="list-dialog-text"></p>
+      <div class="dialog-actions">
+        <button type="button" class="primary" data-act="replace">Skipta út</button>
+        <button type="button" data-act="add">Bæta við</button>
+        <button type="button" data-act="cancel">Hætta við</button>
+      </div>
+    </dialog>
+  </div>
+
+  <script type="application/json" id="recipe-manifest" set:html={JSON.stringify(manifest).replaceAll('<', '\\u003c')} />
+  <script>
+    import '../scripts/random.ts';
+  </script>
+</Base>
