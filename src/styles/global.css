@@ -852,6 +852,213 @@ h2::before {
   .photo-edit-btn, .photo-add { display: none; }
 }
 
+/* ------------------------------------------------------------------ */
+/* Random picker — "Hvað á að elda?"                                   */
+/* ------------------------------------------------------------------ */
+
+.random-page .tagline { margin-top: 0; max-width: var(--measure); }
+
+.random-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  max-width: 34rem;
+}
+.count-picker { border: none; padding: 0; margin: 0; min-width: 0; }
+.count-picker legend {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.count-opts { display: flex; gap: 0.45rem; }
+.count-opt { position: relative; }
+/* The radio stays in the tree for keyboard and screen readers; the ring is what you see. */
+.count-opt input { position: absolute; inset: 0; opacity: 0; margin: 0; width: 100%; height: 100%; cursor: pointer; }
+.count-opt span {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background 130ms ease, border-color 130ms ease;
+}
+.count-opt:hover span { border-color: var(--accent); }
+.count-opt input:checked + span { background: var(--accent); color: #fff; border-color: var(--accent); }
+.count-opt input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.pool-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.pool-toggle[hidden] { display: none; }
+.pool-toggle input { accent-color: var(--accent); width: 1.15rem; height: 1.15rem; margin: 0; }
+.pool-toggle small { flex-basis: 100%; font-family: var(--font-body); font-weight: 400; font-size: 0.82rem; }
+.pool-toggle:has(input:disabled) { color: var(--muted); cursor: default; }
+
+.primary-btn {
+  align-self: flex-start;
+  padding: 0.85rem 1.7rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: filter 130ms ease, transform 130ms ease;
+}
+.primary-btn:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
+.primary-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.draw-notice { min-height: 1.5em; margin: 1rem 0 0; font-size: 0.92rem; }
+
+.draw-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; max-width: 44rem; }
+.draw-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.55rem 0.8rem 0.55rem 0.55rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.draw-thumb {
+  width: 4.5rem;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 9px;
+  flex-shrink: 0;
+  background: var(--border);
+}
+.draw-ph {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--accent-soft), var(--bg) 70%);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--accent);
+  opacity: 0.8;
+}
+.draw-body { flex: 1; min-width: 0; }
+.draw-body a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+.draw-body a:hover { color: var(--accent-ink); }
+.draw-body p { margin: 0; font-size: 0.82rem; }
+.draw-reroll,
+.draw-remove {
+  width: 2.1rem;
+  height: 2.1rem;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.draw-reroll:hover:not(:disabled),
+.draw-remove:hover { color: var(--accent-ink); border-color: var(--accent); }
+.draw-reroll:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.draw-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+.draw-actions button {
+  padding: 0.7rem 1.3rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+}
+.draw-actions button:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
+.draw-actions button:disabled { opacity: 0.45; cursor: not-allowed; }
+.draw-commit { margin-top: 1.75rem; }
+
+#list-dialog {
+  border: none;
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  width: min(24rem, calc(100vw - 2rem));
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+#list-dialog::backdrop { background: rgba(15, 17, 21, 0.5); }
+#list-dialog h2 { margin-top: 0.25rem; }
+#list-dialog p { margin: 0 0 1rem; }
+#list-dialog .dialog-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+#list-dialog .dialog-actions button {
+  flex: 1;
+  padding: 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+}
+#list-dialog .dialog-actions .primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Home-page nudge towards the picker */
+.home-random {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.25rem 0 -0.75rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: background 130ms ease;
+}
+.home-random:hover { background: var(--accent-pulse); }
+
+/* The header grows a second link. It must never wrap, and on a phone with the
+   account button showing there is no room for the words, so a die stands in. */
+.head-links { display: flex; align-items: center; gap: 1.25rem; }
+.list-link { white-space: nowrap; }
+.badge[hidden] { display: none; }
+.random-dice { display: none; font-size: 1.15rem; line-height: 1; }
+@media (max-width: 30rem) {
+  .site-head .inner { gap: 0.6rem; }
+  .head-links { gap: 0.8rem; }
+  .random-word { display: none; }
+  .random-dice { display: inline; }
+}
+
+@media print {
+  .home-random, .random-controls, .draw-actions, .draw-commit, .draw-reroll, .draw-remove { display: none; }
+}
+
 /* Card titles are h2 for document outline, styled as card headings */
 .card .card-title {
   margin: 0 0 0.3rem;

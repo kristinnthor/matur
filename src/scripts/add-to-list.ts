@@ -1,21 +1,4 @@
-const LIST_KEY = 'matur:list';
-
-function readList(): Record<string, number> {
-  try {
-    return JSON.parse(localStorage.getItem(LIST_KEY) ?? '{}');
-  } catch {
-    return {};
-  }
-}
-
-function writeList(list: Record<string, number>): void {
-  try {
-    localStorage.setItem(LIST_KEY, JSON.stringify(list));
-  } catch {
-    // Storage unavailable — the button simply won't persist.
-  }
-  document.dispatchEvent(new CustomEvent('matur:list-changed'));
-}
+import { readList, writeList } from './list-store';
 
 const btn = document.querySelector<HTMLButtonElement>('#add-to-list');
 const servingsOut = document.querySelector<HTMLOutputElement>('#servings');

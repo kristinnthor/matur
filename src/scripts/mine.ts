@@ -13,6 +13,7 @@ interface Entry {
 const grid = document.querySelector<HTMLElement>('#mine-grid')!;
 const signedOut = document.querySelector<HTMLElement>('#mine-signedout')!;
 const empty = document.querySelector<HTMLElement>('#mine-empty')!;
+const randomLink = document.querySelector<HTMLElement>('#mine-random')!;
 
 let manifest: Record<string, Entry> = {};
 try {
@@ -27,6 +28,7 @@ function render(): void {
   // Favourites for recipes that have since been removed are simply skipped.
   const slugs = state.personal.favourites.filter((s) => manifest[s]);
   empty.hidden = !state.signedIn || slugs.length > 0;
+  randomLink.hidden = !state.signedIn || slugs.length === 0;
   if (!state.signedIn) return;
 
   for (const slug of slugs.sort((a, b) =>
