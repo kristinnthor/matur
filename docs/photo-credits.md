@@ -57,6 +57,12 @@ one is worse than none:
 | `pizza-med-hakkbotni` | Every candidate is a dough pizza; the whole point is a minced-meat base |
 | `kramdar-kartoflur` | Nothing on Commons is a photo *of* smashed potatoes — only plates where some appear in a corner |
 | `mexikofiskur` | No candidates across eight queries; the dish is an Icelandic invention, and "fish mornay" matches marionberry pies |
+| `kjuklingarullur` | The breaded, sliced rolls that exist are all cordon bleu, with the ham plainly visible; the recipe's title names spinach and feta. Spinach queries on Commons and Openverse found only unbreaded roulades. Added 2026-09-29 |
+
+The 2026-09-29 batch from the suggestion queue is representative in the same way
+as the first sweep: `coca-cola-kjuklingur` shows cola chicken *wings* rather than
+thighs, and `kryddjurtakjuklingur` shows its breast and cream sauce with mash and
+fiddleheads where the recipe has rice.
 
 Three more were nearly missed for a bad reason worth recording: the first pass
 judged candidates from 300 px contact-sheet tiles, and searched on the wrong

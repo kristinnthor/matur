@@ -278,5 +278,33 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_pot_roast.jpg",
     "sha256": "ce4872bdfd8ea37710cf848e04f03bdaf7d7efc9569a3762b7fe4b8d644ba56b"
+  },
+  "lasagna": {
+    "creator": "Roundhere44",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slice_of_Lasagna.jpg",
+    "sha256": "07c1e710ddad4d8f056f12b3d496d50e1eb8d2987862ccd718b4f9ad000b6fc7"
+  },
+  "coca-cola-kjuklingur": {
+    "creator": "Suginami",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8F%AF%E4%B9%90%E9%B8%A1%E7%BF%85_Cola_Jichi.jpg",
+    "sha256": "232dc2fd86c824e3bfa8ae34137052187a60b3344acc9b0fd3bb44d518bc49e2"
+  },
+  "hamborgarasosa": {
+    "creator": "Rainer Zenz",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thousand-Island-Dressing.jpg",
+    "sha256": "4913866acd67ee9ec2838f344affa3b5f583bcde42dc9ecc6d70bb141ce59799"
+  },
+  "kryddjurtakjuklingur": {
+    "creator": "John Herschell",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pan_Roasted_Chicken_Breasts,_Garlic_Mashed_Potatoes,_Fiddlehead_Ferns_and_Sauce_Supreme.jpg",
+    "sha256": "1b12d288c230f8b20a65b584c5fe4e99227dfa88fa6e405a74cd0c9821e9331a"
   }
 }
