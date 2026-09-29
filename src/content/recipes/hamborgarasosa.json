@@ -1,0 +1,118 @@
+{
+  "title": "Hamborgarasósa",
+  "subtitle": "lúxussósa með hunangssinnepi og súrum gúrkum",
+  "description": "Einstaklega góð hamborgarasósa úr majónesi, hunangssinnepi og smátt söxuðum súrum gúrkum, með örlitlum hita frá sterkri sósu. Hrærð saman á fimm mínútum og gerir venjulegan hamborgara að veislu.",
+  "categories": [
+    "sosur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 5,
+    "cook": 0
+  },
+  "ingredients": [
+    {
+      "id": "gurkur",
+      "amount": 50,
+      "unit": "g",
+      "item": "súrar gúrkur",
+      "note": "smátt saxaðar"
+    },
+    {
+      "id": "majones",
+      "amount": 4,
+      "unit": "msk",
+      "item": "majónes"
+    },
+    {
+      "id": "sinnep",
+      "amount": 3,
+      "unit": "tsk",
+      "item": "hunangssinnep"
+    },
+    {
+      "id": "tomatsosa",
+      "amount": 2,
+      "unit": "msk",
+      "item": "tómatsósa"
+    },
+    {
+      "id": "hvitlauksduft",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "hvítlauksduft"
+    },
+    {
+      "id": "paprikukrydd",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "paprikukrydd"
+    },
+    {
+      "id": "sterksosa",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "sterk chilisósa",
+      "note": "eftir smekk",
+      "scalable": false
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "salt",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 1,
+      "unit": "klípa",
+      "item": "svartur pipar",
+      "note": "nýmalaður",
+      "scalable": false
+    }
+  ],
+  "steps": [
+    {
+      "text": "Saxið {{gurkur}} smátt og kreistið mesta vökvann úr þeim í eldhúspappír, annars þynnist sósan þegar hún stendur.",
+      "refs": [
+        "gurkur"
+      ]
+    },
+    {
+      "text": "Hrærið saman {{majones}}, {{sinnep}}, {{tomatsosa}}, {{hvitlauksduft}}, {{paprikukrydd}} og {{sterksosa}} í skál og blandið gúrkunum saman við.",
+      "refs": [
+        "majones",
+        "sinnep",
+        "tomatsosa",
+        "hvitlauksduft",
+        "paprikukrydd",
+        "sterksosa"
+      ]
+    },
+    {
+      "text": "Smakkið til með {{salt}} og {{pipar}}. Bætið við sinnepi eða sterkri sósu ef þið viljið hana sætari eða sterkari.",
+      "refs": [
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Látið sósuna standa í kæli í minnst 15 mínútur svo hvítlauksduftið nái að leysast upp og bragðið að jafna sig. Berið fram með uppáhaldshamborgurunum ykkar.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: magn af sinnepi (3–4 tsk) og sterkri sósu (1–2 tsk) var gefið upp sem bil og er hér fest á lægri mörkin, með ábendingu um að smakka til. Bætt við að kreista vökvann úr gúrkunum, sem annars lekur út í sósuna og þynnir hana, og að láta sósuna standa stutta stund í kæli svo hvítlauksduftið verði ekki kornótt. Vörumerkið á hunangssinnepinu er gert almennt.",
+    "storage": "Geymist í 3–4 daga í lokuðu íláti í kæli. Hentar ekki í frysti, því majónesið skilur sig.",
+    "variants": "Í stað hunangssinneps má nota Dijon sinnep með ½ tsk af hunangi. Sætt agúrkusalat í stað súrra gúrkna gefur sætari sósu í ætt við hefðbundna hamborgarasósu. Reykt paprika í stað venjulegrar gefur reykbragð sem passar vel með grilluðu kjöti. Fyrir börn má sleppa sterku sósunni alveg."
+  },
+  "source": {
+    "url": "https://lindaben.is/recipes/hamborgarasosa-uppskrift/",
+    "site": "lindaben.is"
+  }
+}

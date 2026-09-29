@@ -1,0 +1,242 @@
+{
+  "title": "Kryddjurtakjúklingur í rjómasósu",
+  "subtitle": "pönnusteiktar bringur með basmatíhrísgrjónum",
+  "description": "Gullinbrúnar kjúklingabringur kláraðar í rjómasósu með parmesan, ferskum kryddjurtum og sítrónu, bornar fram á ilmandi basmatíhrísgrjónum. Einfaldur hversdagsmatur sem sómir sér líka vel þegar gestir koma.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 15,
+    "cook": 30
+  },
+  "ingredients": [
+    {
+      "id": "basmati",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "basmatíhrísgrjón",
+      "group": "Hrísgrjón"
+    },
+    {
+      "id": "vatn",
+      "amount": 4.25,
+      "unit": "dl",
+      "item": "vatn",
+      "group": "Hrísgrjón"
+    },
+    {
+      "id": "smjor_hr",
+      "amount": 1,
+      "unit": "msk",
+      "item": "smjör",
+      "note": "eða ólífuolía",
+      "group": "Hrísgrjón"
+    },
+    {
+      "id": "salt_hr",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Hrísgrjón",
+      "scalable": false
+    },
+    {
+      "id": "bringur",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kjúklingabringur",
+      "note": "eða úrbeinuð læri",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "salt",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Kjúklingur",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "nýmalaður",
+      "group": "Kjúklingur",
+      "scalable": false
+    },
+    {
+      "id": "paprika",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "paprikukrydd",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "kryddjurtir",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "þurrkaðar ítalskar kryddjurtir",
+      "note": "eða blanda af timjan, oregano og basilíku",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "olia",
+      "amount": 2,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "smjor",
+      "amount": 2,
+      "unit": "msk",
+      "item": "smjör",
+      "group": "Kjúklingur"
+    },
+    {
+      "id": "laukur",
+      "amount": 1,
+      "unit": "stk",
+      "item": "laukur",
+      "note": "lítill, saxaður smátt",
+      "group": "Sósa"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 3,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "saxaður smátt",
+      "group": "Sósa"
+    },
+    {
+      "id": "sod",
+      "amount": 2.5,
+      "unit": "dl",
+      "item": "kjúklingasoð",
+      "group": "Sósa"
+    },
+    {
+      "id": "rjomi",
+      "amount": 1.75,
+      "unit": "dl",
+      "item": "rjómi",
+      "group": "Sósa"
+    },
+    {
+      "id": "parmesan",
+      "amount": 25,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "fínt rifinn, má sleppa",
+      "group": "Sósa"
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð",
+      "group": "Sósa"
+    },
+    {
+      "id": "dill",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ferskt dill eða basilíka",
+      "note": "saxað, má sleppa",
+      "group": "Sósa"
+    },
+    {
+      "id": "sitrona",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "sítróna",
+      "note": "safinn",
+      "group": "Sósa"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Skolið {{basmati}} í köldu vatni þar til vatnið rennur tært. Þá losnar sterkjan af og grjónin verða laus í sér.",
+      "refs": [
+        "basmati"
+      ]
+    },
+    {
+      "text": "Setjið grjónin í pott ásamt {{vatn}}, {{smjor_hr}} og {{salt_hr}}. Látið suðuna koma upp, lækkið í lægsta hita, setjið lok á og sjóðið í 15 mínútur. Takið pottinn af hitanum og látið standa undir loki í 5 mínútur áður en grjónin eru losuð með gaffli.",
+      "refs": [
+        "vatn",
+        "smjor_hr",
+        "salt_hr"
+      ]
+    },
+    {
+      "text": "Á meðan grjónin sjóða: skerið {{bringur}} í tvennt eftir endilöngu svo úr verði tvær þynnri sneiðar, þá eldast þær jafnt og þorna ekki. Kryddið með {{salt}}, {{pipar}}, {{paprika}} og {{kryddjurtir}}.",
+      "refs": [
+        "bringur",
+        "salt",
+        "pipar",
+        "paprika",
+        "kryddjurtir"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} og {{smjor}} á stórri pönnu við meðalháan hita. Steikið kjúklinginn í 2–3 mínútur á hvorri hlið þar til hann er gullinbrúnn. Hann þarf ekki að vera eldaður í gegn, því hann klárast í sósunni. Takið hann af pönnunni.",
+      "refs": [
+        "olia",
+        "smjor"
+      ]
+    },
+    {
+      "text": "Lækkið í meðalhita og steikið {{laukur}} á sömu pönnu í 2–3 mínútur þar til hann mýkist. Bætið {{hvitlaukur}} út í og steikið í hálfa mínútu.",
+      "refs": [
+        "laukur",
+        "hvitlaukur"
+      ]
+    },
+    {
+      "text": "Hellið {{sod}} á pönnuna og skafið upp brúnu skófirnar af botninum, þar er mesta bragðið. Látið sjóða niður í 2–3 mínútur.",
+      "refs": [
+        "sod"
+      ]
+    },
+    {
+      "text": "Hrærið {{rjomi}} og {{parmesan}} saman við og látið malla í 3–4 mínútur þar til sósan þykknar aðeins.",
+      "refs": [
+        "rjomi",
+        "parmesan"
+      ]
+    },
+    {
+      "text": "Setjið kjúklinginn aftur á pönnuna ásamt safanum sem hefur runnið af honum, ausið sósu yfir og látið malla við vægan hita í 5–6 mínútur, eða þar til hann er eldaður í gegn.",
+      "refs": []
+    },
+    {
+      "text": "Takið pönnuna af hitanum og hrærið {{steinselja}}, {{dill}} og safanum úr {{sitrona}} saman við. Smakkið sósuna til með salti og pipar.",
+      "refs": [
+        "steinselja",
+        "dill",
+        "sitrona"
+      ]
+    },
+    {
+      "text": "Berið kjúklinginn fram á hrísgrjónunum og ausið sósunni yfir.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: þar eru heilar bringur steiktar í 4–5 mínútur á hvorri hlið þar til þær eru eldaðar í gegn og síðan látnar malla í 5 mínútur til viðbótar í sósunni, sem ofeldar þær og þurrkar. Hér eru bringurnar skornar í tvennt eftir endilöngu svo þær eldist jafnt, aðeins brúnaðar á pönnunni og kláraðar í sósunni. Ferskar kryddjurtir og sítrónusafi fara út í í lokin, af hitanum, í stað þess að malla í sósunni og missa lit og ferskleika.",
+    "storage": "Geymist í 3 daga í lokuðu íláti í kæli. Hitið varlega á pönnu eða í örbylgjuofni með skvettu af soði eða rjóma til að losa sósuna. Rjómasósan getur skilið sig í frysti, svo rétturinn er bestur ferskur.",
+    "variants": "Úrbeinuð kjúklingalæri haldast enn safaríkari en bringur; látið þau þá malla nokkrum mínútum lengur í sósunni. Kryddjurtunum má skipta út eftir því sem til er – rósmarín, estragon, timjan og graslaukur passa öll. Fyrir mjólkurlausa útgáfu má nota kókosrjóma og sleppa parmesan. Rifinn sítrónubörkur eða klípa af chiliflögum yfir í lokin gefur ferskari eða sterkari rétt. Gott með ofnbökuðu grænmeti eða grænu salati."
+  },
+  "source": {
+    "url": "https://recipe.nnutrition.xyz/creamy-herb-chicken-basmati-rice/",
+    "site": "recipe.nnutrition.xyz"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "title": "Klístraður Coca-Cola-kjúklingur",
+  "subtitle": "gljáður kjúklingur á einni pönnu með hrísgrjónum",
+  "description": "Kók, sojasósa, engifer og hvítlaukur sjóða niður í þykka, gljáandi sósu sem hjúpar kjúklinginn, sæt og sölt með örlitlum hita frá chiliflögum. Allt gerist á einni pönnu og tekur um hálftíma.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "fljotlegt",
+    "barnvaent"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 10,
+    "cook": 25
+  },
+  "ingredients": [
+    {
+      "id": "kjuklingalaeri",
+      "amount": 800,
+      "unit": "g",
+      "item": "kjúklingalæri",
+      "note": "úrbeinuð og skinnlaus",
+      "group": "Á pönnuna"
+    },
+    {
+      "id": "olia",
+      "amount": 1,
+      "unit": "msk",
+      "item": "matarolía",
+      "group": "Á pönnuna"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 4,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "saxaður smátt",
+      "group": "Á pönnuna"
+    },
+    {
+      "id": "engifer",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ferskt engifer",
+      "note": "rifið",
+      "group": "Á pönnuna"
+    },
+    {
+      "id": "kok",
+      "amount": 1,
+      "unit": "dós",
+      "item": "kók",
+      "note": "venjulegt, ekki sykurlaust",
+      "group": "Á pönnuna"
+    },
+    {
+      "id": "sojasosa",
+      "amount": 3,
+      "unit": "msk",
+      "item": "sojasósa",
+      "group": "Á pönnuna"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "note": "má sleppa",
+      "group": "Á pönnuna",
+      "scalable": false
+    },
+    {
+      "id": "limona",
+      "amount": 0.5,
+      "unit": "stk",
+      "item": "límóna",
+      "note": "safinn",
+      "group": "Á pönnuna"
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "nýmalaður, eftir smekk",
+      "group": "Á pönnuna",
+      "scalable": false
+    },
+    {
+      "id": "hrisgrjon",
+      "amount": 300,
+      "unit": "g",
+      "item": "hrísgrjón",
+      "group": "Til að bera fram"
+    },
+    {
+      "id": "vorlaukur",
+      "amount": 3,
+      "unit": "stk",
+      "item": "vorlaukur",
+      "note": "sneiddur",
+      "group": "Til að bera fram"
+    },
+    {
+      "id": "sesamfrae",
+      "amount": 1,
+      "unit": "msk",
+      "item": "sesamfræ",
+      "group": "Til að bera fram"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Þerrið {{kjuklingalaeri}} vel með eldhúspappír og kryddið með {{pipar}}. Saltið ekki, sojasósan sér um það.",
+      "refs": [
+        "kjuklingalaeri",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á stórri pönnu við meðalháan hita. Steikið kjúklinginn í 3–4 mínútur á hvorri hlið þar til hann er fallega brúnaður. Ef pannan rúmar ekki allt í einu lagi, steikið í tveimur skömmtum og setjið allt aftur á pönnuna, annars sýður kjötið í stað þess að brúnast.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Lækkið í meðalhita, bætið {{hvitlaukur}} og {{engifer}} á pönnuna og steikið í hálfa mínútu, bara þar til ilmurinn kemur upp.",
+      "refs": [
+        "hvitlaukur",
+        "engifer"
+      ]
+    },
+    {
+      "text": "Hellið {{kok}} og {{sojasosa}} yfir og stráið {{chiliflogur}} út í. Látið sjóða án loks í 15–18 mínútur. Snúið kjúklingnum reglulega og fylgist vel með undir lokin, því sykurinn brennur fljótt við þegar sósan fer að þykkna.",
+      "refs": [
+        "kok",
+        "sojasosa",
+        "chiliflogur"
+      ]
+    },
+    {
+      "text": "Setjið {{hrisgrjon}} í pott um leið og sósan fer að sjóða og sjóðið eftir leiðbeiningum á pakkanum, þá verður allt tilbúið á sama tíma.",
+      "refs": [
+        "hrisgrjon"
+      ]
+    },
+    {
+      "text": "Sósan er tilbúin þegar hún er orðin þykk og gljáandi og hjúpar kjúklinginn, og kjúklingurinn á þá að vera eldaður í gegn. Takið pönnuna af hitanum og kreistið {{limona}} yfir.",
+      "refs": [
+        "limona"
+      ]
+    },
+    {
+      "text": "Berið kjúklinginn fram á hrísgrjónunum með sósunni af pönnunni og stráið {{vorlaukur}} og {{sesamfrae}} yfir.",
+      "refs": [
+        "vorlaukur",
+        "sesamfrae"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: skammtafjöldi var ekki gefinn upp; 800 g af kjúklingi og 300 g af hrísgrjónum duga fjórum. Hrísgrjónin voru síðasta skrefið í aðferðinni, eftir að kjúklingurinn var tilbúinn, og hefðu því orðið korteri á eftir honum; hér fara þau í pottinn um leið og sósan byrjar að sjóða. Bætt við að steikja kjúklinginn í tveimur skömmtum ef pannan er lítil, því 800 g af lærum komast illa í eitt lag.",
+    "storage": "Geymist í lokuðu íláti í kæli í allt að þrjá daga. Hitið á pönnu með skvettu af vatni svo sósan losni aftur. Kjúklinginn má frysta í allt að 3 mánuði, en hrísgrjónin eru best nýsoðin.",
+    "variants": "Viljið þið minni sykur, notið sykurlaust kók og bætið 1 msk af hunangi út í. Sykurinn verður um helmingi minni og sósan þykknar samt. Nota má kjúklingabringur, en skerið þær þá í tvennt eftir endilöngu svo þær eldist jafnt og haldist safaríkar. Hvaða kóladrykkur sem er virkar."
+  },
+  "source": {
+    "url": "https://www.mbl.is/matur/frettir/2026/09/23/klistradur_coca_cola_kjuklingur_slaer_i_gegn/",
+    "site": "mbl.is"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "title": "Einfalt lasagna",
+  "subtitle": "með kjötsósu og ricotta, plöturnar ósoðnar",
+  "description": "Klassískt lasagna með nautahakki og ítölskum pylsum, ricotta-fyllingu og bráðnum mozzarella. Plöturnar fara ósoðnar í mótið og soðna í sósunni í ofninum, svo fyrirhöfnin er lítil.",
+  "categories": [
+    "pasta"
+  ],
+  "tags": [
+    "barnvaent",
+    "frystivaent"
+  ],
+  "servings": 8,
+  "time": {
+    "prep": 25,
+    "cook": 60
+  },
+  "ingredients": [
+    {
+      "id": "nautahakk",
+      "amount": 500,
+      "unit": "g",
+      "item": "nautahakk",
+      "group": "Kjötsósa"
+    },
+    {
+      "id": "salsiccia",
+      "amount": 250,
+      "unit": "g",
+      "item": "ítalskar pylsur (salsiccia)",
+      "note": "mildar",
+      "group": "Kjötsósa"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "pressaður",
+      "group": "Kjötsósa"
+    },
+    {
+      "id": "pastasosa",
+      "amount": 1.5,
+      "unit": "kg",
+      "item": "pastasósa",
+      "note": "tilbúin, úr krukku",
+      "group": "Kjötsósa"
+    },
+    {
+      "id": "ricotta",
+      "amount": 400,
+      "unit": "g",
+      "item": "ricotta",
+      "note": "eða kotasæla",
+      "group": "Ostafylling"
+    },
+    {
+      "id": "mozzarella",
+      "amount": 225,
+      "unit": "g",
+      "item": "rifinn mozzarella",
+      "group": "Ostafylling"
+    },
+    {
+      "id": "egg",
+      "amount": 2,
+      "unit": "stk",
+      "item": "egg",
+      "group": "Ostafylling"
+    },
+    {
+      "id": "parmesan",
+      "amount": 50,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "fínt rifinn",
+      "group": "Ostafylling"
+    },
+    {
+      "id": "steinselja",
+      "amount": 2,
+      "unit": "tsk",
+      "item": "þurrkuð steinselja",
+      "group": "Ostafylling"
+    },
+    {
+      "id": "salt",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Ostafylling",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.25,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "malaður",
+      "group": "Ostafylling",
+      "scalable": false
+    },
+    {
+      "id": "lasagnaplotur",
+      "amount": 300,
+      "unit": "g",
+      "item": "lasagnaplötur",
+      "note": "þurrar, ekki forsoðnar",
+      "group": "Samsetning"
+    },
+    {
+      "id": "vatn",
+      "amount": 1,
+      "unit": "dl",
+      "item": "vatn",
+      "group": "Samsetning"
+    },
+    {
+      "id": "mozzarella2",
+      "amount": 125,
+      "unit": "g",
+      "item": "rifinn mozzarella",
+      "group": "Samsetning"
+    },
+    {
+      "id": "parmesan2",
+      "amount": 25,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "fínt rifinn",
+      "group": "Samsetning"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 175°C og smyrjið eldfast mót, um 23×33 cm.",
+      "refs": []
+    },
+    {
+      "text": "Kreistið kjötið úr hýðinu á {{salsiccia}} og brúnið það ásamt {{nautahakk}} á stórri pönnu við meðalhita. Brjótið kjötið vel í sundur með sleif og hellið fitunni af.",
+      "refs": [
+        "salsiccia",
+        "nautahakk"
+      ]
+    },
+    {
+      "text": "Bætið {{hvitlaukur}} og {{pastasosa}} út á pönnuna og látið malla í 5 mínútur.",
+      "refs": [
+        "hvitlaukur",
+        "pastasosa"
+      ]
+    },
+    {
+      "text": "Hrærið saman {{ricotta}}, {{mozzarella}}, {{egg}}, {{parmesan}}, {{steinselja}}, {{salt}} og {{pipar}} í stórri skál.",
+      "refs": [
+        "ricotta",
+        "mozzarella",
+        "egg",
+        "parmesan",
+        "steinselja",
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Smyrjið þunnu lagi af kjötsósunni í botninn á mótinu og leggið eitt lag af {{lasagnaplotur}} yfir, um fjórðung platnanna. Brjótið plötur til ef þarf svo botninn sé allur þakinn.",
+      "refs": [
+        "lasagnaplotur"
+      ]
+    },
+    {
+      "text": "Skiptið afganginum af kjötsósunni í fjóra hluta í huganum. Smyrjið þriðjungi ostablöndunnar yfir plöturnar og síðan einum hluta af kjötsósunni. Endurtakið tvisvar: plötur, ostablanda, kjötsósa.",
+      "refs": []
+    },
+    {
+      "text": "Leggið síðustu plöturnar ofan á og hellið afganginum af kjötsósunni yfir. Gætið þess að plöturnar séu alveg huldar, því þær sem standa upp úr soðna ekki heldur verða harðar. Stráið {{mozzarella2}} og {{parmesan2}} yfir.",
+      "refs": [
+        "mozzarella2",
+        "parmesan2"
+      ]
+    },
+    {
+      "text": "Hellið {{vatn}} meðfram brúnunum á mótinu – plöturnar soðna í vökvanum. Ef pastasósan er þunn má minnka vatnið um helming.",
+      "refs": [
+        "vatn"
+      ]
+    },
+    {
+      "text": "Smyrjið álpappír og leggið hann yfir mótið með smurðu hliðina niður svo osturinn festist ekki við. Bakið í 50 mínútur.",
+      "refs": []
+    },
+    {
+      "text": "Takið álpappírinn af og bakið áfram í 10 mínútur, þar til osturinn er gylltur og hnífur rennur auðveldlega í gegnum plöturnar.",
+      "refs": []
+    },
+    {
+      "text": "Látið lasagnað standa í 10 mínútur áður en það er skorið, annars rennur það út á diskinn.",
+      "refs": []
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: skammtafjöldinn var 15, sem miðast við litla bita – 750 g af kjöti skipt á 15 gerir 50 g á mann. Hér er miðað við 8 fullorðna. Vatnsmagnið stangast á í frumuppskriftinni, ¼ bolli í hráefnalistanum en ½ bolli í aðferðinni; hér er það 1 dl, sem liggur þar á milli, með ábendingu um að minnka það ef sósan er þunn. Plöturnar voru gefnar upp sem 12 bandarískar lengjur, þrjár í lagi, sem passar ekki við evrópskar plötur; hér eru þær gefnar upp eftir þyngd og lagðar þar til botninn er þakinn. Bætt við að taka pylsukjötið úr hýðinu og að efstu plöturnar verði að vera huldar sósu. Magnið er umreiknað og lagað að íslenskum pakkningum, t.d. 500 g af nautahakki.",
+    "storage": "Geymist í 4 daga í kæli. Frystist mjög vel, heilt eða í bitum, í allt að 3 mánuði. Látið þiðna í kæli yfir nótt og hitið undir álpappír í 175°C ofni í um hálftíma. Það má líka setja lasagnað saman daginn áður og geyma það óbakað í kæli, en lengið þá bökunartímann um 10 mínútur.",
+    "variants": "Kotasæla í stað ricotta gefur aðeins léttari fyllingu og fæst alls staðar. Ef ítalskar pylsur fást ekki má nota eingöngu nautahakk og bæta við 1 tsk af fennelfræjum og klípu af chiliflögum. Ef plöturnar eru forsoðnar eftir leiðbeiningum á pakkanum er vatninu sleppt. Í stað þurrkaðrar steinselju má nota 4 msk af ferskri, saxaðri, og ferskri basilíku má strá yfir áður en lasagnað er borið fram."
+  },
+  "source": {
+    "url": "https://www.tastesoflizzyt.com/easy-lasagna-recipe/",
+    "site": "tastesoflizzyt.com"
+  }
+}
