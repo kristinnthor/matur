@@ -1,0 +1,253 @@
+{
+  "title": "Stökkar kjúklingarúllur með spínati og feta",
+  "subtitle": "fylltar bringur í stökkum hjúp með heitu hunangi",
+  "description": "Kjúklingabringur flattar út, fylltar með þeyttum fetaosti og spínati, rúllaðar upp og hjúpaðar stökku parmesan-raspi. Skornar í sneiðar svo fyllingin sjáist og bornar fram með sætu og sterku hunangi sem dreypt er yfir.",
+  "categories": [
+    "kjuklingur"
+  ],
+  "tags": [
+    "veislumatur"
+  ],
+  "servings": 4,
+  "time": {
+    "prep": 30,
+    "cook": 30
+  },
+  "ingredients": [
+    {
+      "id": "olia_fylling",
+      "amount": 1,
+      "unit": "msk",
+      "item": "ólífuolía",
+      "group": "Fylling"
+    },
+    {
+      "id": "hvitlaukur",
+      "amount": 2,
+      "unit": "rif",
+      "item": "hvítlaukur",
+      "note": "pressaður",
+      "group": "Fylling"
+    },
+    {
+      "id": "spinat",
+      "amount": 150,
+      "unit": "g",
+      "item": "ferskt spínat",
+      "group": "Fylling"
+    },
+    {
+      "id": "feta",
+      "amount": 100,
+      "unit": "g",
+      "item": "fetaostur í kubb",
+      "note": "mulinn",
+      "group": "Fylling"
+    },
+    {
+      "id": "rjomaostur",
+      "amount": 100,
+      "unit": "g",
+      "item": "rjómaostur",
+      "note": "við stofuhita",
+      "group": "Fylling"
+    },
+    {
+      "id": "mozzarella",
+      "amount": 50,
+      "unit": "g",
+      "item": "rifinn mozzarella",
+      "group": "Fylling"
+    },
+    {
+      "id": "bringur",
+      "amount": 4,
+      "unit": "stk",
+      "item": "kjúklingabringur",
+      "group": "Kjúklingurinn"
+    },
+    {
+      "id": "salt",
+      "amount": 0.75,
+      "unit": "tsk",
+      "item": "salt",
+      "group": "Kjúklingurinn",
+      "scalable": false
+    },
+    {
+      "id": "pipar",
+      "amount": 0.5,
+      "unit": "tsk",
+      "item": "svartur pipar",
+      "note": "nýmalaður",
+      "group": "Kjúklingurinn",
+      "scalable": false
+    },
+    {
+      "id": "hveiti",
+      "amount": 0.5,
+      "unit": "dl",
+      "item": "hveiti",
+      "group": "Hjúpur"
+    },
+    {
+      "id": "egg",
+      "amount": 2,
+      "unit": "stk",
+      "item": "egg",
+      "group": "Hjúpur"
+    },
+    {
+      "id": "panko",
+      "amount": 2,
+      "unit": "dl",
+      "item": "panko-brauðrasp",
+      "group": "Hjúpur"
+    },
+    {
+      "id": "parmesan",
+      "amount": 25,
+      "unit": "g",
+      "item": "parmesanostur",
+      "note": "fínt rifinn",
+      "group": "Hjúpur"
+    },
+    {
+      "id": "paprika",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "paprikukrydd",
+      "group": "Hjúpur"
+    },
+    {
+      "id": "olia",
+      "amount": 3,
+      "unit": "msk",
+      "item": "matarolía til steikingar",
+      "group": "Hjúpur",
+      "scalable": false
+    },
+    {
+      "id": "hunang",
+      "amount": 4,
+      "unit": "msk",
+      "item": "fljótandi hunang",
+      "group": "Heitt hunang"
+    },
+    {
+      "id": "chiliflogur",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "chiliflögur",
+      "note": "eftir smekk",
+      "group": "Heitt hunang",
+      "scalable": false
+    },
+    {
+      "id": "edik",
+      "amount": 1,
+      "unit": "tsk",
+      "item": "eplaedik",
+      "note": "eða sítrónusafi",
+      "group": "Heitt hunang"
+    },
+    {
+      "id": "steinselja",
+      "amount": 1,
+      "unit": "msk",
+      "item": "fersk steinselja",
+      "note": "söxuð, til skrauts",
+      "group": "Heitt hunang"
+    }
+  ],
+  "steps": [
+    {
+      "text": "Hitið ofninn í 200°C.",
+      "refs": []
+    },
+    {
+      "text": "Hitið {{olia_fylling}} á pönnu við meðalhita og steikið {{hvitlaukur}} í hálfa mínútu. Bætið {{spinat}} út á og veltið þar til það fellur saman, 1–2 mínútur.",
+      "refs": [
+        "olia_fylling",
+        "hvitlaukur",
+        "spinat"
+      ]
+    },
+    {
+      "text": "Setjið spínatið í sigti, látið það kólna aðeins og kreistið síðan úr því allan vökva sem þið náið. Þetta er mikilvægasta skrefið: blautt spínat gerir fyllinguna vatnskennda og hún lekur út í ofninum. Saxið það gróft.",
+      "refs": []
+    },
+    {
+      "text": "Þeytið {{feta}} og {{rjomaostur}} saman með gaffli eða í matvinnsluvél þar til blandan er mjúk og létt. Hrærið spínatinu og {{mozzarella}} saman við.",
+      "refs": [
+        "feta",
+        "rjomaostur",
+        "mozzarella"
+      ]
+    },
+    {
+      "text": "Skerið {{bringur}} opnar eftir endilöngu, án þess að skera alveg í gegn, og opnið þær eins og bók. Leggið þær á milli tveggja laga af plastfilmu og berjið þær jafnt út í um 1 cm þykkt með kökukefli eða botninum á potti. Jöfn þykkt er það sem lætur rúlluna eldast jafnt í gegn.",
+      "refs": [
+        "bringur"
+      ]
+    },
+    {
+      "text": "Kryddið bringurnar með {{salt}} og {{pipar}}. Smyrjið fyllingunni á þær og skiljið eftir um 2 cm kant allan hringinn, svo hún þrýstist ekki út þegar rúllað er.",
+      "refs": [
+        "salt",
+        "pipar"
+      ]
+    },
+    {
+      "text": "Rúllið bringurnar þétt upp frá mjórri endanum og festið samskeytin með tannstönglum.",
+      "refs": []
+    },
+    {
+      "text": "Setjið {{hveiti}} á disk, pískið {{egg}} í skál og blandið {{panko}}, {{parmesan}} og {{paprika}} saman á öðrum diski. Veltið hverri rúllu fyrst upp úr hveitinu, svo egginu og loks raspinu og þrýstið því vel á allan hringinn.",
+      "refs": [
+        "hveiti",
+        "egg",
+        "panko",
+        "parmesan",
+        "paprika"
+      ]
+    },
+    {
+      "text": "Hitið {{olia}} á ofnþolinni pönnu við meðalháan hita. Brúnið rúllurnar á öllum hliðum þar til hjúpurinn er gullinn, um 5 mínútur samtals, og byrjið á samskeytunum svo þau lokist.",
+      "refs": [
+        "olia"
+      ]
+    },
+    {
+      "text": "Setjið pönnuna inn í ofninn, eða færið rúllurnar í eldfast mót, og bakið í 20–25 mínútur, þar til kjúklingurinn er eldaður í gegn. Kjarnhitinn á að ná 74°C ef hitamælir er við höndina.",
+      "refs": []
+    },
+    {
+      "text": "Á meðan rúllurnar eru í ofninum: hitið {{hunang}}, {{chiliflogur}} og {{edik}} saman í litlum potti við vægan hita í 2–3 mínútur, án þess að sjóða, og takið af hitanum svo chiliið nái að gefa bragð.",
+      "refs": [
+        "hunang",
+        "chiliflogur",
+        "edik"
+      ]
+    },
+    {
+      "text": "Látið rúllurnar hvíla í 5 mínútur, svo fyllingin stífni og renni ekki út þegar skorið er. Fjarlægið tannstönglana og skerið í 2–3 cm sneiðar með beittum hníf.",
+      "refs": []
+    },
+    {
+      "text": "Raðið sneiðunum á fat, dreypið heita hunanginu yfir og stráið {{steinselja}} yfir.",
+      "refs": [
+        "steinselja"
+      ]
+    }
+  ],
+  "notes": {
+    "improvements": "Endurbætur frá upprunalegu uppskriftinni: engin uppskrift fylgdi. Á Pinterest var aðeins mynd af réttinum og nafn hans, svo þessi uppskrift er skrifuð frá grunni fyrir vefinn út frá því sem sést á myndinni. Hún hefur ekki verið elduð enn, og tímar og magn eru því áætluð. Það sem mestu skiptir er að kreista vökvann úr spínatinu, berja bringurnar í jafna þykkt og láta rúllurnar hvíla áður en þær eru skornar.",
+    "storage": "Geymast í 3 daga í kæli. Hitið í 180°C ofni í um 15 mínútur svo hjúpurinn haldist stökkur, því hann linast í örbylgjuofni. Óeldaðar, hjúpaðar rúllur má frysta í allt að 2 mánuði; látið þær þiðna í kæli yfir nótt og eldið eins og lýst er. Heita hunangið geymist vikum saman í lokaðri krukku við stofuhita.",
+    "variants": "Í stað fersks spínats má nota 150 g af frosnu, þiðnuðu og vel kreistu. Salatost í olíu má nota í stað fetakubbs ef olían er látin renna vel af. Venjulegt brauðrasp í stað panko gefur fínlegri og ekki eins stökkan hjúp. Í loftsteikingarpotti: penslið rúllurnar með olíu og eldið við 190°C í 18–20 mínútur, og snúið þeim í miðjunni. Sterk chilisósa eins og sriracha í stað chiliflaganna gefur mýkri hita. Gott með grænu salati og kartöflum eða hrísgrjónum."
+  },
+  "source": {
+    "url": "https://www.pinterest.com/pin/1133570168736284370/",
+    "site": "pinterest.com"
+  }
+}
